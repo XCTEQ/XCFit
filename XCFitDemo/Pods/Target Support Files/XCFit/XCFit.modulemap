@@ -1,0 +1,6 @@
+framework module XCFit {
+  umbrella header "XCFit-umbrella.h"
+
+  export *
+  module * { export * }
+}

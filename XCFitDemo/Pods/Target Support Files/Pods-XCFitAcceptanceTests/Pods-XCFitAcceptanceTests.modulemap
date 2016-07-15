@@ -1,0 +1,6 @@
+framework module Pods_XCFitAcceptanceTests {
+  umbrella header "Pods-XCFitAcceptanceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

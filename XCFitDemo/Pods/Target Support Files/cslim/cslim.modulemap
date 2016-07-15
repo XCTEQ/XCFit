@@ -1,0 +1,6 @@
+framework module cslim {
+  umbrella header "cslim-umbrella.h"
+
+  export *
+  module * { export * }
+}

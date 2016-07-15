@@ -1,0 +1,10 @@
+MYPATH=$(dirname $0)
+source ${MYPATH}/env.sh
+APP_PATH=${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}
+DEVICE_TYPE="iPhone-6"
+DEPLOYMENT_TARGET_VALUE=$( echo "$DEPLOYMENT_TARGET_SUGGESTED_VALUES" | rev | cut -d " " -f1 | rev )
+SLIM_PORT=$1
+
+echo 'Running Test Target "'$FULL_PRODUCT_NAME'" with Slim Port "'$SLIM_PORT'"'
+echo 'Simulator Device "'$DEVICE_TYPE'", deployment Target "'$DEPLOYMENT_TARGET_VALUE'"'
+$MYPATH/ios-sim launch $APP_PATH --devicetypeid "com.apple.CoreSimulator.SimDeviceType.$DEVICE_TYPE, $DEPLOYMENT_TARGET_VALUE" --verbose --args $SLIM_PORT

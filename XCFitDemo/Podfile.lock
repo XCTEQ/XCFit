@@ -1,0 +1,22 @@
+PODS:
+  - cslim (1.1.3)
+  - OCSlimProject (1.1):
+    - cslim
+  - XCFit (0.1.0):
+    - OCSlimProject
+
+DEPENDENCIES:
+  - XCFit (from `../`)
+
+EXTERNAL SOURCES:
+  XCFit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  cslim: acd60006b3d87c180f008f7c9074bd583c345f98
+  OCSlimProject: 7f9bef4576d0bcc3fca1c3d35724d9016784710b
+  XCFit: d9cb29f4fe1360187fdd0440aecadc4445e2fcaf
+
+PODFILE CHECKSUM: d116b087519825ca0b46682484482a89cd6a370d
+
+COCOAPODS: 1.0.1
