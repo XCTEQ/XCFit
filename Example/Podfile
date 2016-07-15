@@ -1,0 +1,6 @@
+use_frameworks!
+target 'XCFit_Tests' do
+  pod 'XCFit', :path => '../'
+  
+  
+end
