@@ -1,42 +1,28 @@
-#
-# Be sure to run `pod lib lint XCFit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XCFit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language.  
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/XCFit'
+  s.homepage         = 'https://github.com/Shashikant86/XCFit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Shashikant86' => 'shashikant.jagtap@aol.co.uk' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/XCFit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Shashikant86' => 'shashikant.jagtap@icloud.com' }
+  s.source           = { :git => 'https://github.com/Shashikant86/XCFit.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Shashikant86'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'XCFit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'XCFit' => ['XCFit/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'XCFit' => ['XCFit/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'OCSlimProject'
 end

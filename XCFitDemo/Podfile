@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'XCFitDemo_AcceptanceTests' do
+  pod 'XcodeBDDfire', :path => '../'
+end  
