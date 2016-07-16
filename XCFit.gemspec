@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shashikant86"]
   spec.email         = ["shashikant.jagtap@icloud.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Full Stack BDD in Xcode Templates for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse. Checkout XCFit Pod as well}
+  spec.description   = %q{XCFit is a full stack BDD framework in Xcode for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language. Checkout XCFIT POD}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
