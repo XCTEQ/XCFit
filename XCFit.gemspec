@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'XCFit/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "XCFit"
+  spec.name          = "xcfit"
   spec.version       = XCFit::VERSION
   spec.authors       = ["Shashikant86"]
   spec.email         = ["shashikant.jagtap@icloud.com"]

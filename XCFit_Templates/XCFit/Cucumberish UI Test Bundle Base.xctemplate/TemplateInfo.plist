@@ -55,7 +55,7 @@
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___.feature</string>
+		<string>demo.feature</string>
 		<string>Info.plist:PackageType</string>
 		<string>___PACKAGENAMEASIDENTIFIER___-Bridging-Header.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___.h</string>
@@ -64,10 +64,10 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>___FILEBASENAME___.feature</key>
+		<key>demo.feature</key>
 		<dict>
 			<key>Path</key>
-			<string>___PACKAGENAMEASIDENTIFIER___.feature</string>
+			<string>demo.feature</string>
 		</dict>
 		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
