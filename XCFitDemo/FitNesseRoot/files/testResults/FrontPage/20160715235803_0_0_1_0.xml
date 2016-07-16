@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-15T23:58:11+01:00</date>
+    <runTimeInMillis>80</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>FrontPage</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>Running Test Target "XCFitAcceptanceTests.app" with Slim Port "8085"
+Simulator Device "iPhone-6", deployment Target "9.2"
+</stdOut>
+    <stdErr>App Spec: &lt;DTiPhoneSimulatorApplicationSpecifier 0x7fda01d4f8b0&gt; specified by app path /Users/shashi/Library/Developer/Xcode/DerivedData/XCFitDemo-evtjijidxcoeohcdnmjdsxaofpqt/Build/Products/Debug-iphonesimulator/XCFitAcceptanceTests.app
+SDK Root: &lt;DTiPhoneSimulatorSystemRoot 0x7fda01c579f0&gt; path=/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468623486'
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468623486'
+using device family iphone
+2016-07-15 23:58:06.470 ios-sim[98932:754276] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-9542/DVTFoundation/PlugInArchitecture/PlugInManager/DVTPlugInManager.m:259
+Details:  Requested but did not find extension point with identifier Xcode.DVTFoundation.DevicePlatformMapping
+Object:   &lt;DVTPlugInManager: 0x7fda01d69d90&gt;
+Method:   -extensionPointWithIdentifier:
+Thread:   &lt;NSThread: 0x7fda01c0be70&gt;{number = 1, name = main}
+Please file a bug at http://bugreport.apple.com with this warning message and any useful information you can provide.
+Session started
+Session did end with error (null)
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468623486'
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468623486'
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>7952</totalRunTimeInMillis>
+</testResults>
+

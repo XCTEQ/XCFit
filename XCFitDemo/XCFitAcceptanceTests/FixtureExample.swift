@@ -4,13 +4,15 @@
 
 import Foundation
 
-@objc(FixtureExample)
+@objc(ShouldIBuyMilk)
 
-class FixtureExample : NSObject, SlimDecisionTable {
+class ShouldIBuyMilk : NSObject, SlimDecisionTable {
     
     //MARK: Inputs
     
-    var input = ""
+    var cashInWallet = ""
+    var creditCard = ""
+    var pintsOfMilkRemaining = 0
     
     //MARK: <SlimDecisionTable>
     
@@ -22,10 +24,8 @@ class FixtureExample : NSObject, SlimDecisionTable {
     
     //MARK: Outputs
     
-    var output: NSString {
-        get {
-            return ""
-        }
+    func goToStore() -> String {
+        return "no"
     }
     
 }

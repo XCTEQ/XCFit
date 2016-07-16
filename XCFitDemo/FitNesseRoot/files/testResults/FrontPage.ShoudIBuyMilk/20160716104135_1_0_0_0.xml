@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage.ShoudIBuyMilk</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-16T10:41:39+01:00</date>
+    <runTimeInMillis>31</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;should I buy milk&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;cash in wallet&lt;/td&gt;
+		&lt;td&gt;credit card&lt;/td&gt;
+		&lt;td&gt;pints of milk remaining&lt;/td&gt;
+		&lt;td&gt;go to store?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;yes&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ShoudIBuyMilk</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='ShouldIBuyMilk', args=[]}</instruction>
+        <slimResult>pass(should I buy milk)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>should I buy milk</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_8', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_14', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_16', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_16</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_17</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_18', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_18</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_20', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_22', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_22</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_23', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_23</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_24', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_24</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_26', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_26</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8086</command>
+    <exitCode>0</exitCode>
+    <stdOut>Running Test Target "XCFitAcceptanceTests.app" with Slim Port "8086"
+Simulator Device "iPhone-6", deployment Target "9.2"
+</stdOut>
+    <stdErr>App Spec: &lt;DTiPhoneSimulatorApplicationSpecifier 0x7f8923d832f0&gt; specified by app path /Users/shashi/Library/Developer/Xcode/DerivedData/XCFitDemo-evtjijidxcoeohcdnmjdsxaofpqt/Build/Products/Debug-iphonesimulator/XCFitAcceptanceTests.app
+SDK Root: &lt;DTiPhoneSimulatorSystemRoot 0x7f8923d73160&gt; path=/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468662096'
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468662096'
+using device family iphone
+2016-07-16 10:41:36.321 ios-sim[21370:797029] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-9542/DVTFoundation/PlugInArchitecture/PlugInManager/DVTPlugInManager.m:259
+Details:  Requested but did not find extension point with identifier Xcode.DVTFoundation.DevicePlatformMapping
+Object:   &lt;DVTPlugInManager: 0x7f8923d96e60&gt;
+Method:   -extensionPointWithIdentifier:
+Thread:   &lt;NSThread: 0x7f8923d00710&gt;{number = 1, name = main}
+Please file a bug at http://bugreport.apple.com with this warning message and any useful information you can provide.
+Session started
+Session did end with error (null)
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468662096'
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468662096'
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3356</totalRunTimeInMillis>
+</testResults>
+

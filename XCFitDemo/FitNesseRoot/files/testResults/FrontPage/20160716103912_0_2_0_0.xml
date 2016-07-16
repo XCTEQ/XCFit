@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.BuyMilk</name>
+    <date>2016-07-16T10:39:12+01:00</date>
+    <pageHistoryLink>FrontPage.BuyMilk?pageHistory&amp;resultDate=20160716103912</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>4</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>236</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FrontPage.ShoudIBuyMilk</name>
+    <date>2016-07-16T10:39:12+01:00</date>
+    <pageHistoryLink>FrontPage.ShoudIBuyMilk?pageHistory&amp;resultDate=20160716103912</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>4</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>327</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8093</command>
+    <exitCode>0</exitCode>
+    <stdOut>Running Test Target "XCFitAcceptanceTests.app" with Slim Port "8093"
+Simulator Device "iPhone-6", deployment Target "9.2"
+</stdOut>
+    <stdErr>App Spec: &lt;DTiPhoneSimulatorApplicationSpecifier 0x7fbe7ad539a0&gt; specified by app path /Users/shashi/Library/Developer/Xcode/DerivedData/XCFitDemo-evtjijidxcoeohcdnmjdsxaofpqt/Build/Products/Debug-iphonesimulator/XCFitAcceptanceTests.app
+SDK Root: &lt;DTiPhoneSimulatorSystemRoot 0x7fbe7ad55520&gt; path=/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468661947'
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468661947'
+using device family iphone
+2016-07-16 10:39:07.459 ios-sim[20019:793648] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-9542/DVTFoundation/PlugInArchitecture/PlugInManager/DVTPlugInManager.m:259
+Details:  Requested but did not find extension point with identifier Xcode.DVTFoundation.DevicePlatformMapping
+Object:   &lt;DVTPlugInManager: 0x7fbe7ad90730&gt;
+Method:   -extensionPointWithIdentifier:
+Thread:   &lt;NSThread: 0x7fbe7ac0be50&gt;{number = 1, name = main}
+Please file a bug at http://bugreport.apple.com with this warning message and any useful information you can provide.
+Session started
+Session did end with error (null)
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1468661947'
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1468661947'
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>2</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>6855</totalRunTimeInMillis>
+</suiteResults>
+

@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage.ShoudIBuyMilk</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>52</exceptions>
+    </counts>
+    <date>2016-07-15T23:59:59+01:00</date>
+    <runTimeInMillis>132</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;should I buy milk &lt;span class="error"&gt;Could not find class ShouldIBuyMilk.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;cash in wallet&lt;/td&gt;
+		&lt;td&gt;credit card&lt;/td&gt;
+		&lt;td&gt;pints of milk remaining&lt;/td&gt;
+		&lt;td&gt;go to store?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;no &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;yes &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;nope &lt;span class="error"&gt;The instance decisionTable_0. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ShoudIBuyMilk</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='ShouldIBuyMilk', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class ShouldIBuyMilk.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_1', instruction='call', instanceName='decisionTable_0', methodName='table', args=[[[cash in wallet, credit card, pints of milk remaining, go to store?], [0, no, 0, no], [10, no, 0, yes], [0, yes, 0, yes], [10, yes, 0, yes], [0, no, 1, no], [10, no, 1, no], [0, yes, 1, no], [10, yes, 1, nope]]]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_1</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_2', instruction='call', instanceName='decisionTable_0', methodName='beginTable', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_2</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_3', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_3</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_7</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_8', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_9', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_9</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_11</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_13', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_13</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_14', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_14</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_15', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_15</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_16', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_16</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_17</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_18', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_18</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_19', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_19</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_20', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_20</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_21', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_21</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_22', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_22</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_23', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_23</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_24', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_24</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_25', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_25</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_26', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_26</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_27', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_27</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_28', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_28</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_29', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_29</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_30', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_30</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_31', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_31</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_32', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_32</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_33', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_33</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_34', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_34</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_35', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_35</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_36', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_36</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_37', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_37</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_38', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_38</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_39', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_39</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_40', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_40</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_41', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_41</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_42', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_42</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_43', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_43</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_44', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_44</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_45', instruction='call', instanceName='decisionTable_0', methodName='reset', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_45</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_46', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_46</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_47', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_47</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_48', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_48</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_49', instruction='call', instanceName='decisionTable_0', methodName='execute', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_49</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_50', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_50</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_51', instruction='call', instanceName='decisionTable_0', methodName='endTable', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_51</instructionId>
+                              <type>SilentReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>132</totalRunTimeInMillis>
+</testResults>
+

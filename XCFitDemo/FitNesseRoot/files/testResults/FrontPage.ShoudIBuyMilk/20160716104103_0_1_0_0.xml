@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage.ShoudIBuyMilk</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>4</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-16T10:41:03+01:00</date>
+    <runTimeInMillis>635</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;should I buy milk&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;cash in wallet&lt;/td&gt;
+		&lt;td&gt;credit card&lt;/td&gt;
+		&lt;td&gt;pints of milk remaining&lt;/td&gt;
+		&lt;td&gt;go to store?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;no&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;yes&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;yes&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;no&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;yes&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;yes&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;no&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;yes&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;no&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;yes&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;no&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;yes&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;[no] &lt;span class="fail"&gt;expected [no&lt;/span&gt;&lt;span class="diff"&gt;pe&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ShoudIBuyMilk</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='ShouldIBuyMilk', args=[]}</instruction>
+        <slimResult>pass(should I buy milk)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>should I buy milk</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_8', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_14', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>fail(a=no;e=yes)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>no</actual>
+                              <expected>yes</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_16', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_16</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_17</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_18', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_18</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_20', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>fail(a=no;e=yes)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>no</actual>
+                              <expected>yes</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_22', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_22</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_23', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_23</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_24', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_24</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_26', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>fail(a=no;e=yes)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_26</instructionId>
+                    <col>3</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>no</actual>
+                              <expected>yes</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_28', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_28</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_29', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_29</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_30', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_30</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_32', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_32</instructionId>
+                    <col>3</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_34', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_34</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_35', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[no]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_35</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_36', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_36</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_38', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_38</instructionId>
+                    <col>3</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_40', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_40</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_41', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_41</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_42', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_42</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_44', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>pass(no)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_44</instructionId>
+                    <col>3</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>no</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_46', instruction='call', instanceName='decisionTable_0', methodName='setCashInWallet', args=[10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_46</instructionId>
+                    <col>0</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_47', instruction='call', instanceName='decisionTable_0', methodName='setCreditCard', args=[yes]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_47</instructionId>
+                    <col>1</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_48', instruction='call', instanceName='decisionTable_0', methodName='setPintsOfMilkRemaining', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_48</instructionId>
+                    <col>2</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_50', instruction='call', instanceName='decisionTable_0', methodName='goToStore', args=[]}</instruction>
+        <slimResult>fail(a=no;e=nope)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_0_50</instructionId>
+                    <col>3</col>
+                              <row>9</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>no</actual>
+                              <expected>nope</expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>635</totalRunTimeInMillis>
+</testResults>
+
