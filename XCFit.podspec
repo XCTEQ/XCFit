@@ -11,7 +11,7 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Shashikant86' => 'shashikant.jagtap@icloud.com' }
-  s.source           = { :git => 'https://github.com/Shashikant86/XCFit.git', :branch => '0.1.0' }
+  s.source           = { :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '0.1.0' }
   s.social_media_url = 'https://twitter.com/Shashikant86'
 
   s.ios.deployment_target = '8.0'
