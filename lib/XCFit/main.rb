@@ -49,7 +49,7 @@ module XCFit
 
       desc 'create_xcgherkin', 'Generate Xcode Templates for the Gherkin Feature Files'
       def create_xcgherkin
-        if File.exist?($source_dir)
+        if File.exist?($root_gherkin_dir)
          puts "==================XXXXXXXX===========================" 
          puts 'There is already Gherkin directory in Xcode Templates. Have you tried XCFit Before? '
          puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/Gherkin directory to carry on'
@@ -67,5 +67,12 @@ module XCFit
          puts 'You wont need to restart Xcode but do so if nesessary!'
          puts " ***************** Enjoy XCFit *****************"
       end
+
+      desc 'setall', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
+      def setall
+        create_xctargets
+        create_xcgherkin
+      end 
+        
   end 
 end 
