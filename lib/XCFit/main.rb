@@ -26,8 +26,8 @@ module XCFit
         say XCFit::VERSION
       end
 
-      desc 'setup_xcfit', 'Generate a Xcode Templates for the Cucumberish and Fitnesse'
-      def setup_xcfit
+      desc 'create_xctargets', 'Generate a Xcode Templates for the Cucumberish and Fitnesse'
+      def create_xctargets
         if File.exist?($root_xcfit_dir)
         puts "==================XXXXXXXX===========================" 
          puts 'There is already XCFit directory in Xcode Templates. Have you tried XCFit Before? '
@@ -47,8 +47,8 @@ module XCFit
          puts " ***************** Enjoy XCFit *****************"
       end 
 
-      desc 'setup_gherkin', 'Generate Xcode Templates for the Gherkin Feature Files'
-      def setup_gherkin
+      desc 'create_xcgherkin', 'Generate Xcode Templates for the Gherkin Feature Files'
+      def create_xcgherkin
         if File.exist?($source_dir)
          puts "==================XXXXXXXX===========================" 
          puts 'There is already Gherkin directory in Xcode Templates. Have you tried XCFit Before? '
