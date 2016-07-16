@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    XCFit (0.1.0)
+    xcfit (0.1.0)
       thor (~> 0.17.0)
 
 GEM
@@ -14,9 +14,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  XCFit!
   bundler (~> 1.12)
   rake (~> 10.0)
+  xcfit!
 
 BUNDLED WITH
    1.12.5

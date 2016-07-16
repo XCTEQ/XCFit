@@ -31,7 +31,7 @@ module XCFit
         if File.exist?($root_xcfit_dir)
         puts "==================XXXXXXXX===========================" 
          puts 'There is already XCFit directory in Xcode Templates. Have you tried XCFit Before? '
-         puts 'Please remove/move existing Gherkin directory to carry on'
+         puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/XCFit directory to carry on'
          puts "==================XXXXXXXX===========================" 
         exit 1
        end
@@ -44,6 +44,7 @@ module XCFit
          puts "==================XXXXXXXX===========================" 
          puts 'File -> New -->Target-->XCFit'
          puts 'You wont need to restart Xcode but do so if nesessary!'
+         puts " ***************** Enjoy XCFit *****************"
       end 
 
       desc 'setup_gherkin', 'Generate Xcode Templates for the Gherkin Feature Files'
@@ -51,7 +52,7 @@ module XCFit
         if File.exist?($source_dir)
          puts "==================XXXXXXXX===========================" 
          puts 'There is already Gherkin directory in Xcode Templates. Have you tried XCFit Before? '
-         puts 'Please remove/move existing Gherkin directory to carry on'
+         puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/Gherkin directory to carry on'
          puts "==================XXXXXXXX===========================" 
          exit 1
          end
@@ -64,6 +65,7 @@ module XCFit
          puts "==================XXXXXXXX===========================" 
          puts 'File -> New -->File-->Gherkin'
          puts 'You wont need to restart Xcode but do so if nesessary!'
+         puts " ***************** Enjoy XCFit *****************"
       end
   end 
 end 
