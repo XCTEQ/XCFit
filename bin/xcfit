@@ -6,107 +6,112 @@ require 'fileutils'
 require 'tempfile'
 require 'json'
 require 'rubygems'
+require 'XCFit/version'
+require 'XCFit/main'
 
 lib_dir = File.expand_path('../lib', File.dirname(__FILE__))
 $LOAD_PATH.unshift lib_dir unless $LOAD_PATH.include?(lib_dir)
+$:.unshift lib_dir unless $:.include?(lib_dir)
+
+XCFit::Main.start(ARGV)
 
 
-@root_dir = File.expand_path('~')
-@root_lib_dir = File.join(@root_dir, 'Library')
-@root_developer_dir = File.join(@root_lib_dir, 'Developer')
-@root_xcode_dir = File.join(@root_developer_dir, 'Xcode')
-@root_template_dir = File.join(@root_xcode_dir, 'Templates')
-@root_xcfit_dir = File.join(@root_template_dir, 'XCfit')
-@root_gherkin_dir = File.join(@root_template_dir, 'Gherkin')
-@source_dir = File.join(File.dirname(__FILE__), '..', 'XCFit_Templates')
-@source_xcfit_dir = File.join(@source_dir, 'XCFit')
-@source_gherkin_dir = File.join(@source_dir, 'Gherkin')
+# @root_dir = File.expand_path('~')
+# @root_lib_dir = File.join(@root_dir, 'Library')
+# @root_developer_dir = File.join(@root_lib_dir, 'Developer')
+# @root_xcode_dir = File.join(@root_developer_dir, 'Xcode')
+# @root_template_dir = File.join(@root_xcode_dir, 'Templates')
+# @root_xcfit_dir = File.join(@root_template_dir, 'XCfit')
+# @root_gherkin_dir = File.join(@root_template_dir, 'Gherkin')
+# @source_dir = File.join(File.dirname(__FILE__), '..', 'XCFit_Templates')
+# @source_xcfit_dir = File.join(@source_dir, 'XCFit')
+# @source_gherkin_dir = File.join(@source_dir, 'Gherkin')
 
-puts "Hello"
-puts (@root_template_dir)
+# puts "Hello"
+# puts (@root_template_dir)
 
-def setup_xcfit
-  if File.exist?(@root_xcfit_dir)
-    puts 'There is already XCFit directory. Please move existing XCFit directory to carry on '
-    exit 1
-  end
+# def setup_xcfit
+#   if File.exist?(@root_xcfit_dir)
+#     puts 'There is already XCFit directory. Please move existing XCFit directory to carry on '
+#     exit 1
+#   end
 
-  FileUtils.cp_r(@source_xcfit_dir, @root_template_dir)
+#   FileUtils.cp_r(@source_xcfit_dir, @root_template_dir)
 
-end 
+# end 
 
-def setup_gherkin
+# def setup_gherkin
  
-  if File.exist?(@root_gherkin_dir)
-    puts 'There is already Gherkin directory. Please move existing Gherkin directory to carry on '
-    exit 1
-  end
+#   if File.exist?(@root_gherkin_dir)
+#     puts 'There is already Gherkin directory. Please move existing Gherkin directory to carry on '
+#     exit 1
+#   end
 
-  FileUtils.cp_r(@source_gherkin_dir, @root_template_dir)
+#   FileUtils.cp_r(@source_gherkin_dir, @root_template_dir)
 
-end 
-
-
-def print_usage
-  puts <<EOF
-
-  Usage: xcfit <command-name> 
-
-  <command-name> can be one of
-    help
-      prints more detailed help information.
-    setup_xcfit
-      generate a Xcode Templates for the Cucumberish and Fitnesse
-    setup_gherkin
-      generate Xcode Templates for the Gherkin Feature Files 
-    version
-      prints the gem version
+# end 
 
 
-  <options> can be
-     -v, --verbose   Turns on verbose logging
-EOF
-end
+# def print_usage
+#   puts <<EOF
 
-def print_help
-  puts <<EOF
+#   Usage: xcfit <command-name> 
 
-  Usage: xcfit <command-name> 
+#   <command-name> can be one of
+#     help
+#       prints more detailed help information.
+#     setup_xcfit
+#       generate a Xcode Templates for the Cucumberish and Fitnesse
+#     setup_gherkin
+#       generate Xcode Templates for the Gherkin Feature Files 
+#     version
+#       prints the gem version
 
-  <command-name> can be one of
-    help
-    setup_xcfit
-    setup_gherkin
-    version
 
-    Commands:
-      help : prints more detailed help information.
+#   <options> can be
+#      -v, --verbose   Turns on verbose logging
+# EOF
+# end
 
-      setup_xcfit  : Generate a Xcode Templates for the Cucumberish and Fitnesse
+# def print_help
+#   puts <<EOF
 
-      setup_gherkin : Generate Xcode Templates for the Gherkin Feature Files
+#   Usage: xcfit <command-name> 
 
-      version : prints the gem version
+#   <command-name> can be one of
+#     help
+#     setup_xcfit
+#     setup_gherkin
+#     version
 
-  <Options>
-      -v, --verbose  Turns on verbose logging
-EOF
-end
+#     Commands:
+#       help : prints more detailed help information.
 
-if ARGV.length == 0
-  print_usage
-else
-  cmd = ARGV.shift
-  if cmd == 'help'
-    print_help
-  elsif cmd == 'setup_xcfit'
-    setup_xcfit
-  elsif cmd == 'version'
-    puts XCFit::VERSION
-  elsif cmd == 'setup_gherkin'
-    setup_gherkin
-  else
-    print_usage
-  end
-end
+#       setup_xcfit  : Generate a Xcode Templates for the Cucumberish and Fitnesse
+
+#       setup_gherkin : Generate Xcode Templates for the Gherkin Feature Files
+
+#       version : prints the gem version
+
+#   <Options>
+#       -v, --verbose  Turns on verbose logging
+# EOF
+# end
+
+# if ARGV.length == 0
+#   print_usage
+# else
+#   cmd = ARGV.shift
+#   if cmd == 'help'
+#     print_help
+#   elsif cmd == 'setup_xcfit'
+#     setup_xcfit
+#   elsif cmd == 'version'
+#     puts XCFit::VERSION
+#   elsif cmd == 'setup_gherkin'
+#     setup_gherkin
+#   else
+#     print_usage
+#   end
+# end
 
