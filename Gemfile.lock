@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    xcfit (0.2.0)
+    xcfit (0.3.0)
       thor (~> 0.17.0)
 
 GEM
