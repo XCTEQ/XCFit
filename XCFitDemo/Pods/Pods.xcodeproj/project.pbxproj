@@ -7,67 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00D7B634331FE09312C886C2682C367C /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1389A0A21ABA2B5F949BC274C340929F /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		01C6E24A25C2E6C50B99A3173A920455 /* cslim-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7090A442AA52F17FA0A59D0821D4EC /* cslim-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		039F024F9FCE7F543CCE4308CF354200 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = DCDE3AC1B1ACF141EFA4A76D24B77F92 /* SlimList.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		052CC0791906DB8F404C31EBFA0FA13F /* TcpComLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E177A24B44B8E7D899326E87D3C570C /* TcpComLink.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		08F16CFB7A1D55C7B306B192B03F3143 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCF9FF9519C8A6A1505E94586ED26B /* Fixtures.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0DA6749E607D259AB82B49296FFE7DCE /* XCFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56759210DEB466B02399CFE4FA5AE7 /* XCFit-dummy.m */; };
-		0E40D6DA62D5E6890E96564C7F815485 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D423B4E19D6629A4B6D47A03AC4EA /* OCSSymbolDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		197F79D7A0288524C41AAC4652C98887 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F74AC6FC66961B90918681D93CE8E95 /* ReplaceMe.swift */; };
-		1CA2F85439913F7460C8B5806454F3A7 /* Slim.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CC16BBCD0AAFC343F2377230571168 /* Slim.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		21394C07FDB02541F95E3701C1C00381 /* SlimConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 615B23CA036A4D222A3EA6BB404913B2 /* SlimConnectionHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		219037F53C3E866F1231252B9B392608 /* SocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F029B036659A6BA0EBBA08FA7B7260 /* SocketServer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00D7B634331FE09312C886C2682C367C /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 531638D4D6A1A52F376C7DCE5E44CA73 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01C6E24A25C2E6C50B99A3173A920455 /* cslim-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AF1392A551B82CFA695F62D692D2FA /* cslim-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		039F024F9FCE7F543CCE4308CF354200 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8B01B13040F56026D8072E1F1DA5 /* SlimList.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		03EDB396026BFF2CA6BA2DE917E59FEE /* LaunchFitnesse in Resources */ = {isa = PBXBuildFile; fileRef = F2AEB19B6BDE7D08BEC21DB02DFEF80F /* LaunchFitnesse */; };
+		052CC0791906DB8F404C31EBFA0FA13F /* TcpComLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F81C925FF44DBE7AA5A3B75B6F306 /* TcpComLink.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		06030B2BC7606CA135A7ACFE30D107AD /* CopyDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8411449E2910E67B98AB3256117C4 /* CopyDir.swift */; };
+		08F16CFB7A1D55C7B306B192B03F3143 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA58E14913C9106B61D4705BAFF16A /* Fixtures.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E40D6DA62D5E6890E96564C7F815485 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA24EDC91178ECF5D584199046B9B70 /* OCSSymbolDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1CA2F85439913F7460C8B5806454F3A7 /* Slim.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F04A7D8D3E504C6BB23F35B7C248EA0 /* Slim.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		21394C07FDB02541F95E3701C1C00381 /* SlimConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 066264AD7842785A0CBE302A84F2F346 /* SlimConnectionHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		219037F53C3E866F1231252B9B392608 /* SocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C20125A718E298C7248A28B4F38427EB /* SocketServer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		26665B8783EC0970CD065AE573102825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8C27DE02B803613FAE65888DDAD26D /* Foundation.framework */; };
 		28F0CBF7788F46BF9F230E7295A275A1 /* cslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50D156E9EFA351EC6E623E358C878FE /* cslim.framework */; };
 		3590AC3BAC9B10FFE89E98055B6F0FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8C27DE02B803613FAE65888DDAD26D /* Foundation.framework */; };
-		35AB0BE641E4A1C1AAC0256AFE4FDB44 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 8733EF3416A57B74D937617374BD9AF0 /* ListExecutor.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3975228846A1423C8B2E6D0D08C3DAC5 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCED3B73458491E5BC993401D7FAE8A /* OCSInvocation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		35AB0BE641E4A1C1AAC0256AFE4FDB44 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 2331607540B822EC12E7793DBF320036 /* ListExecutor.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3975228846A1423C8B2E6D0D08C3DAC5 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B569C507327318FC8E0B618DE7E42EE /* OCSInvocation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4BE25A8D909356B45B163DC2158870F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8C27DE02B803613FAE65888DDAD26D /* Foundation.framework */; };
-		53060BC23E0CB71C28275AA761833E4F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = AB177668C3F8EA398B4018B5D59C16BC /* SlimListSerializer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		54134971F8DBE2443EDCC1ACCAA32978 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 01212939A469C39425F7F535CA766512 /* OCSObjectiveCtoCBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5D37FFF328416B9C3940978B95362753 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = 613DC54AE2A488A0EFDC97B0FEBB5CB7 /* Slim.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		607D0B40C44350F826D130CCA93CC6AD /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = A6834CB5BF051984139DAE0E306DE311 /* SocketServer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		63811DB46B6249E5C81109F99982EEC7 /* OCSSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B06662EA26092660B42F37DEC83B2D8 /* OCSSelector.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		63CF284B0A3DCE5518BDE5BDCD13D71A /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4535235CA665944B8C82A422658C97 /* OCSException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53060BC23E0CB71C28275AA761833E4F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0850F1A9ECA5DE27B77BD6286901A6C9 /* SlimListSerializer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54134971F8DBE2443EDCC1ACCAA32978 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE102B4F356E163B01452DFDFBFBAC7 /* OCSObjectiveCtoCBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D37FFF328416B9C3940978B95362753 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BB909AC9C4BF5E35C75F90376B312 /* Slim.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		607D0B40C44350F826D130CCA93CC6AD /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 10099ECA9BE25F22AE7582A48B5B4F6F /* SocketServer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63811DB46B6249E5C81109F99982EEC7 /* OCSSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3913A3D68BAE40DA2345C9AAE7764F9D /* OCSSelector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		63CF284B0A3DCE5518BDE5BDCD13D71A /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = D55AA35690DD39C8C0B2BF2759A54A41 /* OCSException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		67F0325619F3BF660EC24D8F24FF4C0F /* Pods-XCFitDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CECD9A83DC1EBD4AB789297F49371 /* Pods-XCFitDemoTests-dummy.m */; };
-		6B91EA7124C95930F29A34F001060BF2 /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 67942D71063B07637EF02FFB73A9C38F /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6F4F4714CC914C534CF2483B402A180C /* SlimUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 39855F3C57E4066B8C9C87393B817206 /* SlimUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		70A40F408D01BD331B67ECE999B18DB1 /* OCSException.h in Headers */ = {isa = PBXBuildFile; fileRef = 420AEB320831E6245BCB7BE946B6A033 /* OCSException.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7206A2A818FF4B8E3009A2FAFC37E65A /* XCFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD166F2E818F29FAB9B5F4628CE0A19 /* XCFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		720DA7C762D95A01179639F980A82E4A /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD02B0225705BA2F1CE224F789793486 /* SlimListDeserializer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B91EA7124C95930F29A34F001060BF2 /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 226D6976FB9C57EF1697657B559C0AC3 /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6CB9742856DD256AC94F996D9C842DAD /* XCFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D80E497F135FAE8F9476A4EA93EB332 /* XCFit-dummy.m */; };
+		6F4F4714CC914C534CF2483B402A180C /* SlimUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAED5CF03240C2C7EACD963A2FCDC62 /* SlimUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		70A40F408D01BD331B67ECE999B18DB1 /* OCSException.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE81E82DD2F7EF3A81A79F42ADC22CD /* OCSException.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7206A2A818FF4B8E3009A2FAFC37E65A /* XCFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06312644C86F6F62AF5813644A0C9359 /* XCFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		720DA7C762D95A01179639F980A82E4A /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3325D6402B7BCE4474B54055ED106BEE /* SlimListDeserializer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		76D12407E29F3B94996FFE64216AC4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8C27DE02B803613FAE65888DDAD26D /* Foundation.framework */; };
-		7989C4B02CF0BC0A803A2B9180288481 /* StatementExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A85101C6E9C573FB89C9480A835F3D3 /* StatementExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7AF61081BCCDFFD4B066820FA7C517C9 /* LaunchFitnesse in Resources */ = {isa = PBXBuildFile; fileRef = 443FF767ED6F0BC6A1455EFEBA3A4D73 /* LaunchFitnesse */; };
-		7BE14AA744254CF04887009AD2C47BA4 /* OCSInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 288BCEBD7D66D4CCE7FBD48EF81C5A90 /* OCSInvocation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8FE26F10A3EFDE183C4F2D7C192E7AD1 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 538038CD4996434C326E1B37127616AA /* OCSSelector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		95E8CE847B7A865C76F4E9F50E74DCDC /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 8345D70BA9662BB0110428FFC1260487 /* SlimConnectionHandler.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		965889C1237123B521AD690227344090 /* OCSReturnValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 470B73ED40C20014BA522AA6BD7A5A3C /* OCSReturnValue.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		96B919DBE32AA2A6ECC0CECD400157E1 /* cslim-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EC99E795CEC77BCAE38C866551C83D /* cslim-dummy.m */; };
-		9DFEEB8E2E49B6B9B3650849755B92E7 /* OCSSymbolDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F72427CD0A7034ED8D4D3F1529E757 /* OCSSymbolDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9E2464E2458AD1CAF2EC423ABF80382D /* OCSInstanceCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 099BC1A6E0D430AFA3D05F9C03FCCE7A /* OCSInstanceCreator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7989C4B02CF0BC0A803A2B9180288481 /* StatementExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 24476E169F67D48CED8A4F2903269E4C /* StatementExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7BE14AA744254CF04887009AD2C47BA4 /* OCSInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E247854B73C0CEE46C8A7376F13374 /* OCSInvocation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		89262CB537AD23D1834673B0B6A25FC3 /* ios-sim in Resources */ = {isa = PBXBuildFile; fileRef = F492FB34B9ACBA95D6910D60E5917930 /* ios-sim */; };
+		8FE26F10A3EFDE183C4F2D7C192E7AD1 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 659EE0FCD3A26384DFFDF745A25FE7AE /* OCSSelector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95E8CE847B7A865C76F4E9F50E74DCDC /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = EB6B216350494E169F22427B1E8AAE39 /* SlimConnectionHandler.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		965889C1237123B521AD690227344090 /* OCSReturnValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 450F94B458A08CC4C68FF623CFCDF5F5 /* OCSReturnValue.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		96B919DBE32AA2A6ECC0CECD400157E1 /* cslim-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31DEA8C00BF1862C52A977EFDFF693 /* cslim-dummy.m */; };
+		992C315354D4C44FB1E0799605A1CAF6 /* RunTestsTargetWithSlimPort in Resources */ = {isa = PBXBuildFile; fileRef = 4FDDEF69DF4621D7082131D261571535 /* RunTestsTargetWithSlimPort */; };
+		9AEA5BBC286EAE1FABA9EC9EBD88E39E /* CliSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F512E1127F3DC24822779F92BF806F4 /* CliSwift.swift */; };
+		9DFEEB8E2E49B6B9B3650849755B92E7 /* OCSSymbolDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E21D1963E47937E23D632074B1919D /* OCSSymbolDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9E2464E2458AD1CAF2EC423ABF80382D /* OCSInstanceCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = E87DD1E3C56FD606564FF5239636846F /* OCSInstanceCreator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9E6C1F7342EE80A72F637D8BB641F5AF /* Pods-XCFitAcceptanceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD611061A99D7DD2412940619BBDFC80 /* Pods-XCFitAcceptanceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A002C1425F615C0F16A16ADC23582240 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DE00D5C82B9D0399EFB80BC08C3419B /* TcpComLink.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B1C58905EB5401100B12CB9BE87FF795 /* OCSStatementExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = E39877106FEDC9C1DDF4AF8009DACC73 /* OCSStatementExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B235DCF976DEE9F7AB30F63DFB9303BA /* OCSObjectiveCtoCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A0598058AB78E1DA1C66ED7E09D266 /* OCSObjectiveCtoCBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B3F6C10A60287CDCE55AB2AC74E5CCF6 /* Fixtures.h in Headers */ = {isa = PBXBuildFile; fileRef = EA53F4B455AA503445C692E623BB594B /* Fixtures.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B7924F4FA3944F4DDCF4721790309D53 /* OCSlimToObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FECC8FB9C9D37798E5706E44885EFF /* OCSlimToObjectiveCBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C348885251136512FC2329DED7A18B6A /* OCSMethodCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF83627E0C5A6CCDEA2AF179D2D8D48 /* OCSMethodCaller.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C4B512953A79F75F1B1941758BADD8F6 /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CC2878BE42A4618FE004A4E6EAE0E /* OCSInstanceCreator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A002C1425F615C0F16A16ADC23582240 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B20EB2FB84F1AEE6148CC1AB09B7F97 /* TcpComLink.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1C58905EB5401100B12CB9BE87FF795 /* OCSStatementExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD3E15A1693CBBA63E4BD2200737A91 /* OCSStatementExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B1EBF8AB9D7075A1D96D6240651B3302 /* fitnesse-standalone.jar in Resources */ = {isa = PBXBuildFile; fileRef = 9B264CEEDAACAC487D713C28D7060832 /* fitnesse-standalone.jar */; };
+		B235DCF976DEE9F7AB30F63DFB9303BA /* OCSObjectiveCtoCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = DD78EFCEE9F4BC2824B2D76F0B6A5D4C /* OCSObjectiveCtoCBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B3F6C10A60287CDCE55AB2AC74E5CCF6 /* Fixtures.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB272EA60418C5CE1272DF466B659C6 /* Fixtures.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B7924F4FA3944F4DDCF4721790309D53 /* OCSlimToObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D5BAF72E5D0C55580326F37F54CC40 /* OCSlimToObjectiveCBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C348885251136512FC2329DED7A18B6A /* OCSMethodCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B786A3948678D88B3F5E65876B6DE52 /* OCSMethodCaller.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C4B512953A79F75F1B1941758BADD8F6 /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F3F8717C7E3BEA88F70F9C8172AFCD /* OCSInstanceCreator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C5ED0EC3219FBDA0EDE8724653D7F2D9 /* Pods-XCFitAcceptanceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7860C00344C5401C588AE92980D595 /* Pods-XCFitAcceptanceTests-dummy.m */; };
-		C8B46E09C3D0935139DB8BF6BFFB1CC1 /* SlimListSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72042AE8FCCC379264755611B57B6AE1 /* SlimListSerializer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CA8F85C62713FCD8BC91B1B84D1246D7 /* ListExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E952D0D6A7EF3125907E5209B148F5D /* ListExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CEB9146CDCC2AFC690301DC477826216 /* RunTestsTargetWithSlimPort in Resources */ = {isa = PBXBuildFile; fileRef = DD8A78A7DCE19D977E1CDFDCA92B9076 /* RunTestsTargetWithSlimPort */; };
-		D0BDED65B75F594CA9B3AB553E64C8AF /* SlimList.h in Headers */ = {isa = PBXBuildFile; fileRef = 781B070B9B84DB3B008C6A0CD808B075 /* SlimList.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D25C409068006FE9645B728A73AC1744 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B64E61F2E1B8B4AE72ACAA9F98313EE /* SlimUtil.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8B46E09C3D0935139DB8BF6BFFB1CC1 /* SlimListSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A113E2B50B9761771BFD30E098ACE0C1 /* SlimListSerializer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C8C23C9185FBAD9BDE9491820C1D5E0B /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 305C1CB3EB762BF9F2100CBE4726647D /* LICENCE.txt */; };
+		CA8F85C62713FCD8BC91B1B84D1246D7 /* ListExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B71A664564313B35D94E6D56683F2F /* ListExecutor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D0BDED65B75F594CA9B3AB553E64C8AF /* SlimList.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDA146A8332C2437D20820743801F72 /* SlimList.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D25C409068006FE9645B728A73AC1744 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = EB805B658312C0FC030B18134C44E6B0 /* SlimUtil.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D4F396263FBA3DF64F319F18BA64490F /* Pods-XCFitDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A77C8DF920999E030F71F82D3C7F08C4 /* Pods-XCFitDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D900546ED7A62650ACA2318D284E37FC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B4AE20E9B27D55D427EA5209C1FE7 /* Main.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DC3389E583347761EF2ECA87767AAA02 /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 88254EDA6830B270D5AEFB70EDCFE613 /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E3CF958856EACED5197E3D016778E971 /* XCFit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21705FDFC03FD6629188949E529DE866 /* XCFit.bundle */; };
-		EAC99D9B3EB07694BECA5AAB4A12A0D4 /* ios-sim in Resources */ = {isa = PBXBuildFile; fileRef = B2DCC415FE07350CDC11ABB2FCC6A8EC /* ios-sim */; };
-		F17B09BBC6AA45CE9307E3A57C873B2B /* SlimListDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D54A2323122E815A003AE11281956E /* SlimListDeserializer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F82A6F6793AD252C0853B61218419DEF /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A62B865BB17DB2D73DA66EDF1B7ADC2 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FA239F0E14FAFE2E9C4FF2C86E073956 /* OCSlimToObjectiveCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0087B60DF170CC622A7152D8142D9F /* OCSlimToObjectiveCBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D900546ED7A62650ACA2318D284E37FC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5767F8957D962A51B845ECF832D21344 /* Main.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC3389E583347761EF2ECA87767AAA02 /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D4EB80CB68EEA6DE3EE23DEC42401 /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F17B09BBC6AA45CE9307E3A57C873B2B /* SlimListDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF81DA062FCCD82D9F9571D6BB753E6 /* SlimListDeserializer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F82A6F6793AD252C0853B61218419DEF /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEFF2B4C9D78F6C6A96B2531929D533 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FA239F0E14FAFE2E9C4FF2C86E073956 /* OCSlimToObjectiveCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = C794886AEF32B88981252E85925229D0 /* OCSlimToObjectiveCBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,18 +80,11 @@
 			remoteGlobalIDString = E884ED3E99B4F837DB59B3D47CE32F74;
 			remoteInfo = XCFit;
 		};
-		104A0EB642E3EB4CFC92CEDB9C6D6E68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2490FE0A02A27440259CEF12BA442CB;
-			remoteInfo = "XCFit-XCFit";
-		};
 		11ECFDFE375366C414DF8E8317F18F7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C419C443462CE8418AA9349181BE2BE7;
+			remoteGlobalIDString = 3B4F24EF2D0CD56440755FD6D07164B8;
 			remoteInfo = "OCSlimProject-OCSlimProject";
 		};
 		825A5D4FEBFD4EB096D333EF3F58816E /* PBXContainerItemProxy */ = {
@@ -103,7 +98,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C419C443462CE8418AA9349181BE2BE7;
+			remoteGlobalIDString = 3B4F24EF2D0CD56440755FD6D07164B8;
 			remoteInfo = "OCSlimProject-OCSlimProject";
 		};
 		B1208FC4173B9266F9BBE216A0182340 /* PBXContainerItemProxy */ = {
@@ -130,97 +125,98 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01212939A469C39425F7F535CA766512 /* OCSObjectiveCtoCBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridge.m; path = src/ExecutorObjectiveC/OCSObjectiveCtoCBridge.m; sourceTree = "<group>"; };
-		04291F57F7C9F2B80E9D28D233A0CE3E /* OCSlimProject.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCSlimProject.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		099BC1A6E0D430AFA3D05F9C03FCCE7A /* OCSInstanceCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSInstanceCreator.h; path = include/ExecutorObjectiveC/OCSInstanceCreator.h; sourceTree = "<group>"; };
-		0A0D423B4E19D6629A4B6D47A03AC4EA /* OCSSymbolDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionary.m; path = src/ExecutorObjectiveC/OCSSymbolDictionary.m; sourceTree = "<group>"; };
+		00AF1392A551B82CFA695F62D692D2FA /* cslim-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cslim-umbrella.h"; sourceTree = "<group>"; };
+		06312644C86F6F62AF5813644A0C9359 /* XCFit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCFit-umbrella.h"; sourceTree = "<group>"; };
+		066264AD7842785A0CBE302A84F2F346 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
+		0850F1A9ECA5DE27B77BD6286901A6C9 /* SlimListSerializer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimListSerializer.c; path = src/CSlim/SlimListSerializer.c; sourceTree = "<group>"; };
+		0B20EB2FB84F1AEE6148CC1AB09B7F97 /* TcpComLink.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = src/Com/TcpComLink.c; sourceTree = "<group>"; };
 		0BAF9BC6423A3471ACF773E278BCF3D8 /* Pods-XCFitDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFitDemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		1389A0A21ABA2B5F949BC274C340929F /* StatementExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = "<group>"; };
-		181F01033ACD1197830237D44FE6207D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21705FDFC03FD6629188949E529DE866 /* XCFit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCFit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		221CEC3596A35ACFA585E64F0BA543CB /* cslim.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cslim.xcconfig; sourceTree = "<group>"; };
-		288BCEBD7D66D4CCE7FBD48EF81C5A90 /* OCSInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSInvocation.h; path = include/ExecutorObjectiveC/OCSInvocation.h; sourceTree = "<group>"; };
-		2A85101C6E9C573FB89C9480A835F3D3 /* StatementExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StatementExecutor.h; path = include/CSlim/StatementExecutor.h; sourceTree = "<group>"; };
-		37B37A818E0B1C06C61BE2CE7B9213D0 /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39855F3C57E4066B8C9C87393B817206 /* SlimUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimUtil.h; path = include/CSlim/SlimUtil.h; sourceTree = "<group>"; };
+		0BE81E82DD2F7EF3A81A79F42ADC22CD /* OCSException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
+		0E752DE12D915F1AA80DA4A30A090A29 /* cslim.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cslim.xcconfig; sourceTree = "<group>"; };
+		10099ECA9BE25F22AE7582A48B5B4F6F /* SocketServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = src/Com/SocketServer.c; sourceTree = "<group>"; };
+		11A174384DA4938F9F4D36C257DCB288 /* Pods_XCFitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E247854B73C0CEE46C8A7376F13374 /* OCSInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSInvocation.h; path = include/ExecutorObjectiveC/OCSInvocation.h; sourceTree = "<group>"; };
+		184D4A3BB30B3C7FCBA4A3ACA6486B36 /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B569C507327318FC8E0B618DE7E42EE /* OCSInvocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSInvocation.m; path = src/ExecutorObjectiveC/OCSInvocation.m; sourceTree = "<group>"; };
+		1D13F192C6FFAE28D360C6F900849EDE /* XCFit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCFit.xcconfig; sourceTree = "<group>"; };
+		1DE102B4F356E163B01452DFDFBFBAC7 /* OCSObjectiveCtoCBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridge.m; path = src/ExecutorObjectiveC/OCSObjectiveCtoCBridge.m; sourceTree = "<group>"; };
+		226D6976FB9C57EF1697657B559C0AC3 /* OCSMethodCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCaller.m; path = src/ExecutorObjectiveC/OCSMethodCaller.m; sourceTree = "<group>"; };
+		2331607540B822EC12E7793DBF320036 /* ListExecutor.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = src/CSlim/ListExecutor.c; sourceTree = "<group>"; };
+		24476E169F67D48CED8A4F2903269E4C /* StatementExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StatementExecutor.h; path = include/CSlim/StatementExecutor.h; sourceTree = "<group>"; };
+		25E21D1963E47937E23D632074B1919D /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
+		2FBE8B01B13040F56026D8072E1F1DA5 /* SlimList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimList.c; path = src/CSlim/SlimList.c; sourceTree = "<group>"; };
+		305C1CB3EB762BF9F2100CBE4726647D /* LICENCE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENCE.txt; path = Pod/Support/SharedSupport/LICENCE.txt; sourceTree = "<group>"; };
+		3325D6402B7BCE4474B54055ED106BEE /* SlimListDeserializer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimListDeserializer.c; path = src/CSlim/SlimListDeserializer.c; sourceTree = "<group>"; };
+		36C2A8F1E43FA893B610BACB68EEB4F9 /* cslim.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = cslim.modulemap; sourceTree = "<group>"; };
+		38EBD93C219242332412F56B9527E08C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3913A3D68BAE40DA2345C9AAE7764F9D /* OCSSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSSelector.h; path = include/ExecutorObjectiveC/OCSSelector.h; sourceTree = "<group>"; };
+		3B31DEA8C00BF1862C52A977EFDFF693 /* cslim-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cslim-dummy.m"; sourceTree = "<group>"; };
+		3CBA58E14913C9106B61D4705BAFF16A /* Fixtures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = src/ExecutorObjectiveC/Fixtures.m; sourceTree = "<group>"; };
 		3CD471C260F55907C70BF4E9F0D68B0A /* Pods-XCFitAcceptanceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCFitAcceptanceTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3D5B4AE20E9B27D55D427EA5209C1FE7 /* Main.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = Main.c; path = fixtures/Main.c; sourceTree = "<group>"; };
-		3DCED3B73458491E5BC993401D7FAE8A /* OCSInvocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSInvocation.m; path = src/ExecutorObjectiveC/OCSInvocation.m; sourceTree = "<group>"; };
 		40F568505241D2654C78AD8A3FC6E982 /* Pods-XCFitDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XCFitDemoTests.modulemap"; sourceTree = "<group>"; };
-		41F029B036659A6BA0EBBA08FA7B7260 /* SocketServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = include/Com/SocketServer.h; sourceTree = "<group>"; };
-		420AEB320831E6245BCB7BE946B6A033 /* OCSException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
+		40FD1075258AC6A29D646286AC1F33BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422B33A426962D586E4A8CCA6BD6997E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		443FF767ED6F0BC6A1455EFEBA3A4D73 /* LaunchFitnesse */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LaunchFitnesse; path = Pod/Support/SharedSupport/LaunchFitnesse; sourceTree = "<group>"; };
+		450F94B458A08CC4C68FF623CFCDF5F5 /* OCSReturnValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = include/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = "<group>"; };
 		46C42CE57400C015CD88FD204D17BD6B /* Pods-XCFitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		470B73ED40C20014BA522AA6BD7A5A3C /* OCSReturnValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = include/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = "<group>"; };
+		47D5BAF72E5D0C55580326F37F54CC40 /* OCSlimToObjectiveCBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSlimToObjectiveCBridge.m; path = src/ExecutorObjectiveC/OCSlimToObjectiveCBridge.m; sourceTree = "<group>"; };
+		4BDA146A8332C2437D20820743801F72 /* SlimList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimList.h; path = include/CSlim/SlimList.h; sourceTree = "<group>"; };
 		4CDE7A9AC99637BA915B16BE66D53534 /* Pods-XCFitAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFitAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DFCF9A8D773634F65D82DF796F45A8F /* Pods-XCFitDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCFitDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		537CC2878BE42A4618FE004A4E6EAE0E /* OCSInstanceCreator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreator.m; path = src/ExecutorObjectiveC/OCSInstanceCreator.m; sourceTree = "<group>"; };
-		538038CD4996434C326E1B37127616AA /* OCSSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSSelector.m; path = src/ExecutorObjectiveC/OCSSelector.m; sourceTree = "<group>"; };
-		5B06662EA26092660B42F37DEC83B2D8 /* OCSSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSSelector.h; path = include/ExecutorObjectiveC/OCSSelector.h; sourceTree = "<group>"; };
-		5CBCF9FF9519C8A6A1505E94586ED26B /* Fixtures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = src/ExecutorObjectiveC/Fixtures.m; sourceTree = "<group>"; };
-		5F74AC6FC66961B90918681D93CE8E95 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		4E5D4EB80CB68EEA6DE3EE23DEC42401 /* OCSReturnValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = "<group>"; };
+		4F512E1127F3DC24822779F92BF806F4 /* CliSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CliSwift.swift; path = XCFit/Classes/CliSwift.swift; sourceTree = "<group>"; };
+		4FDDEF69DF4621D7082131D261571535 /* RunTestsTargetWithSlimPort */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RunTestsTargetWithSlimPort; path = Pod/Support/iOS/RunTestsTargetWithSlimPort; sourceTree = "<group>"; };
+		512F81C925FF44DBE7AA5A3B75B6F306 /* TcpComLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = include/Com/TcpComLink.h; sourceTree = "<group>"; };
+		531638D4D6A1A52F376C7DCE5E44CA73 /* StatementExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = "<group>"; };
+		54F3F8717C7E3BEA88F70F9C8172AFCD /* OCSInstanceCreator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreator.m; path = src/ExecutorObjectiveC/OCSInstanceCreator.m; sourceTree = "<group>"; };
+		5767F8957D962A51B845ECF832D21344 /* Main.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = Main.c; path = fixtures/Main.c; sourceTree = "<group>"; };
+		5B786A3948678D88B3F5E65876B6DE52 /* OCSMethodCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSMethodCaller.h; path = include/ExecutorObjectiveC/OCSMethodCaller.h; sourceTree = "<group>"; };
+		5D1CB4C5685221FC0F1EC80686836F76 /* XCFit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCFit-prefix.pch"; sourceTree = "<group>"; };
+		5E4BB909AC9C4BF5E35C75F90376B312 /* Slim.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = Slim.c; path = src/CSlim/Slim.c; sourceTree = "<group>"; };
 		5F8C27DE02B803613FAE65888DDAD26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		613DC54AE2A488A0EFDC97B0FEBB5CB7 /* Slim.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = Slim.c; path = src/CSlim/Slim.c; sourceTree = "<group>"; };
-		615B23CA036A4D222A3EA6BB404913B2 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
+		5FAED5CF03240C2C7EACD963A2FCDC62 /* SlimUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimUtil.h; path = include/CSlim/SlimUtil.h; sourceTree = "<group>"; };
 		62A363AEFCC69BB66737D62B7B10D170 /* Pods-XCFitAcceptanceTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFitAcceptanceTests-frameworks.sh"; sourceTree = "<group>"; };
-		67942D71063B07637EF02FFB73A9C38F /* OCSMethodCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCaller.m; path = src/ExecutorObjectiveC/OCSMethodCaller.m; sourceTree = "<group>"; };
+		659EE0FCD3A26384DFFDF745A25FE7AE /* OCSSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSSelector.m; path = src/ExecutorObjectiveC/OCSSelector.m; sourceTree = "<group>"; };
 		6A8E3F8A25A8D4ADB72E0E4F79588A7E /* Pods-XCFitAcceptanceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XCFitAcceptanceTests.modulemap"; sourceTree = "<group>"; };
-		6B7090A442AA52F17FA0A59D0821D4EC /* cslim-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cslim-umbrella.h"; sourceTree = "<group>"; };
-		6BF83627E0C5A6CCDEA2AF179D2D8D48 /* OCSMethodCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSMethodCaller.h; path = include/ExecutorObjectiveC/OCSMethodCaller.h; sourceTree = "<group>"; };
-		6DD166F2E818F29FAB9B5F4628CE0A19 /* XCFit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCFit-umbrella.h"; sourceTree = "<group>"; };
-		6E0087B60DF170CC622A7152D8142D9F /* OCSlimToObjectiveCBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSlimToObjectiveCBridge.h; path = include/ExecutorObjectiveC/OCSlimToObjectiveCBridge.h; sourceTree = "<group>"; };
 		70C6C799435C67059B7DE101E933571C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71FECC8FB9C9D37798E5706E44885EFF /* OCSlimToObjectiveCBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSlimToObjectiveCBridge.m; path = src/ExecutorObjectiveC/OCSlimToObjectiveCBridge.m; sourceTree = "<group>"; };
-		72042AE8FCCC379264755611B57B6AE1 /* SlimListSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimListSerializer.h; path = include/CSlim/SlimListSerializer.h; sourceTree = "<group>"; };
-		723A75523BADEE438B0FD36393AA9293 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BC18DEAB2B7D1CBD0BEE9D66B4F0CD /* ResourceBundle-OCSlimProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OCSlimProject-Info.plist"; sourceTree = "<group>"; };
 		73789F389D457D9FB4BA2D8D4298E7EE /* Pods-XCFitAcceptanceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCFitAcceptanceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73B9F5FB4EA4DA37265ABFA12E989976 /* Pods-XCFitAcceptanceTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFitAcceptanceTests-resources.sh"; sourceTree = "<group>"; };
-		74AF9C7CE803C390A409365F2C8D9360 /* cslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		781B070B9B84DB3B008C6A0CD808B075 /* SlimList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimList.h; path = include/CSlim/SlimList.h; sourceTree = "<group>"; };
-		784E719B0038F222210236D9249ED1D5 /* ResourceBundle-OCSlimProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OCSlimProject-Info.plist"; sourceTree = "<group>"; };
-		7B64E61F2E1B8B4AE72ACAA9F98313EE /* SlimUtil.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimUtil.c; path = src/CSlim/SlimUtil.c; sourceTree = "<group>"; };
-		7DE00D5C82B9D0399EFB80BC08C3419B /* TcpComLink.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = src/Com/TcpComLink.c; sourceTree = "<group>"; };
-		82EC99E795CEC77BCAE38C866551C83D /* cslim-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cslim-dummy.m"; sourceTree = "<group>"; };
-		8345D70BA9662BB0110428FFC1260487 /* SlimConnectionHandler.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimConnectionHandler.c; path = src/CSlim/SlimConnectionHandler.c; sourceTree = "<group>"; };
-		8733EF3416A57B74D937617374BD9AF0 /* ListExecutor.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = src/CSlim/ListExecutor.c; sourceTree = "<group>"; };
+		7D80E497F135FAE8F9476A4EA93EB332 /* XCFit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCFit-dummy.m"; sourceTree = "<group>"; };
 		876CECD9A83DC1EBD4AB789297F49371 /* Pods-XCFitDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCFitDemoTests-dummy.m"; sourceTree = "<group>"; };
-		88254EDA6830B270D5AEFB70EDCFE613 /* OCSReturnValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = "<group>"; };
-		8A62B865BB17DB2D73DA66EDF1B7ADC2 /* OCSStatementExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutor.m; path = src/ExecutorObjectiveC/OCSStatementExecutor.m; sourceTree = "<group>"; };
-		8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCFit.xcconfig; sourceTree = "<group>"; };
-		8C7020DA52FE6549A7F0AEB5B534802A /* OCSlimProject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSlimProject.h; path = Pod/Classes/OCSlimProject.h; sourceTree = "<group>"; };
+		8FB272EA60418C5CE1272DF466B659C6 /* Fixtures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = include/CSlim/Fixtures.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E177A24B44B8E7D899326E87D3C570C /* TcpComLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = include/Com/TcpComLink.h; sourceTree = "<group>"; };
-		9E952D0D6A7EF3125907E5209B148F5D /* ListExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
-		A39E21C429ABBC1C0BD249BE7A74FBA2 /* Pods_XCFitAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFitAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D3505880039557732069B654F0438A /* cslim.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = cslim.modulemap; sourceTree = "<group>"; };
-		A4DC263F3178C703F36D8BD0EBAE227B /* XCFit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCFit.modulemap; sourceTree = "<group>"; };
-		A6834CB5BF051984139DAE0E306DE311 /* SocketServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = src/Com/SocketServer.c; sourceTree = "<group>"; };
+		9B264CEEDAACAC487D713C28D7060832 /* fitnesse-standalone.jar */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.jar; name = "fitnesse-standalone.jar"; path = "Pod/Support/SharedSupport/fitnesse-standalone.jar"; sourceTree = "<group>"; };
+		9BF81DA062FCCD82D9F9571D6BB753E6 /* SlimListDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimListDeserializer.h; path = include/CSlim/SlimListDeserializer.h; sourceTree = "<group>"; };
+		9F04A7D8D3E504C6BB23F35B7C248EA0 /* Slim.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = include/CSlim/Slim.h; sourceTree = "<group>"; };
+		A113E2B50B9761771BFD30E098ACE0C1 /* SlimListSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimListSerializer.h; path = include/CSlim/SlimListSerializer.h; sourceTree = "<group>"; };
 		A77C8DF920999E030F71F82D3C7F08C4 /* Pods-XCFitDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCFitDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		A7A0598058AB78E1DA1C66ED7E09D266 /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
-		A8CC16BBCD0AAFC343F2377230571168 /* Slim.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = include/CSlim/Slim.h; sourceTree = "<group>"; };
-		AB177668C3F8EA398B4018B5D59C16BC /* SlimListSerializer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimListSerializer.c; path = src/CSlim/SlimListSerializer.c; sourceTree = "<group>"; };
-		AC608BCED5702F7F5B18F3EE60EFF96B /* ResourceBundle-XCFit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XCFit-Info.plist"; sourceTree = "<group>"; };
-		AD02B0225705BA2F1CE224F789793486 /* SlimListDeserializer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimListDeserializer.c; path = src/CSlim/SlimListDeserializer.c; sourceTree = "<group>"; };
+		A8B71A664564313B35D94E6D56683F2F /* ListExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
 		AD7860C00344C5401C588AE92980D595 /* Pods-XCFitAcceptanceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCFitAcceptanceTests-dummy.m"; sourceTree = "<group>"; };
+		ADD3E15A1693CBBA63E4BD2200737A91 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
 		AE4401138732BC91F56889BB44EE525A /* Pods-XCFitAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFitAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
-		B2DCC415FE07350CDC11ABB2FCC6A8EC /* ios-sim */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.executable"; name = "ios-sim"; path = "Pod/Support/iOS/ios-sim"; sourceTree = "<group>"; };
+		B659CA270700A41FB86CBC21E67DE386 /* OCSlimProject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSlimProject.h; path = Pod/Classes/OCSlimProject.h; sourceTree = "<group>"; };
+		BBBDBD7D3045F3B73C1A67EC54676F1E /* Pods_XCFitAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFitAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEFF2B4C9D78F6C6A96B2531929D533 /* OCSStatementExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutor.m; path = src/ExecutorObjectiveC/OCSStatementExecutor.m; sourceTree = "<group>"; };
+		BDA24EDC91178ECF5D584199046B9B70 /* OCSSymbolDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionary.m; path = src/ExecutorObjectiveC/OCSSymbolDictionary.m; sourceTree = "<group>"; };
+		BF5ED32C502C67844865F0E19102A71A /* XCFit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCFit.modulemap; sourceTree = "<group>"; };
+		C20125A718E298C7248A28B4F38427EB /* SocketServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = include/Com/SocketServer.h; sourceTree = "<group>"; };
 		C50D156E9EFA351EC6E623E358C878FE /* cslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F72427CD0A7034ED8D4D3F1529E757 /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
-		CC56759210DEB466B02399CFE4FA5AE7 /* XCFit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCFit-dummy.m"; sourceTree = "<group>"; };
+		C794886AEF32B88981252E85925229D0 /* OCSlimToObjectiveCBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSlimToObjectiveCBridge.h; path = include/ExecutorObjectiveC/OCSlimToObjectiveCBridge.h; sourceTree = "<group>"; };
 		CD611061A99D7DD2412940619BBDFC80 /* Pods-XCFitAcceptanceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCFitAcceptanceTests-umbrella.h"; sourceTree = "<group>"; };
-		D2D54A2323122E815A003AE11281956E /* SlimListDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlimListDeserializer.h; path = include/CSlim/SlimListDeserializer.h; sourceTree = "<group>"; };
-		DCDE3AC1B1ACF141EFA4A76D24B77F92 /* SlimList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimList.c; path = src/CSlim/SlimList.c; sourceTree = "<group>"; };
-		DD8A78A7DCE19D977E1CDFDCA92B9076 /* RunTestsTargetWithSlimPort */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RunTestsTargetWithSlimPort; path = Pod/Support/iOS/RunTestsTargetWithSlimPort; sourceTree = "<group>"; };
-		DE9A1DD71437FAE23872B6AFD4B0C9F9 /* cslim-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cslim-prefix.pch"; sourceTree = "<group>"; };
+		D55AA35690DD39C8C0B2BF2759A54A41 /* OCSException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSException.m; path = src/ExecutorObjectiveC/OCSException.m; sourceTree = "<group>"; };
+		DD78EFCEE9F4BC2824B2D76F0B6A5D4C /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
+		DD986BEFA9466C2BB30137384242BF81 /* cslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3A8DFF79EBB59C8FF5ADF203312188 /* cslim-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cslim-prefix.pch"; sourceTree = "<group>"; };
+		E047B85979A221FE21AA1F099A171EAD /* OCSlimProject.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCSlimProject.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC45A9D0C36B4E438CD45856B595F9 /* Pods-XCFitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		E39877106FEDC9C1DDF4AF8009DACC73 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
-		EA53F4B455AA503445C692E623BB594B /* Fixtures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = include/CSlim/Fixtures.h; sourceTree = "<group>"; };
+		E87DD1E3C56FD606564FF5239636846F /* OCSInstanceCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCSInstanceCreator.h; path = include/ExecutorObjectiveC/OCSInstanceCreator.h; sourceTree = "<group>"; };
 		EA67CE733039393BAAA6D8398300DA2D /* Pods-XCFitDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCFitDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EC4535235CA665944B8C82A422658C97 /* OCSException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCSException.m; path = src/ExecutorObjectiveC/OCSException.m; sourceTree = "<group>"; };
+		EB6B216350494E169F22427B1E8AAE39 /* SlimConnectionHandler.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimConnectionHandler.c; path = src/CSlim/SlimConnectionHandler.c; sourceTree = "<group>"; };
+		EB805B658312C0FC030B18134C44E6B0 /* SlimUtil.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = SlimUtil.c; path = src/CSlim/SlimUtil.c; sourceTree = "<group>"; };
+		EBA8411449E2910E67B98AB3256117C4 /* CopyDir.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopyDir.swift; path = XCFit/Classes/CopyDir.swift; sourceTree = "<group>"; };
 		ECFFCFA8CCFA2751F9123BAD3E68DDD1 /* Pods-XCFitDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFitDemoTests-resources.sh"; sourceTree = "<group>"; };
-		EEC23C025868EED54EC22D1CB5DB49A6 /* XCFit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCFit-prefix.pch"; sourceTree = "<group>"; };
-		F1630BBEE7996B4E3260DDFCF1F7808A /* Pods_XCFitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AEB19B6BDE7D08BEC21DB02DFEF80F /* LaunchFitnesse */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LaunchFitnesse; path = Pod/Support/SharedSupport/LaunchFitnesse; sourceTree = "<group>"; };
+		F492FB34B9ACBA95D6910D60E5917930 /* ios-sim */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.executable"; name = "ios-sim"; path = "Pod/Support/iOS/ios-sim"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,13 +228,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		518CCEA38195F4A94329389907A8B079 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		59E42719044BB7ACB6DA6CE15B53FB0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B48B68B73A827C8988F3E1723C863272 /* Frameworks */ = {
+		7EE710B8FA6753F1B29FEDEA4275BD04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,30 +281,6 @@
 			path = "Target Support Files/Pods-XCFitAcceptanceTests";
 			sourceTree = "<group>";
 		};
-		0733AA2AAB99B83B680D0B8D61AF3C11 /* OCSlimProject */ = {
-			isa = PBXGroup;
-			children = (
-				8C7020DA52FE6549A7F0AEB5B534802A /* OCSlimProject.h */,
-				616C2AE9D46F7B6F1C2C84E5440746D8 /* Resources */,
-				BF8E3B17D616AAB0919F0B2D2C343E68 /* Support Files */,
-			);
-			path = OCSlimProject;
-			sourceTree = "<group>";
-		};
-		0F5B651FE35C02F9AA3EA55AE80F13FD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A4D3505880039557732069B654F0438A /* cslim.modulemap */,
-				221CEC3596A35ACFA585E64F0BA543CB /* cslim.xcconfig */,
-				82EC99E795CEC77BCAE38C866551C83D /* cslim-dummy.m */,
-				DE9A1DD71437FAE23872B6AFD4B0C9F9 /* cslim-prefix.pch */,
-				6B7090A442AA52F17FA0A59D0821D4EC /* cslim-umbrella.h */,
-				181F01033ACD1197830237D44FE6207D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/cslim";
-			sourceTree = "<group>";
-		};
 		10B3DC53BBAE77BBEEAB5A0BC0B01EC0 /* Pods-XCFitDemoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,19 +299,6 @@
 			path = "Target Support Files/Pods-XCFitDemoTests";
 			sourceTree = "<group>";
 		};
-		2603BD2C1A175E4C3D34676D7950DB10 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74AF9C7CE803C390A409365F2C8D9360 /* cslim.framework */,
-				04291F57F7C9F2B80E9D28D233A0CE3E /* OCSlimProject.bundle */,
-				A39E21C429ABBC1C0BD249BE7A74FBA2 /* Pods_XCFitAcceptanceTests.framework */,
-				F1630BBEE7996B4E3260DDFCF1F7808A /* Pods_XCFitDemoTests.framework */,
-				21705FDFC03FD6629188949E529DE866 /* XCFit.bundle */,
-				37B37A818E0B1C06C61BE2CE7B9213D0 /* XCFit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2DFC789F1B8DA1D062F73545B95934C6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,22 +307,100 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		53BAD731118D3D9EC47BEF318A954BC0 /* Classes */ = {
+		394024D664DED171FC8BEF12678BC466 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5F74AC6FC66961B90918681D93CE8E95 /* ReplaceMe.swift */,
+				71BC18DEAB2B7D1CBD0BEE9D66B4F0CD /* ResourceBundle-OCSlimProject-Info.plist */,
 			);
-			path = Classes;
+			name = "Support Files";
+			path = "../Target Support Files/OCSlimProject";
 			sourceTree = "<group>";
 		};
-		616C2AE9D46F7B6F1C2C84E5440746D8 /* Resources */ = {
+		67C32D3D51D20417C4906FA8EE2473E8 /* XCFit */ = {
 			isa = PBXGroup;
 			children = (
-				B2DCC415FE07350CDC11ABB2FCC6A8EC /* ios-sim */,
-				443FF767ED6F0BC6A1455EFEBA3A4D73 /* LaunchFitnesse */,
-				DD8A78A7DCE19D977E1CDFDCA92B9076 /* RunTestsTargetWithSlimPort */,
+				4F512E1127F3DC24822779F92BF806F4 /* CliSwift.swift */,
+				EBA8411449E2910E67B98AB3256117C4 /* CopyDir.swift */,
+				6D4E41FCCDC72F5FF7B4B81AB6674E7E /* Support Files */,
 			);
-			name = Resources;
+			path = XCFit;
+			sourceTree = "<group>";
+		};
+		6A14F50FE9305082C3F86EEEBABCC7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD986BEFA9466C2BB30137384242BF81 /* cslim.framework */,
+				E047B85979A221FE21AA1F099A171EAD /* OCSlimProject.bundle */,
+				BBBDBD7D3045F3B73C1A67EC54676F1E /* Pods_XCFitAcceptanceTests.framework */,
+				11A174384DA4938F9F4D36C257DCB288 /* Pods_XCFitDemoTests.framework */,
+				184D4A3BB30B3C7FCBA4A3ACA6486B36 /* XCFit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C4639460690AF91E87AEA9FCAB34CBF /* cslim */ = {
+			isa = PBXGroup;
+			children = (
+				8FB272EA60418C5CE1272DF466B659C6 /* Fixtures.h */,
+				3CBA58E14913C9106B61D4705BAFF16A /* Fixtures.m */,
+				2331607540B822EC12E7793DBF320036 /* ListExecutor.c */,
+				A8B71A664564313B35D94E6D56683F2F /* ListExecutor.h */,
+				5767F8957D962A51B845ECF832D21344 /* Main.c */,
+				0BE81E82DD2F7EF3A81A79F42ADC22CD /* OCSException.h */,
+				D55AA35690DD39C8C0B2BF2759A54A41 /* OCSException.m */,
+				E87DD1E3C56FD606564FF5239636846F /* OCSInstanceCreator.h */,
+				54F3F8717C7E3BEA88F70F9C8172AFCD /* OCSInstanceCreator.m */,
+				11E247854B73C0CEE46C8A7376F13374 /* OCSInvocation.h */,
+				1B569C507327318FC8E0B618DE7E42EE /* OCSInvocation.m */,
+				C794886AEF32B88981252E85925229D0 /* OCSlimToObjectiveCBridge.h */,
+				47D5BAF72E5D0C55580326F37F54CC40 /* OCSlimToObjectiveCBridge.m */,
+				5B786A3948678D88B3F5E65876B6DE52 /* OCSMethodCaller.h */,
+				226D6976FB9C57EF1697657B559C0AC3 /* OCSMethodCaller.m */,
+				DD78EFCEE9F4BC2824B2D76F0B6A5D4C /* OCSObjectiveCtoCBridge.h */,
+				1DE102B4F356E163B01452DFDFBFBAC7 /* OCSObjectiveCtoCBridge.m */,
+				450F94B458A08CC4C68FF623CFCDF5F5 /* OCSReturnValue.h */,
+				4E5D4EB80CB68EEA6DE3EE23DEC42401 /* OCSReturnValue.m */,
+				3913A3D68BAE40DA2345C9AAE7764F9D /* OCSSelector.h */,
+				659EE0FCD3A26384DFFDF745A25FE7AE /* OCSSelector.m */,
+				ADD3E15A1693CBBA63E4BD2200737A91 /* OCSStatementExecutor.h */,
+				BBEFF2B4C9D78F6C6A96B2531929D533 /* OCSStatementExecutor.m */,
+				25E21D1963E47937E23D632074B1919D /* OCSSymbolDictionary.h */,
+				BDA24EDC91178ECF5D584199046B9B70 /* OCSSymbolDictionary.m */,
+				5E4BB909AC9C4BF5E35C75F90376B312 /* Slim.c */,
+				9F04A7D8D3E504C6BB23F35B7C248EA0 /* Slim.h */,
+				EB6B216350494E169F22427B1E8AAE39 /* SlimConnectionHandler.c */,
+				066264AD7842785A0CBE302A84F2F346 /* SlimConnectionHandler.h */,
+				2FBE8B01B13040F56026D8072E1F1DA5 /* SlimList.c */,
+				4BDA146A8332C2437D20820743801F72 /* SlimList.h */,
+				3325D6402B7BCE4474B54055ED106BEE /* SlimListDeserializer.c */,
+				9BF81DA062FCCD82D9F9571D6BB753E6 /* SlimListDeserializer.h */,
+				0850F1A9ECA5DE27B77BD6286901A6C9 /* SlimListSerializer.c */,
+				A113E2B50B9761771BFD30E098ACE0C1 /* SlimListSerializer.h */,
+				EB805B658312C0FC030B18134C44E6B0 /* SlimUtil.c */,
+				5FAED5CF03240C2C7EACD963A2FCDC62 /* SlimUtil.h */,
+				10099ECA9BE25F22AE7582A48B5B4F6F /* SocketServer.c */,
+				C20125A718E298C7248A28B4F38427EB /* SocketServer.h */,
+				24476E169F67D48CED8A4F2903269E4C /* StatementExecutor.h */,
+				531638D4D6A1A52F376C7DCE5E44CA73 /* StatementExecutor.m */,
+				0B20EB2FB84F1AEE6148CC1AB09B7F97 /* TcpComLink.c */,
+				512F81C925FF44DBE7AA5A3B75B6F306 /* TcpComLink.h */,
+				835E33E5F406771E4D25CCD8BF887F62 /* Support Files */,
+			);
+			path = cslim;
+			sourceTree = "<group>";
+		};
+		6D4E41FCCDC72F5FF7B4B81AB6674E7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40FD1075258AC6A29D646286AC1F33BB /* Info.plist */,
+				BF5ED32C502C67844865F0E19102A71A /* XCFit.modulemap */,
+				1D13F192C6FFAE28D360C6F900849EDE /* XCFit.xcconfig */,
+				7D80E497F135FAE8F9476A4EA93EB332 /* XCFit-dummy.m */,
+				5D1CB4C5685221FC0F1EC80686836F76 /* XCFit-prefix.pch */,
+				06312644C86F6F62AF5813644A0C9359 /* XCFit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCFit";
 			sourceTree = "<group>";
 		};
 		6E395B4D7673440ADEE0A1576D94B0D5 /* Targets Support Files */ = {
@@ -382,126 +412,61 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7498487EF8A966A5DFA0FBB1114C55D0 /* cslim */ = {
-			isa = PBXGroup;
-			children = (
-				EA53F4B455AA503445C692E623BB594B /* Fixtures.h */,
-				5CBCF9FF9519C8A6A1505E94586ED26B /* Fixtures.m */,
-				8733EF3416A57B74D937617374BD9AF0 /* ListExecutor.c */,
-				9E952D0D6A7EF3125907E5209B148F5D /* ListExecutor.h */,
-				3D5B4AE20E9B27D55D427EA5209C1FE7 /* Main.c */,
-				420AEB320831E6245BCB7BE946B6A033 /* OCSException.h */,
-				EC4535235CA665944B8C82A422658C97 /* OCSException.m */,
-				099BC1A6E0D430AFA3D05F9C03FCCE7A /* OCSInstanceCreator.h */,
-				537CC2878BE42A4618FE004A4E6EAE0E /* OCSInstanceCreator.m */,
-				288BCEBD7D66D4CCE7FBD48EF81C5A90 /* OCSInvocation.h */,
-				3DCED3B73458491E5BC993401D7FAE8A /* OCSInvocation.m */,
-				6E0087B60DF170CC622A7152D8142D9F /* OCSlimToObjectiveCBridge.h */,
-				71FECC8FB9C9D37798E5706E44885EFF /* OCSlimToObjectiveCBridge.m */,
-				6BF83627E0C5A6CCDEA2AF179D2D8D48 /* OCSMethodCaller.h */,
-				67942D71063B07637EF02FFB73A9C38F /* OCSMethodCaller.m */,
-				A7A0598058AB78E1DA1C66ED7E09D266 /* OCSObjectiveCtoCBridge.h */,
-				01212939A469C39425F7F535CA766512 /* OCSObjectiveCtoCBridge.m */,
-				470B73ED40C20014BA522AA6BD7A5A3C /* OCSReturnValue.h */,
-				88254EDA6830B270D5AEFB70EDCFE613 /* OCSReturnValue.m */,
-				5B06662EA26092660B42F37DEC83B2D8 /* OCSSelector.h */,
-				538038CD4996434C326E1B37127616AA /* OCSSelector.m */,
-				E39877106FEDC9C1DDF4AF8009DACC73 /* OCSStatementExecutor.h */,
-				8A62B865BB17DB2D73DA66EDF1B7ADC2 /* OCSStatementExecutor.m */,
-				C6F72427CD0A7034ED8D4D3F1529E757 /* OCSSymbolDictionary.h */,
-				0A0D423B4E19D6629A4B6D47A03AC4EA /* OCSSymbolDictionary.m */,
-				613DC54AE2A488A0EFDC97B0FEBB5CB7 /* Slim.c */,
-				A8CC16BBCD0AAFC343F2377230571168 /* Slim.h */,
-				8345D70BA9662BB0110428FFC1260487 /* SlimConnectionHandler.c */,
-				615B23CA036A4D222A3EA6BB404913B2 /* SlimConnectionHandler.h */,
-				DCDE3AC1B1ACF141EFA4A76D24B77F92 /* SlimList.c */,
-				781B070B9B84DB3B008C6A0CD808B075 /* SlimList.h */,
-				AD02B0225705BA2F1CE224F789793486 /* SlimListDeserializer.c */,
-				D2D54A2323122E815A003AE11281956E /* SlimListDeserializer.h */,
-				AB177668C3F8EA398B4018B5D59C16BC /* SlimListSerializer.c */,
-				72042AE8FCCC379264755611B57B6AE1 /* SlimListSerializer.h */,
-				7B64E61F2E1B8B4AE72ACAA9F98313EE /* SlimUtil.c */,
-				39855F3C57E4066B8C9C87393B817206 /* SlimUtil.h */,
-				A6834CB5BF051984139DAE0E306DE311 /* SocketServer.c */,
-				41F029B036659A6BA0EBBA08FA7B7260 /* SocketServer.h */,
-				2A85101C6E9C573FB89C9480A835F3D3 /* StatementExecutor.h */,
-				1389A0A21ABA2B5F949BC274C340929F /* StatementExecutor.m */,
-				7DE00D5C82B9D0399EFB80BC08C3419B /* TcpComLink.c */,
-				9E177A24B44B8E7D899326E87D3C570C /* TcpComLink.h */,
-				0F5B651FE35C02F9AA3EA55AE80F13FD /* Support Files */,
-			);
-			path = cslim;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DE12E0D4F6A81FB2BFCEF7F3BC4F199D /* Development Pods */,
 				FF99D65E1612D97894EFB2EB3DF4BC60 /* Frameworks */,
-				93E1DAB9C0CC4633D8CB0748605FF790 /* Pods */,
-				2603BD2C1A175E4C3D34676D7950DB10 /* Products */,
+				B42C4E6C55879E655C11B3685B31D6EE /* Pods */,
+				6A14F50FE9305082C3F86EEEBABCC7C4 /* Products */,
 				6E395B4D7673440ADEE0A1576D94B0D5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		93E1DAB9C0CC4633D8CB0748605FF790 /* Pods */ = {
+		835E33E5F406771E4D25CCD8BF887F62 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7498487EF8A966A5DFA0FBB1114C55D0 /* cslim */,
-				0733AA2AAB99B83B680D0B8D61AF3C11 /* OCSlimProject */,
+				36C2A8F1E43FA893B610BACB68EEB4F9 /* cslim.modulemap */,
+				0E752DE12D915F1AA80DA4A30A090A29 /* cslim.xcconfig */,
+				3B31DEA8C00BF1862C52A977EFDFF693 /* cslim-dummy.m */,
+				DE3A8DFF79EBB59C8FF5ADF203312188 /* cslim-prefix.pch */,
+				00AF1392A551B82CFA695F62D692D2FA /* cslim-umbrella.h */,
+				38EBD93C219242332412F56B9527E08C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/cslim";
+			sourceTree = "<group>";
+		};
+		B42C4E6C55879E655C11B3685B31D6EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C4639460690AF91E87AEA9FCAB34CBF /* cslim */,
+				B918D81AD0834981FAFE2317BE24E454 /* OCSlimProject */,
+				67C32D3D51D20417C4906FA8EE2473E8 /* XCFit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BF8E3B17D616AAB0919F0B2D2C343E68 /* Support Files */ = {
+		B918D81AD0834981FAFE2317BE24E454 /* OCSlimProject */ = {
 			isa = PBXGroup;
 			children = (
-				784E719B0038F222210236D9249ED1D5 /* ResourceBundle-OCSlimProject-Info.plist */,
+				B659CA270700A41FB86CBC21E67DE386 /* OCSlimProject.h */,
+				C11B2727A1465D2981A849698295CF0D /* Resources */,
+				394024D664DED171FC8BEF12678BC466 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/OCSlimProject";
+			path = OCSlimProject;
 			sourceTree = "<group>";
 		};
-		C1338B0DD2C53A67E860EE00C54CDBA1 /* XCFit */ = {
+		C11B2727A1465D2981A849698295CF0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EC0AE08C0A21E42437DD09DDD59FE7B6 /* Support Files */,
-				D9FDC8A095FE02964695D1016ED478E2 /* XCFit */,
+				9B264CEEDAACAC487D713C28D7060832 /* fitnesse-standalone.jar */,
+				F492FB34B9ACBA95D6910D60E5917930 /* ios-sim */,
+				F2AEB19B6BDE7D08BEC21DB02DFEF80F /* LaunchFitnesse */,
+				305C1CB3EB762BF9F2100CBE4726647D /* LICENCE.txt */,
+				4FDDEF69DF4621D7082131D261571535 /* RunTestsTargetWithSlimPort */,
 			);
-			name = XCFit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D9FDC8A095FE02964695D1016ED478E2 /* XCFit */ = {
-			isa = PBXGroup;
-			children = (
-				53BAD731118D3D9EC47BEF318A954BC0 /* Classes */,
-			);
-			path = XCFit;
-			sourceTree = "<group>";
-		};
-		DE12E0D4F6A81FB2BFCEF7F3BC4F199D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C1338B0DD2C53A67E860EE00C54CDBA1 /* XCFit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EC0AE08C0A21E42437DD09DDD59FE7B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				723A75523BADEE438B0FD36393AA9293 /* Info.plist */,
-				AC608BCED5702F7F5B18F3EE60EFF96B /* ResourceBundle-XCFit-Info.plist */,
-				A4DC263F3178C703F36D8BD0EBAE227B /* XCFit.modulemap */,
-				8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */,
-				CC56759210DEB466B02399CFE4FA5AE7 /* XCFit-dummy.m */,
-				EEC23C025868EED54EC22D1CB5DB49A6 /* XCFit-prefix.pch */,
-				6DD166F2E818F29FAB9B5F4628CE0A19 /* XCFit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "XCFitDemo/Pods/Target Support Files/XCFit";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FF99D65E1612D97894EFB2EB3DF4BC60 /* Frameworks */ = {
@@ -572,21 +537,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A2490FE0A02A27440259CEF12BA442CB /* XCFit-XCFit */ = {
+		3B4F24EF2D0CD56440755FD6D07164B8 /* OCSlimProject-OCSlimProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45C49AF00775466ECF7D984C786FA4C0 /* Build configuration list for PBXNativeTarget "XCFit-XCFit" */;
+			buildConfigurationList = 18160617C0E49202EFFDA8B5AEE18056 /* Build configuration list for PBXNativeTarget "OCSlimProject-OCSlimProject" */;
 			buildPhases = (
-				5478CB9E9FF5124C53B7CE8D2DBC0EB0 /* Sources */,
-				B48B68B73A827C8988F3E1723C863272 /* Frameworks */,
-				25D2A5E6753F0E1AAD947E6230741030 /* Resources */,
+				71836594983ABA46BC301601A5729CAA /* Sources */,
+				7EE710B8FA6753F1B29FEDEA4275BD04 /* Frameworks */,
+				927BD4F30E55DC26A65F94871AA9D618 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "XCFit-XCFit";
-			productName = "XCFit-XCFit";
-			productReference = 21705FDFC03FD6629188949E529DE866 /* XCFit.bundle */;
+			name = "OCSlimProject-OCSlimProject";
+			productName = "OCSlimProject-OCSlimProject";
+			productReference = E047B85979A221FE21AA1F099A171EAD /* OCSlimProject.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		A3F45E9B3971B4778A309B715D9F3ACD /* Pods-XCFitDemoTests */ = {
@@ -606,7 +571,7 @@
 			);
 			name = "Pods-XCFitDemoTests";
 			productName = "Pods-XCFitDemoTests";
-			productReference = F1630BBEE7996B4E3260DDFCF1F7808A /* Pods_XCFitDemoTests.framework */;
+			productReference = 11A174384DA4938F9F4D36C257DCB288 /* Pods_XCFitDemoTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BA9D1153E68E6CC71B58FB63ABC04A40 /* Pods-XCFitAcceptanceTests */ = {
@@ -626,44 +591,25 @@
 			);
 			name = "Pods-XCFitAcceptanceTests";
 			productName = "Pods-XCFitAcceptanceTests";
-			productReference = A39E21C429ABBC1C0BD249BE7A74FBA2 /* Pods_XCFitAcceptanceTests.framework */;
+			productReference = BBBDBD7D3045F3B73C1A67EC54676F1E /* Pods_XCFitAcceptanceTests.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		C419C443462CE8418AA9349181BE2BE7 /* OCSlimProject-OCSlimProject */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A54F4788775190846DD9306CC571EB1 /* Build configuration list for PBXNativeTarget "OCSlimProject-OCSlimProject" */;
-			buildPhases = (
-				009C3A5BF25CFFF36E632CCB299DD7B0 /* Sources */,
-				518CCEA38195F4A94329389907A8B079 /* Frameworks */,
-				E7AF2204FC8B433415E8E8C7CE491CE3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OCSlimProject-OCSlimProject";
-			productName = "OCSlimProject-OCSlimProject";
-			productReference = 04291F57F7C9F2B80E9D28D233A0CE3E /* OCSlimProject.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		E884ED3E99B4F837DB59B3D47CE32F74 /* XCFit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86D6CA44B2860A3F30E7541A8E5F739C /* Build configuration list for PBXNativeTarget "XCFit" */;
 			buildPhases = (
-				7381184A29F8416A44CF3A4BFE734572 /* Sources */,
+				5B1EC8A83D2D87ABB26A635B15A69DFC /* Sources */,
 				B721F5774DF596BED997C5F225E749FA /* Frameworks */,
-				919EEFCF675E894F5EEEAEEAD8C36F7D /* Resources */,
 				0BB2699832583DC1F6752CF56EFC9A99 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1CF4EB18F58394F97F4D39CE7FE67A7C /* PBXTargetDependency */,
 				1F54F8A4400D270AADE274F34D399D08 /* PBXTargetDependency */,
 			);
 			name = XCFit;
 			productName = XCFit;
-			productReference = 37B37A818E0B1C06C61BE2CE7B9213D0 /* XCFit.framework */;
+			productReference = 184D4A3BB30B3C7FCBA4A3ACA6486B36 /* XCFit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F673226E2D7E7F7C729F273DD77C1B28 /* cslim */ = {
@@ -680,7 +626,7 @@
 			);
 			name = cslim;
 			productName = cslim;
-			productReference = 74AF9C7CE803C390A409365F2C8D9360 /* cslim.framework */;
+			productReference = DD986BEFA9466C2BB30137384242BF81 /* cslim.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -700,56 +646,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2603BD2C1A175E4C3D34676D7950DB10 /* Products */;
+			productRefGroup = 6A14F50FE9305082C3F86EEEBABCC7C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F673226E2D7E7F7C729F273DD77C1B28 /* cslim */,
-				C419C443462CE8418AA9349181BE2BE7 /* OCSlimProject-OCSlimProject */,
+				3B4F24EF2D0CD56440755FD6D07164B8 /* OCSlimProject-OCSlimProject */,
 				BA9D1153E68E6CC71B58FB63ABC04A40 /* Pods-XCFitAcceptanceTests */,
 				A3F45E9B3971B4778A309B715D9F3ACD /* Pods-XCFitDemoTests */,
 				E884ED3E99B4F837DB59B3D47CE32F74 /* XCFit */,
-				A2490FE0A02A27440259CEF12BA442CB /* XCFit-XCFit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		25D2A5E6753F0E1AAD947E6230741030 /* Resources */ = {
+		927BD4F30E55DC26A65F94871AA9D618 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		919EEFCF675E894F5EEEAEEAD8C36F7D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3CF958856EACED5197E3D016778E971 /* XCFit.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7AF2204FC8B433415E8E8C7CE491CE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAC99D9B3EB07694BECA5AAB4A12A0D4 /* ios-sim in Resources */,
-				7AF61081BCCDFFD4B066820FA7C517C9 /* LaunchFitnesse in Resources */,
-				CEB9146CDCC2AFC690301DC477826216 /* RunTestsTargetWithSlimPort in Resources */,
+				B1EBF8AB9D7075A1D96D6240651B3302 /* fitnesse-standalone.jar in Resources */,
+				89262CB537AD23D1834673B0B6A25FC3 /* ios-sim in Resources */,
+				03EDB396026BFF2CA6BA2DE917E59FEE /* LaunchFitnesse in Resources */,
+				C8C23C9185FBAD9BDE9491820C1D5E0B /* LICENCE.txt in Resources */,
+				992C315354D4C44FB1E0799605A1CAF6 /* RunTestsTargetWithSlimPort in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		009C3A5BF25CFFF36E632CCB299DD7B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		31D3C6B8D59AED644AE9878FA3777A21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -758,19 +683,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5478CB9E9FF5124C53B7CE8D2DBC0EB0 /* Sources */ = {
+		5B1EC8A83D2D87ABB26A635B15A69DFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEA5BBC286EAE1FABA9EC9EBD88E39E /* CliSwift.swift in Sources */,
+				06030B2BC7606CA135A7ACFE30D107AD /* CopyDir.swift in Sources */,
+				6CB9742856DD256AC94F996D9C842DAD /* XCFit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7381184A29F8416A44CF3A4BFE734572 /* Sources */ = {
+		71836594983ABA46BC301601A5729CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197F79D7A0288524C41AAC4652C98887 /* ReplaceMe.swift in Sources */,
-				0DA6749E607D259AB82B49296FFE7DCE /* XCFit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +744,7 @@
 		00FD23E0267D5FE3D4A474C5CAA21B59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OCSlimProject-OCSlimProject";
-			target = C419C443462CE8418AA9349181BE2BE7 /* OCSlimProject-OCSlimProject */;
+			target = 3B4F24EF2D0CD56440755FD6D07164B8 /* OCSlimProject-OCSlimProject */;
 			targetProxy = 11ECFDFE375366C414DF8E8317F18F7C /* PBXContainerItemProxy */;
 		};
 		07D502926467C748E6BD965F358ECC5B /* PBXTargetDependency */ = {
@@ -826,12 +752,6 @@
 			name = cslim;
 			target = F673226E2D7E7F7C729F273DD77C1B28 /* cslim */;
 			targetProxy = BD2F9E829B3192BC1E3A4C94DED08C58 /* PBXContainerItemProxy */;
-		};
-		1CF4EB18F58394F97F4D39CE7FE67A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "XCFit-XCFit";
-			target = A2490FE0A02A27440259CEF12BA442CB /* XCFit-XCFit */;
-			targetProxy = 104A0EB642E3EB4CFC92CEDB9C6D6E68 /* PBXContainerItemProxy */;
 		};
 		1F54F8A4400D270AADE274F34D399D08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -842,7 +762,7 @@
 		900DD174D973DF5D758127AAFF79A685 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OCSlimProject-OCSlimProject";
-			target = C419C443462CE8418AA9349181BE2BE7 /* OCSlimProject-OCSlimProject */;
+			target = 3B4F24EF2D0CD56440755FD6D07164B8 /* OCSlimProject-OCSlimProject */;
 			targetProxy = A33FCFE3FECF7842E6A75D7AD4C2F832 /* PBXContainerItemProxy */;
 		};
 		A339BAA9825F10EB99F89FBEF2F4379B /* PBXTargetDependency */ = {
@@ -868,7 +788,7 @@
 /* Begin XCBuildConfiguration section */
 		1FCDED08556259E6F56794DA451B868C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */;
+			baseConfigurationReference = 1D13F192C6FFAE28D360C6F900849EDE /* XCFit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -894,22 +814,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		33B7B11BEF268EFCFA31253F1C4A6759 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OCSlimProject";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/OCSlimProject/ResourceBundle-OCSlimProject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = OCSlimProject;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		345208F9D9CC1B581540E92CDEA801CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1012,7 +916,23 @@
 			};
 			name = Debug;
 		};
-		6B37D8FB7A158C527124F94FB8ED1025 /* Release */ = {
+		6D5670708A567F2AE1FC3688495637D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OCSlimProject";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/OCSlimProject/ResourceBundle-OCSlimProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OCSlimProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6F6B83D7576AA72B154B27948D69F09D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OCSlimProject";
@@ -1072,7 +992,7 @@
 		};
 		91308FB6058F8A3CD4D449FBFD909B34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CEC3596A35ACFA585E64F0BA543CB /* cslim.xcconfig */;
+			baseConfigurationReference = 0E752DE12D915F1AA80DA4A30A090A29 /* cslim.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1101,7 +1021,7 @@
 		};
 		9A7D23FC27BE27A61D211017F2A75EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */;
+			baseConfigurationReference = 1D13F192C6FFAE28D360C6F900849EDE /* XCFit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1129,26 +1049,9 @@
 			};
 			name = Debug;
 		};
-		A8EC1741BE19764170783E9CF27C1F30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XCFit";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/XCFit/ResourceBundle-XCFit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = XCFit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		BD49FABE1DF6395906069D1E2700FA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CEC3596A35ACFA585E64F0BA543CB /* cslim.xcconfig */;
+			baseConfigurationReference = 0E752DE12D915F1AA80DA4A30A090A29 /* cslim.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1208,23 +1111,6 @@
 			};
 			name = Release;
 		};
-		F23B803FA96C1368AC4910D8320BAE58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB9715C803220B394A2E3D3689E4942 /* XCFit.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XCFit";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/XCFit/ResourceBundle-XCFit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = XCFit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		F594C655D48020EC34B00AA63E001773 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1266,6 +1152,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18160617C0E49202EFFDA8B5AEE18056 /* Build configuration list for PBXNativeTarget "OCSlimProject-OCSlimProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5670708A567F2AE1FC3688495637D8 /* Debug */,
+				6F6B83D7576AA72B154B27948D69F09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1284,29 +1179,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45C49AF00775466ECF7D984C786FA4C0 /* Build configuration list for PBXNativeTarget "XCFit-XCFit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8EC1741BE19764170783E9CF27C1F30 /* Debug */,
-				F23B803FA96C1368AC4910D8320BAE58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4DE4FC851FD6BA5D1E34B5004370305B /* Build configuration list for PBXNativeTarget "Pods-XCFitDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				504B3C974C7DB07802A21E0CD3904F37 /* Debug */,
 				DD5141CDE7799497D8CD0B55C71160FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6A54F4788775190846DD9306CC571EB1 /* Build configuration list for PBXNativeTarget "OCSlimProject-OCSlimProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33B7B11BEF268EFCFA31253F1C4A6759 /* Debug */,
-				6B37D8FB7A158C527124F94FB8ED1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
