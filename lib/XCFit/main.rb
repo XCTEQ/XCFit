@@ -7,7 +7,7 @@ module XCFit
 	  include Thor::Actions
     $source_dir = File.expand_path '../../..', __FILE__
     $source_template_dir = File.join($source_dir, 'XCFit_Templates')
-	  $source_xcfit_dir = File.join($source_template_dir, 'XCFit')
+	$source_xcfit_dir = File.join($source_template_dir, 'XCFit')
     $source_cucumberish_template_dir = File.join($source_xcfit_dir, 'Cucumberish\ UI\ Test\ Bundle\ Base.xctemplate')
     $source_gherkin_dir = File.join($source_template_dir, 'Gherkin')
     $root_dir = File.expand_path('~')
@@ -22,7 +22,7 @@ module XCFit
 	  map %w(-v -V --version) => :version
       
 
-	  desc 'version', 'Get the current version number'
+	  desc 'version', 'Get the current version number', :hide => true
       def version
         say XCFit::VERSION
       end
@@ -48,7 +48,7 @@ module XCFit
          puts " ***************** Enjoy XCFit *****************"
       end 
 
-      desc 'create_xcgherkin', 'Generate Xcode Templates for the Gherkin Feature Files'
+      desc 'create_xcgherkin', 'Generate Xcode Templates for the Gherkin Feature Files', :hide => true
       def create_xcgherkin
         if File.exist?($root_gherkin_dir)
          puts "==================XXXXXXXX===========================" 
@@ -89,7 +89,7 @@ module XCFit
          puts "=======Now creating Feature Directory with Demo Feature ===="
          puts "==================XXXXXXXX===========================" 
          system("mkdir -p Features")
-         demo_feature_file = $source_cucumberish_template_dir + "/demo.feature"
+         demo_feature_file = $source_template_dir + "/demo.feature"
          system("cp #{demo_feature_file} Features/")
          puts $source_cucumberish_template_dir
          puts "==================XXXXXXXX===========================" 
