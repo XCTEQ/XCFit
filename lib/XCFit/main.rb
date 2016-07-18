@@ -70,7 +70,7 @@ module XCFit
       end
 
       desc 'set_xcode_templates', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
-      def setall_templates
+      def set_xcode_templates
         create_xctargets
         create_xcgherkin
       end 
