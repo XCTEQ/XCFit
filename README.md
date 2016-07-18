@@ -91,6 +91,8 @@ You will see new option for iOS and OSX i.e 'XCFit'. Once Clicked on it. You wil
 - Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging hrader for Cucumberish UI Testing.
 Once Clicked on the target e.g 'Fitnesse Acceptance Test Bundle' Xcode will create UI tAcceptance test with all the required files with Bridging headers for the Fitnesse Acceptance Test. We will see that in details soon. 
 
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_Setup.gif)
+
 - This script also set new file type in Xcode to create new Gherking feature file 
 
 ## Setting up Cucumberish UI Target
@@ -114,6 +116,8 @@ This will download Cucumberish directory from version 0.0.7 and also creats 'Fea
 - Finally from the Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test 
 
 You are done !!
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/CucumberishDemo.gif)
 
 ## Setting up Fitnesse Acceptance Target
 
@@ -153,6 +157,8 @@ $ ./LaunchFitnesse
 ```
 
 Now you should have Fitnesse up and runnig. Follow Paul's article for the details on how to write acceptance tests [here](http://stringerstheory.net/acceptance-testing-with-ios/)
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTests.gif)
 
 ## Continous Integration & Test Reporting 
 
