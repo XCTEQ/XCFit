@@ -35,18 +35,16 @@ There are few reason you should go for XCFit
   
   ```
   $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -r html -r junit --test --color
-  
 ```
   Running Fitnesse Tests: Clean, Build and Execute
+  
   ```
   $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
   
   $java -jar fitnesse-standalone.jar -v -o -c "FrontPage?suite&format=junit"
+  
   ```
 
-
-
-***
 
 
 Big Thanks to
