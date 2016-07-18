@@ -5,7 +5,7 @@
 
 # XCFit
 
-######XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. XCFit is fully automated solution for Cucumberish and Fitness. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
+####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. XCFit is fully automated solution for Cucumberish and Fitness. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
 
 ### XCFit Features
 There are few reason you should go for XCFit
@@ -166,7 +166,7 @@ You can execute Cucumberish tests with like this for XCFitDemo App.
 
 
 ```sh
-xcodebuild -workspace CuPod.xcworkspace -scheme CuPodUITests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' test | xcpretty --test --color
+xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty --test --color
 ```
 
 You can now analyse the reports generated in the 'build/reports' directory. 
