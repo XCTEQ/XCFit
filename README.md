@@ -22,6 +22,32 @@ There are few reason you should go for XCFit
   - Setup Cucumberish and Fitnesse in Xcode within few minutes !!
 
   ***
+  
+  ### Quick Demo with Example App 
+  
+  ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Quick_Demo.gif)
+  
+  ```
+  $ git clone https://github.com/Shashikant86/XCFit 
+  $ cd XCFit/XCFitDemo
+  ```
+  Running Unit, UI and Cucumberish test
+  
+  ```
+  $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -r html -r junit --test --color
+  
+```
+  Running Fitnesse Tests: Clean, Build and Execute
+  ```
+  $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
+  
+  $java -jar fitnesse-standalone.jar -v -o -c "FrontPage?suite&format=junit"
+  ```
+
+
+
+***
+
 
 Big Thanks to
   - [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) : Provide native [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) parser for iOS Apps to enable BDD in Xcode using Given When Then. Yay!
@@ -172,7 +198,7 @@ You can execute Cucumberish tests with like this for XCFitDemo App.
 
 
 ```sh
-xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty --test --color
+xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -r html -r junit --test --color
 ```
 
 You can now analyse the reports generated in the 'build/reports' directory. 
