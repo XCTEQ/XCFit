@@ -55,7 +55,6 @@
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>demo.feature</string>
 		<string>Info.plist:PackageType</string>
 		<string>___PACKAGENAMEASIDENTIFIER___-Bridging-Header.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___.h</string>
@@ -64,11 +63,6 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>demo.feature</key>
-		<dict>
-			<key>Path</key>
-			<string>demo.feature</string>
-		</dict>
 		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;BNDL&lt;/string&gt;

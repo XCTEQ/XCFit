@@ -69,7 +69,7 @@ module XCFit
          puts " ***************** Enjoy XCFit *****************"
       end
 
-      desc 'setall_templates', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
+      desc 'set_xcode_templates', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
       def setall_templates
         create_xctargets
         create_xcgherkin
