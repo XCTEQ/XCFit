@@ -5,7 +5,7 @@
 
 # XCFit
 
-####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. XCFit is fully automated solution for Cucumberish and Fitness. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
+####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitness. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
 
 ### XCFit Features
 There are few reason you should go for XCFit
@@ -18,7 +18,7 @@ There are few reason you should go for XCFit
   - Automated almost all [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) Setup in one command
   - Enhanced OCSlimProject (https://github.com/paulstringer/OCSlimProject) templates and automated Fitnesse download process.
   - XCFit target templates are independent of native Xcode Test targets.
-  - Its native Xcode implementation, No Appium, Calabash etc etc
+  - We can stiil use Apple's brand new XCUI Testing framework. Its native Xcode implementation, No Appium, Calabash etc etc
   - Setup Cucumberish and Fitnesse in Xcode within few minutes !!
 
   ***
