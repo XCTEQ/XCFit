@@ -109,7 +109,7 @@ Now that Xcode has created brand new target with all required Swift and Objectiv
 $ cd $CUCUMBERISH_TARGET_DIR
 $ xcfit get_cucumberish 0.0.7
 ```
-This will download Cucumberish directory from version 0.0.7 and also creats 'Features' directory with demo feature. You can then reference those directory in Xcode. For "Cucumberish" directory select 'Copy if needed and Create Group' and for the "Features" directory select don't create group or Copy if needed. Just " create folder reference"
+This will download Cucumberish directory from version 0.0.7 and also creats 'Features' directory. You can then reference those directory in Xcode. For "Cucumberish" directory select 'Copy if needed and Create Group' and for the "Features" directory select don't create group or Copy if needed. Just " create folder reference"
 
 - Finally from the Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test 
 

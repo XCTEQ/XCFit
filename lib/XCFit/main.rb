@@ -90,10 +90,10 @@ module XCFit
          puts "==================XXXXXXXX===========================" 
          system("mkdir -p Features")
          demo_feature_file = $source_template_dir + "/demo.feature"
-         system("cp #{demo_feature_file} Features/")
-         puts $source_cucumberish_template_dir
+         # system("cp #{demo_feature_file} Features/")
+         # puts $source_cucumberish_template_dir
          puts "==================XXXXXXXX===========================" 
-         puts "=======Created Feature Directory with Demo Feature ===="
+         puts "=======Created Feature Directory. Add New Gherkin Feature ===="
          puts "==================XXXXXXXX===========================" 
       end 
      
