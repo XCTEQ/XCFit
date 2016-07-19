@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
 
 #XCFit
-## XCFit - 'Swift'ing iOS/macOS apps towards BDD
+## XCFit - 'Swift' Your iOS/macOS apps towards BDD
 
 ####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitness. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
 
@@ -25,29 +25,6 @@ There are few reason you should go for XCFit
   - Setup Cucumberish and Fitnesse in Xcode within few minutes !!
 
   ***
-
-#### What XCFit can solve in iOS/macOS team?
-XCFit can bring lot of improvement the way you work. The most common problems in iOS development is explained by Paul Stringer in this [article](http://stringerstheory.net/acceptance-testing-with-ios/). XCFit can solve few of them
-
-  - Better Developer/QA collabration, Early QA Involvement.
-
-Usually,in the iOS development world, Developer build an app using Swift and Objective-C and army of manual and automated QA uses tools like Apppium, Calabash using languages like Ruby, Java, Python WTF !!. QA and Developers world is totally different. With XCFit you will be speaking same language that is "Swift". QA can write test script as we build. No need to wait until build is handed over. Just work with developer ! Little bit of learning curve for QA but you will save developers time as they don't to learn Java, Pyth or Ruby to help QA team
-
-   - Quick Acceptance & UI testing setup
-
-You will be surprised by how easily/quickly you can setup Fitnesse(Acceptance Test) and Cucumberish(UI Testing) environmant in Xcode and running your first test.
-
-   -  Getting Business people involved
-
-As we can now able to write scenarios with Given/When/Then and decision tables. We can get business people involved to contribute to acceptance criteria. In short we got all benefits of BDD in iOS/macOS project.
-
-   - Developers don't need to learn Ruby or similar ! Just stick to Swift
-
-You must be happy as you won't need to learn other language just in case QA ask something to solve. With XCFit it's everything Swift.
-
-  - Fix failed attempt to automate testing by QA team
-
-As of now your QA team might have tried all wrappers on [UIAutomation](https://developer.apple.com/library/tvos/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UIAutomation.html) e.g Appium, Calabash, Frank, KIF etc etc and keeping themselve busy writing some Ruby, Python, Java code to automate testing and all that attempts results in Slow, Brittle, Untrusted, Non-valuable UI tests causing harm to mobile development rather than good. With XCFit, everyone will be speaking same language and you can cover businness logic with lighting fast Fitnesse Tests and major journeys with UI tests. Keep it 80:20 means 80% Fitness and 20% Cucumberish or XCUI.
 
 
 ### Quick Demo with Example App
@@ -221,6 +198,7 @@ Now you should have Fitnesse up and runnig. Follow Paul's article for the detail
 
 ## Continous Integration & Test Reporting
 
+Continous Integration is very important and you simply can't avoid that. XCFit will be easily configured on any CI server including Apple's own [Xcode Server](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/) or very polular one [Jenkins](https://jenkins.io/) as we can generate reports in both HTML and JUnit format. 
 As of now, you might be running tests within Xcode, but there are some awsome tools which allows us to run our tests from command line. The 'xcodebuild' is being used to build and test Xcode Schemes. [Fastlane](https://github.com/fastlane/fastlane) seems much easier option to automate everything but it's upto you. These are long commands but you k ow better how to Script it Or Fastlane it, right ? :)
 
 ### Cucumberish
@@ -234,7 +212,7 @@ You can execute Cucumberish tests with like this for XCFitDemo App.
 xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -r html -r junit --test --color
 ```
 
-You can now analyse the reports generated in the 'build/reports' directory.
+You can now analyse the reports generated in the 'build/reports' directory. You will find both HTML and JUnit reports. You can configure these reports with Xcode-Server, Jenkins, TeamCity easily in the post build setting. 
 
 ```
 $ open build/reports/tests.html
@@ -257,14 +235,38 @@ Now run the Fitnesse tests using
 
 $ java -jar fitnesse-standalone.jar -v -o -c "FrontPage?suite"
 ```
-You can also set reports directory and generate Junit style reports inside the "XCFitDemo/FitNesseRoot/files/testResults/" directory.
+You can also set reports directory and generate Junit style reports inside the "XCFitDemo/FitNesseRoot/files/testResults/" directory. You can configure these reports with Xcode-Server, Jenkins, TeamCity easily in the post build setting. 
+
+
+
+## What XCFit can solve in iOS/macOS team?
+XCFit can bring lot of improvement the way you work. The most common problems in iOS development is explained by Paul Stringer in this [article](http://stringerstheory.net/acceptance-testing-with-ios/). XCFit can solve few of them
+
+  - Better Developer/QA collabration, Early QA Involvement.
+
+Usually,in the iOS development world, Developer build an app using Swift and Objective-C and army of manual and automated QA uses tools like Apppium, Calabash using languages like Ruby, Java, Python WTF !!. QA and Developers world is totally different. With XCFit you will be speaking same language that is "Swift". QA can write test script as we build. No need to wait until build is handed over. Just work with developer ! Little bit of learning curve for QA but you will save developers time as they don't to learn Java, Pyth or Ruby to help QA team
+
+   - Quick Acceptance & UI testing setup
+
+You will be surprised by how easily/quickly you can setup Fitnesse(Acceptance Test) and Cucumberish(UI Testing) environmant in Xcode and running your first test.
+
+   -  Getting Business people involved
+
+As we can now able to write scenarios with Given/When/Then and decision tables. We can get business people involved to contribute to acceptance criteria. In short we got all benefits of BDD in iOS/macOS project.
+
+   - Developers don't need to learn Ruby or similar ! Just stick to Swift
+
+You must be happy as you won't need to learn other language just in case QA ask something to solve. With XCFit it's everything Swift.
+
+  - Fix failed attempt to automate testing by QA team
+
+As of now your QA team might have tried all wrappers on [UIAutomation](https://developer.apple.com/library/tvos/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UIAutomation.html) e.g Appium, Calabash, Frank, KIF etc etc and keeping themselve busy writing some Ruby, Python, Java code to automate testing and all that attempts results in Slow, Brittle, Untrusted, Non-valuable UI tests causing harm to mobile development rather than good. With XCFit, everyone will be speaking same language and you can cover businness logic with lighting fast Fitnesse Tests and major journeys with UI tests. Keep it 80:20 means 80% Fitness and 20% Cucumberish or XCUI.
+
 
 
 # Video Demo
 
 Coming Soon !
-
-
 
 
 ## Author
