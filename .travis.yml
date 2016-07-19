@@ -13,6 +13,9 @@ script:
  - cd XCFitDemo/
  - pwd
  - set -o pipefail && xcodebuild -list
-# - set -o pipefail && xcodebuild test -workspace Example/XCFit.xcworkspace -scheme XCFit-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
- - set -o pipefail && xcodebuild -project XCFitDemo.xcodeproj -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build test | xcpretty -r html -r junit --test --color
-
+ - echo "==========Now Running Cucumberish Tests==================="
+ - set -o pipefail && xcodebuild -project XCFitDemo.xcodeproj -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build test | xcpretty -s -r html -r junit -t --color
+ - echo "==========Now Building target for Fitnesse ==================="
+ - set -o pipefail && xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build | xcpretty
+ - echo "==========Now Running Fitnesse Tests ==================="
+ - set -o pipefail && java -jar fitnesse-standalone.jar -v -o -c "FrontPage?suite&format=junit"
