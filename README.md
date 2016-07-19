@@ -16,7 +16,7 @@ There are few reason you should go for XCFit
   -  One command to set all fully automated Xcode template for Cucumberish and Fitnesse targets
   - New Template to create Gherkin Feature file in Xcode
   - Automated almost all [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) Setup in one command
-  - Enhanced OCSlimProject (https://github.com/paulstringer/OCSlimProject) templates and automated Fitnesse download process.
+  - Enhanced [OCSlimProject](https://github.com/paulstringer/OCSlimProject) templates and automated Fitnesse download process.
   - XCFit target templates are independent of native Xcode Test targets.
   - We can stiil use Apple's brand new XCUI Testing framework. Its native Xcode implementation, No Appium, Calabash etc etc
   - Setup Cucumberish and Fitnesse in Xcode within few minutes !!
@@ -30,6 +30,7 @@ There are few reason you should go for XCFit
   ```
   $ git clone https://github.com/Shashikant86/XCFit 
   $ cd XCFit/XCFitDemo
+  $ open XCDemo.xcworkspace
   ```
   Running Unit, UI and Cucumberish test
   
@@ -109,6 +110,8 @@ $ xcfit set_xcode_templates
 -  This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File--->New--->Target'
 
 You will see new option for iOS and OSX i.e 'XCFit'. Once Clicked on it. You will see Cucumberish API, Cucumberish UI and Fitnesse Acceptance Tests targets. As shown
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/new_targets.png)
 
 
 
@@ -200,6 +203,13 @@ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulat
 ```
 
 You can now analyse the reports generated in the 'build/reports' directory. 
+
+```
+$ open build/reports/tests.html
+```
+
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/html_reports.png)
 
 ### Fitnesse 
 
