@@ -14,7 +14,7 @@ script:
  - pwd
  - set -o pipefail && xcodebuild -list
  - echo "==========Now Running Cucumberish Tests==================="
- - set -o pipefail && xcodebuild -project XCFitDemo.xcodeproj -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build test | xcpretty -s -r html -r junit -t --color
+ - set -o pipefail && xcodebuild -project XCFitDemo.xcodeproj -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build test | xcpretty -s -r html -r junit --color
  - echo "==========Now Building target for Fitnesse ==================="
  - set -o pipefail && xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build | xcpretty
  - echo "==========Now Running Fitnesse Tests ==================="
