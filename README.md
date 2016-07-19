@@ -148,10 +148,24 @@ $ cd $CUCUMBERISH_TARGET_DIR
 $ xcfit get_cucumberish 0.0.7
 ```
 This will download Cucumberish directory from version 0.0.7 and also creats 'Features' directory. You can then reference those directory in Xcode. For "Cucumberish" directory select 'Copy if needed and Create Group' and for the "Features" directory select don't create group or Copy if needed. Just " create folder reference"
+Now Add sample Feature File to 'Features' directory either by File->New->Gherkin Or Just add it using your favourite text editor e.g demo.feature with content 
+
+```
+Feature: Demo App Feature
+
+Scenario: Demo Scenario 
+
+Given the app is running
+
+```
 
 - Finally from the Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test
 
 You are done !!
+
+You can add more feature/Scenarios and implement steps definitions inside your Swift File. [Ahmed-Ali](https://github.com/Ahmed-Ali) creator of Cucumberish already implemented useful pre-defined steps have a look at this [Swift file](https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift). You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code. 
+
+
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/CucumberishDemo.gif)
 
