@@ -306,7 +306,7 @@ Shashikant86, shashikant.jagtap@icloud.com
 # TODO
 
  * Swift Implementation of Gherkin Parser 
- * Cocoapods free installtion 
+ * Cocoapods free installation. Carthage or Swift Package Manager once ready 
  * Setting up XCFit on Apple's own CI Xcode Server 
 
 ## LICENSE
