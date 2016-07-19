@@ -6,7 +6,7 @@
 #XCFit
 ## XCFit - 'Swift' Your iOS/macOS apps towards BDD
 
-####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitness. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
+####XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
 
 
 ### XCFit Features
@@ -18,7 +18,7 @@ There are few reason you should go for XCFit
   -  XCFit provides Xcode Templates to create new Cucumberish and Fitnesse targets which reduce hectic Xcode configuration steps. It's all automated in XCFit
   -  One command to set all fully automated Xcode template for Cucumberish and Fitnesse targets
   - New Template to create Gherkin Feature file in Xcode
-  - Automated almost all [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) Setup in one command
+  - Automated [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) Setup in one command
   - Enhanced [OCSlimProject](https://github.com/paulstringer/OCSlimProject) templates and automated Fitnesse download process.
   - XCFit target templates are independent of native Xcode Test targets.
   - We can stiil use Apple's brand new XCUI Testing framework. Its native Xcode implementation, No Appium, Calabash etc etc
@@ -63,9 +63,9 @@ Big Thanks to
 XCFit automated configuration of these two guys.
 
 ### Version
-CocoaPods -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : TBD
+CocoaPods -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : 0.1.0
 
-RubyGems  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit)  : TBD
+RubyGems  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit)  : 0.8.0
 
 ### Tech & Software Requirements
 
@@ -128,6 +128,7 @@ You will see new option for iOS and OSX i.e 'XCFit'. Once Clicked on it. You wil
 Once Clicked on the target e.g 'Fitnesse Acceptance Test Bundle' Xcode will create UI tAcceptance test with all the required files with Bridging headers for the Fitnesse Acceptance Test. We will see that in details soon.
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_Setup.gif)
+You can watch YouTube video of XCFit setup [here](https://www.youtube.com/watch?v=Q3cKinwYwhE)
 
 - This script also set new file type in Xcode to create new Gherking feature file
 
@@ -162,6 +163,8 @@ Given the app is running
 - Finally from the Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test
 
 You are done !!
+
+You can watch YouTube video of Cucumberish Setup [here](https://www.youtube.com/watch?v=Wd9myhNkpx4)
 
 You can add more feature/Scenarios and implement steps definitions inside your Swift File. [Ahmed-Ali](https://github.com/Ahmed-Ali) creator of Cucumberish already implemented useful pre-defined steps have a look at this [Swift file](https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift). You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code. 
 
@@ -207,6 +210,8 @@ $ ./LaunchFitnesse
 ```
 
 Now you should have Fitnesse up and runnig. Follow Paul's article for the details on how to write acceptance tests [here](http://stringerstheory.net/acceptance-testing-with-ios/)
+
+You can watch YouTube video of XCFit Fitnesse [here](https://www.youtube.com/watch?v=Wd9myhNkpx4)
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTests.gif)
 
@@ -280,13 +285,57 @@ As of now your QA team might have tried all wrappers on [UIAutomation](https://d
 
 # Video Demo
 
-Coming Soon !
+### XCFit Xcode Setup
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Q3cKinwYwhE/0.jpg)](http://www.youtube.com/watch?v=Q3cKinwYwhE)
+
+
+### XCFit Cucumberish Demo
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Wd9myhNkpx4/0.jpg)](http://www.youtube.com/watch?v=Wd9myhNkpx4)
+
+
+### XCFit Fitnesse Demo
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/xFRSIugJ-FA/0.jpg)](http://www.youtube.com/watch?v=xFRSIugJ-FA)
 
 ## Author
 
 Shashikant86, shashikant.jagtap@icloud.com
 
-## License
+# TODO
 
-XCFit is available under the MIT license. See the LICENSE file for more info.
+ * Swift Implementation of Gherkin Parser 
+ * Cocoapods free installtion 
+ * Setting up XCFit on Apple's own CI Xcode Server 
+
+## LICENSE
+
+Copyright © 2014 Shashikant Jagtap, http://shashikantjagtap.net
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Contributing
+
+1. Fork it ( https://github.com/Shashikant86/XCFit/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
