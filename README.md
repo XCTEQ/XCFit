@@ -29,7 +29,7 @@ There are few reason you should go for XCFit
 
 ### Quick Demo with Example App
 
-You can clone the existing repo which has a demo app. To get started..Watch this animated GIF for the steps below
+You can clone the existing repo which has a demo app. To get started..Watch this animated GIF for the steps below. 
 
   ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Quick_Demo.gif)
 
@@ -54,6 +54,7 @@ You can clone the existing repo which has a demo app. To get started..Watch this
 
   ```
 
+Curently XCFitDemo App is configured on TravisCI which runs both Cucumberish and Fitnesse Tests. The sample .travis.yml is in the Github repo and sample logs from TravisCI [here](https://travis-ci.org/Shashikant86/XCFit/builds/145963673).
 
 
 Big Thanks to
@@ -219,6 +220,10 @@ You can watch YouTube video of XCFit Fitnesse [here](https://www.youtube.com/wat
 
 Continous Integration is very important and you simply can't avoid that. XCFit will be easily configured on any CI server including Apple's own [Xcode Server](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/) or very polular one [Jenkins](https://jenkins.io/) as we can generate reports in both HTML and JUnit format. 
 As of now, you might be running tests within Xcode, but there are some awsome tools which allows us to run our tests from command line. The 'xcodebuild' is being used to build and test Xcode Schemes. [Fastlane](https://github.com/fastlane/fastlane) seems much easier option to automate everything but it's upto you. These are long commands but you k ow better how to Script it Or Fastlane it, right ? :)
+
+Curently XCFitDemo App is configured on TravisCI which runs both Cucumberish and Fitnesse Tests. The sample .travis.yml is in the Github repo and sample logs from TravisCI [here](https://travis-ci.org/Shashikant86/XCFit/builds/145963673). Watch out Live Execution : 
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Travis_XCFit.gif)
 
 ### Cucumberish
 
