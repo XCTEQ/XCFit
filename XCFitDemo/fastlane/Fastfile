@@ -1,0 +1,65 @@
+fastlane_version "1.98.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    system "bundle install"  
+    system "pod install"
+  end
+
+  desc "Runs all the Cucumberish UI tests"
+  lane :cucumberish do
+  scan(scheme: "XCFitDemo")
+  end
+
+  desc "Runs all the Fitnesse Tests"
+  lane :fitnesse do
+  # gym(scheme: "XCFitAcceptanceTests")
+  system "cd ..&&xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -destination 'platform=iOS Simulator,id=5DFF7BD8-6417-4E55-B9B4-304A9B966FB3' clean build| xcpretty"
+  # scan(scheme: "XCFitAcceptanceTests")
+
+  system "cd ..&&java -jar fitnesse-standalone.jar -v -o -c 'FrontPage?suite&format=junit'"
+  end
+
+
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    gym # Build your app - more options available
+    pilot
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :appstore do
+    # match(type: "appstore")
+    # snapshot
+    gym # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
