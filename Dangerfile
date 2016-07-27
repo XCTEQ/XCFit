@@ -11,3 +11,9 @@ warn("Big PR") if git.lines_of_code > 500
 # Don't let testing shortcuts get into master by accident
 fail("fdescribe left in tests") if `grep -r fdescribe specs/`.length > 1
 fail("fit left in tests") if `grep -r "fit specs/ `.length > 1
+
+message "Welcome, Danger." if github.pr_author == "Shashikant86"
+
+fail "Please provide a summary in the Pull Request description" if github.pr_body.length < 5
+
+
