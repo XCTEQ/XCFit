@@ -54,6 +54,17 @@ You can clone the existing repo which has a demo app. To get started..Watch this
 
   ```
 
+###### Using Fastlane
+
+Assuming you have Bundler  rubygem installed if not install it by "gem install bundler"
+
+```
+$ bundle install
+$ bundle exec fastlane cucumberish
+$ bundle exec fastlane fitnesse
+```
+
+
 Curently XCFitDemo App is configured on TravisCI which runs both Cucumberish and Fitnesse Tests. The sample .travis.yml is in the Github repo and sample logs from TravisCI [here](https://travis-ci.org/Shashikant86/XCFit/builds/145963673).
 
 
