@@ -8,7 +8,7 @@ language: objective-c
 podfile: XCFitDemo/Podfile
 before_install:
  - gem install danger 
- # - danger
+ - danger
 #  - pod install --project-directory=XCFitDemo
 script:
  - cd XCFitDemo/
