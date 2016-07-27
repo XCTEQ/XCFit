@@ -8,6 +8,7 @@ language: objective-c
 podfile: XCFitDemo/Podfile
 before_install:
  - gem install danger 
+ - danger
 #  - pod install --project-directory=XCFitDemo
 script:
  - cd XCFitDemo/
@@ -19,4 +20,3 @@ script:
  - set -o pipefail && xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build | xcpretty
  - echo "==========Now Running Fitnesse Tests ==================="
  - set -o pipefail && java -jar fitnesse-standalone.jar -v -o -c "FrontPage.ShoudIBuyMilk?test&format=junit"
- - danger
