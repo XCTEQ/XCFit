@@ -1,0 +1,4 @@
+!1 Welcome to XCFit Fitnesse Tests [[FitNesse][FitNesse.FitNesse]]!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+
+[[XCFitDemo Fitnesse Acceptance tests][FrontPage.XCFitDemoFitnesse]]

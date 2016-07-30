@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.AddNumbers</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-30T20:29:20+01:00</date>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content>&lt;br/&gt;|Add Numbers   |&lt;br/&gt;|num1|num2|add?|&lt;br/&gt;|2   |3        |5&lt;br/&gt;</content>
+    <relativePageName>AddNumbers</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>Running Test Target "XCFitAcceptanceTests.app" with Slim Port "8085"
+Simulator Device "iPhone-6", deployment Target "9.2"
+</stdOut>
+    <stdErr>App Spec: &lt;DTiPhoneSimulatorApplicationSpecifier 0x7f834b418da0&gt; specified by app path /Users/shashi/Library/Developer/Xcode/DerivedData/XCFitDemo-evtjijidxcoeohcdnmjdsxaofpqt/Build/Products/Debug-iphonesimulator/XCFitAcceptanceTests.app
+SDK Root: &lt;DTiPhoneSimulatorSystemRoot 0x7f834b419300&gt; path=/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1469906958'
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1469906958'
+using device family iphone
+2016-07-30 20:29:18.241 ios-sim[40940:1212227] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-9542/DVTFoundation/PlugInArchitecture/PlugInManager/DVTPlugInManager.m:259
+Details:  Requested but did not find extension point with identifier Xcode.DVTFoundation.DevicePlatformMapping
+Object:   &lt;DVTPlugInManager: 0x7f834b47de90&gt;
+Method:   -extensionPointWithIdentifier:
+Thread:   &lt;NSThread: 0x7f834b40bd00&gt;{number = 1, name = main}
+Please file a bug at http://bugreport.apple.com with this warning message and any useful information you can provide.
+Session started
+Session did end with error (null)
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1469906958'
+Removing named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1469906958'
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2328</totalRunTimeInMillis>
+</testResults>
+

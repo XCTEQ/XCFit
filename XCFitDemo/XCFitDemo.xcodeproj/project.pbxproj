@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		95047B08527D20D0C77C238A /* Pods_XCFitAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFB7581E6C9607C7975D396 /* Pods_XCFitAcceptanceTests.framework */; };
 		95B7973A7794F4AC555A4EA2 /* Pods_XCFitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB70B9FBFE46C9C8F36CC773 /* Pods_XCFitDemoTests.framework */; };
+		9BAB7E801D4D355100505B9C /* ShouldIEat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB7E7F1D4D355100505B9C /* ShouldIEat.swift */; };
+		9BAB7E821D4D37D500505B9C /* AddNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB7E811D4D37D500505B9C /* AddNumbers.swift */; };
 		9BDAFF861D3999C800267068 /* XCFitAcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAFF851D3999C800267068 /* XCFitAcceptanceTests.m */; };
 		9BDAFF891D3999C800267068 /* FixtureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAFF881D3999C800267068 /* FixtureExample.swift */; };
 		9BEA3F311D398F10008E89BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3F301D398F10008E89BA /* AppDelegate.swift */; };
@@ -99,6 +101,8 @@
 		6EFB7581E6C9607C7975D396 /* Pods_XCFitAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFitAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BDD4EE365B1113935100FF /* Pods-XCFitAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFitAcceptanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCFitAcceptanceTests/Pods-XCFitAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		847A4FDD3D6949485F1C12FA /* Pods-XCFitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFitDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCFitDemoTests/Pods-XCFitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BAB7E7F1D4D355100505B9C /* ShouldIEat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldIEat.swift; sourceTree = "<group>"; };
+		9BAB7E811D4D37D500505B9C /* AddNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNumbers.swift; sourceTree = "<group>"; };
 		9BDAFF821D3999C800267068 /* XCFitAcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCFitAcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDAFF851D3999C800267068 /* XCFitAcceptanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFitAcceptanceTests.m; sourceTree = "<group>"; };
 		9BDAFF881D3999C800267068 /* FixtureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureExample.swift; sourceTree = "<group>"; };
@@ -314,6 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				9BDAFF881D3999C800267068 /* FixtureExample.swift */,
+				9BAB7E7F1D4D355100505B9C /* ShouldIEat.swift */,
+				9BAB7E811D4D37D500505B9C /* AddNumbers.swift */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -873,8 +879,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAB7E821D4D37D500505B9C /* AddNumbers.swift in Sources */,
 				9BDAFF891D3999C800267068 /* FixtureExample.swift in Sources */,
 				9BDAFF861D3999C800267068 /* XCFitAcceptanceTests.m in Sources */,
+				9BAB7E801D4D355100505B9C /* ShouldIEat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

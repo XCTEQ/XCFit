@@ -1,4 +1,7 @@
-|FrontPage||22:00:44 Sat, Jul 16, 2016|
-|FrontPage.ShoudIBuyMilk||10:41:33 Sat, Jul 16, 2016|
-|FrontPage.BuyMilk||10:40:25 Sat, Jul 16, 2016|
-|FrontPage.Suite||23:59:15 Fri, Jul 15, 2016|
+|FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.AddNumbers||21:26:47 Sat, Jul 30, 2016|
+|FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.ShouldIEatThree||20:27:14 Sat, Jul 30, 2016|
+|FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.ShouldIEatTwo||20:26:42 Sat, Jul 30, 2016|
+|FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.ShouldIEat||20:19:05 Sat, Jul 30, 2016|
+|FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite||20:15:33 Sat, Jul 30, 2016|
+|FrontPage||20:14:53 Sat, Jul 30, 2016|
+|FrontPage.XCFitDemoFitnesse||20:13:15 Sat, Jul 30, 2016|

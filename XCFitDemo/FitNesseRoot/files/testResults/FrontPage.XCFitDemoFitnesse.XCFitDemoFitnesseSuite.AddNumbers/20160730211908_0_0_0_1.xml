@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>FrontPage.XCFitDemoFitnesse.XCFitDemoFitnesseSuite.AddNumbers</rootPath>
+    <result>
+    <counts>
+      <right></right>
+      <wrong></wrong>
+      <ignores></ignores>
+      <exceptions></exceptions>
+    </counts>
+    <date>2016-07-30T21:19:11+01:00</date>
+    <runTimeInMillis>$result.runTimeInMillis</runTimeInMillis>
+    <content></content>
+    <relativePageName>AddNumbers</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8087</command>
+    <exitCode>143</exitCode>
+    <stdOut>Running Test Target "XCFitAcceptanceTests.app" with Slim Port "8087"
+Simulator Device "iPhone-6", deployment Target "9.2"
+</stdOut>
+    <stdErr>App Spec: &lt;DTiPhoneSimulatorApplicationSpecifier 0x7fca5ac024c0&gt; specified by app path /Users/shashi/Library/Developer/Xcode/DerivedData/XCFitDemo-evtjijidxcoeohcdnmjdsxaofpqt/Build/Products/Debug-iphonesimulator/XCFitAcceptanceTests.app
+SDK Root: &lt;DTiPhoneSimulatorSystemRoot 0x7fca5ad4d950&gt; path=/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stderr-pipe-1469909949'
+Creating named pipe at `/var/folders/p5/08pcsdfs2qs8_13vyd5mcgmm0000gn/T//ios-sim-stdout-pipe-1469909949'
+using device family iphone
+2016-07-30 21:19:09.134 ios-sim[68970:1272958] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-9542/DVTFoundation/PlugInArchitecture/PlugInManager/DVTPlugInManager.m:259
+Details:  Requested but did not find extension point with identifier Xcode.DVTFoundation.DevicePlatformMapping
+Object:   &lt;DVTPlugInManager: 0x7fca5adf56b0&gt;
+Method:   -extensionPointWithIdentifier:
+Thread:   &lt;NSThread: 0x7fca5ac0bd00&gt;{number = 1, name = main}
+Please file a bug at http://bugreport.apple.com with this warning message and any useful information you can provide.
+Session started
+</stdErr>
+    <exception>Could not send/receive data with SUT</exception>
+    <exception>fitnesse.testsystems.slim.SlimCommunicationException: Could not send/receive data with SUT</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2586</totalRunTimeInMillis>
+</testResults>
+
