@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>OCSlimProjectExamplePage</rootPath>
+  <pageHistoryReference>
+    <name>OCSlimProjectExamplePage.TestPage</name>
+    <date>2016-09-26T22:49:36+01:00</date>
+    <pageHistoryLink>OCSlimProjectExamplePage.TestPage?pageHistory&amp;resultDate=20160926224936</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>181</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>[OCSP_RUN] == RunSlimTestTargetWithSlimPort~iOS:8085 ==
+[OCSP_RUN] Info: Test System SDK Deployment Target: 10.0
+[OCSP_RUN] Info: Test System Executable Folder Path: /Users/Shashi/Library/Developer/Xcode/DerivedData/XCFitnesse-ahrekgzynaqyvhhkofsmwymgzjyz/Build/Products/Debug-iphonesimulator/AcceptanceTest.app
+[OCSP_RUN] Info: Simulator Device Identifier: com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus, 10.0
+[OCSP_RUN] == Start Slim Test Sytem (ios-sim version 5.0.8, Node Version: v6.6.0) ==
+[OCSP_RUN] Waiting for Slim Test System To Launch
+Shashikant.AcceptanceTest: 23545
+Sep 26 22:49:35 Shashikants-MacBook-Pro CoreSimulatorBridge[13083]: [Common] [FBSSystemService][0x3e24] Request successful: &lt;FBSProcessHandle: 0x7fc84e407480; AcceptanceTest:23545; valid: YES&gt;
+[OCSP_RUN] Slim System Detected (23545)
+Sep 26 22:49:36 Shashikants-MacBook-Pro logd[13066]: metadata shared cached uuid is null (using logd's shared cache info) AcceptanceTest (23545)
+Sep 26 22:49:36 Shashikants-MacBook-Pro logd[13066]: Failed to harvest strings for pathless uuid '00000000-0000-0000-0000-000000000000'
+Sep 26 22:49:37 Shashikants-MacBook-Pro logd[13066]: metadata shared cached uuid is null (using logd's shared cache info) AcceptanceTest (23554)
+Sep 26 22:49:37 Shashikants-MacBook-Pro logd[13066]: Failed to harvest strings for pathless uuid '00000000-0000-0000-0000-000000000000'
+[OCSP_RUN] Slim Test System Exited Normally
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>30178</totalRunTimeInMillis>
+</suiteResults>
+

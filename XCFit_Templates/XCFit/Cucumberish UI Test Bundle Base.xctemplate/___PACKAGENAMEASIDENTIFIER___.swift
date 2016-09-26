@@ -20,6 +20,6 @@ class ___PACKAGENAMEASIDENTIFIER___: NSObject {
             
         }
         //Tell Cucumberish the name of your features folder and let it execute them for you...
-        Cucumberish.executeFeaturesInDirectory("Features", featureTags: nil)
+        Cucumberish.executeFeatures(inDirectory: "Features", includeTags: nil, excludeTags: nil)
     }
 }

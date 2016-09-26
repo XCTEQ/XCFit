@@ -1,0 +1,1 @@
+../../../Cucumberish/Cucumberish/Dependencies/Gherkin/NSString+Trim.h
