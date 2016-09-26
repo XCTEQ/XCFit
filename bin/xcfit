@@ -38,10 +38,10 @@ XCFit::Main.start(ARGV)
 
 #   FileUtils.cp_r(@source_xcfit_dir, @root_template_dir)
 
-# end 
+# end
 
 # def setup_gherkin
- 
+
 #   if File.exist?(@root_gherkin_dir)
 #     puts 'There is already Gherkin directory. Please move existing Gherkin directory to carry on '
 #     exit 1
@@ -49,13 +49,13 @@ XCFit::Main.start(ARGV)
 
 #   FileUtils.cp_r(@source_gherkin_dir, @root_template_dir)
 
-# end 
+# end
 
 
 # def print_usage
 #   puts <<EOF
 
-#   Usage: xcfit <command-name> 
+#   Usage: xcfit <command-name>
 
 #   <command-name> can be one of
 #     help
@@ -63,7 +63,7 @@ XCFit::Main.start(ARGV)
 #     setup_xcfit
 #       generate a Xcode Templates for the Cucumberish and Fitnesse
 #     setup_gherkin
-#       generate Xcode Templates for the Gherkin Feature Files 
+#       generate Xcode Templates for the Gherkin Feature Files
 #     version
 #       prints the gem version
 
@@ -76,7 +76,7 @@ XCFit::Main.start(ARGV)
 # def print_help
 #   puts <<EOF
 
-#   Usage: xcfit <command-name> 
+#   Usage: xcfit <command-name>
 
 #   <command-name> can be one of
 #     help
@@ -114,4 +114,3 @@ XCFit::Main.start(ARGV)
 #     print_usage
 #   end
 # end
-
