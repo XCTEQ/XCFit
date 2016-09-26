@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Macros</key>
+	<dict>
+		<key>POD_ABBREVIATION</key>
+		<string>OCSP</string>
+		<key>POD_NAME</key>
+		<string>OCSlimProject</string>
+		<key>POD_PLATFORM_IDENTIFIER</key>
+		<string>___POD_PLATFORM_IDENTIFIER___</string>
+	</dict>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Swift</key>
@@ -42,61 +51,14 @@
 			<key>BuildPhases</key>
 			<array>
 				<dict>
+					<key>Name</key>
+					<string>[___POD_ABBREVIATION___] Generate Fitnesse Test System Scripts</string>
 					<key>Class</key>
 					<string>ShellScript</string>
 					<key>ShellPath</key>
 					<string>/bin/sh</string>
 					<key>ShellScript</key>
-					<string># Validate Project Build Settings
-if [ -z &quot;${OCSLIMPROJECT_BUNDLE_RESOURCES_DIR}&quot; ]; then
-   echo &quot;Missing expected OCSlimProject build settings. Running &apos;$ pod update&apos; may fix this problem&quot;
-   exit 1
-fi
-
-# Export Build Environment to Bundle Location
-ENV_TARGET=${OCSLIMPROJECT_BUNDLE_RESOURCES_DIR}/env.sh
-
-function exportTestRunnerEnv {
-    mkdir -p &quot;$(dirname &quot;$ENV_TARGET&quot;)&quot; &amp;&amp; touch &quot;$ENV_TARGET&quot;
-    export | egrep &apos;(INSTALL_DIR)|(PRODUCT_NAME)|(TARGET_BUILD_DIR)|(EXECUTABLE_FOLDER_PATH)|(DEPLOYMENT_TARGET_SUGGESTED_VALUES)|(EXECUTABLE_PATH)&apos; &gt; $ENV_TARGET
-}
-
-# Write Test Runner Script To Project Root
-TESTRUNNER_SOURCE=${OCSLIMPROJECT_BUNDLE_RESOURCES_DIR}/RunTestsTargetWithSlimPort
-TESTRUNNER_TARGET=${PROJECT_DIR}/OCSlimProjectTestRunner.sh
-
-function writeTestRunnerScript {
-    
-    if [ -f &quot;$TESTRUNNER_TARGET&quot; ]; then
-        rm $TESTRUNNER_TARGET
-    fi
-    
-    echo &apos;#!/bin/sh&apos; &gt; $TESTRUNNER_TARGET
-    echo $TESTRUNNER_SOURCE &apos;$1&apos; &gt;&gt; $TESTRUNNER_TARGET
-    chmod +x $TESTRUNNER_TARGET
-    
-}
-
-# Symbolic Link LaunchFitnesse to Project Root
-LAUNCHFITNESSE_SCRIPTNAME=LaunchFitnesse
-LAUNCHFITNESSE_SOURCE=${OCSLIMPROJECT_BUNDLE_RESOURCES_DIR}/$LAUNCHFITNESSE_SCRIPTNAME
-LAUNCHFITNESSE_TARGET=${PROJECT_DIR}/$LAUNCHFITNESSE_SCRIPTNAME
-
-function linkFitnesseScript {
-    
-    if [ -L $LAUNCHFITNESSE_TARGET ]; then
-        unlink $LAUNCHFITNESSE_TARGET
-    fi
-    
-    ln -s $LAUNCHFITNESSE_SOURCE $(dirname &quot;$LAUNCHFITNESSE_TARGET&quot;)
-}
-
-
-###
-
-exportTestRunnerEnv
-writeTestRunnerScript
-linkFitnesseScript</string>
+					<string>${OCSP_SUPPORT_FILE_DIR}/ocsp-generate-fitnesse-test-system-scripts.sh &quot;${OCSP_BUNDLE_RESOURCES_DIR}&quot;</string>
 				</dict>
 			</array>
 		</dict>
@@ -146,5 +108,48 @@ linkFitnesseScript</string>
 &lt;string&gt;APPL&lt;/string&gt;
 </string>
 	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Project</key>
+					<dict>
+						<key>Configurations</key>
+						<dict>
+							<key>Debug</key>
+							<dict>
+								<key>SWIFT_OPTIMIZATION_LEVEL</key>
+								<string>-Onone</string>
+								<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+								<string>DEBUG</string>
+							</dict>
+							<key>Release</key>
+							<dict>
+								<key>SWIFT_OPTIMIZATION_LEVEL</key>
+								<string>-Owholemodule</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>Targets</key>
+					<array>
+						<dict>
+							<key>Concrete</key>
+							<false/>
+							<key>SharedSettings</key>
+							<dict>
+								<key>SWIFT_VERSION</key>
+								<string>3.0</string>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

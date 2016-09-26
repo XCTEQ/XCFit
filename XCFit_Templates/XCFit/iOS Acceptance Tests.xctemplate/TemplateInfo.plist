@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Macros</key>
+	<dict>
+		<key>POD_PLATFORM_IDENTIFIER</key>
+		<string>ios</string>
+	</dict>
+	<key>Name</key>
+	<string>iOS Acceptance Tests</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>

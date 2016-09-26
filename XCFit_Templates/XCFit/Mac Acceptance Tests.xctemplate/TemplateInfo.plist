@@ -2,12 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Macros</key>
+	<dict>
+		<key>POD_PLATFORM_IDENTIFIER</key>
+		<string>osx</string>
+	</dict>
+	<key>Name</key>
+	<string>Acceptance Tests</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
 	<string>io.cleankit.macAcceptanceTests</string>
 	<key>Description</key>
-	<string>This target builds a Mac Application for Acceptance Testing your App using the Fitnesse framework. Requires a project that uses CocoaPods.</string>
+	<string>This target builds an OS X Application for Acceptance Testing your App using the Fitnesse framework. Requires a project that uses CocoaPods.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>io.cleankit.baseAcceptanceTests</string>
