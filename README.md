@@ -14,21 +14,25 @@ If you are still XCode 7 users then please follow this link for documentation
 
 ### Quick Demo with Example App
 
-You can clone the existing repo which has a demo app. To get started..Watch this animated GIF for the steps below.
-
-  ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitDemo.gif)
-
-  ```
+You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
+ ```
   $ git clone https://github.com/Shashikant86/XCFit
   $ cd XCFit/XCFitnesse
   $ open XCFitnesse.xcworkspace
   ```
-  Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". Edit Scheme if nessesary to avoid running Unit Tests for this demo. Or Run nit from command line. Update Simulator device/OS version as installed in your Xcode if nessessary
-
+ Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane
+ 
+ 
   ```
   $ bundle install
   $ bundle exec fastlane xctest_fitnesse
 ```
+ 
+ 
+Watch this animated GIF for the steps below.
+
+  ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitDemo.gif)
+
 
 Big Thanks to
   - [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) : Provide native [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) parser for iOS Apps to enable BDD in Xcode using Given When Then. Yay!
@@ -49,9 +53,10 @@ Hardware : You must have Mac Operating System with OSX/MacOS version > 10.9
 
 Software:
 * [Ruby](https://www.ruby-lang.org/en/) - Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X
-* [Xcode](https://developer.apple.com/xcode/) - Ideally Xcode 7.X
+* [Xcode8](https://developer.apple.com/xcode/) - Ideally Xcode 8
 * [RubyGems](https://rubygems.org/) - RubyGem with [Cocoapods](https://cocoapods.org/) installed
 * [Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html) - Might be pre-installed but worth double checking.
+* NodeJS and iOS-Sim
 * Ruby Packages : Xcpretty, Fastlane(Optional), Rake, Bundler.. Install with 'gem install <package_name>'
 
 
@@ -127,11 +132,13 @@ This will download Cucumberish directory from version 1.0.0 and also create 'Fea
 
 - In your Podfile, add following Pod entry and update/install pod
 
-```target '$_YOUR_CUCUMBERISH_TARGET' do
+```ruby
+    target '$_YOUR_CUCUMBERISH_TARGET' do
       pod 'Cucumberish', :git => 'https://github.com/Ahmed-Ali/Cucumberish'
-    end
+    end 
 ```
-Now install pod
+
+
 
 ```sh
 $ pod update
@@ -159,13 +166,97 @@ You are done !!
 You can add more feature/Scenarios and implement steps definitions inside your Swift File. [Ahmed-Ali](https://github.com/Ahmed-Ali) creator of Cucumberish already implemented useful pre-defined steps have a look at this [Swift file](https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift). You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code.
 
 
-## Setting up Fitnesse Acceptance Target
+## Setting up Fitnesse Acceptance Target with XCTest
 
 You can also setup Fitnesse Acceptance Tests but you need to use Cocoapods for this target.
 
-Basically Steps are pretty much same mentioned in the [OCSlimProject](http://paulstringer.github.io/OCSlimProject/) but most of them are automated for simplicity. Here is simple way to set Fitnesse Acceptance tests for iOS/MacOS Apps
-
 You can find detailed blog post on [Dzone](https://dzone.com/articles/integrate-fitnesse-with-xctest-using-xcode8)
+
+#### Add Acceptance and Acceptance Unit Test Target to Project
+
+We have all the predefined targets for FitNesse. Just add “Acceptance Tests” target from the template and “AcceptanceUnitTests” target from the bundle. You will need “FitNesse Suite page name” to create this target but just put “OCSlimProjectExamplePage” there for now . Add your ‘AcceptanceTests’ target as a ‘Target Dependancy’ of this new target in Build Phases. This ensures that it the latest code has been built prior to the tests being run.
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/targets.gif)
+
+#### Add Pod Dependencies
+We need to create a “Podfile” at the root of the project with the following content.
+
+```ruby 
+target 'AcceptanceTests' do     
+   pod 'OCSlimProject' 
+end   
+target 'AcceptanceUnitTests' do     
+   pod 'OCSlimProjectTestBundleSupport' 
+end
+```
+
+Now, we can run ‘pod install’ at this stage and close the current Xcode session and open project workspace.
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/pod_install.gif)
+
+#### Build Acceptance Tests Target
+At this stage, we should be able to build the “Acceptance Tests” target. If you are using Xcode8, you might see some warning related to the Swift3 Syntax. Just Click on ‘Edit-> Convert-> To Current Swift Syntax
+
+Now you should be able to build an “Acceptance Tests” target. Once, build is successful, you should see “LaunchFitnesse” script is generated in the root of the project. We can launch and execute the fitness test as shown below.
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/build_acceptance.gif)
+
+#### Test AcceptanceUnitTests Target
+
+Now if you select “AcceptanceUnitTarget” and press CMD+U.
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/RunXCUITest.gif)
+
+
+Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.
+
+
+### Taking Control with Bundler, Fastlane, and Trainer
+
+Now that , we have seen how to run FitNesse acceptance tests from Xcode but it’s a good idea to run it with Fastlane.  We can also take control of version of Cocoapods and Fastlane by using Bundler. Let’s create a Gemfile at the root of the project with the following gem
+
+```ruby
+source "https://rubygems.org"   
+gem 'cocoapods' 
+gem 'fastlane'   plugins_path = File.join(File.dirname(__FILE__), '.', 'Pluginfile') eval(File.read(plugins_path), binding) if File.exist?(plugins_path
+```
+
+Let’s also create directory “fastlane” and make “Fastfile” with following content
+
+```ruby
+
+fastlane_version "1.104.0"  
+default_platform :ios   
+platform :ios do   
+before_all do     
+   system "rm -rf ../test_reports/"     
+   system "bundle install"     
+   system "pod install"     
+    system "bundle exec fastlane add_plugin trainer"   
+end     
+desc "Runs all the Unit tests and Fitnesse Aceptance Tests"   
+lane :xctest_fitnesse do    
+  scan(scheme: "FitnesseXCTestDemo", 
+   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',  
+   output_directory: "test_reports/",    
+    output_types: "html",    
+    fail_build: false    )
+   trainer(output_directory: "test_reports/trainer_report/")   
+end 
+end
+```
+
+Now we will create a “fastlane/PluginFile” to add “trainer” plugin.
+
+```ruby
+ gem 'fastlane-plugin-trainer'
+
+```
+
+After running “bundle install” we should be able to run those test from command line like this :
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/xcfitnesse.gif)
+
 
 You can watch YouTube video of XCFTest-Fitnesse [here](https://www.youtube.com/watch?v=xqvy1vN87e8)
 
@@ -175,10 +266,6 @@ You can watch YouTube video of XCFTest-Fitnesse [here](https://www.youtube.com/w
 ### XCTest Fitnesse Demo
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/xqvy1vN87e8/0.jpg)](http://www.youtube.com/watch?v=xxqvy1vN87e8)
-
-
-# Video Demo
-
 
 
 ## Author
