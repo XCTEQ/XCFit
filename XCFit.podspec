@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
-  s.version          = '0.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC
-XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language.  
+XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language.
                        DESC
 
   s.homepage         = 'https://github.com/Shashikant86/XCFit'
