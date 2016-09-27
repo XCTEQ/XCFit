@@ -7,9 +7,24 @@
 
 #### XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit) and [CocoaPods](http://cocoadocs.org/docsets/XCFit).
 
+### XCFit Features
+***
+  -  You can now write Given When Then and Decision Table in Xcode !! YAY.. Thanks to Cucumberish and OCSlimProject ! And XCFit automated them !!
+  -  You can now write/Execute all your Acdeptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!
+  -  XCFit provides Xcode Templates to create new Cucumberish and Fitnesse targets which reduce hectic Xcode configuration steps. It's all automated in XCFit
+  -  One command to set all fully automated Xcode template for Cucumberish and Fitnesse targets
+  - New Template to create Gherkin Feature file in Xcode
+  - Automated [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) Setup in one command
+  - Enhanced [OCSlimProject](https://github.com/paulstringer/OCSlimProject) templates and automated Fitnesse download process.
+  - XCFit target templates are independent of native Xcode Test targets.
+  - We can stiil use Apple's brand new XCUI Testing framework. Its native Xcode implementation, No Appium, Calabash etc etc
+  - Setup Cucumberish and Fitnesse in Xcode within few minutes !!
+
+  ***
+
 ### Xcode 7 Users
 
-If you are still XCode 7 users then please follow this link for documentation
+If you are still XCode 7 users then please follow [this](https://github.com/Shashikant86/XCFit/blob/master/Docs/xcdoe7swift2.md) link for documentation
 
 
 ### Quick Demo with Example App
