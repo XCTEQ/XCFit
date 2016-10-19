@@ -19,6 +19,6 @@ class HomeScreen: BaseScreen {
     
     // You can add locators and functions of homeScreen here
     
-   let crappyButtuon = XCUIApplication().buttons["I am really useless button"]
+    let crappyButtuon = XCUIApplication().buttons["I am really useless button"]
     
 }

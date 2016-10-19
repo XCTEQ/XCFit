@@ -12,10 +12,11 @@
  
  */
 
+
 import XCTest
 import Foundation
 
-class BaseScreen: XCTestCase {
+class BaseScreen: ___PACKAGENAMEASIDENTIFIER___TestBase {
     
     func waitAndTap(element: XCUIElement) {
         

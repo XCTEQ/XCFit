@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//
 //  Created by XCFit Framework
 //  Copyright © 2016 XCFit Framework. All rights reserved.
 //
@@ -12,6 +12,8 @@
  This file can take all the Swift extensions build around XCUI Test Frameworks which can be directly used in the tests, page objects. Here are sample extensions on XCUIElement and XCTestCase.
  
  */
+
+
 
 import Foundation
 import XCTest

@@ -5,6 +5,14 @@
 //
 //
 
+/*
+ 
+ This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
+ 
+ This class has some mostly used step definitions included here. You can add some more here if needed. 
+ 
+ */
+
 import XCTest
 
 class CommonStepDefinitions: NSObject {
