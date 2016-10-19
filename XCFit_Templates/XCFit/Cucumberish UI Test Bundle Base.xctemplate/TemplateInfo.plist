@@ -55,6 +55,12 @@
 	</array>
 	<key>Nodes</key>
 	<array>
+		<string>HomeScreen.swift</string>
+		<string>BaseScreen.swift</string>
+		<string>HomeScreenSteps.swift</string>
+		<string>Hooks.swift</string>
+		<string>Extensions.swift</string>
+		<string>CommonStepDefinitions.swift</string>
 		<string>Info.plist:PackageType</string>
 		<string>___PACKAGENAMEASIDENTIFIER___-Bridging-Header.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___.h</string>
@@ -63,6 +69,48 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>HomeScreen.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>HomeScreen.swift</string>
+			<key>Group</key>
+			<string>Screens</string>
+		</dict>
+		<key>BaseScreen.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseScreen.swift</string>
+			<key>Group</key>
+			<string>Screens</string>
+		</dict>
+		<key>HomeScreenSteps.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>HomeScreenSteps.swift</string>
+			<key>Group</key>
+			<string>Step Definitions</string>
+		</dict>
+		<key>Hooks.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Hooks.swift</string>
+			<key>Group</key>
+			<string>Common</string>
+		</dict>
+		<key>Extensions.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Extensions.swift</string>
+			<key>Group</key>
+			<string>Common</string>
+		</dict>
+		<key>CommonStepDefinitions.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>CommonStepDefinitions.swift</string>
+			<key>Group</key>
+			<string>Common</string>
+		</dict>
 		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;BNDL&lt;/string&gt;
@@ -71,6 +119,8 @@
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___-Bridging-Header.h</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___.swift</key>
 		<dict>
@@ -81,37 +131,16 @@
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___.m</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___.h</key>
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___.h</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
 		</dict>
 	</dict>
-	<key>Options</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>languageChoice</string>
-			<key>Units</key>
-			<dict>
-				<key>Swift</key>
-				<dict>
-					<key>Nodes</key>
-					<array>
-						<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
-					</array>
-					<key>Definitions</key>
-					<dict>
-						<key>___PACKAGENAMEASIDENTIFIER___.swift</key>
-						<dict>
-							<key>Path</key>
-							<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
-						</dict>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
-	</array>
 </dict>
 </plist>

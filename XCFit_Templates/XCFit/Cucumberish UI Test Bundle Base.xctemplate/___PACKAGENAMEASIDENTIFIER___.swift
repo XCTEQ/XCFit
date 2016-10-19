@@ -13,6 +13,8 @@ class ___PACKAGENAMEASIDENTIFIER___: NSObject {
         //A closure that will be executed just before executing any of your features
         beforeStart { () -> Void in
             application = XCUIApplication()
+            CommonStepDefinitions.setup(application);
+            HomeScreenSteps().HomeScreenSteps()
         }
         //A Given step definition
         Given("the app is running") { (args, userInfo) -> Void in

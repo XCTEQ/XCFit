@@ -24,16 +24,5 @@
 			<string>com.apple.dt.cocoaUITestBundleTarget</string>
 		</dict>
 	</array>
-	<key>OptionConstraints</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>ConstraintType</key>
-			<string>DefaultIfAssociatedTarget</string>
-			<key>Value</key>
-			<string>___ASSOCIATEDTARGET_bundleName___UITests</string>
-		</dict>
-	</array>
 </dict>
 </plist>
