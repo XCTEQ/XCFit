@@ -58,7 +58,7 @@ XCFit automated configuration of these two guys.
 ### Version
 CocoaPods -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : 0.1.0
 
-RubyGems  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit)  : 0.8.0
+RubyGems  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit)  : 2.0.1
 
 ### Tech & Software Requirements
 
@@ -125,11 +125,21 @@ Once Clicked on the target e.g 'Fitnesse Acceptance Test Bundle' Xcode will crea
 
 Few Steps to setup BDD Styles in Xcode8
 
-##### Add New Target for Cucumberish
+##### Add New Target for Cucumberish 
 
 - Add new target iOS/macOS project and Select "File -> New -> Target -> XCFit -> Cucumberish UI Test Bundle". Give it a name you like e.g CucumberishUITests
 
-Now that Xcode has created brand new target with all required Swift and Objective-C files to run Cucumberish. All Xcode setting has been done by the Xcode Template.
+Now that Xcode has created brand new target with all required Swift and Objective-C files to run Cucumberish. All Xcode setting has been done by the Xcode Template. 
+####### Link Target Application 
+The most important thing is link your target to application to test. Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/LinkTargetTestApp.png)
+
+#### Cucumberish Page Object Pattern Directory Structure 
+
+Now that, you can observe that new target has nice directory structure following [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html)
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/DirectoryStructure.png)
 
 #####  Download Cucumberish in the target
 
@@ -174,9 +184,14 @@ Given the app is running
 
 ##### Add Target To Test
 
-- Finally from the Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test
+- Finally, Run Your Test from Cucumberish Target by Pressing 'CMD+U'
 
 You are done !!
+
+Look how easy it is ! 
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/POM_Cucumberish.gif)
+
 
 You can add more feature/Scenarios and implement steps definitions inside your Swift File. [Ahmed-Ali](https://github.com/Ahmed-Ali) creator of Cucumberish already implemented useful pre-defined steps have a look at this [Swift file](https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift). You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code.
 
