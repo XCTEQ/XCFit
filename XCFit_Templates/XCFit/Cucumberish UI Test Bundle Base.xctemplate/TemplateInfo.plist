@@ -12,6 +12,19 @@
 	</array>
 	<key>TargetOnly</key>
 	<true/>
+	<key>AssociatedTargetSpecification</key>
+<dict>
+	<key>PopUpTitle</key>
+	<string>Target to be Tested:</string>
+	<key>PopUpDescription</key>
+	<string>The application that this new test bundle will be testing. The new UI Tests will be associated with that target&apos;s scheme.</string>
+	<key>AllowableProductTypes</key>
+	<array>
+		<string>com.apple.product-type.application</string>
+	</array>
+	<key>AssociatedTargetIsTargetToBeTested</key>
+	<true/>
+</dict>
 	<key>Targets</key>
 	<array>
 		<dict>

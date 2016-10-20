@@ -123,7 +123,7 @@
 			<key>Path</key>
 			<string>BaseScreen.swift</string>
 			<key>Group</key>
-			<string>TestBase</string>
+			<string>Screens</string>
 		</dict>
 		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
