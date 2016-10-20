@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{XCFit is a full stack BDD framework in Xcode for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language. Checkout XCFIT POD}
   spec.homepage      = "https://github.com/Shashikant86/XCFit"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|XCFitDemo|XCFitnesse|spec|features|_Pods.xcodeproj)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|XCFitDemo|XCFitnesse|spec|features|_Pods.xcodeproj|Sources|Tests|XCFit.xcodeproj)/}) }
   spec.files.reject! { |fn| fn.include? "_Pods.xcodeproj" }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

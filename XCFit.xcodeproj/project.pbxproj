@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_XCFit, ______Target_XCFitTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_bin' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'bin';
+            path = 'bin';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Docs' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'Docs';
+            path = 'Docs';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_lib' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'lib';
+            path = 'lib';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, '__PBXFileRef_bin','__PBXFileRef_Docs','__PBXFileRef_lib', Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_XCFit = {
+            isa = PBXGroup;
+            name = 'XCFit';
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/XCFit.swift');
+        };
+        '__PBXFileRef_Sources/XCFit.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'XCFit.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_XCFit = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_XCFit;
+            buildPhases = (CompilePhase_XCFit, ___LinkPhase_XCFit);
+            buildRules = ();
+            dependencies = ();
+            name = 'XCFit';
+            productName = XCFit;
+            productReference = _____Product_XCFit;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_XCFit = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'XCFit.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_XCFit = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/XCFit.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/XCFit.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/XCFit.swift';
+        };
+        ___LinkPhase_XCFit = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_XCFit = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_XCFit, _ReleaseConf_XCFit);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_XCFit = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'XCFit.xcodeproj/XCFit_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'XCFit'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_XCFit = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'XCFit.xcodeproj/XCFit_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'XCFit'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_XCFit = {
+            isa = PBXTargetDependency;
+            target = ______Target_XCFit;
+        };
+        _______Group_XCFitTests = {
+            isa = PBXGroup;
+            name = 'XCFitTests';
+            path = 'Tests/XCFitTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/XCFitTests/XCFitTests.swift');
+        };
+        '__PBXFileRef_Tests/XCFitTests/XCFitTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'XCFitTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_XCFitTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_XCFitTests;
+            buildPhases = (CompilePhase_XCFitTests, ___LinkPhase_XCFitTests);
+            buildRules = ();
+            dependencies = (__Dependency_XCFit);
+            name = 'XCFitTests';
+            productName = XCFitTests;
+            productReference = _____Product_XCFitTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_XCFitTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'XCFitTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_XCFitTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/XCFitTests/XCFitTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/XCFitTests/XCFitTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/XCFitTests/XCFitTests.swift';
+        };
+        ___LinkPhase_XCFitTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_XCFit_via_XCFitTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_XCFit_via_XCFitTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_XCFit;
+        };
+        _______Confs_XCFitTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_XCFitTests, _ReleaseConf_XCFitTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_XCFitTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'XCFit.xcodeproj/XCFitTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_XCFitTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'XCFit.xcodeproj/XCFitTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_XCFitTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_XCFitTests;
+        };
+        '__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'XCFit.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_XCFit);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_XCFitTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_XCFitTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_XCFit);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
