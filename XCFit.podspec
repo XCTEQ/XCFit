@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
-  s.version          = '2.0.0'
+  s.version          = '0.1.2'
   s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC
@@ -11,16 +11,27 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Shashikant86' => 'shashikant.jagtap@icloud.com' }
-  s.source           = { :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '0.1.0' }
+  s.source           = { :git => 'https://github.com/Shashikant86/XCFit.git', :tag => "v#{s.version}"}
 
   s.social_media_url = 'https://twitter.com/Shashikant86'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XCFit/Classes/**/*'
-
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.source_files = 'Sources/XCFit/*'
+  s.source_files  = 'XCFit/Classes/Cucumberish/*.{h,m}', 'XCFit/Classes/Cucumberish/Core/Managers/*.{h,m}', 'XCFit/Classes/Cucumberish/Core/Models/*.{h,m}', 'XCFit/Classes/Cucumberish/Utils/*.{h,m}', 'XCFit/Classes/Cucumberish/Dependencies/Gherkin', 'XCFit/Classes/Cucumberish/Core/CCIBlockDefinitions.h'
+  s.public_header_files =
+    'XCFit/Classes/Cucumberish/Cucumberish.h',
+    'XCFit/Classes/Cucumberish/Core/Managers/CCIStepsManager.h',
+    'XCFit/Classes/Cucumberish/Core/CCIBlockDefinitions.h',
+    'XCFit/Classes/Cucumberish/Core/Models/CCIScenarioDefinition.h',
+    'XCFit/Classes/Cucumberish/Core/Models/CCIExample.h',
+    'XCFit/Classes/Cucumberish/Core/Models/CCIStep.h',
+    'XCFit/Classes/Cucumberish/Core/Models/CCILocation.h',
+    'XCFit/Classes/Cucumberish/Core/Models/CCIArgument.h'
+  s.resource_bundles = {
+    'GherkinLanguages' => ['XCFit/Classes/Cucumberish/Dependencies/Gherkin/gherkin-languages.json'],
+  }
+   s.framework  = "XCTest"
    s.dependency 'OCSlimProject'
+   s.dependency 'OCSlimProjectTestBundleSupport'
 end
