@@ -32,6 +32,5 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   }
    s.framework  = "XCTest"
    s.dependency 'OCSlimProject', '1.3'
-   s.dependency 'OCSlimProjectTestBundleSupport', '1.3'
    s.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "SRC_ROOT=@\\\"$(SRCROOT)\\\"" }
 end
