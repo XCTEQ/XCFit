@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC
@@ -31,6 +31,5 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
     'GherkinLanguages' => ['XCFit/Classes/Cucumberish/Dependencies/Gherkin/gherkin-languages.json'],
   }
    s.framework  = "XCTest"
-   s.dependency 'OCSlimProject', '1.3'
    s.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "SRC_ROOT=@\\\"$(SRCROOT)\\\"" }
 end
