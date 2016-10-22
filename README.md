@@ -39,10 +39,13 @@
 
 XCFit uses a number of open source projects to work properly. You need to have following
 
-Hardware : You must have Mac Operating System with OSX/MacOS version > 10.9
+**Hardware** 
 
-Software:
-* **Ruby(https://www.ruby-lang.org/en/)**
+You must have Mac Operating System with OSX/MacOS version > 10.9
+
+** Software **
+
+* **[Ruby](https://www.ruby-lang.org/en/)**
    - Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo
 * **[Xcode8](https://developer.apple.com/xcode/)** 
    - Ideally Xcode 8 but works on Xcode 7 as well.
@@ -52,6 +55,8 @@ Software:
    - Might be pre-installed but worth double checking.
 * **[iOS-Sim](https://www.npmjs.com/package/ios-sim)** 
   - Node Package required to launch iOS app for Fitnesse Acceptance tests.
+* [**Java**](https://www.java.com/en/) 
+  - Java should be installed on Mac, it is required for Fitnesse Acceptance Test
 * **Ruby Packages(optional)** 
   - Xcpretty, Fastlane(Optional), Rake, Bundler etc 
 
