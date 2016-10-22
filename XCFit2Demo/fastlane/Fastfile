@@ -7,7 +7,6 @@ platform :ios do
     system "rm -rf ../test_reports/"
     system "bundle install"
     system "pod install"
-    system "bundle exec fastlane add_plugin trainer"
   end
 
   desc "Runs all the XCUI POM, Cucumberish tests"
@@ -19,7 +18,6 @@ platform :ios do
    output_types: "html",
    fail_build: false
    )
-   trainer(output_directory: "test_reports/trainer_report/")
   end
 
   desc "Runs Fitnesse Tests"
