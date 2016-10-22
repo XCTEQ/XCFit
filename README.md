@@ -338,7 +338,6 @@ At this stage, we should be able to build the “Acceptance Tests” target. If 
 
 Now you should be able to build an “Acceptance Tests” target. Once, build is successful, you should see “LaunchFitnesse” script is generated in the root of the project. We can launch and execute the fitness test as shown below.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/build_acceptace.gif)
 
 #### Test AcceptanceUnitTests Target
 
@@ -411,7 +410,7 @@ After running “bundle install” we should be able to run those test from comm
         $ bundle exec fastlane xcfit_ui_test
 
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FastlanXCFit.gif)
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FastlaneXCFit.gif)
 
 Once that done. We can have clear HTML reports genearted 
 
