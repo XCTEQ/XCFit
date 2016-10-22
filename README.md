@@ -415,12 +415,30 @@ After running “bundle install” we should be able to run those test from comm
 Once that done. We can have clear HTML reports genearted 
 
 
+# XCFit: Swift Package Manager 
+
+XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use. 
+Full Documetation and API implementation still in progress. You can grab it like this  
+
+```
+import PackageDescription
+
+let package = Package(
+    name: "XCFit",
+    dependencies: [
+  .Package(url: "https://github.com/Shashikant86/XFit.git", majorVersion: 2),
+]
+)
+```
+
+
+
 ### Quick Demo with Example App
 
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
  ```
   $ git clone https://github.com/Shashikant86/XCFit
-  $ cd XCFit/XC2Demo
+  $ cd XCFit/XCFit2Demo
   $ open XCFit2Demo.xcworkspace
   ```
  Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane
