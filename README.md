@@ -51,7 +51,7 @@ You must have Mac Operating System with OSX/MacOS version > 10.9
    - Ideally Xcode 8 but works on Xcode 7 as well.
 * **[RubyGems](https://rubygems.org/)** 
    - RubyGem with [Cocoapods](https://cocoapods.org/) installed
-* [**Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
+* **[Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
    - Might be pre-installed but worth double checking.
 * **[iOS-Sim](https://www.npmjs.com/package/ios-sim)** 
   - Node Package required to launch iOS app for Fitnesse Acceptance tests.
@@ -286,7 +286,7 @@ Testbase is group where we can abstract all setup, teardown and common stuff in 
 
 ```ruby
     target 'AcceptanceTests' do
-      pod 'XCFit'
+      pod 'OCSlimProject'
     end
 ```
 
@@ -321,7 +321,6 @@ You can find detailed blog post on [Dzone](https://dzone.com/articles/integrate-
 
 We have all the predefined targets for FitNesse. Just add “Acceptance Tests” target from the template and “AcceptanceUnitTests” target from the bundle. You will need “FitNesse Suite page name” to create this target but just put “OCSlimProjectExamplePage” there for now . Add your ‘AcceptanceTests’ target as a ‘Target Dependancy’ of this new target in Build Phases. This ensures that it the latest code has been built prior to the tests being run.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/targets.gif)
 
 #### Add Pod Dependencies
 We need to create a “Podfile” at the root of the project with the following content.
@@ -334,8 +333,6 @@ end
 
 Now, we can run ‘pod install’ at this stage and close the current Xcode session and open project workspace.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/pod_install.gif)
-
 #### Build Acceptance Tests Target
 At this stage, we should be able to build the “Acceptance Tests” target. If you are using Xcode8, you might see some warning related to the Swift3 Syntax. Just Click on ‘Edit-> Convert-> To Current Swift Syntax
 
@@ -347,15 +344,15 @@ Now you should be able to build an “Acceptance Tests” target. Once, build is
 
 Now if you select “AcceptanceUnitTarget” and press CMD+U.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/RunXCUITest.gif)
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FitnesseXCTest.gif)
 
 
 Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.
 
 
-### Taking Control with Bundler, Fastlane, and Trainer
+# Continuous Integration + Fastlane
 
-Now that , we have seen how to run FitNesse acceptance tests from Xcode but it’s a good idea to run it with Fastlane.  We can also take control of version of Cocoapods and Fastlane by using Bundler. Let’s create a Gemfile at the root of the project with the following gem
+Now that , we have seen how to run Cucumberish, XCUIPOM, FitNesse acceptance tests from Xcode but it’s a good idea to run it with Fastlane.  We can also take control of version of Cocoapods and Fastlane by using Bundler. Let’s create a Gemfile at the root of the project with the following gem
 
 ```ruby
 source "https://rubygems.org"   
@@ -376,15 +373,29 @@ before_all do
    system "pod install"     
     system "bundle exec fastlane add_plugin trainer"   
 end     
-desc "Runs all the Unit tests and Fitnesse Aceptance Tests"   
-lane :xctest_fitnesse do    
-  scan(scheme: "FitnesseXCTestDemo",
-   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',  
-   output_directory: "test_reports/",    
-    output_types: "html",    
-    fail_build: false    )
-   trainer(output_directory: "test_reports/trainer_report/")   
-end
+desc "Runs all the XCUI POM, Cucumberish tests"
+  lane :xcfit_ui_test do
+   scan(
+   scheme: "XCFit2Demo",
+   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
+   output_directory: "test_reports/",
+   output_types: "html",
+   fail_build: false
+   )
+   trainer(output_directory: "test_reports/trainer_report/")
+  end
+
+  desc "Runs Fitnesse Tests"
+  lane :fitnesse do
+   scan(
+   scheme: "AcceptanceUnitTests",
+   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
+   output_directory: "test_reports/",
+   output_types: "html",
+   fail_build: false
+   )
+   trainer(output_directory: "test_reports/trainer_report/")
+  end
 end
 ```
 
@@ -397,45 +408,37 @@ Now we will create a “fastlane/PluginFile” to add “trainer” plugin.
 
 After running “bundle install” we should be able to run those test from command line like this :
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/xcfitnesse.gif)
+        $ bundle exec fastlane xcfit_ui_test
 
 
-You can watch YouTube video of XCFTest-Fitnesse [here](https://www.youtube.com/watch?v=xqvy1vN87e8)
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FastlanXCFit.gif)
 
+Once that done. We can have clear HTML reports genearted 
 
-# Video Demo
-
-### XCTest Fitnesse Demo
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/xqvy1vN87e8/0.jpg)](http://www.youtube.com/watch?v=xxqvy1vN87e8)
 
 ### Quick Demo with Example App
 
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
  ```
   $ git clone https://github.com/Shashikant86/XCFit
-  $ cd XCFit/XCFitnesse
-  $ open XCFitnesse.xcworkspace
+  $ cd XCFit/XC2Demo
+  $ open XCFit2Demo.xcworkspace
   ```
  Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane
 
 
   ```
   $ bundle install
-  $ bundle exec fastlane xctest_fitnesse
+  $ bundle exec fastlane xcfit_ui_test
 ```
 
 
-Watch this animated GIF for the steps below.
-
-  ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitDemo.gif)
-
+# Acknoledgement
 
 Big Thanks to
   - [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) : Provide native [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) parser for iOS Apps to enable BDD in Xcode using Given When Then. Yay!
   - [OCSlimProject](https://github.com/paulstringer/OCSlimProject) : Provide Xcode Templates to enable BDD with Decision Tables using Fitnesse
 
-XCFit automated configuration of these two guys.
 
 ## Author
 
