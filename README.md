@@ -398,7 +398,6 @@ desc "Runs all the XCUI POM, Cucumberish tests"
    output_types: "html",
    fail_build: false
    )
-   trainer(output_directory: "test_reports/trainer_report/")
   end
 
   desc "Runs Fitnesse Tests"
@@ -410,16 +409,8 @@ desc "Runs all the XCUI POM, Cucumberish tests"
    output_types: "html",
    fail_build: false
    )
-   trainer(output_directory: "test_reports/trainer_report/")
   end
 end
-```
-
-Now we will create a “fastlane/PluginFile” to add “trainer” plugin.
-
-```ruby
- gem 'fastlane-plugin-trainer'
-
 ```
 
 After running “bundle install” we should be able to run those test from command line like this :
