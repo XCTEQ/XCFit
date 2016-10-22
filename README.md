@@ -8,42 +8,23 @@
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit),  [CocoaPods](http://cocoadocs.org/docsets/XCFit) and Swift Package Manager.**
 
 * [XCFit : Full Stack BDD in Xcode](#xcfit--full-stack-bdd-in-xcode)
-         * [XCFit Features](#xcfit-features)
-         * [XCFIT allows follwing frameworks](#xcfit-allows-follwing-frameworks)
-         * [XCFit Available on](#xcfit-available-on)
+   * [XCFit Features](#xcfit-features)
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
-      * [Install XCFit Gem](#install-xcfit-gem)
-      * [Install XCFit Cocoapod and Swift Package (Covered later)](#install-xcfit-cocoapod-and-swift-package-covered-later)
    * [Setup Xcode Templates](#setup-xcode-templates)
-               * [Xcode 8](#xcode-8)
-               * [Xcode 7](#xcode-7)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
-      * [Setup 'iOS UI Cucumberish Test Bundle' Target](#setup-ios-ui-cucumberish-test-bundle-target)
-               * [What's in the Cucumberish Template ?](#whats-in-the-cucumberish-template-)
-               * [What's not in the Cucumberish Template](#whats-not-in-the-cucumberish-template)
-         * [Adding XCFit CocoaPod to Project](#adding-xcfit-cocoapod-to-project)
-            * [Create Separate Scheme if needed](#create-separate-scheme-if-needed)
    * [XCUI Page Object Pattern](#xcui-page-object-pattern)
-      * [Setup 'XCUI POM Test bundle' Target](#setup-xcui-pom-test-bundle-target)
-               * [What's in the XCUI POM Template ?](#whats-in-the-xcui-pom-template-)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
-      * [Setup 'Acceptance Test' Target template](#setup-acceptance-test-target-template)
-      * [Setting up Fitnesse Acceptance Target with XCTest](#setting-up-fitnesse-acceptance-target-with-xctest)
-            * [Add Acceptance and Acceptance Unit Test Target to Project](#add-acceptance-and-acceptance-unit-test-target-to-project)
-            * [Add Pod Dependencies](#add-pod-dependencies)
-            * [Build Acceptance Tests Target](#build-acceptance-tests-target)
-            * [Test AcceptanceUnitTests Target](#test-acceptanceunittests-target)
    * [Continuous Integration   Fastlane](#continuous-integration--fastlane)
    * [XCFit: Swift Package Manager](#xcfit-swift-package-manager)
-         * [Quick Demo with Example App](#quick-demo-with-example-app)
+   * [Quick Demo with Example App](#quick-demo-with-example-app)
    * [Acknowledgements](#acknowledgements)
-      * [Author](#author)
+   * [Author](#author)
    * [TODO](#todo)
-      * [LICENSE](#license)
-      * [Contributing](#contributing)
+   * [LICENSE](#license)
+   * [Contributing](#contributing)
 
-### XCFit Features
+# XCFit Features
 ***
   -  You can now write Given When Then (Gherkin) and Decision Table in Xcode. In Short, you can do BDD in Xcode for your iOS app.   
   -  You can now write/Execute all your Acceptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!
@@ -469,7 +450,7 @@ let package = Package(
 
 
 
-### Quick Demo with Example App
+# Quick Demo with Example App
 
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
  ```
@@ -493,7 +474,7 @@ Big Thanks to
   - [OCSlimProject](https://github.com/paulstringer/OCSlimProject) : Provide Xcode Templates to enable BDD with Decision Tables using Fitnesse
 
 
-## Author
+# Author
 
 Shashikant86, shashikant.jagtap@icloud.com
 
@@ -503,7 +484,7 @@ Shashikant86, shashikant.jagtap@icloud.com
  * Improve Swift Package with additional XCUI test helpers
  * Setting up XCFit on Apple's own CI Xcode Server
 
-## LICENSE
+# LICENSE
 
 Copyright © 2014 Shashikant Jagtap, http://shashikantjagtap.net
 
@@ -526,7 +507,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Contributing
+# Contributing
 
 1. Fork it ( https://github.com/Shashikant86/XCFit/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
