@@ -5,14 +5,13 @@
 osx_image: xcode7.3
 language: objective-c
 # cache: cocoapods
-# podfile: XCFit2Demo/Podfile
-# gemfile: XCFit2Demo/Gemfile
+podfile: XCFit2Demo/Podfile
+gemfile: XCFit2Demo/Gemfile
 
 script:
+ - cd XCFit2Demo
  - pwd
  - set -o pipefail && xcodebuild -list
- - swift build
- - swift test
- # - bundle install
- # - echo "==========Now Running XCUI Cucumberish Tests==================="
- # - bundle exec fastlane xcfit_ui_test
+ - bundle install
+ - echo "==========Now Running XCUI Cucumberish Tests==================="
+ - bundle exec fastlane xcfit_ui_test
