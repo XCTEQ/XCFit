@@ -29,11 +29,11 @@
 
 ### XCFit Available on
 
-**CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit)
+* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : BDD Style scenarios for iOS App
 
-**RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit)  
+* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) : Automated Xcode Templates 
 
-**Swift Package Manager** : 2.0.0
+* **Swift Package Manager** : 2.0.0 : XCUI Test Framework Helpers
 
 # Tech & Software Requirements
 
@@ -43,7 +43,7 @@ XCFit uses a number of open source projects to work properly. You need to have f
 
 You must have Mac Operating System with OSX/MacOS version > 10.9
 
-** Software **
+**Software**
 
 * **[Ruby](https://www.ruby-lang.org/en/)**
    - Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo
@@ -211,7 +211,7 @@ Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xco
 
 #### Create Separate Scheme if needed
 
-XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target and run separate scheme to keep it independent from Unit tests. 
+XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target and run separate scheme to keep it independent from Unit tests. Make sure you make the new scheme executable for Running. 
 
 ---
 
@@ -433,7 +433,7 @@ You can clone the existing repo which has a demo app we can run Unit, Fitnesse a
 ```
 
 
-# Acknoledgement
+# Acknowledgements
 
 Big Thanks to
   - [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) : Provide native [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) parser for iOS Apps to enable BDD in Xcode using Given When Then. Yay!
@@ -446,8 +446,8 @@ Shashikant86, shashikant.jagtap@icloud.com
 
 # TODO
 
- * Swift Implementation of Gherkin Parser
- * Cocoapods free installation. Carthage or Swift Package Manager once ready
+ * Add More Step Definitions for Cucumberish Projects 
+ * Improve Swift Package with additional XCUI test helpers 
  * Setting up XCFit on Apple's own CI Xcode Server
 
 ## LICENSE
