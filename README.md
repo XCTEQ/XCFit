@@ -10,7 +10,7 @@
 ### XCFit Features
 ***
   -  You can now write Given When Then (Gherkin) and Decision Table in Xcode. In Short, you can do BDD in Xcode for your iOS app.   
-  -  You can now write/Execute all your Acdeptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!
+  -  You can now write/Execute all your Acceptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!
   -  XCFit provides automated Xcode Target Templates for Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups. All happens in one command
   - XCFit will setup test frameworks within a minute and works for Xcode 8 and Xcode 7.  
   
@@ -42,17 +42,22 @@ XCFit uses a number of open source projects to work properly. You need to have f
 Hardware : You must have Mac Operating System with OSX/MacOS version > 10.9
 
 Software:
-* **Ruby**
-[Ruby](https://www.ruby-lang.org/en/) - Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo
-* **[Xcode8](https://developer.apple.com/xcode/)** - Ideally Xcode 8 but works on Xcode 7 as well.
-* **[RubyGems](https://rubygems.org/)** - RubyGem with [Cocoapods](https://cocoapods.org/) installed
-* [**Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)** - Might be pre-installed but worth double checking.
-* **[iOS-Sim]**(https://www.npmjs.com/package/ios-sim) Node Package for Fitnesse.
-* **Ruby Packages(optional)** : Xcpretty, Fastlane(Optional), Rake, Bundler.. Install with 'gem install <package_name>'
+* **Ruby**(https://www.ruby-lang.org/en/) 
+   - Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo
+* **[Xcode8](https://developer.apple.com/xcode/)** 
+   - Ideally Xcode 8 but works on Xcode 7 as well.
+* **[RubyGems](https://rubygems.org/)** 
+   - RubyGem with [Cocoapods](https://cocoapods.org/) installed
+* [**Curl on Mac]**(https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html) - Might be pre-installed but worth double checking.
+* **[iOS-Sim]**(https://www.npmjs.com/package/ios-sim) 
+  - Node Package required to launch iOS app for Fitnesse Acceptance tests.
+* **Ruby Packages(optional)** 
+  - Xcpretty, Fastlane(Optional), Rake, Bundler etc 
 
 
 # Installation
 
+## Install XCFit Gem
 In order to get started, We need to install XCFit from [RubyGems](https://rubygems.org/). This will set our Xcode for BDD
 
        $ gem install xcfit
@@ -71,6 +76,8 @@ Tasks:
   xcfit set_xcode_templates      
 ```
 
+
+## Install XCFit Cocoapod and Swift Package (Covered later)
 
 Later, we need to install [XCFit](http://cocoadocs.org/docsets/XCFit) from CocoaPods to enable Cucumberish and Fitnesse test. We can also get XCFit from Swift Package Manager if we need to have additional helpers for the XCUI test framework. 
 
@@ -106,23 +113,47 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 # Setting Cucumberish BDD Scenarios in Xcode
 
-### Setup 'iOS UI Cucumberish Test Bundle' Target
+## Setup 'iOS UI Cucumberish Test Bundle' Target
 
-- From Xcode, you can 
+- From Xcode, create a new app(Or use existing app) and selct File ---> New ----> Target 
 
-- Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging header for Cucumberish UI Testing. It create Page Object Pattern with all required files with screens, steps definitions and Cucumberish initialiser swift file. This has following files.  
-* YOUR_CUCUMBERISH_TARGET.swift : This file is at the base of the target. This initiate Cucumberish for project. We need to register all step definitions in this file.
-* Screens
+- Now Select 'XCFit' for iOS app and Click on 'Cucumberish UI Test Bundle' 
+
+- Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging header for Cucumberish UI Testing. It create Page Object Pattern with all required files with screens, steps definitions and Cucumberish initialiser swift file. 
+
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_CucumberishTemplates.gif)
+
+##### What's in the Cucumberish Template ? 
+
+* **YOUR_CUCUMBERISH_TARGET.swift**
+
+This file is at the base of the target. This initiate Cucumberish for project. We need to register all step definitions in this file.
+* **Screens**
+
 This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift'
-* Step_Definitions
+
+* **Step_Definitions**
+
 This groups has all the step definitions related to screen. Example file 'HomeScreenSteps.swift'. Once implemented we need to register it in the initialiser file mentioned above.
-* Common
+
+* **Common**
+
 This group has common code like extensions and common steps. The example file 'CommonStepDefinitions.swift' has some steps that can be used in the feature file. It also has 'Hooks.swift' to ad cucumber hooks.
-* Supporting Files
+
+* **Supporting Files**
+
 This groups all the Objective-C headers and Bridging headers needed to get Cucumberish working with Swift.
 
 ###### What's not in the Cucumberish Template
-We don't have 'Features' directory in the template because it needs to have directory on the disk and should be added to Xcode as 'Folder Reference' not Group. Now Add sample Feature File to 'Features' directory either by File->New->Gherkin Or Just add it using your favourite text editor e.g demo.feature with content
+
+* **Features Directory**
+
+We don't have 'Features' directory in the template because it needs to have directory on the disk and should be added to Xcode as 'Folder Reference' not Group. 
+
+ - Create a Direcory called "Feature" 
+ 
+ - Now Add sample Gherkin Feature File to 'Features' directory either by File->New->Gherkin Or Just add it using your favourite text editor e.g demo.feature with content
 
 ```
 Feature: Demo App Feature
@@ -133,8 +164,13 @@ Given the app is running
 
 ```
 
+- Now Drag and Drop 'Features' directory to Xcode Cucumberish target 
+
+- Select only '**Create folder references**' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed' 
+
 Here is how to do it.
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddFeaturesDirectory.gif)
+
 Thats's it for the setup. Now we need to add 'XCFit' Pod in our project to get our demo test working.
 
 ### Adding XCFit CocoaPod to Project
@@ -156,95 +192,63 @@ $ pod install
  You can do that easily.
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddPod.gif)
 
-Now close the Xcode Project and Xcode Workspace. We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
+Now close the existing Xcode session and Xcode Workspace next time. 
+We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/CucumberTest.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. Now add your own :)
 
+** Create Separate Scheme if needed**
+
+XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target and run separate scheme to keep it independent from Unit tests. 
+
+# XCUI Page Object Pattern
+
+Now, we have seen that it's failrly easy to setup BDD Style tests with Cucumberish but some people don't want that overhead of adding extra layer of Gherkin. XCFit gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework. 
+
+## Setup 'XCUI POM Test bundle' Target
+
+- From Xcode, create a new app(Or use existing app) and selct File ---> New ----> Target 
+
+- Now Select 'XCFit' for iOS app and Click on 'XCUI POM Test Bundle' 
+
+- Once Clicked on the target e.g 'XCUI POM Test Bundle' Xcode will create UI testing target with properly structured Xcode Groups and required files. You can then make physical directories on Disk Or change the folder/group structure as per your need. 
+
+- You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !
+
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCUIPOM.gif)
+
+##### What's in the XCUI POM Template ? 
+
+* **YOUR_CUCUMBERISH_TARGETPageObjectTests.swift**
+
+This file is at the base of the target. It's exactly same file that Apple's XCUI Test generate at first. You may use it for recording the tests or simply delete it if not needed. 
+
+* **Screens**
+
+This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift' This assumes that your apps is made up of multiple screens. You can write individual screen class which extend BaseScreen. All the functionality related to screen can be included in this class.
+
+* **Sections**
+
+This group has 'HomeElements.swift' class which stores all the locators of HomeScreen in enums. Sections are defined to store locators of the screen in the form of enums. Here are some samples we can store Images, Buttons and Static Texts of the HomeScreens. We can access those enums from anywhere from the Test methods or page objects.
+
+* **Protocols**
+
+Swift is protocol oriented language so feel to start with Protocol per screen. This group has 'HomeProtocol.swift' file where there is way to implement protocol oriented testing. Here is example of sample protocol for the homescreen. We can implement this protocol in the XCTest method as needed or we can write some extensions to support Testing.
+
+* **Tests**
+
+This group has all the test for our app. Currently demo template has two tests 'HomeScreenTest.swift' and 'ProtocolOrientedTest.swift'. This examples shows how XCUI test can be implemented in the Object Orinted way and Protocol oriented way. 
+
+* **TestBase**
+
+Testbase is group where we can abstract all setup, teardown and common stuff in the base class. Every Screen then use this class as base. You can add more stuff as needed e.g Fixtures, Launch Arguments 
+
 
 # Fitnesse: Acceptance Tests
-
-
-
-Once Clicked on the target e.g 'Fitnesse Acceptance Test Bundle' Xcode will create UI tAcceptance test with all the required files with Bridging headers for the Fitnesse Acceptance Test. We will see that in details soon.
-
-- This script also set new file type in Xcode to create new Gherking feature file
-
-## Setting up Cucumberish UI Target
-
-Few Steps to setup BDD Styles in Xcode8
-
-##### Add New Target for Cucumberish
-
-- Add new target iOS/macOS project and Select "File -> New -> Target -> XCFit -> Cucumberish UI Test Bundle". Give it a name you like e.g CucumberishUITests
-
-Now that Xcode has created brand new target with all required Swift and Objective-C files to run Cucumberish. All Xcode setting has been done by the Xcode Template.
-####### Link Target Application
-The most important thing is link your target to application to test. Cucumberish target 'General' setting select 'Testing -> Target To Test' and configure scheme to add Cucumeerish UI target to Test
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/LinkTargetTestApp.png)
-
-#### Cucumberish Page Object Pattern Directory Structure
-
-Now that, you can observe that new target has nice directory structure following [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html)
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/DirectoryStructure.png)
-
-#####  Download Cucumberish in the target
-
-This can be done in two ways. By directly downloading contents of "Cucumberish" directory into the target directory or using Cocoapods.
-######  Using Direct Download with XCFit
-- Now that you have to CD into the Cucumberish target directory .eg CucumberishUITests
-
-```sh
-$ cd $_YOUR_CUCUMBERISH_TARGET_DIR
-$ xcfit get_cucumberish 1.0.0
-```
-This will download Cucumberish directory from version 1.0.0 and also create 'Features' directory. You can then reference those directory in Xcode. For "Cucumberish" directory select 'Copy if needed and Create Group' and for the "Features" directory select don't create group or Copy if needed. Just " create folder reference"
-
-######  Using Cocoapods
-
-- In your Podfile, add following Pod entry and update/install pod
-
-```ruby
-    target '$_YOUR_CUCUMBERISH_TARGET' do
-      pod 'Cucumberish', :git => 'https://github.com/Ahmed-Ali/Cucumberish'
-    end
-```
-
-
-
-```sh
-$ pod update
-```
-
-
-#####  Create Cucumber Features - Gherkin
-Now Add sample Feature File to 'Features' directory either by File->New->Gherkin Or Just add it using your favourite text editor e.g demo.feature with content
-
-```
-Feature: Demo App Feature
-
-Scenario: Demo Scenario
-
-Given the app is running
-
-```
-
-##### Add Target To Test
-
-- Finally, Run Your Test from Cucumberish Target by Pressing 'CMD+U'
-
-You are done !!
-
-Look how easy it is !
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/POM_Cucumberish.gif)
-
-
-You can add more feature/Scenarios and implement steps definitions inside your Swift File. [Ahmed-Ali](https://github.com/Ahmed-Ali) creator of Cucumberish already implemented useful pre-defined steps have a look at this [Swift file](https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift). You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code.
 
 
 ## Setting up Fitnesse Acceptance Target with XCTest
