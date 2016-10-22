@@ -16,7 +16,6 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   s.social_media_url = 'https://twitter.com/Shashikant86'
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Sources/XCFit/*'
   s.source_files  = 'XCFit/Classes/Cucumberish/*.{h,m}', 'XCFit/Classes/Cucumberish/Core/Managers/*.{h,m}', 'XCFit/Classes/Cucumberish/Core/Models/*.{h,m}', 'XCFit/Classes/Cucumberish/Utils/*.{h,m}', 'XCFit/Classes/Cucumberish/Dependencies/Gherkin', 'XCFit/Classes/Cucumberish/Core/CCIBlockDefinitions.h'
   s.public_header_files =
     'XCFit/Classes/Cucumberish/Cucumberish.h',
