@@ -91,7 +91,7 @@ $ xcfit set_xcode7_templates
 
 You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.gif)
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png)
 
 # Cucumberish BDD Scenario
 
