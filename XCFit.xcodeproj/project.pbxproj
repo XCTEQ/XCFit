@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B89C59B1DB973FC00341A5E /* XCFitScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C59A1DB973FC00341A5E /* XCFitScreen.swift */; };
-		9B89C59D1DB9747300341A5E /* XCFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C59C1DB9747300341A5E /* XCFit.swift */; };
-		9B89C59F1DB976DD00341A5E /* XCFitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C59E1DB976DD00341A5E /* XCFitSection.swift */; };
-		9B89C5A11DB9788700341A5E /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C5A01DB9788700341A5E /* Waiter.swift */; };
-		9B89C5A31DB9798B00341A5E /* ElementContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C5A21DB9798B00341A5E /* ElementContainer.swift */; };
-		9B89C5A51DB97A3A00341A5E /* ElementChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C5A41DB97A3A00341A5E /* ElementChecker.swift */; };
-		9B89C5A71DB97AD100341A5E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89C5A61DB97AD100341A5E /* Loadable.swift */; };
+		9BD4FC491DBB303800C0ED6E /* ElementChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */; };
+		9BD4FC4B1DBB306600C0ED6E /* ElementContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */; };
+		9BD4FC4D1DBB307100C0ED6E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */; };
+		9BD4FC4F1DBB307B00C0ED6E /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */; };
+		9BD4FC511DBB308300C0ED6E /* XCFitScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */; };
+		9BD4FC531DBB309100C0ED6E /* XCFitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */; };
+		9BD4FC551DBB309900C0ED6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC541DBB309900C0ED6E /* Extensions.swift */; };
+		9BD4FC571DBB30DB00C0ED6E /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */; };
+		9BD4FC591DBB35AC00C0ED6E /* BaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */; };
+		9BD4FC5B1DBB3BDB00C0ED6E /* XCFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */; };
 		_LinkFileRef_XCFit_via_XCFitTests /* XCFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_XCFit" /* XCFit.framework */; };
+		__src_cc_ref_Sources/XCFit.swift /* XCFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/XCFit.swift /* XCFit.swift */; };
 		__src_cc_ref_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9B89C5991DB973A300341A5E /* PBXContainerItemProxy */ = {
+		9BD4FC471DBB2FE000C0ED6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
@@ -29,15 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B89C59A1DB973FC00341A5E /* XCFitScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitScreen.swift; sourceTree = "<group>"; };
-		9B89C59C1DB9747300341A5E /* XCFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFit.swift; sourceTree = "<group>"; };
-		9B89C59E1DB976DD00341A5E /* XCFitSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitSection.swift; sourceTree = "<group>"; };
-		9B89C5A01DB9788700341A5E /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
-		9B89C5A21DB9798B00341A5E /* ElementContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementContainer.swift; sourceTree = "<group>"; };
-		9B89C5A41DB97A3A00341A5E /* ElementChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementChecker.swift; sourceTree = "<group>"; };
-		9B89C5A61DB97AD100341A5E /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementChecker.swift; sourceTree = "<group>"; };
+		9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementContainer.swift; sourceTree = "<group>"; };
+		9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
+		9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitScreen.swift; sourceTree = "<group>"; };
+		9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitSection.swift; sourceTree = "<group>"; };
+		9BD4FC541DBB309900C0ED6E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHelpers.swift; sourceTree = "<group>"; };
+		9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitApp.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Docs /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/XCFit.swift /* XCFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFit.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFitTests.swift; sourceTree = "<group>"; };
 		__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig /* XCFit.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XCFit.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_bin /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
@@ -115,13 +123,17 @@
 		"_______Group_XCFit" /* XCFit */ = {
 			isa = PBXGroup;
 			children = (
-				9B89C59A1DB973FC00341A5E /* XCFitScreen.swift */,
-				9B89C59C1DB9747300341A5E /* XCFit.swift */,
-				9B89C59E1DB976DD00341A5E /* XCFitSection.swift */,
-				9B89C5A01DB9788700341A5E /* Waiter.swift */,
-				9B89C5A21DB9798B00341A5E /* ElementContainer.swift */,
-				9B89C5A41DB97A3A00341A5E /* ElementChecker.swift */,
-				9B89C5A61DB97AD100341A5E /* Loadable.swift */,
+				9BD4FC541DBB309900C0ED6E /* Extensions.swift */,
+				9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */,
+				9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */,
+				9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */,
+				9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */,
+				9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */,
+				9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */,
+				__PBXFileRef_Sources/XCFit.swift /* XCFit.swift */,
+				9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */,
+				9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */,
+				9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */,
 			);
 			name = XCFit;
 			path = Sources;
@@ -211,13 +223,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				9B89C59D1DB9747300341A5E /* XCFit.swift in Sources */,
-				9B89C5A71DB97AD100341A5E /* Loadable.swift in Sources */,
-				9B89C59B1DB973FC00341A5E /* XCFitScreen.swift in Sources */,
-				9B89C59F1DB976DD00341A5E /* XCFitSection.swift in Sources */,
-				9B89C5A31DB9798B00341A5E /* ElementContainer.swift in Sources */,
-				9B89C5A51DB97A3A00341A5E /* ElementChecker.swift in Sources */,
-				9B89C5A11DB9788700341A5E /* Waiter.swift in Sources */,
+				9BD4FC531DBB309100C0ED6E /* XCFitSection.swift in Sources */,
+				9BD4FC491DBB303800C0ED6E /* ElementChecker.swift in Sources */,
+				9BD4FC4D1DBB307100C0ED6E /* Loadable.swift in Sources */,
+				9BD4FC551DBB309900C0ED6E /* Extensions.swift in Sources */,
+				9BD4FC511DBB308300C0ED6E /* XCFitScreen.swift in Sources */,
+				9BD4FC4F1DBB307B00C0ED6E /* Waiter.swift in Sources */,
+				9BD4FC591DBB35AC00C0ED6E /* BaseHelpers.swift in Sources */,
+				__src_cc_ref_Sources/XCFit.swift /* XCFit.swift in Sources */,
+				9BD4FC5B1DBB3BDB00C0ED6E /* XCFitApp.swift in Sources */,
+				9BD4FC571DBB30DB00C0ED6E /* Accessibility.swift in Sources */,
+				9BD4FC4B1DBB306600C0ED6E /* ElementContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +251,7 @@
 		__Dependency_XCFit /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_XCFit" /* XCFit */;
-			targetProxy = 9B89C5991DB973A300341A5E /* PBXContainerItemProxy */;
+			targetProxy = 9BD4FC471DBB2FE000C0ED6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
