@@ -1,0 +1,36 @@
+fastlane_version "1.104.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    system "rm -rf ../test_reports/"
+    system "bundle install"
+    system "pod install"
+    system "bundle exec fastlane add_plugin trainer"
+  end
+
+  desc "Runs all the XCUI POM, Cucumberish tests"
+  lane :xcfit_ui_test do
+   scan(
+   scheme: "XCFit2Demo",
+   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
+   output_directory: "test_reports/",
+   output_types: "html",
+   fail_build: false
+   )
+   trainer(output_directory: "test_reports/trainer_report/")
+  end
+
+  desc "Runs Fitnesse Tests"
+  lane :fitnesse do
+   scan(
+   scheme: "AcceptanceUnitTests",
+   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
+   output_directory: "test_reports/",
+   output_types: "html",
+   fail_build: false
+   )
+   trainer(output_directory: "test_reports/trainer_report/")
+  end
+end

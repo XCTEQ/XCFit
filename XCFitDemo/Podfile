@@ -1,9 +1,0 @@
-use_frameworks!
-
-target 'XCFitDemoTests' do
-  pod 'XCFit'
-end  
-
-target 'XCFitAcceptanceTests' do
-  pod 'XCFit'
-end  

@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OCSlimProject" "${PODS_ROOT}/Headers/Public/OCSlimProjectTestBundleSupport" "${PODS_ROOT}/Headers/Public/XCFit" "${PODS_ROOT}/Headers/Public/cslim"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/cslim"
+OCSP_BUNDLE_RESOURCES_DIR = ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/OCSlimProject.bundle
+OCSP_SUPPORT_FILE_DIR = ${PODS_ROOT}/OCSlimProject/Pod/Support/SharedSupport
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OCSlimProject" -isystem "${PODS_ROOT}/Headers/Public/OCSlimProjectTestBundleSupport" -isystem "${PODS_ROOT}/Headers/Public/XCFit" -isystem "${PODS_ROOT}/Headers/Public/cslim"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"cslim"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

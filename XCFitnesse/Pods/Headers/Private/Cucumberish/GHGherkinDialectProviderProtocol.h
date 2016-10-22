@@ -1,1 +1,0 @@
-../../../Cucumberish/Cucumberish/Dependencies/Gherkin/GHGherkinDialectProviderProtocol.h

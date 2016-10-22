@@ -1,3 +1,0 @@
-|Should I Eat|
-|hungry |eat?|
-|no     |no  |

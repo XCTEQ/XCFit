@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>OCSlimProjectExamplePage</rootPath>
+  <pageHistoryReference>
+    <name>OCSlimProjectExamplePage.TestPage</name>
+    <date>2016-10-22T21:36:36+01:00</date>
+    <pageHistoryLink>OCSlimProjectExamplePage.TestPage?pageHistory&amp;resultDate=20161022213636</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>290</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>[OCSP_RUN] == RunSlimTestTargetWithSlimPort~iOS:8085 ==
+[OCSP_RUN] Info: Test System SDK Deployment Target: 10.0
+[OCSP_RUN] Info: Test System Executable Folder Path: /Users/Shashi/Library/Developer/Xcode/DerivedData/XCFit2Demo-cqdjtxuopbvmutfdxiktygfnqgza/Build/Products/Debug-iphonesimulator/AcceptanceTests.app
+[OCSP_RUN] Info: Simulator Device Identifier: com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus, 10.0
+[OCSP_RUN] == Start Slim Test Sytem (ios-sim version 5.0.8, Node Version: v6.6.0) ==
+[OCSP_RUN] Waiting for Slim Test System To Launch
+Shashikant.AcceptanceTests: 30106
+[OCSP_RUN] Slim System Detected (30106)
+Oct 22 21:36:36 Shashikants-MacBook-Pro logd[24228]: metadata shared cached uuid is null (using logd's shared cache info) AcceptanceTests (30106)
+Oct 22 21:36:36 Shashikants-MacBook-Pro logd[24228]: Failed to harvest strings for pathless uuid '00000000-0000-0000-0000-000000000000'
+Oct 22 21:36:37 Shashikants-MacBook-Pro logd[24228]: metadata shared cached uuid is null (using logd's shared cache info) AcceptanceTests (30115)
+[OCSP_RUN] Slim Test System Exited Normally
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>23911</totalRunTimeInMillis>
+</suiteResults>
+

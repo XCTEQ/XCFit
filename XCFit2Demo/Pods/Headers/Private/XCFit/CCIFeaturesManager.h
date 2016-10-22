@@ -1,0 +1,1 @@
+../../../XCFit/XCFit/Classes/Cucumberish/Core/Managers/CCIFeaturesManager.h

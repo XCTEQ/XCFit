@@ -1,0 +1,1 @@
+../../../XCFit/XCFit/Classes/Cucumberish/Dependencies/Gherkin/NSString+Trim.h
