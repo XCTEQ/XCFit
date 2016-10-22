@@ -13,4 +13,4 @@ script:
  - set -o pipefail && xcodebuild -list
  - bundle install
  - echo "==========Now Running XCUI Cucumberish Tests==================="
- - bundle exc fastlane xcfit_ui_test
+ - bundle exec fastlane xcfit_ui_test
