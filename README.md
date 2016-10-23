@@ -205,7 +205,7 @@ We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumb
 
 In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) source content. There are few ways we can do that 
 
-- **Adding XCFit CocoaPod to Project**
+- ***Adding XCFit CocoaPod to Project***
 
 Create a 'Podfile' if you don't have already. In your Podfile, add following Pod entry and update/install pod
 
@@ -226,13 +226,13 @@ $ pod install
 
 Now close the existing Xcode session and Xcode Workspace next time.
 
-**Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
+> **Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
 
-- Manually Copy Content of Cucumberish and Drag to Xcode (**Prefered**)
+- ***Manually Copy Content of Cucumberish and Drag to Xcode (**Prefered**)***
 
 We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed". 
 
-- Use Carthage without build and drag the folder to target 
+- ***Use Carthage without build and drag the folder to target*** 
 
 Create a `Cartfile ` with following Content 
 
