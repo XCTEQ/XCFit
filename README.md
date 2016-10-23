@@ -150,7 +150,7 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_CucumberishTemplates.gif)
 
-##### What's in the Cucumberish Template ?
+### What's in the Cucumberish Template ?
 
 * **YOUR_CUCUMBERISH_TARGET.swift**
 
@@ -171,7 +171,7 @@ This group has common code like extensions and common steps. The example file 'C
 
 This groups all the Objective-C headers and Bridging headers needed to get Cucumberish working with Swift.
 
-##### What's not in the Cucumberish Template
+### What's not in the Cucumberish Template
 
 * **Features Directory**
 
@@ -228,9 +228,9 @@ Now close the existing Xcode session and Xcode Workspace next time.
 
 > **Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
 
-- ***Manually Copy Content of Cucumberish and Drag to Xcode Prefered***
+- ***Manually Copy Content of Cucumberish and Drag to Xcode - Prefered Way***
 
-We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed". 
+We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed**". 
 
 - ***Use Carthage without build and drag the folder to target*** 
 
@@ -277,7 +277,7 @@ Now, we have seen that it's failrly easy to setup BDD Style tests with Cucumberi
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCUIPOM.gif)
 
-##### What's in the XCUI POM Template ?
+### What's in the XCUI POM Template ?
 
 * **YOUR_CUCUMBERISH_TARGETPageObjectTests.swift**
 
