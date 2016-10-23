@@ -230,7 +230,7 @@ Now close the existing Xcode session and Xcode Workspace next time.
 
 - ***Manually Copy Content of Cucumberish and Drag to Xcode - Prefered Way***
 
-We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed**". 
+We can manually copy content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) directory and drag to target as with option "**Create groups" and "Copy items if needed**". 
 
 - ***Use Carthage without build and drag the folder to target*** 
 
