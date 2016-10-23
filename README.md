@@ -457,7 +457,7 @@ Once that done. We can have clear HTML reports genearted
 
 # XCFit: Swift Package Manager
 
-XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use.
+XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use. There is [sample swift package](https://github.com/Shashikant86/XCFitDemoSwiftPackage) on Github to test XCFit
 Full Documetation and API implementation still in progress. You can grab it like this  
 
 ```
