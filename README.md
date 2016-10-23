@@ -466,7 +466,7 @@ import PackageDescription
 let package = Package(
     name: "XCFit",
     dependencies: [
-  .Package(url: "https://github.com/Shashikant86/XFit.git", majorVersion: 2),
+  .Package(url: "https://github.com/Shashikant86/XCFit.git", majorVersion: 2),
 ]
 )
 ```
