@@ -228,7 +228,7 @@ Now close the existing Xcode session and Xcode Workspace next time.
 
 > **Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
 
-- ***Manually Copy Content of Cucumberish and Drag to Xcode (**Prefered**)***
+- ***Manually Copy Content of Cucumberish and Drag to Xcode Prefered***
 
 We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed". 
 
