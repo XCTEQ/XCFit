@@ -201,7 +201,7 @@ Here is how to do it.
 
 We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) to be included in our project. 
 
-### Getting Cucumberish into out Target 
+### Getting Cucumberish into our Target 
 
 In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) source content. There are few ways we can do that 
 
