@@ -197,9 +197,15 @@ Given the app is running
 Here is how to do it.
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddFeaturesDirectory.gif)
 
-Thats's it for the setup. Now we need to add 'XCFit' Pod in our project to get our demo test working.
+* **Cucumberish Header Files**
 
-### Adding XCFit CocoaPod to Project
+We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) to be included in our project. 
+
+### Getting Cucumberish into out Target 
+
+In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) source content. There are few ways we can do that 
+
+1. **Adding XCFit CocoaPod to Project**
 - Create a 'Podfile' if you don't have already.
 - In your Podfile, add following Pod entry and update/install pod
 
@@ -219,6 +225,28 @@ $ pod install
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddPod.gif)
 
 Now close the existing Xcode session and Xcode Workspace next time.
+
+**Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
+
+2. Manually Copy Content of Cucumberish and Drag to Xcode (**Prefered**)
+
+We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed". 
+
+3. Use Carthage without build and drag the folder to target 
+
+Create a `Cartfile ` with following Content 
+
+```
+github "Ahmed-Ali/Cucumberish"
+```
+Now run Carthage wihtout build option. 
+    
+          $ carthage update --platform iOS --no-build 
+          
+Now in the `Carthage/Checkout` directory has Cucumberish. Just add that to target or workspace. 
+
+Please choose one of the suitable option for you. 
+
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
