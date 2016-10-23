@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">XCFit</h1>
-      <h2 class="project-tagline">&#39;Swift&#39; your iOS macOS Apps towards BDD. Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.</h2>
+      <h2 class="project-tagline">Full Stack BDD in Xcode for iOS with Cucumberish, Page Object and Fitnesse</h2>
       <a href="https://github.com/Shashikant86/XCFit" class="btn">View on GitHub</a>
       <a href="https://github.com/Shashikant86/XCFit/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/Shashikant86/XCFit/tarball/master" class="btn">Download .tar.gz</a>
@@ -25,79 +25,581 @@
 <a href="http://cocoapods.org/pods/XCFit"><img src="https://img.shields.io/cocoapods/p/XCFit.svg?style=flat" alt="Platform"></a></p>
 
 <h1>
-<a id="xcfit" class="anchor" href="#xcfit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit</h1>
+<a id="xcfit--full-stack-bdd-in-xcode" class="anchor" href="#xcfit--full-stack-bdd-in-xcode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit : Full Stack BDD in Xcode</h1>
 
-<h2>
-<a id="xcfit---swift-your-iosmacos-apps-towards-bdd" class="anchor" href="#xcfit---swift-your-iosmacos-apps-towards-bdd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit - 'Swift' Your iOS/macOS apps towards BDD</h2>
+<p><strong>XCFit a.k.a (<a href="https://developer.apple.com/videos/play/wwdc2015/406/0">XCUI</a>, <a href="https://github.com/Ahmed-Ali/Cucumberish">Cucumberish</a> and <a href="https://github.com/paulstringer/OCSlimProject">Fitnesse</a> Integrations Tests) is a full stack Xcode BDD framework for <a href="https://swift.org">Swift</a> iOS and macOS apps. XCFit allows us to write API level, UI and Acceptance Tests with Swift in human readable language using tools like <a href="https://cucumber.io/">Cucumber</a> and <a href="http://fitnesse.org/">Fitnesse</a> in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on <a href="https://rubygems.org/gems/xcfit">RubyGem</a>,  <a href="http://cocoadocs.org/docsets/XCFit">CocoaPods</a> and Swift Package Manager.</strong></p>
 
-<h4>
-<a id="xcfit-aka-xcui-cucumberish-and-fitnesse-integrations-tests-is-a-full-stack-xcode-bdd-framework-for-swift-ios-and-macos-apps-xcfit-allows-us-to-write-api-ui-and-acceptance-tests-with-swift-in-human-readable-language-using-tools-like-cucumber-and-fitnesse-in-xcode-we-can-still-use-apples-brand-new-ui-testing-framework-xcui-under-the-hood-of-cucumberish-xcfit-is-fully-automated-solution-for-cucumberish-and-fitnesse-you-can-use-80fitnesse20cucumberish-formula-to-automate-acceptance-and-ui-testing-for-better-coverage-and-faster-feedback-xcfit-is-available-on-rubygem-and-cocoapods" class="anchor" href="#xcfit-aka-xcui-cucumberish-and-fitnesse-integrations-tests-is-a-full-stack-xcode-bdd-framework-for-swift-ios-and-macos-apps-xcfit-allows-us-to-write-api-ui-and-acceptance-tests-with-swift-in-human-readable-language-using-tools-like-cucumber-and-fitnesse-in-xcode-we-can-still-use-apples-brand-new-ui-testing-framework-xcui-under-the-hood-of-cucumberish-xcfit-is-fully-automated-solution-for-cucumberish-and-fitnesse-you-can-use-80fitnesse20cucumberish-formula-to-automate-acceptance-and-ui-testing-for-better-coverage-and-faster-feedback-xcfit-is-available-on-rubygem-and-cocoapods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit a.k.a (<a href="https://developer.apple.com/videos/play/wwdc2015/406/0">XCUI</a>, <a href="https://github.com/Ahmed-Ali/Cucumberish">Cucumberish</a> and <a href="https://github.com/paulstringer/OCSlimProject">Fitnesse</a> Integrations Tests) is a full stack Xcode BDD framework for <a href="https://swift.org">Swift</a> iOS and macOS apps. XCFit allows us to write API, UI and Acceptance Tests with Swift in human readable language using tools like <a href="https://cucumber.io/">Cucumber</a> and <a href="http://fitnesse.org/">Fitnesse</a> in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on <a href="https://rubygems.org/gems/xcfit">RubyGem</a> and <a href="http://cocoadocs.org/docsets/XCFit">CocoaPods</a>.</h4>
+<ul>
+<li>
+<a href="#xcfit--full-stack-bdd-in-xcode">XCFit : Full Stack BDD in Xcode</a>
 
-<h3>
-<a id="xcfit-features" class="anchor" href="#xcfit-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Features</h3>
+<ul>
+<li><a href="#xcfit-features">XCFit Features</a></li>
+<li><a href="#tech--software-requirements">Tech &amp; Software Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#setup-xcode-templates">Setup Xcode Templates</a></li>
+<li><a href="#setting-cucumberish-bdd-scenarios-in-xcode">Setting Cucumberish BDD Scenarios in Xcode</a></li>
+<li><a href="#xcui-page-object-pattern">XCUI Page Object Pattern</a></li>
+<li><a href="#fitnesse-for-ios-acceptancecontract-tests">Fitnesse for iOS: Acceptance/Contract Tests</a></li>
+<li><a href="#continuous-integration--fastlane">Continuous Integration   Fastlane</a></li>
+<li><a href="#xcfit-swift-package-manager">XCFit: Swift Package Manager</a></li>
+<li><a href="#quick-demo-with-example-app">Quick Demo with Example App</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#license">LICENSE</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+</li>
+</ul>
 
-<p>There are few reason you should go for XCFit</p>
+<h1>
+<a id="xcfit-features" class="anchor" href="#xcfit-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Features</h1>
 
 <hr>
 
 <ul>
-<li> You can now write Given When Then and Decision Table in Xcode !! YAY.. Thanks to Cucumberish and OCSlimProject ! And XCFit automated them !!</li>
-<li><p>You can now write/Execute all your Acdeptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!</p></li>
-<li><p>XCFit provides Xcode Templates to create new Cucumberish and Fitnesse targets which reduce hectic Xcode configuration steps. It's all automated in XCFit</p></li>
-<li> One command to set all fully automated Xcode template for Cucumberish and Fitnesse targets</li>
-<li>New Template to create Gherkin Feature file in Xcode</li>
-<li>Automated <a href="https://github.com/Ahmed-Ali/Cucumberish">Cucumberish</a> Setup in one command</li>
-<li>Enhanced <a href="https://github.com/paulstringer/OCSlimProject">OCSlimProject</a> templates and automated Fitnesse download process.</li>
-<li>XCFit target templates are independent of native Xcode Test targets.</li>
-<li>We can stiil use Apple's brand new XCUI Testing framework. Its native Xcode implementation, No Appium, Calabash etc etc</li>
+<li> You can now write Given When Then (Gherkin) and Decision Table in Xcode. In Short, you can do BDD in Xcode for your iOS app.<br>
+</li>
+<li> You can now write/Execute all your Acceptance Tests and UI Tests using Apple's brand new programming language "Swift" in Xcode. Goodbye Appium, Calabash, Frank, KIF and Goodbye Ruby,Java, Python. It's pure Swift !!</li>
+<li> XCFit provides automated Xcode Target Templates for Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups. All happens in one command</li>
 <li>
-<p>Setup Cucumberish and Fitnesse in Xcode within few minutes !!</p>
+<p>XCFit will setup test frameworks within a minute and works for Xcode 8 and Xcode 7.  </p>
 
-<hr>
+<h3>
+<a id="xcfit-allows-follwing-frameworks" class="anchor" href="#xcfit-allows-follwing-frameworks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFIT allows follwing frameworks</h3>
+</li>
+<li>
+<p><strong>Cucumberish BDD Framework</strong></p>
+
+<p>XCFit setup <a href="https://cucumber.io">Cucumber</a> style BDD framework with "<a href="https://github.com/Ahmed-Ali/Cucumberish">Cucumberish</a> UI Test Bundle' Templates</p>
+</li>
+<li>
+<p><strong>Page Object Pattern for XCUI Test framework from Apple</strong></p>
+
+<p>XCFit setup <a href="http://martinfowler.com/bliki/PageObject.html">Page Object Pattern</a> for Apple's <a href="https://developer.apple.com/videos/play/wwdc2015/406/">XCUI Test</a> using 'XCUI POM Test Bundle' Templates</p>
+</li>
+<li>
+<p><strong>Fitnesse Acceptance Tests for iOS using OCSlim Project</strong></p>
+
+<p>XCFit allows us to setup <a href="http://fitnesse.org/">Fitnesse</a> style decision table test framework with <a href="https://github.com/paulstringer/OCSlimProject">OCSlimProject</a> using 'Acceptance Tests  Bundle' templates.</p>
 </li>
 </ul>
 
 <h3>
-<a id="quick-demo-with-example-app" class="anchor" href="#quick-demo-with-example-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Demo with Example App</h3>
+<a id="xcfit-available-on" class="anchor" href="#xcfit-available-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Available on</h3>
 
-<p>You can clone the existing repo which has a demo app. To get started..Watch this animated GIF for the steps below</p>
+<ul>
+<li><p><strong>CocoaPods</strong> -- <a href="http://cocoadocs.org/docsets/XCFit">XCFit-CocoaPods</a> : BDD Style scenarios for iOS App</p></li>
+<li><p><strong>RubyGems</strong>  -- <a href="https://rubygems.org/gems/xcfit">xcfit-RubyGem</a> : Automated Xcode Templates</p></li>
+<li><p><strong>Swift Package Manager</strong> : 2.0.0 : XCUI Test Framework Helpers</p></li>
+</ul>
 
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/Quick_Demo.gif" alt="image"></p>
+<h1>
+<a id="tech--software-requirements" class="anchor" href="#tech--software-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tech &amp; Software Requirements</h1>
+
+<p>XCFit uses a number of open source projects to work properly. You need to have following</p>
+
+<p><strong>Hardware</strong></p>
+
+<p>You must have Mac Operating System with OSX/MacOS version &gt; 10.9</p>
+
+<p><strong>Software</strong></p>
+
+<ul>
+<li>
+<strong><a href="https://www.ruby-lang.org/en/">Ruby</a></strong>
+
+<ul>
+<li>Use <a href="https://rvm.io/">RVM</a> for GEM management. Ideally Ruby &gt; 2.X. You can use system Ruby with sudo</li>
+</ul>
+</li>
+<li>
+<strong><a href="https://developer.apple.com/xcode/">Xcode8</a></strong>
+
+<ul>
+<li>Ideally Xcode 8 but works on Xcode 7 as well.</li>
+</ul>
+</li>
+<li>
+<strong><a href="https://rubygems.org/">RubyGems</a></strong>
+
+<ul>
+<li>RubyGem with <a href="https://cocoapods.org/">Cocoapods</a> installed</li>
+</ul>
+</li>
+<li>
+<strong><a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html">Curl on Mac</a></strong>
+
+<ul>
+<li>Might be pre-installed but worth double checking.</li>
+</ul>
+</li>
+<li>
+<strong><a href="https://www.npmjs.com/package/ios-sim">iOS-Sim</a></strong>
+
+<ul>
+<li>Node Package required to launch iOS app for Fitnesse Acceptance tests.</li>
+</ul>
+</li>
+<li>
+<a href="https://www.java.com/en/"><strong>Java</strong></a>
+
+<ul>
+<li>Java should be installed on Mac, it is required for Fitnesse Acceptance Test</li>
+</ul>
+</li>
+<li>
+<strong>Ruby Packages(optional)</strong>
+
+<ul>
+<li>Xcpretty, Fastlane(Optional), Rake, Bundler etc</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
+
+<h2>
+<a id="install-xcfit-gem" class="anchor" href="#install-xcfit-gem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install XCFit Gem</h2>
+
+<p>In order to get started, We need to install XCFit from <a href="https://rubygems.org/">RubyGems</a>. This will set our Xcode for BDD</p>
+
+<pre><code>   $ gem install xcfit
+</code></pre>
+
+<p>You need to use with 'sudo' if you are using system (pre-installed) Ruby(2.0). XCFit gem will be used to set all the Xcode Templated for Xcode 8 as well Xcode 7</p>
+
+<p>Now that you can execute 'xcfit' command from your terminal/iTerm etc etc. Example Output Looks like this :</p>
+
+<pre><code>$xcfit                                                                  
+Tasks:
+  xcfit get_cucumberish VERSION  
+  xcfit get_fitnesse             
+  xcfit help [TASK]             
+  xcfit set_xcode7_templates     
+  xcfit set_xcode_templates      
+</code></pre>
+
+<h2>
+<a id="install-xcfit-cocoapod-and-swift-package-covered-later" class="anchor" href="#install-xcfit-cocoapod-and-swift-package-covered-later" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install XCFit Cocoapod and Swift Package (Covered later)</h2>
+
+<p>Later, we need to install <a href="http://cocoadocs.org/docsets/XCFit">XCFit</a> from CocoaPods to enable Cucumberish and Fitnesse test. We can also get XCFit from Swift Package Manager if we need to have additional helpers for the XCUI test framework.</p>
+
+<hr>
+
+<h1>
+<a id="setup-xcode-templates" class="anchor" href="#setup-xcode-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup Xcode Templates</h1>
+
+<p>In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.</p>
+
+<h5>
+<a id="xcode-8" class="anchor" href="#xcode-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Xcode 8</h5>
+
+<p>To setup Templates for Xcode 8.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ xcfit set_xcode_templates
+</pre></div>
+
+<h5>
+<a id="xcode-7" class="anchor" href="#xcode-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Xcode 7</h5>
+
+<p>To setup Templates for Xcode 7.x.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ xcfit set_xcode7_templates
+</pre></div>
+
+<ul>
+<li> This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File---&gt;New---&gt;Target'</li>
+</ul>
+
+<p>You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown</p>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png" alt="image"></p>
+
+<hr>
+
+<h1>
+<a id="setting-cucumberish-bdd-scenarios-in-xcode" class="anchor" href="#setting-cucumberish-bdd-scenarios-in-xcode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting Cucumberish BDD Scenarios in Xcode</h1>
+
+<h2>
+<a id="setup-ios-ui-cucumberish-test-bundle-target" class="anchor" href="#setup-ios-ui-cucumberish-test-bundle-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup 'iOS UI Cucumberish Test Bundle' Target</h2>
+
+<ul>
+<li><p>From Xcode, create a new app(Or use existing app) and selct File ---&gt; New ----&gt; Target</p></li>
+<li><p>Now Select 'XCFit' for iOS app and Click on 'Cucumberish UI Test Bundle'</p></li>
+<li><p>Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging header for Cucumberish UI Testing. It create Page Object Pattern with all required files with screens, steps definitions and Cucumberish initialiser swift file.</p></li>
+</ul>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_CucumberishTemplates.gif" alt="image"></p>
+
+<h5>
+<a id="whats-in-the-cucumberish-template-" class="anchor" href="#whats-in-the-cucumberish-template-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's in the Cucumberish Template ?</h5>
+
+<ul>
+<li><strong>YOUR_CUCUMBERISH_TARGET.swift</strong></li>
+</ul>
+
+<p>This file is at the base of the target. This initiate Cucumberish for project. We need to register all step definitions in this file.</p>
+
+<ul>
+<li><strong>Screens</strong></li>
+</ul>
+
+<p>This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift'</p>
+
+<ul>
+<li><strong>Step_Definitions</strong></li>
+</ul>
+
+<p>This groups has all the step definitions related to screen. Example file 'HomeScreenSteps.swift'. Once implemented we need to register it in the initialiser file mentioned above.</p>
+
+<ul>
+<li><strong>Common</strong></li>
+</ul>
+
+<p>This group has common code like extensions and common steps. The example file 'CommonStepDefinitions.swift' has some steps that can be used in the feature file. It also has 'Hooks.swift' to ad cucumber hooks.</p>
+
+<ul>
+<li><strong>Supporting Files</strong></li>
+</ul>
+
+<p>This groups all the Objective-C headers and Bridging headers needed to get Cucumberish working with Swift.</p>
+
+<h5>
+<a id="whats-not-in-the-cucumberish-template" class="anchor" href="#whats-not-in-the-cucumberish-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's not in the Cucumberish Template</h5>
+
+<ul>
+<li><strong>Features Directory</strong></li>
+</ul>
+
+<p>We don't have 'Features' directory in the template because it needs to have directory on the disk and should be added to Xcode as 'Folder Reference' not Group.</p>
+
+<ul>
+<li><p>Create a Direcory called "Feature"</p></li>
+<li><p>Now Add sample Gherkin Feature File to 'Features' directory either by File-&gt;New-&gt;Gherkin Or Just add it using your favourite text editor e.g demo.feature with content</p></li>
+</ul>
+
+<pre><code>Feature: Demo App Feature
+
+Scenario: Demo Scenario
+
+Given the app is running
+
+</code></pre>
+
+<ul>
+<li><p>Now Drag and Drop 'Features' directory to Xcode Cucumberish target</p></li>
+<li><p>Select only '<strong>Create folder references</strong>' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed'</p></li>
+</ul>
+
+<p>Here is how to do it.
+<img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddFeaturesDirectory.gif" alt="image"></p>
+
+<ul>
+<li><strong>Cucumberish Header Files</strong></li>
+</ul>
+
+<p>We still don't have content of <a href="https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish">Cucumberish</a> to be included in our project. </p>
+
+<h3>
+<a id="getting-cucumberish-into-our-target" class="anchor" href="#getting-cucumberish-into-our-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Cucumberish into our Target</h3>
+
+<p>In order to get <a href="https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish">Cucumberish</a> source content. There are few ways we can do that </p>
+
+<ul>
+<li><strong><em>Adding XCFit CocoaPod to Project</em></strong></li>
+</ul>
+
+<p>Create a 'Podfile' if you don't have already. In your Podfile, add following Pod entry and update/install pod</p>
+
+<div class="highlight highlight-source-ruby"><pre>    target <span class="pl-s"><span class="pl-pds">'</span>$_YOUR_CUCUMBERISH_TARGET<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+      pod <span class="pl-s"><span class="pl-pds">'</span>XCFit<span class="pl-pds">'</span></span>
+    <span class="pl-k">end</span></pre></div>
+
+<div class="highlight highlight-source-shell"><pre>$ pod install</pre></div>
+
+<p>You can do that easily.
+<img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddPod.gif" alt="image"></p>
+
+<p>Now close the existing Xcode session and Xcode Workspace next time.</p>
+
+<blockquote>
+<p><strong>Note</strong> There is issue with Cocoapods when you have <code>'use_frameworks!'</code>, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. </p>
+</blockquote>
+
+<ul>
+<li><strong><em>Manually Copy Content of Cucumberish and Drag to Xcode Prefered</em></strong></li>
+</ul>
+
+<p>We can manually copy content of this directory and drag to target as with option "**Create groups" and "Copy items if needed". </p>
+
+<ul>
+<li>
+<strong><em>Use Carthage without build and drag the folder to target</em></strong> </li>
+</ul>
+
+<p>Create a <code>Cartfile</code> with following Content </p>
+
+<pre><code>         github "Ahmed-Ali/Cucumberish"
+</code></pre>
+
+<p>Now run Carthage wihtout build option. </p>
+
+<pre><code>      $ carthage update --platform iOS --no-build 
+</code></pre>
+
+<p>Now in the <code>Carthage/Checkout</code> directory has Cucumberish. Just add that to target or workspace. </p>
+
+<p>Please choose one of the suitable option for you. </p>
+
+<p>We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
+and press 'CMD+U'</p>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/CucumberTest.gif" alt="image"></p>
+
+<p>Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. Now add your own :)</p>
+
+<h4>
+<a id="create-separate-scheme-if-needed" class="anchor" href="#create-separate-scheme-if-needed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create Separate Scheme if needed</h4>
+
+<p>XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target and run separate scheme to keep it independent from Unit tests. Make sure you make the new scheme executable for Running.</p>
+
+<hr>
+
+<h1>
+<a id="xcui-page-object-pattern" class="anchor" href="#xcui-page-object-pattern" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCUI Page Object Pattern</h1>
+
+<p>Now, we have seen that it's failrly easy to setup BDD Style tests with Cucumberish but some people don't want that overhead of adding extra layer of Gherkin. XCFit gives an option to use very polular <a href="http://martinfowler.com/bliki/PageObject.html">Page Object Pattern</a> with Apple's Xcode UI Testing framework.</p>
+
+<h2>
+<a id="setup-xcui-pom-test-bundle-target" class="anchor" href="#setup-xcui-pom-test-bundle-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup 'XCUI POM Test bundle' Target</h2>
+
+<ul>
+<li><p>From Xcode, create a new app(Or use existing app) and selct File ---&gt; New ----&gt; Target</p></li>
+<li><p>Now Select 'XCFit' for iOS app and Click on 'XCUI POM Test Bundle'</p></li>
+<li><p>Once Clicked on the target e.g 'XCUI POM Test Bundle' Xcode will create UI testing target with properly structured Xcode Groups and required files. You can then make physical directories on Disk Or change the folder/group structure as per your need.</p></li>
+<li><p>You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !</p></li>
+</ul>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCUIPOM.gif" alt="image"></p>
+
+<h5>
+<a id="whats-in-the-xcui-pom-template-" class="anchor" href="#whats-in-the-xcui-pom-template-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's in the XCUI POM Template ?</h5>
+
+<ul>
+<li><strong>YOUR_CUCUMBERISH_TARGETPageObjectTests.swift</strong></li>
+</ul>
+
+<p>This file is at the base of the target. It's exactly same file that Apple's XCUI Test generate at first. You may use it for recording the tests or simply delete it if not needed.</p>
+
+<ul>
+<li><strong>Screens</strong></li>
+</ul>
+
+<p>This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift' This assumes that your apps is made up of multiple screens. You can write individual screen class which extend BaseScreen. All the functionality related to screen can be included in this class.</p>
+
+<ul>
+<li><strong>Sections</strong></li>
+</ul>
+
+<p>This group has 'HomeElements.swift' class which stores all the locators of HomeScreen in enums. Sections are defined to store locators of the screen in the form of enums. Here are some samples we can store Images, Buttons and Static Texts of the HomeScreens. We can access those enums from anywhere from the Test methods or page objects.</p>
+
+<ul>
+<li><strong>Protocols</strong></li>
+</ul>
+
+<p>Swift is protocol oriented language so feel to start with Protocol per screen. This group has 'HomeProtocol.swift' file where there is way to implement protocol oriented testing. Here is example of sample protocol for the homescreen. We can implement this protocol in the XCTest method as needed or we can write some extensions to support Testing.</p>
+
+<ul>
+<li><strong>Tests</strong></li>
+</ul>
+
+<p>This group has all the test for our app. Currently demo template has two tests 'HomeScreenTest.swift' and 'ProtocolOrientedTest.swift'. This examples shows how XCUI test can be implemented in the Object Orinted way and Protocol oriented way.</p>
+
+<ul>
+<li><strong>TestBase</strong></li>
+</ul>
+
+<p>Testbase is group where we can abstract all setup, teardown and common stuff in the base class. Every Screen then use this class as base. You can add more stuff as needed e.g Fixtures, Launch Arguments</p>
+
+<hr>
+
+<h1>
+<a id="fitnesse-for-ios-acceptancecontract-tests" class="anchor" href="#fitnesse-for-ios-acceptancecontract-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fitnesse for iOS: Acceptance/Contract Tests</h1>
+
+<p><a href="http://fitnesse.org/">Fitnesse</a> is fully integrated standalone wiki and acceptance testing framework for BDD Style testing. As of now we have seen Cucumber and Page Object pattern test frameworks. If you really wanted to get more information about Fitnnese for iOS, please follow documentation on <a href="http://paulstringer.github.io/OCSlimProject/">OCSlim</a> project. XCFit adopted the framework as dependeny to make it full stack BDD. We will cover basic setup as part of this document.</p>
+
+<h2>
+<a id="setup-acceptance-test-target-template" class="anchor" href="#setup-acceptance-test-target-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup 'Acceptance Test' Target template</h2>
+
+<ul>
+<li><p>From Xcode, create a new app(Or use existing app) and selct File ---&gt; New ----&gt; Target</p></li>
+<li><p>Now Select 'XCFit' for iOS app and Click on 'iOS Acceptance Tests '</p></li>
+<li><p>Once Clicked on the target e.g 'OS Acceptance Tests' Xcode will create new target with all required files and groups for Acceptance testing</p></li>
+<li><p>Select 'Acceptance Test' Scheme from Xcode and try to build</p></li>
+<li><p>The build will fail as we need fix some <strong>Swift3</strong> related issue as well as we need to add <strong>XCFit/OCSlimProject</strong> Pod to the to the podfile.</p></li>
+</ul>
+
+<p>** Watch it so far**</p>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTarget.gif" alt="image"></p>
+
+<ol>
+<li>To Fix Swift Issue : Just Click on ‘Edit-&gt; Convert-&gt; To Current Swift Syntax</li>
+<li>To Fix Pod issue : Add 'XCFit' for AcceptanceTests target</li>
+</ol>
+
+<div class="highlight highlight-source-ruby"><pre>    target <span class="pl-s"><span class="pl-pds">'</span>AcceptanceTests<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+      pod <span class="pl-s"><span class="pl-pds">'</span>OCSlimProject<span class="pl-pds">'</span></span>
+    <span class="pl-k">end</span></pre></div>
+
+<div class="highlight highlight-source-shell"><pre>$ pod install</pre></div>
+
+<p>Now, You should be able to build 'Acceptance Tests" target.</p>
+
+<p>You should also note that, the script 'Launch Fitnesse' has been created in the base of the project. Launch the fitness by exucuting that script from command line</p>
+
+<pre><code>   $ sh Launch Fitnesse
+</code></pre>
+
+<p>The browser will popup with example test. You should be able to excute that suite and see then running and passing</p>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTargetPod.gif" alt="image"></p>
+
+<p>If you get any errors at this stage, please confirm that you have Java as well as ios-sim node package installed.</p>
+
+<p>So, Congratulations again.. You have just executed Fitnesse test fro browser which is talking to your app.</p>
+
+<h2>
+<a id="setting-up-fitnesse-acceptance-target-with-xctest" class="anchor" href="#setting-up-fitnesse-acceptance-target-with-xctest" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting up Fitnesse Acceptance Target with XCTest</h2>
+
+<p>You can also setup Fitnesse Acceptance Tests but you need to use Cocoapods for this target.</p>
+
+<p>You can find detailed blog post on <a href="https://dzone.com/articles/integrate-fitnesse-with-xctest-using-xcode8">Dzone</a></p>
+
+<h4>
+<a id="add-acceptance-and-acceptance-unit-test-target-to-project" class="anchor" href="#add-acceptance-and-acceptance-unit-test-target-to-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add Acceptance and Acceptance Unit Test Target to Project</h4>
+
+<p>We have all the predefined targets for FitNesse. Just add “Acceptance Tests” target from the template and “AcceptanceUnitTests” target from the bundle. You will need “FitNesse Suite page name” to create this target but just put “OCSlimProjectExamplePage” there for now . Add your ‘AcceptanceTests’ target as a ‘Target Dependancy’ of this new target in Build Phases. This ensures that it the latest code has been built prior to the tests being run.</p>
+
+<h4>
+<a id="add-pod-dependencies" class="anchor" href="#add-pod-dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add Pod Dependencies</h4>
+
+<p>We need to create a “Podfile” at the root of the project with the following content.</p>
+
+<div class="highlight highlight-source-ruby"><pre>target <span class="pl-s"><span class="pl-pds">'</span>AcceptanceUnitTests<span class="pl-pds">'</span></span> <span class="pl-k">do     </span>
+   pod <span class="pl-s"><span class="pl-pds">'</span>OCSlimProjectTestBundleSupport<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Now, we can run ‘pod install’ at this stage and close the current Xcode session and open project workspace.</p>
+
+<h4>
+<a id="build-acceptance-tests-target" class="anchor" href="#build-acceptance-tests-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Acceptance Tests Target</h4>
+
+<p>At this stage, we should be able to build the “Acceptance Tests” target. If you are using Xcode8, you might see some warning related to the Swift3 Syntax. Just Click on ‘Edit-&gt; Convert-&gt; To Current Swift Syntax</p>
+
+<p>Now you should be able to build an “Acceptance Tests” target. Once, build is successful, you should see “LaunchFitnesse” script is generated in the root of the project. We can launch and execute the fitness test as shown below.</p>
+
+<h4>
+<a id="test-acceptanceunittests-target" class="anchor" href="#test-acceptanceunittests-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Test AcceptanceUnitTests Target</h4>
+
+<p>Now if you select “AcceptanceUnitTarget” and press CMD+U.</p>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/FitnesseXCTest.gif" alt="image"></p>
+
+<p>Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.</p>
+
+<h1>
+<a id="continuous-integration--fastlane" class="anchor" href="#continuous-integration--fastlane" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Continuous Integration + Fastlane</h1>
+
+<p>Now that , we have seen how to run Cucumberish, XCUIPOM, FitNesse acceptance tests from Xcode but it’s a good idea to run it with Fastlane.  We can also take control of version of Cocoapods and Fastlane by using Bundler. Let’s create a Gemfile at the root of the project with the following gem</p>
+
+<div class="highlight highlight-source-ruby"><pre>source <span class="pl-s"><span class="pl-pds">"</span>https://rubygems.org<span class="pl-pds">"</span></span>   
+<span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>cocoapods<span class="pl-pds">'</span></span>
+<span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>fastlane<span class="pl-pds">'</span></span>   plugins_path <span class="pl-k">=</span> <span class="pl-c1">File</span>.join(<span class="pl-c1">File</span>.dirname(<span class="pl-v">__FILE__</span>), <span class="pl-s"><span class="pl-pds">'</span>.<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Pluginfile<span class="pl-pds">'</span></span>) eval(<span class="pl-c1">File</span>.read(plugins_path), binding) <span class="pl-k">if</span> <span class="pl-c1">File</span>.exist?(plugins_path</pre></div>
+
+<p>Let’s also create directory “fastlane” and make “Fastfile” with following content</p>
+
+<div class="highlight highlight-source-ruby"><pre>
+fastlane_version <span class="pl-s"><span class="pl-pds">"</span>1.104.0<span class="pl-pds">"</span></span>  
+default_platform <span class="pl-c1">:ios</span>   
+platform <span class="pl-c1">:ios</span> <span class="pl-k">do   </span>
+before_all <span class="pl-k">do     </span>
+   system <span class="pl-s"><span class="pl-pds">"</span>rm -rf ../test_reports/<span class="pl-pds">"</span></span>     
+   system <span class="pl-s"><span class="pl-pds">"</span>bundle install<span class="pl-pds">"</span></span>     
+   system <span class="pl-s"><span class="pl-pds">"</span>pod install<span class="pl-pds">"</span></span>     
+    system <span class="pl-s"><span class="pl-pds">"</span>bundle exec fastlane add_plugin trainer<span class="pl-pds">"</span></span>   
+<span class="pl-k">end</span>     
+desc <span class="pl-s"><span class="pl-pds">"</span>Runs all the XCUI POM, Cucumberish tests<span class="pl-pds">"</span></span>
+  lane <span class="pl-c1">:xcfit_ui_test</span> <span class="pl-k">do</span>
+   scan(
+   <span class="pl-c1">scheme:</span> <span class="pl-s"><span class="pl-pds">"</span>XCFit2Demo<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">destination:</span> <span class="pl-s"><span class="pl-pds">'</span>platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0<span class="pl-pds">'</span></span>,
+   <span class="pl-c1">output_directory:</span> <span class="pl-s"><span class="pl-pds">"</span>test_reports/<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">output_types:</span> <span class="pl-s"><span class="pl-pds">"</span>html<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">fail_build:</span> <span class="pl-c1">false</span>
+   )
+  <span class="pl-k">end</span>
+
+  desc <span class="pl-s"><span class="pl-pds">"</span>Runs Fitnesse Tests<span class="pl-pds">"</span></span>
+  lane <span class="pl-c1">:fitnesse</span> <span class="pl-k">do</span>
+   scan(
+   <span class="pl-c1">scheme:</span> <span class="pl-s"><span class="pl-pds">"</span>AcceptanceUnitTests<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">destination:</span> <span class="pl-s"><span class="pl-pds">'</span>platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0<span class="pl-pds">'</span></span>,
+   <span class="pl-c1">output_directory:</span> <span class="pl-s"><span class="pl-pds">"</span>test_reports/<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">output_types:</span> <span class="pl-s"><span class="pl-pds">"</span>html<span class="pl-pds">"</span></span>,
+   <span class="pl-c1">fail_build:</span> <span class="pl-c1">false</span>
+   )
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>After running “bundle install” we should be able to run those test from command line like this :</p>
+
+<pre><code>    $ bundle exec fastlane xcfit_ui_test
+</code></pre>
+
+<p><img src="https://github.com/Shashikant86/XCFit-GIFS/blob/master/FastlaneXCFit.gif" alt="image"></p>
+
+<p>Once that done. We can have clear HTML reports genearted</p>
+
+<h1>
+<a id="xcfit-swift-package-manager" class="anchor" href="#xcfit-swift-package-manager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit: Swift Package Manager</h1>
+
+<p>XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use.
+Full Documetation and API implementation still in progress. You can grab it like this  </p>
+
+<pre><code>import PackageDescription
+
+let package = Package(
+    name: "XCFit",
+    dependencies: [
+  .Package(url: "https://github.com/Shashikant86/XFit.git", majorVersion: 2),
+]
+)
+</code></pre>
+
+<h1>
+<a id="quick-demo-with-example-app" class="anchor" href="#quick-demo-with-example-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Demo with Example App</h1>
+
+<p>You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest</p>
 
 <pre><code>  $ git clone https://github.com/Shashikant86/XCFit
-  $ cd XCFit/XCFitDemo
-  $ open XCFitDemo.xcworkspace
+  $ cd XCFit/XCFit2Demo
+  $ open XCFit2Demo.xcworkspace
 </code></pre>
 
-<p>Run Unit, UI and Cucumberish test with Xcode. "cmd + U". Edit Scheme if nessesary to avoid running Unit Tests for this demo. Or Run nit from command line. Update Simulator device/OS version as installed in your Xcode if nessessary</p>
+<p>Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane</p>
 
-<pre><code>  $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' test | xcpretty -r html -r junit --test --color
+<pre><code>  $ bundle install
+  $ bundle exec fastlane xcfit_ui_test
 </code></pre>
 
-<p>Watch out HTML and JUnit reports generated in the 'Build/reports/' directory with XCPretty. Install XCpretty if you havent got already.</p>
-
-<p>Running Fitnesse Tests: Clean, Build and Execute</p>
-
-<pre><code>  $ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' clean build | xcpretty
-
-  $java -jar fitnesse-standalone.jar -v -o -c "FrontPage?suite&amp;format=junit"
-
-</code></pre>
-
-<h6>
-<a id="using-fastlane" class="anchor" href="#using-fastlane" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using Fastlane</h6>
-
-<p>Assuming you have Bundler  rubygem installed if not install it by "gem install bundler"</p>
-
-<pre><code>$ bundle install
-$ bundle exec fastlane cucumberish
-$ bundle exec fastlane fitnesse
-</code></pre>
-
-<h6>
-<a id="travisci" class="anchor" href="#travisci" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TravisCI</h6>
-
-<p>Curently XCFitDemo App is configured on TravisCI which runs both Cucumberish and Fitnesse Tests. The sample .travis.yml is in the Github repo and sample logs from TravisCI <a href="https://travis-ci.org/Shashikant86/XCFit/builds/145963673">here</a>. </p>
+<h1>
+<a id="acknowledgements" class="anchor" href="#acknowledgements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgements</h1>
 
 <p>Big Thanks to</p>
 
@@ -108,265 +610,8 @@ $ bundle exec fastlane fitnesse
 <a href="https://github.com/paulstringer/OCSlimProject">OCSlimProject</a> : Provide Xcode Templates to enable BDD with Decision Tables using Fitnesse</li>
 </ul>
 
-<p>XCFit automated configuration of these two guys.</p>
-
-<h3>
-<a id="version" class="anchor" href="#version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version</h3>
-
-<p>CocoaPods -- <a href="http://cocoadocs.org/docsets/XCFit">XCFit-CocoaPods</a> : 0.1.0</p>
-
-<p>RubyGems  -- <a href="https://rubygems.org/gems/xcfit">xcfit-RubyGem</a>  : 0.8.0</p>
-
-<h3>
-<a id="tech--software-requirements" class="anchor" href="#tech--software-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tech &amp; Software Requirements</h3>
-
-<p>XCFit uses a number of open source projects to work properly. You need to have following</p>
-
-<p>Hardware : You must have Mac Operating System with OSX/MacOS version &gt; 10.9</p>
-
-<p>Software:</p>
-
-<ul>
-<li>
-<a href="https://www.ruby-lang.org/en/">Ruby</a> - Use <a href="https://rvm.io/">RVM</a> for GEM management. Ideally Ruby &gt; 2.X</li>
-<li>
-<a href="https://developer.apple.com/xcode/">Xcode</a> - Ideally Xcode 7.X</li>
-<li>
-<a href="https://rubygems.org/">RubyGems</a> - RubyGem with <a href="https://cocoapods.org/">Cocoapods</a> installed</li>
-<li>
-<a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html">Curl on Mac</a> - Might be pre-installed but worth double checking.</li>
-<li>Ruby Packages : Xcpretty, Fastlane(Optional), Rake, Bundler.. Install with 'gem install '</li>
-</ul>
-
-<h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
-
-<p>XCFit requires <a href="https://rubygems.org/">RubyGems</a> to run.</p>
-
-<p>You need RubyGem installed globally:</p>
-
-<pre><code>  $ gem install xcfit
-</code></pre>
-
-<p>Now you are good to get started with XCFit for now. Later we also need to install XCFit Pod.</p>
-
 <h1>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
-
-<p>Now that you can execute 'xcfit' command from your terminal/iTerm etc etc. Example Output Looks like this :</p>
-
-<pre><code>$ xcfit
-Tasks:
-  xcfit get_cucumberish VERSION  # Downloads Cucumberish version and Create Features directory. You must execute this from Cucumberish Xcode Target directory
-  xcfit get_fitnesse             # Download Fitnesse JAR file from Internet. You must execute this from Xcode Fitnesse Acceptance Test Xcode Target directory
-  xcfit help [TASK]              # Describe available tasks or one specific task
-  xcfit set_xcode_templates      # Generate All Xcode Templates for the Gherkin Feature Files &amp; targets for Cucumberish and Fitnesse
-  xcfit version                  # Get the current version number
-
-</code></pre>
-
-<h2>
-<a id="setup-xcode-templates" class="anchor" href="#setup-xcode-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup Xcode Templates</h2>
-
-<p>In existing app or brand new app, we have to enable the Xcode templates for files and targets to speed up the things. Run following command from your termonal</p>
-
-<div class="highlight highlight-source-shell"><pre>$ xcfit set_xcode_templates
-</pre></div>
-
-<ul>
-<li> This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File---&gt;New---&gt;Target'</li>
-</ul>
-
-<p>You will see new option for iOS and OSX i.e 'XCFit'. Once Clicked on it. You will see Cucumberish API, Cucumberish UI and Fitnesse Acceptance Tests targets. As shown</p>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/new_targets.png" alt="image"></p>
-
-<ul>
-<li>Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging hrader for Cucumberish UI Testing.
-Once Clicked on the target e.g 'Fitnesse Acceptance Test Bundle' Xcode will create UI tAcceptance test with all the required files with Bridging headers for the Fitnesse Acceptance Test. We will see that in details soon.</li>
-</ul>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/XCFit_Setup.gif" alt="image">
-You can watch YouTube video of XCFit setup <a href="https://www.youtube.com/watch?v=Q3cKinwYwhE">here</a></p>
-
-<ul>
-<li>This script also set new file type in Xcode to create new Gherking feature file</li>
-</ul>
-
-<h2>
-<a id="setting-up-cucumberish-ui-target" class="anchor" href="#setting-up-cucumberish-ui-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting up Cucumberish UI Target</h2>
-
-<p>3 Steps to setup Cucumberish. You don't need to use Cocoapods to setup this target.</p>
-
-<ul>
-<li>Add new target iOS/macOS project and Select "File -&gt; New -&gt; Target -&gt; XCFit -&gt; Cucumberish UI Test Bundle". Give it a name you like e.g CucumberishUITests</li>
-</ul>
-
-<p>Now that Xcode has created brand new target with all required Swift and Objective-C files to run Cucumberish. All Xcode setting has been done by the Xcode Template. Don't worry about configuting anything.</p>
-
-<ul>
-<li>Now that you have to CD into the Cucumberish target directory .eg CucumberishUITests</li>
-</ul>
-
-<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> <span class="pl-smi">$CUCUMBERISH_TARGET_DIR</span>
-$ xcfit get_cucumberish 0.0.7</pre></div>
-
-<p>This will download Cucumberish directory from version 0.0.7 and also creats 'Features' directory. You can then reference those directory in Xcode. For "Cucumberish" directory select 'Copy if needed and Create Group' and for the "Features" directory select don't create group or Copy if needed. Just " create folder reference"
-Now Add sample Feature File to 'Features' directory either by File-&gt;New-&gt;Gherkin Or Just add it using your favourite text editor e.g demo.feature with content </p>
-
-<pre><code>Feature: Demo App Feature
-
-Scenario: Demo Scenario 
-
-Given the app is running
-
-</code></pre>
-
-<ul>
-<li>Finally from the Cucumberish target 'General' setting select 'Testing -&gt; Target To Test' and configure scheme to add Cucumeerish UI target to Test</li>
-</ul>
-
-<p>You are done !!</p>
-
-<p>You can watch YouTube video of Cucumberish Setup <a href="https://www.youtube.com/watch?v=Wd9myhNkpx4">here</a></p>
-
-<p>You can add more feature/Scenarios and implement steps definitions inside your Swift File. <a href="https://github.com/Ahmed-Ali">Ahmed-Ali</a> creator of Cucumberish already implemented useful pre-defined steps have a look at this <a href="https://github.com/Ahmed-Ali/Cucumberish/blob/master/CucumberishExample/CucumberishExampleUITests/CCIStepDefinitions.swift">Swift file</a>. You are free to try Page Object Pattern and all other crazy stuff to abstract and refactor your Swift code. </p>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/CucumberishDemo.gif" alt="image"></p>
-
-<h2>
-<a id="setting-up-fitnesse-acceptance-target" class="anchor" href="#setting-up-fitnesse-acceptance-target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting up Fitnesse Acceptance Target</h2>
-
-<p>You can also setup Fitnesse Acceptance Tests but you need to use Cocoapod for this target.</p>
-
-<p>Basically Steps are pretty much same mentioned in the <a href="http://paulstringer.github.io/OCSlimProject/">OCSlimProject</a> but most of them are automated for simplicity. Here is simple way to set Fitnesse Acceptance tests for iOS/MacOS Apps</p>
-
-<ul>
-<li><p>Create new target, "File --&gt; New --&gt; Target --&gt; XCFit --&gt; Fitnesse Acceptance Test". Give it a suitable name e.g 'AcceptanceTests'</p></li>
-<li><p>Create/Update Podfile with</p></li>
-</ul>
-
-<div class="highlight highlight-source-ruby"><pre>
-use_frameworks!
-
-target <span class="pl-s"><span class="pl-pds">'</span>AcceptanceTests<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
-  pod <span class="pl-s"><span class="pl-pds">'</span>XCFit<span class="pl-pds">'</span></span>
-<span class="pl-k">end</span></pre></div>
-
-<p>Run 'Pod install' and build newly created Acceptance target from Xcode. You should see 'LaunchFitnesse' Script geerated and Your app should be talking to fitnesse now.</p>
-
-<ul>
-<li>Now CD into FITNESSE_TARGET directory and Get Fitnesse JAR file by running</li>
-</ul>
-
-<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> <span class="pl-smi">$FITNESSE_TARGET</span>
-$ xcfit get_fitnesse</pre></div>
-
-<p>You should have fitnesse-standalone file downloaded in the target directory. You can now execute 'LaunchFitnesse'</p>
-
-<div class="highlight highlight-source-shell"><pre>$ ./LaunchFitnesse</pre></div>
-
-<p>Now you should have Fitnesse up and runnig. Follow Paul's article for the details on how to write acceptance tests <a href="http://stringerstheory.net/acceptance-testing-with-ios/">here</a></p>
-
-<p>You can watch YouTube video of XCFit Fitnesse <a href="https://www.youtube.com/watch?v=Wd9myhNkpx4">here</a></p>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/AcceptanceTests.gif" alt="image"></p>
-
-<h2>
-<a id="continous-integration--test-reporting" class="anchor" href="#continous-integration--test-reporting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Continous Integration &amp; Test Reporting</h2>
-
-<p>Continous Integration is very important and you simply can't avoid that. XCFit will be easily configured on any CI server including Apple's own <a href="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/">Xcode Server</a> or very polular one <a href="https://jenkins.io/">Jenkins</a> as we can generate reports in both HTML and JUnit format. 
-As of now, you might be running tests within Xcode, but there are some awsome tools which allows us to run our tests from command line. The 'xcodebuild' is being used to build and test Xcode Schemes. <a href="https://github.com/fastlane/fastlane">Fastlane</a> seems much easier option to automate everything but it's upto you. These are long commands but you k ow better how to Script it Or Fastlane it, right ? :)</p>
-
-<p>Curently XCFitDemo App is configured on TravisCI which runs both Cucumberish and Fitnesse Tests. The sample .travis.yml is in the Github repo and sample logs from TravisCI <a href="https://travis-ci.org/Shashikant86/XCFit/builds/145963673">here</a>. Watch out Live Execution : </p>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/Travis_XCFit.gif" alt="image"></p>
-
-<h3>
-<a id="cucumberish" class="anchor" href="#cucumberish" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cucumberish</h3>
-
-<p>You can execute Cucumberish tests with like this for XCFitDemo App.</p>
-
-<p><a href="https://github.com/supermarin/xcpretty">XCPretty</a> can be used to generate JUnit Or HTML report as below</p>
-
-<div class="highlight highlight-source-shell"><pre>xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitDemo -sdk iphonesimulator -destination <span class="pl-s"><span class="pl-pds">'</span>platform=iOS Simulator,name=iPhone 6<span class="pl-pds">'</span></span> <span class="pl-c1">test</span> <span class="pl-k">|</span> xcpretty -r html -r junit --test --color</pre></div>
-
-<p>You can now analyse the reports generated in the 'build/reports' directory. You will find both HTML and JUnit reports. You can configure these reports with Xcode-Server, Jenkins, TeamCity easily in the post build setting. </p>
-
-<pre><code>$ open build/reports/tests.html
-</code></pre>
-
-<p><img src="https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/html_reports.png" alt="image"></p>
-
-<h3>
-<a id="fitnesse" class="anchor" href="#fitnesse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fitnesse</h3>
-
-<p>You can first build the Acceptance target</p>
-
-<div class="highlight highlight-source-shell"><pre>$ xcodebuild -workspace XCFitDemo.xcworkspace -scheme XCFitAcceptanceTests -sdk iphonesimulator -destination <span class="pl-s"><span class="pl-pds">'</span>platform=iOS Simulator,name=iPhone 6<span class="pl-pds">'</span></span> clean build <span class="pl-k">|</span> xcpretty</pre></div>
-
-<p>Now run the Fitnesse tests using</p>
-
-<div class="highlight highlight-source-shell"><pre>
-$ java -jar fitnesse-standalone.jar -v -o -c <span class="pl-s"><span class="pl-pds">"</span>FrontPage?suite<span class="pl-pds">"</span></span></pre></div>
-
-<p>You can also set reports directory and generate Junit style reports inside the "XCFitDemo/FitNesseRoot/files/testResults/" directory. You can configure these reports with Xcode-Server, Jenkins, TeamCity easily in the post build setting. </p>
-
-<h2>
-<a id="what-xcfit-can-solve-in-iosmacos-team" class="anchor" href="#what-xcfit-can-solve-in-iosmacos-team" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What XCFit can solve in iOS/macOS team?</h2>
-
-<p>XCFit can bring lot of improvement the way you work. The most common problems in iOS development is explained by Paul Stringer in this <a href="http://stringerstheory.net/acceptance-testing-with-ios/">article</a>. XCFit can solve few of them</p>
-
-<ul>
-<li>Better Developer/QA collabration, Early QA Involvement.</li>
-</ul>
-
-<p>Usually,in the iOS development world, Developer build an app using Swift and Objective-C and army of manual and automated QA uses tools like Apppium, Calabash using languages like Ruby, Java, Python WTF !!. QA and Developers world is totally different. With XCFit you will be speaking same language that is "Swift". QA can write test script as we build. No need to wait until build is handed over. Just work with developer ! Little bit of learning curve for QA but you will save developers time as they don't to learn Java, Pyth or Ruby to help QA team</p>
-
-<ul>
-<li>Quick Acceptance &amp; UI testing setup</li>
-</ul>
-
-<p>You will be surprised by how easily/quickly you can setup Fitnesse(Acceptance Test) and Cucumberish(UI Testing) environmant in Xcode and running your first test.</p>
-
-<ul>
-<li> Getting Business people involved</li>
-</ul>
-
-<p>As we can now able to write scenarios with Given/When/Then and decision tables. We can get business people involved to contribute to acceptance criteria. In short we got all benefits of BDD in iOS/macOS project.</p>
-
-<ul>
-<li>Developers don't need to learn Ruby or similar ! Just stick to Swift</li>
-</ul>
-
-<p>You must be happy as you won't need to learn other language just in case QA ask something to solve. With XCFit it's everything Swift.</p>
-
-<ul>
-<li>Fix failed attempt to automate testing by QA team</li>
-</ul>
-
-<p>As of now your QA team might have tried all wrappers on <a href="https://developer.apple.com/library/tvos/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UIAutomation.html">UIAutomation</a> e.g Appium, Calabash, Frank, KIF etc etc and keeping themselve busy writing some Ruby, Python, Java code to automate testing and all that attempts results in Slow, Brittle, Untrusted, Non-valuable UI tests causing harm to mobile development rather than good. With XCFit, everyone will be speaking same language and you can cover businness logic with lighting fast Fitnesse Tests and major journeys with UI tests. Keep it 80:20 means 80% Fitness and 20% Cucumberish or XCUI.</p>
-
-<h1>
-<a id="video-demo" class="anchor" href="#video-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video Demo</h1>
-
-<h3>
-<a id="xcfit-xcode-setup" class="anchor" href="#xcfit-xcode-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Xcode Setup</h3>
-
-<p><a href="http://www.youtube.com/watch?v=Q3cKinwYwhE"><img src="http://img.youtube.com/vi/Q3cKinwYwhE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
-
-<h3>
-<a id="xcfit-cucumberish-demo" class="anchor" href="#xcfit-cucumberish-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Cucumberish Demo</h3>
-
-<p><a href="http://www.youtube.com/watch?v=Wd9myhNkpx4"><img src="http://img.youtube.com/vi/Wd9myhNkpx4/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
-
-<h3>
-<a id="xcfit-fitnesse-demo" class="anchor" href="#xcfit-fitnesse-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>XCFit Fitnesse Demo</h3>
-
-<p><a href="http://www.youtube.com/watch?v=xFRSIugJ-FA"><img src="http://img.youtube.com/vi/xFRSIugJ-FA/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
-
-<h2>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h1>
 
 <p>Shashikant86, <a href="mailto:shashikant.jagtap@icloud.com">shashikant.jagtap@icloud.com</a></p>
 
@@ -374,13 +619,13 @@ $ java -jar fitnesse-standalone.jar -v -o -c <span class="pl-s"><span class="pl-
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TODO</h1>
 
 <ul>
-<li>Swift Implementation of Gherkin Parser </li>
-<li>Cocoapods free installtion </li>
-<li>Setting up XCFit on Apple's own CI Xcode Server </li>
+<li>Add More Step Definitions for Cucumberish Projects</li>
+<li>Improve Swift Package with additional XCUI test helpers</li>
+<li>Setting up XCFit on Apple's own CI Xcode Server</li>
 </ul>
 
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h2>
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h1>
 
 <p>Copyright © 2014 Shashikant Jagtap, <a href="http://shashikantjagtap.net">http://shashikantjagtap.net</a></p>
 
@@ -403,8 +648,8 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
-<h2>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+<h1>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h1>
 
 <ol>
 <li>Fork it ( <a href="https://github.com/Shashikant86/XCFit/fork">https://github.com/Shashikant86/XCFit/fork</a> )</li>
