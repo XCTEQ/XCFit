@@ -196,7 +196,7 @@ Given the app is running
 
 - Now Drag and Drop 'Features' directory to Xcode Cucumberish target
 
-- Select only '**Create folder references**' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed'
+- Select only '**Create folder references**' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed**'
 
 Here is how to do it.
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddFeaturesDirectory.gif)
@@ -235,6 +235,10 @@ Now close the existing Xcode session and Xcode Workspace next time.
 - ***Manually Copy Content of Cucumberish and Drag to Xcode - Prefered Way***
 
 We can manually copy content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) directory and drag to target as with option "**Create groups" and "Copy items if needed**". 
+
+Here is How to setup everything in a minute 
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
 
 - ***Use Carthage without build and drag the folder to target*** 
 
