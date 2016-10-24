@@ -12,6 +12,7 @@
 	</array>
 	<key>TargetOnly</key>
 	<true/>
+	<key>AssociatedTargetSpecification</key>
 	<dict>
 		<key>PopUpTitle</key>
 		<string>Target to be Tested:</string>
