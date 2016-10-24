@@ -255,7 +255,7 @@ Now in the `Carthage/Checkout` directory has `Cucumberish/Cucumberish`. drag to 
 
 Here is how to do that !
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Carthage.gif)
 
 
 Please choose one of the suitable option for you. 
