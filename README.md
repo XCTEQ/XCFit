@@ -209,7 +209,7 @@ We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumb
 
 In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) source content. There are few ways we can do that 
 
-- ***Adding XCFit CocoaPod to Project***
+- **Cocoapods**
 
 Create a 'Podfile' if you don't have already. In your Podfile, add following Pod entry and update/install pod
 
@@ -232,7 +232,7 @@ Now close the existing Xcode session and Xcode Workspace next time.
 
 > **Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK. 
 
-- ***Manually Copy Content of Cucumberish and Drag to Xcode - Prefered Way***
+- **Manual Installtion**
 
 We can manually copy content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) directory and drag to target as with option "**Create groups" and "Copy items if needed**". 
 
@@ -240,7 +240,7 @@ Here is How to setup everything in a minute
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
 
-- ***Use Carthage without build and drag the folder to target*** 
+- **Carthage**
 
 Create a `Cartfile ` with following Content 
 
@@ -251,7 +251,12 @@ Now run Carthage wihtout build option.
     
           $ carthage update --platform iOS --no-build 
           
-Now in the `Carthage/Checkout` directory has Cucumberish. Just add that to target or workspace. 
+Now in the `Carthage/Checkout` directory has `Cucumberish/Cucumberish`. drag to target as with option "**Create groups" and "Copy items if needed**". 
+
+Here is how to do that !
+
+![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
+
 
 Please choose one of the suitable option for you. 
 
