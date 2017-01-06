@@ -2,8 +2,6 @@
 
 require 'fileutils'
 require 'tempfile'
-require 'XCFit/version'
-require 'XCFit/main'
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
@@ -96,7 +94,7 @@ else
   elsif cmd == 'setup_xcode_templates'
     setup_xcode_templates
   elsif cmd == 'version'
-    puts XCFit::VERSION
+    puts "2.0"
   elsif cmd == 'setup_gherkin_template'
     setup_gherkin
   else
