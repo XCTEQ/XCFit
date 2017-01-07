@@ -5,7 +5,7 @@
 
 # XCFit : Full Stack BDD in Xcode
 
-**XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [RubyGem](https://rubygems.org/gems/xcfit),  [CocoaPods](http://cocoadocs.org/docsets/XCFit) and Swift Package Manager.**
+**XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit),  [CocoaPods](http://cocoadocs.org/docsets/XCFit) and Swift Package Manager.**
 
 ### XCFit 2.0 has just released !
 
@@ -52,7 +52,7 @@
 
 * **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : BDD Style scenarios for iOS App
 
-* **HomeBrew** - Just do `brew tap shashikant86/homebrew-taps` and `brew install xcfit`
+* **Homebrew** - Just do `brew tap shashikant86/homebrew-taps` and `brew install xcfit`
 
 * **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) : Automated Xcode Templates
 
@@ -77,7 +77,7 @@ You must have Mac Operating System with OSX/MacOS version > 10.9
    - RubyGem with [Cocoapods](https://cocoapods.org/) installed
 * **[Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
    - Might be pre-installed but worth double checking.
-* **[HomeBrew](http://brew.sh)**   
+* **[Homebrew](http://brew.sh)**   
 * **[iOS-Sim](https://www.npmjs.com/package/ios-sim)**
   - Node Package required to launch iOS app for Fitnesse Acceptance tests.
 * [**Java**](https://www.java.com/en/)
@@ -89,11 +89,14 @@ You must have Mac Operating System with OSX/MacOS version > 10.9
 
 # Installation
 
+XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](https://rubygems.org/) but it's strongly recommended to install it using Homebrew. 
+
 ## Install with HomeBrew
 
-Assuming you have already installed [HomeBrew](http://brew.sh). You can tap the formula and start using XCFit
+Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
 `brew tap shashikant86/homebrew-taps`
+Now, we can install XCFit brew package using 
 `brew install xcfit`
 
 This is recommended method to install `XCFit` over the Rubygem mentioned below.
