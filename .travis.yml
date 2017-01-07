@@ -8,24 +8,10 @@ language: generic
 sudo: required
 dist: trusty
 osx_image: xcode8
-# script:
-#   - swift build
-#   - swift test
-# notifications:
-#   email:
-#     on_success: never
-#     on_failure: change
-language: objective-c
-# cache: cocoapods
-podfile: XCFit2Demo/Podfile
-gemfile: XCFit2Demo/Gemfile
-
 script:
- - rm -rf Gemfile.lock
- - cd XCFit2Demo
- - rm -rf Gemfile.lock
- - pwd
- - set -o pipefail && xcodebuild -list
- - bundle install
- - echo "==========Now Running XCUI Cucumberish Tests==================="
- - bundle exec fastlane xcfit_ui_test
+  - swift build
+  - swift test
+notifications:
+  email:
+    on_success: never
+    on_failure: change
