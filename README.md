@@ -95,9 +95,11 @@ XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](http
 
 Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
-`brew tap shashikant86/homebrew-taps`
+     brew tap shashikant86/homebrew-taps
 Now, we can install XCFit brew package using 
-`brew install xcfit`
+
+     brew install xcfit
+      
 
 This is recommended method to install `XCFit` over the Rubygem mentioned below.
 
