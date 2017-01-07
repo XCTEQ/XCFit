@@ -2,13 +2,26 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode7.3
+os:
+  - osx
+language: generic
+sudo: required
+dist: trusty
+osx_image: xcode8
+# script:
+#   - swift build
+#   - swift test
+# notifications:
+#   email:
+#     on_success: never
+#     on_failure: change
 language: objective-c
 # cache: cocoapods
 podfile: XCFit2Demo/Podfile
 gemfile: XCFit2Demo/Gemfile
 
 script:
+ - rm -rf Gemfile.lock
  - cd XCFit2Demo
  - rm -rf Gemfile.lock
  - pwd
