@@ -10,6 +10,7 @@ gemfile: XCFit2Demo/Gemfile
 
 script:
  - cd XCFit2Demo
+ - rm -rf Gemfile.lock
  - pwd
  - set -o pipefail && xcodebuild -list
  - bundle install
