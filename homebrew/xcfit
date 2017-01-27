@@ -10,21 +10,34 @@ require 'tempfile'
 @root_template_dir = File.join(@root_xcode_dir, 'Templates')
 @root_xcfit_dir = File.join(@root_template_dir, 'XCfit')
 @root_gherkin_dir = File.join(@root_template_dir, 'Gherkin')
-@source_dir = File.join(File.dirname(__FILE__), '..', 'XCFit_Templates')
-@source_xcfit_dir = File.join(@source_dir, 'XCFit')
-@source_gherkin_dir = File.join(@source_dir, 'Gherkin')
+# @source_dir = File.join(File.dirname(__FILE__), '..', 'XCFit_Templates')
+# @source_xcfit_dir = File.join(@source_dir, 'XCFit')
+# @source_gherkin_dir = File.join(@source_dir, 'Gherkin')
 
 puts "Welcome to XCFit: Full Stack BDD framework for iOS app"
 puts "==================XXXXXXXX==========================="
+
+
+def clone_xcfit
+  # system("cd /tmp")
+  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/v2.1.tar.gz | tar xz")
+  puts "*******======= Downloading XCFit Templates for the Xcode =============***"
+  @xcfit_template_dir = "/tmp/XCFit-2.1/XCFit_Templates/XCFit"
+  @gherkin_template_dir = "/tmp/XCFit-2.1/XCFit_Templates/Gherkin"
+end
+
+def clean_xcfit
+  system("rm -rf /tmp/XCFit-2.1/")
+end
 
 def setup_xcode_templates
   if File.exist?(@root_xcfit_dir)
     puts 'There is already XCFit directory. Please move existing XCFit directory to carry on '
     exit 1
   end
-
-  FileUtils.cp_r(@source_xcfit_dir, @root_template_dir)
-
+  clone_xcfit
+  FileUtils.cp_r(@xcfit_template_dir, @root_template_dir)
+  clean_xcfit
 end
 
 def setup_gherkin_template
@@ -37,7 +50,9 @@ def setup_gherkin_template
   puts 'Creating XCode Template for XCFit'
   puts 'This Template will allow you create Cucumberish and Fitnesse targets'
   puts "==================XXXXXXXX==========================="
-  FileUtils.cp_r(@source_gherkin_dir, @root_template_dir)
+  clone_xcfit
+  FileUtils.cp_r(@gherkin_template_dir, @root_template_dir)
+  clean_xcfit
   puts 'Now Your Xcode will have XCFIT iOS and macOS tagets for Cucumberish and Fitnesse'
   puts "==================XXXXXXXX==========================="
   puts 'File -> New -->Target-->XCFit'
@@ -88,7 +103,7 @@ def print_usage
       generate a Xcode 8 Templates for the Cucumberish and Fitnesse
     setup_xcode7_templates
         generate a Xcode 7.x Templates. Please upgrade to Xcode 8
-    setup_gherkin
+    setup_gherkin_template
       generate Xcode Templates for the Gherkin Feature Files
     get_cucumberish
         Downloads Cucumberish version
@@ -147,7 +162,7 @@ else
   elsif cmd == 'version'
     puts "2.0"
   elsif cmd == 'setup_gherkin_template'
-    setup_gherkin
+    setup_gherkin_template
   else
     print_usage
   end
