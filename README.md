@@ -89,17 +89,17 @@ You must have Mac Operating System with OSX/MacOS version > 10.9
 
 # Installation
 
-XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](https://rubygems.org/) but it's strongly recommended to install it using Homebrew. 
+XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](https://rubygems.org/) but it's strongly recommended to install it using Homebrew.
 
 ## Install with HomeBrew
 
 Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
      brew tap shashikant86/homebrew-taps
-Now, we can install XCFit brew package using 
+Now, we can install XCFit brew package using
 
      brew install xcfit
-      
+
 
 This is recommended method to install `XCFit` over the Rubygem mentioned below.
 
@@ -149,15 +149,6 @@ $ xcfit set_xcode_templates
 
 ```
 
-##### Xcode 7
-
-To setup Templates for Xcode 7.x.
-
-
-```sh
-$ xcfit set_xcode7_templates
-
-```
 
 -  This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File--->New--->Target'
 
