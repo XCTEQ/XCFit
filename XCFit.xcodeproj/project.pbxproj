@@ -7,164 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BD4FC491DBB303800C0ED6E /* ElementChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */; };
-		9BD4FC4B1DBB306600C0ED6E /* ElementContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */; };
-		9BD4FC4D1DBB307100C0ED6E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */; };
-		9BD4FC4F1DBB307B00C0ED6E /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */; };
-		9BD4FC511DBB308300C0ED6E /* XCFitScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */; };
-		9BD4FC531DBB309100C0ED6E /* XCFitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */; };
-		9BD4FC551DBB309900C0ED6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC541DBB309900C0ED6E /* Extensions.swift */; };
-		9BD4FC571DBB30DB00C0ED6E /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */; };
-		9BD4FC591DBB35AC00C0ED6E /* BaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */; };
-		9BD4FC5B1DBB3BDB00C0ED6E /* XCFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */; };
-		_LinkFileRef_XCFit_via_XCFitTests /* XCFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_XCFit" /* XCFit.framework */; };
-		__src_cc_ref_Sources/XCFit.swift /* XCFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/XCFit.swift /* XCFit.swift */; };
-		__src_cc_ref_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift */; };
+		9B8AF9CB1E3CB55E00372E93 /* XCFitAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */; };
+		9B8AF9CD1E3D120B00372E93 /* XCFitUserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */; };
+		9B8AF9CF1E3D160300372E93 /* XCFitWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */; };
+		OBJ_27 /* XCFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* XCFit.swift */; };
+		OBJ_34 /* XCFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* XCFitTests.swift */; };
+		OBJ_36 /* XCFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCFit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9BD4FC471DBB2FE000C0ED6E /* PBXContainerItemProxy */ = {
+		9B8AF9C91E3C7A8600372E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "______Target_XCFit";
+			remoteGlobalIDString = OBJ_22;
 			remoteInfo = XCFit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementChecker.swift; sourceTree = "<group>"; };
-		9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementContainer.swift; sourceTree = "<group>"; };
-		9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
-		9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
-		9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitScreen.swift; sourceTree = "<group>"; };
-		9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitSection.swift; sourceTree = "<group>"; };
-		9BD4FC541DBB309900C0ED6E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
-		9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHelpers.swift; sourceTree = "<group>"; };
-		9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitApp.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Docs /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = "<group>"; };
-		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/XCFit.swift /* XCFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFit.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFitTests.swift; sourceTree = "<group>"; };
-		__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig /* XCFit.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XCFit.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
-		__PBXFileRef_bin /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
-		__PBXFileRef_lib /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
-		"_____Product_XCFit" /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_XCFitTests" /* XCFitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitAppLauncher.swift; sourceTree = "<group>"; };
+		9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitUserActions.swift; sourceTree = "<group>"; };
+		9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitWaiter.swift; sourceTree = "<group>"; };
+		OBJ_11 /* XCFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFitTests.swift; sourceTree = "<group>"; };
+		OBJ_12 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
+		OBJ_13 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
+		OBJ_14 /* homebrew */ = {isa = PBXFileReference; lastKnownFileType = folder; path = homebrew; sourceTree = SOURCE_ROOT; };
+		OBJ_15 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = SOURCE_ROOT; };
+		OBJ_16 /* XCFit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit; sourceTree = SOURCE_ROOT; };
+		OBJ_17 /* XCFit2Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit2Demo; sourceTree = SOURCE_ROOT; };
+		OBJ_18 /* XCFit_Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit_Templates; sourceTree = SOURCE_ROOT; };
+		OBJ_20 /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_21 /* XCFitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_8 /* XCFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		"___LinkPhase_XCFit" /* Frameworks */ = {
+		OBJ_28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		"___LinkPhase_XCFitTests" /* Frameworks */ = {
+		OBJ_35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				_LinkFileRef_XCFit_via_XCFitTests /* XCFit.framework in Frameworks */,
+				OBJ_36 /* XCFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		TestProducts_ /* Tests */ = {
+		OBJ_10 /* XCFitTests */ = {
 			isa = PBXGroup;
 			children = (
-				"_____Product_XCFitTests" /* XCFitTests.xctest */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
-		"___RootGroup_" = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Package.swift /* Package.swift */,
-				"_____Configs_" /* Configs */,
-				"_____Sources_" /* Sources */,
-				__PBXFileRef_bin /* bin */,
-				__PBXFileRef_Docs /* Docs */,
-				__PBXFileRef_lib /* lib */,
-				"_______Tests_" /* Tests */,
-				"____Products_" /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		"____Products_" /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				TestProducts_ /* Tests */,
-				"_____Product_XCFit" /* XCFit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		"_____Configs_" /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig /* XCFit.xcodeproj/Configs/Project.xcconfig */,
-			);
-			name = Configs;
-			sourceTree = "<group>";
-		};
-		"_____Sources_" /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				"_______Group_XCFit" /* XCFit */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		"_______Group_XCFit" /* XCFit */ = {
-			isa = PBXGroup;
-			children = (
-				9BD4FC541DBB309900C0ED6E /* Extensions.swift */,
-				9BD4FC521DBB309100C0ED6E /* XCFitSection.swift */,
-				9BD4FC501DBB308300C0ED6E /* XCFitScreen.swift */,
-				9BD4FC4E1DBB307B00C0ED6E /* Waiter.swift */,
-				9BD4FC4C1DBB307100C0ED6E /* Loadable.swift */,
-				9BD4FC4A1DBB306600C0ED6E /* ElementContainer.swift */,
-				9BD4FC481DBB303800C0ED6E /* ElementChecker.swift */,
-				__PBXFileRef_Sources/XCFit.swift /* XCFit.swift */,
-				9BD4FC561DBB30DB00C0ED6E /* Accessibility.swift */,
-				9BD4FC581DBB35AC00C0ED6E /* BaseHelpers.swift */,
-				9BD4FC5A1DBB3BDB00C0ED6E /* XCFitApp.swift */,
-			);
-			name = XCFit;
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		"_______Group_XCFitTests" /* XCFitTests */ = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift */,
+				OBJ_11 /* XCFitTests.swift */,
 			);
 			name = XCFitTests;
 			path = Tests/XCFitTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		"_______Tests_" /* Tests */ = {
+		OBJ_19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_XCFitTests" /* XCFitTests */,
+				OBJ_20 /* XCFit.framework */,
+				OBJ_21 /* XCFitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_9 /* Tests */,
+				OBJ_12 /* bin */,
+				OBJ_13 /* Docs */,
+				OBJ_14 /* homebrew */,
+				OBJ_15 /* lib */,
+				OBJ_16 /* XCFit */,
+				OBJ_17 /* XCFit2Demo */,
+				OBJ_18 /* XCFit_Templates */,
+				OBJ_19 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* XCFit.swift */,
+				9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */,
+				9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */,
+				9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* XCFitTests */,
 			);
 			name = Tests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"______Target_XCFit" /* XCFit */ = {
+		OBJ_22 /* XCFit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_XCFit" /* Build configuration list for PBXNativeTarget "XCFit" */;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "XCFit" */;
 			buildPhases = (
-				CompilePhase_XCFit /* Sources */,
-				"___LinkPhase_XCFit" /* Frameworks */,
+				OBJ_26 /* Sources */,
+				OBJ_28 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,95 +133,92 @@
 			);
 			name = XCFit;
 			productName = XCFit;
-			productReference = "_____Product_XCFit" /* XCFit.framework */;
+			productReference = OBJ_20 /* XCFit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"______Target_XCFitTests" /* XCFitTests */ = {
+		OBJ_29 /* XCFitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_XCFitTests" /* Build configuration list for PBXNativeTarget "XCFitTests" */;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "XCFitTests" */;
 			buildPhases = (
-				CompilePhase_XCFitTests /* Sources */,
-				"___LinkPhase_XCFitTests" /* Frameworks */,
+				OBJ_33 /* Sources */,
+				OBJ_35 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				__Dependency_XCFit /* PBXTargetDependency */,
+				OBJ_37 /* PBXTargetDependency */,
 			);
 			name = XCFitTests;
 			productName = XCFitTests;
-			productReference = "_____Product_XCFitTests" /* XCFitTests.xctest */;
+			productReference = OBJ_21 /* XCFitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		__RootObject_ /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "XCFit" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "XCFit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = "___RootGroup_";
-			productRefGroup = "____Products_" /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"______Target_XCFit" /* XCFit */,
-				"______Target_XCFitTests" /* XCFitTests */,
+				OBJ_22 /* XCFit */,
+				OBJ_29 /* XCFitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CompilePhase_XCFit /* Sources */ = {
+		OBJ_26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				9BD4FC531DBB309100C0ED6E /* XCFitSection.swift in Sources */,
-				9BD4FC491DBB303800C0ED6E /* ElementChecker.swift in Sources */,
-				9BD4FC4D1DBB307100C0ED6E /* Loadable.swift in Sources */,
-				9BD4FC551DBB309900C0ED6E /* Extensions.swift in Sources */,
-				9BD4FC511DBB308300C0ED6E /* XCFitScreen.swift in Sources */,
-				9BD4FC4F1DBB307B00C0ED6E /* Waiter.swift in Sources */,
-				9BD4FC591DBB35AC00C0ED6E /* BaseHelpers.swift in Sources */,
-				__src_cc_ref_Sources/XCFit.swift /* XCFit.swift in Sources */,
-				9BD4FC5B1DBB3BDB00C0ED6E /* XCFitApp.swift in Sources */,
-				9BD4FC571DBB30DB00C0ED6E /* Accessibility.swift in Sources */,
-				9BD4FC4B1DBB306600C0ED6E /* ElementContainer.swift in Sources */,
+				9B8AF9CB1E3CB55E00372E93 /* XCFitAppLauncher.swift in Sources */,
+				9B8AF9CD1E3D120B00372E93 /* XCFitUserActions.swift in Sources */,
+				9B8AF9CF1E3D160300372E93 /* XCFitWaiter.swift in Sources */,
+				OBJ_27 /* XCFit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CompilePhase_XCFitTests /* Sources */ = {
+		OBJ_33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				__src_cc_ref_Tests/XCFitTests/XCFitTests.swift /* XCFitTests.swift in Sources */,
+				OBJ_34 /* XCFitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		__Dependency_XCFit /* PBXTargetDependency */ = {
+		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "______Target_XCFit" /* XCFit */;
-			targetProxy = 9BD4FC471DBB2FE000C0ED6E /* PBXContainerItemProxy */;
+			target = OBJ_22 /* XCFit */;
+			targetProxy = 9B8AF9C91E3C7A8600372E93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		_ReleaseConf_XCFit /* Release */ = {
+		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = XCFit.xcodeproj/XCFit_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -268,28 +226,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = XCFit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 3.0;
+				SKIP_INSTALL = YES;
+				TARGET_NAME = XCFit;
 			};
-			name = Release;
+			name = Debug;
 		};
-		_ReleaseConf_XCFitTests /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = XCFit.xcodeproj/XCFitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		"___DebugConf_XCFit" /* Debug */ = {
+		OBJ_25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = XCFit.xcodeproj/XCFit_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -297,70 +247,120 @@
 				PRODUCT_BUNDLE_IDENTIFIER = XCFit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = XCFit;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		"___DebugConf_XCFitTests" /* Debug */ = {
+		OBJ_31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = XCFit.xcodeproj/XCFitTests_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				TARGET_NAME = XCFitTests;
 			};
 			name = Debug;
 		};
-		"_____Release_" /* Release */ = {
+		OBJ_32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = __PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig /* XCFit.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = XCFit.xcodeproj/XCFitTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = XCFitTests;
 			};
 			name = Release;
 		};
-		"_______Debug_" /* Debug */ = {
+		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = __PBXFileRef_XCFit.xcodeproj/Configs/Project.xcconfig /* XCFit.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		"___RootConfs_" /* Build configuration list for PBXProject "XCFit" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "XCFit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				"_______Debug_" /* Debug */,
-				"_____Release_" /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		"_______Confs_XCFit" /* Build configuration list for PBXNativeTarget "XCFit" */ = {
+		OBJ_23 /* Build configuration list for PBXNativeTarget "XCFit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				"___DebugConf_XCFit" /* Debug */,
-				_ReleaseConf_XCFit /* Release */,
+				OBJ_24 /* Debug */,
+				OBJ_25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		"_______Confs_XCFitTests" /* Build configuration list for PBXNativeTarget "XCFitTests" */ = {
+		OBJ_30 /* Build configuration list for PBXNativeTarget "XCFitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				"___DebugConf_XCFitTests" /* Debug */,
-				_ReleaseConf_XCFitTests /* Release */,
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = __RootObject_ /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

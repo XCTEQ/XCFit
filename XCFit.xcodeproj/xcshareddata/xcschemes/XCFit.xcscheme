@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_XCFit"
+               BlueprintIdentifier = "OBJ_22"
                BuildableName = "XCFit.framework"
                BlueprintName = "XCFit"
                ReferencedContainer = "container:XCFit.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_XCFitTests"
+               BlueprintIdentifier = "OBJ_29"
                BuildableName = "XCFitTests.xctest"
                BlueprintName = "XCFitTests"
                ReferencedContainer = "container:XCFit.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "______Target_XCFit"
+            BlueprintIdentifier = "OBJ_22"
             BuildableName = "XCFit.framework"
             BlueprintName = "XCFit"
             ReferencedContainer = "container:XCFit.xcodeproj">

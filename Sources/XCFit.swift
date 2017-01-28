@@ -1,4 +1,9 @@
-struct XCFit {
+import XCTest
 
-    var text = "Thanks for Trying XCFit. Feedback Welcome"
+@available(OSX 10.11, *)
+class XCFit: XCTestCase {
+    
+    static let app = XCUIApplication()
+    
 }
+
