@@ -10,7 +10,7 @@ import XCTest
 import Foundation
 
 @available(OSX 10.11, *)
-class XCFitWaiter: XCFit {
+open class XCFitWaiter: XCFit {
     
     func waitUntilElementExist(element: XCUIElement) {
         let exists = NSPredicate(format: "exists == true")
@@ -24,17 +24,17 @@ class XCFitWaiter: XCFit {
 @available(OSX 10.11, *)
 extension XCUIElement {
 
-    func waitAndTap(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
+    open func waitAndTap(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
         let predicate = NSPredicate(format: "exists == true AND hittable == true AND enabled == true")
         wait(with: testCase, for: predicate, file: file, line: line)
         tap()
     }
     
-    func waitForAppearance(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
+    open func waitForAppearance(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
         wait(with: testCase, for: NSPredicate(format: "exists == true"), file: file, line: line)
     }
     
-    func waitForDisappearance(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
+    open func waitForDisappearance(testCase: XCTestCase, file: String = #file, line: UInt = #line) {
         wait(with: testCase, for: NSPredicate(format: "exists == false"), file: file, line: line)
         
     }
@@ -53,7 +53,7 @@ extension XCUIElement {
 
 extension XCTestCase {
     @available(OSX 10.11, *)
-    func waitForElementToAppearOnScreen(element: XCUIElement,
+    open func waitForElementToAppearOnScreen(element: XCUIElement,
                                         file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "exists == true")
         expectation(for: existsPredicate,
@@ -80,7 +80,7 @@ extension XCUIElement {
 }
 
 @available(OSX 10.11, *)
-public extension XCTestCase {
+extension XCTestCase {
     /**
      * Waits for the default timeout until `element.exists` is true.
      *
@@ -88,7 +88,7 @@ public extension XCTestCase {
      * @see waitForElementToNotExist()
      */
     @available(OSX 10.11, *)
-    func waitForElementToExist(element: XCUIElement) {
+    open func waitForElementToExist(element: XCUIElement) {
         waitForElement(element: element, toExist: true)
     }
     
@@ -99,7 +99,7 @@ public extension XCTestCase {
      * @see waitForElementToExist()
      */
     @available(OSX 10.11, *)
-    func waitForElementToNotExist(element: XCUIElement) {
+    open func waitForElementToNotExist(element: XCUIElement) {
         waitForElement(element: element, toExist: false)
     }
     
@@ -108,7 +108,7 @@ public extension XCTestCase {
      *
      * @note Should only be used if one `ActivityIndicator` is present.
      */
-    func waitForActivityIndicatorToFinish() {
+    open func waitForActivityIndicatorToFinish() {
         
         let spinnerQuery = XCUIApplication().activityIndicators
         
@@ -146,7 +146,7 @@ public extension XCTestCase {
 
 extension XCTestCase {
     @available(OSX 10.11, *)
-    func waitForHittable(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
+    open func waitForHittable(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "hittable == true")
         expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
         
@@ -160,7 +160,7 @@ extension XCTestCase {
     }
     
     @available(OSX 10.11, *)
-    func waitForNotHittable(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
+    open func waitForNotHittable(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "hittable == false")
         expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
         
@@ -177,7 +177,7 @@ extension XCTestCase {
     
     
     @available(OSX 10.11, *)
-    func waitForExists(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
+    open func waitForExists(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "exists == true")
         expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
         

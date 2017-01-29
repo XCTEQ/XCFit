@@ -11,23 +11,23 @@ import XCTest
 @available(OSX 10.11, *)
 extension XCFit {
     
-    func whenITap(element: XCUIElement) {
+    open func whenITap(element: XCUIElement) {
         element.tap()
     }
     
-    func whenIDoubleTap(element: XCUIElement) {
+    open func whenIDoubleTap(element: XCUIElement) {
         element.doubleTap()
     }
     
-    func whenItypeTextIntoTextField(textField: XCUIElement, text: String) {
+    open func whenItypeTextIntoTextField(textField: XCUIElement, text: String) {
         textField.typeText(text)
     }
     
-    func whenIActOnAlert(alertTitle: String, alertButton: String) {
+    open func whenIActOnAlert(alertTitle: String, alertButton: String) {
         XCUIApplication().alerts[alertTitle].buttons[alertButton].tap()
     }
     
-    func whenIAllowSystemAlert(alertDescription: String) {
+    open func whenIAllowSystemAlert(alertDescription: String) {
         
         addUIInterruptionMonitor(withDescription: alertDescription) { (alert) -> Bool in
             alert.buttons["Allow"].tap()
@@ -37,15 +37,15 @@ extension XCFit {
         
     }
     
-    func whenISlideASlider(by normalisedValue: CGFloat) {
+    open func whenISlideASlider(by normalisedValue: CGFloat) {
         XCUIApplication().sliders.element.adjust(toNormalizedSliderPosition: normalisedValue)
     }
     
-    func whenISelectAItemFromPicker(item: CGFloat) {
+    open func whenISelectAItemFromPicker(item: CGFloat) {
         XCUIApplication().pickerWheels.element.adjust(toNormalizedSliderPosition: item)
     }
     
-    func whenIClickLinkFromWebView(linkText: String) {
+    open func whenIClickLinkFromWebView(linkText: String) {
         XCUIApplication().links[linkText].tap()
     }
     

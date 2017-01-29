@@ -11,16 +11,16 @@ import XCTest
 @available(OSX 10.11, *)
 extension XCFit {
     
-    func givenILaunchedApplication() {
+    open func givenILaunchedApplication() {
         super.setUp()
         XCUIApplication().launch()
     }
     
-    func whenITerminatedApplication() {
+    open func whenITerminatedApplication() {
         XCUIApplication().terminate()
     }
     
-    func givenILaunchedApplicationWithArguments(launchArguments: [[String]] = []) {
+    open func givenILaunchedApplicationWithArguments(launchArguments: [[String]] = []) {
         launchArguments.forEach { XCUIApplication().launchArguments += $0 }
         XCUIApplication().launch()
     }
