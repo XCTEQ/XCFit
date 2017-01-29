@@ -11,6 +11,7 @@
 		9B8AF9CD1E3D120B00372E93 /* XCFitUserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */; };
 		9B8AF9CF1E3D160300372E93 /* XCFitWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */; };
 		9BBA72801E3EB18D0060E9C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEF3D301E3EAC37000D311E /* XCTest.framework */; };
+		9BBA72811E3EB2B50060E9C2 /* XCFitFramework.h in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF3D251E3EAAD2000D311E /* XCFitFramework.h */; };
 		9BEF3D271E3EAAD2000D311E /* XCFitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BEF3D251E3EAAD2000D311E /* XCFitFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BEF3D2B1E3EABC3000D311E /* XCFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* XCFit.swift */; };
 		9BEF3D2C1E3EABC3000D311E /* XCFitAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */; };
@@ -269,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBA72811E3EB2B50060E9C2 /* XCFitFramework.h in Sources */,
 				9BEF3D2B1E3EABC3000D311E /* XCFit.swift in Sources */,
 				9BEF3D2C1E3EABC3000D311E /* XCFitAppLauncher.swift in Sources */,
 				9BEF3D2D1E3EABC3000D311E /* XCFitUserActions.swift in Sources */,
