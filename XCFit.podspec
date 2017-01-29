@@ -16,7 +16,7 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   s.social_media_url = 'https://twitter.com/Shashikant86'
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'XCFit/Classes/**/*'
+  s.source_files = 'XCFit/Classes/*.swift'
   s.framework = "XCTest"
   s.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "SRC_ROOT=@\\\"$(SRCROOT)\\\"" }
 end
