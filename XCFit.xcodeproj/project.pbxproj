@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B586BAC1E413ECD000B81EB /* XCFitAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B586BAB1E413ECD000B81EB /* XCFitAssertions.swift */; };
 		9B8AF9CB1E3CB55E00372E93 /* XCFitAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */; };
 		9B8AF9CD1E3D120B00372E93 /* XCFitUserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */; };
 		9B8AF9CF1E3D160300372E93 /* XCFitWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B586BAB1E413ECD000B81EB /* XCFitAssertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitAssertions.swift; sourceTree = "<group>"; };
 		9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitAppLauncher.swift; sourceTree = "<group>"; };
 		9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitUserActions.swift; sourceTree = "<group>"; };
 		9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCFitWaiter.swift; sourceTree = "<group>"; };
@@ -80,7 +82,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -95,7 +97,6 @@
 				OBJ_18 /* XCFit_Templates */,
 				OBJ_19 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -105,6 +106,7 @@
 				9B8AF9CA1E3CB55E00372E93 /* XCFitAppLauncher.swift */,
 				9B8AF9CC1E3D120B00372E93 /* XCFitUserActions.swift */,
 				9B8AF9CE1E3D160300372E93 /* XCFitWaiter.swift */,
+				9B586BAB1E413ECD000B81EB /* XCFitAssertions.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -168,7 +170,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,6 +188,7 @@
 			files = (
 				9B8AF9CB1E3CB55E00372E93 /* XCFitAppLauncher.swift in Sources */,
 				9B8AF9CD1E3D120B00372E93 /* XCFitUserActions.swift in Sources */,
+				9B586BAC1E413ECD000B81EB /* XCFitAssertions.swift in Sources */,
 				9B8AF9CF1E3D160300372E93 /* XCFitWaiter.swift in Sources */,
 				OBJ_27 /* XCFit.swift in Sources */,
 			);

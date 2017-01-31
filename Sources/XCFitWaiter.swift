@@ -10,12 +10,37 @@ import XCTest
 import Foundation
 
 @available(OSX 10.11, *)
+extension XCFit {
+    
+    open func whenIexpectElementToAppear(_ element: XCUIElement) {
+        let result = waitForElementToAppearCommpleted(element)
+        XCTAssertTrue(result)
+    }
+    
+    open func whenIexpectElementTimeOut(_ element: XCUIElement) {
+        let result = waitForElementToAppearTimedOut(element)
+        XCTAssertTrue(result)
+    }
+    
+    open func whenIexpectElementIncorrectOrder(_ element: XCUIElement) {
+        let result = waitForElementToAppearIncorrectOrder(element)
+        XCTAssertTrue(result)
+    }
+    
+    open func whenIexpectElementInvertedFulfillment(_ element: XCUIElement) {
+        let result = waitForElementToAppearinvertedFulfillment(element)
+        XCTAssertTrue(result)
+    }
+}
+
+
+@available(OSX 10.11, *)
 open class XCFitWaiter: XCFit {
     
     open func waitUntilElementExist(element: XCUIElement) {
-        let exists = NSPredicate(format: "exists == true")
+        let exists = NSPredicate(format: "exists == true AND hittable == true AND enabled == true")
         self.expectation(for: exists, evaluatedWith: element, handler: nil)
-        self.waitForExpectations(timeout: 10, handler: nil)
+        self.waitForExpectations(timeout: 60, handler: nil)
         XCTAssert(element.exists)
     }
     

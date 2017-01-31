@@ -11,15 +11,18 @@ import XCTest
 @available(OSX 10.11, *)
 extension XCFit {
     
-    open func whenITap(element: XCUIElement) {
+    open func whenITap(on element: XCUIElement) {
+        elementAppeared(element)
         element.tap()
     }
     
     open func whenIDoubleTap(element: XCUIElement) {
+        elementAppeared(element)
         element.doubleTap()
     }
     
     open func whenItypeTextIntoTextField(textField: XCUIElement, text: String) {
+        elementAppeared(textField)
         textField.typeText(text)
     }
     
@@ -48,6 +51,61 @@ extension XCFit {
     open func whenIClickLinkFromWebView(linkText: String) {
         XCUIApplication().links[linkText].tap()
     }
+    
+    open func whenIHoverOver(_ element: XCUIElement) {
+        elementAppeared(element)
+        element.hover()
+        
+    }
+    
+    open func whenIClickOn(_ element: XCUIElement) {
+        elementAppeared(element)
+        element.click()
+    }
+    
+    open func whenIDoubleClickedOn(_ element: XCUIElement) {
+        elementAppeared(element)
+        element.doubleClick()
+    }
+    
+    open func whenIRightClickOn(_ element: XCUIElement) {
+        elementAppeared(element)
+        element.rightClick()
+    }
+    
+    open func whenIPressElementForDuration(_ element: XCUIElement, duration: TimeInterval) {
+        elementAppeared(element)
+        element.press(forDuration: duration)
+    }
+    
+    open func whenIPressOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval) {
+        elementAppeared(element)
+        element.press(forDuration: duration, thenDragTo: destinationElement)
+    }
+    
+    open func whenIClickElementForDuration(_ element: XCUIElement, duration: TimeInterval) {
+        elementAppeared(element)
+        element.press(forDuration: duration)
+    }
+    
+    open func whenIClickOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval) {
+        elementAppeared(element)
+        element.press(forDuration: duration, thenDragTo: destinationElement)
+    }
+    
+    open func whenISroll(_ element: XCUIElement, x: CGFloat, y: CGFloat) {
+        element.scroll(byDeltaX: x, deltaY: y)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
