@@ -16,7 +16,7 @@ extension XCFit {
         element.tap()
     }
     
-    open func whenIDoubleTap(element: XCUIElement) {
+    open func whenIDoubleTapOn(_ element: XCUIElement) {
         elementAppeared(element)
         element.doubleTap()
     }
@@ -52,27 +52,6 @@ extension XCFit {
         XCUIApplication().links[linkText].tap()
     }
     
-    open func whenIHoverOver(_ element: XCUIElement) {
-        elementAppeared(element)
-        element.hover()
-        
-    }
-    
-    open func whenIClickOn(_ element: XCUIElement) {
-        elementAppeared(element)
-        element.click()
-    }
-    
-    open func whenIDoubleClickedOn(_ element: XCUIElement) {
-        elementAppeared(element)
-        element.doubleClick()
-    }
-    
-    open func whenIRightClickOn(_ element: XCUIElement) {
-        elementAppeared(element)
-        element.rightClick()
-    }
-    
     open func whenIPressElementForDuration(_ element: XCUIElement, duration: TimeInterval) {
         elementAppeared(element)
         element.press(forDuration: duration)
@@ -93,20 +72,8 @@ extension XCFit {
         element.press(forDuration: duration, thenDragTo: destinationElement)
     }
     
-    open func whenISroll(_ element: XCUIElement, x: CGFloat, y: CGFloat) {
-        element.scroll(byDeltaX: x, deltaY: y)
-    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
 }
 
