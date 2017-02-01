@@ -6,16 +6,17 @@
 
 
 /*
- 
+
  This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
- 
- This is very important file as we will be using it as initialiser of all out test suite. We have to resgister all our Step Definitions in this class. e.g we have registed CommonStepDefinitions and HomeScreenSteps here 
- 
+
+ This is very important file as we will be using it as initialiser of all out test suite. We have to resgister all our Step Definitions in this class. e.g we have registed CommonStepDefinitions and HomeScreenSteps here
+
  */
 
 
 import Foundation
-import XCTest
+import Cucumberish
+
 class ___PACKAGENAMEASIDENTIFIER___: NSObject {
     class func CucumberishSwiftInit()
     {
@@ -29,9 +30,10 @@ class ___PACKAGENAMEASIDENTIFIER___: NSObject {
         //A Given step definition
         Given("the app is running") { (args, userInfo) -> Void in
             application.launch()
-            
+
         }
-        //Tell Cucumberish the name of your features folder and let it execute them for you...
-        Cucumberish.executeFeatures(inDirectory: "Features", includeTags: nil, excludeTags: nil)
+        let bundle = Bundle(for: ___PACKAGENAMEASIDENTIFIER___.self)
+
+        Cucumberish.executeFeatures(inDirectory: "Features", from: bundle, includeTags: nil, excludeTags: nil)
     }
 }

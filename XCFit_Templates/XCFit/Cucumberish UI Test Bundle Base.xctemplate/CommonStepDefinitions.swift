@@ -6,19 +6,20 @@
 //
 
 /*
- 
+
  This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
- 
- This class has some mostly used step definitions included here. You can add some more here if needed. 
- 
+
+ This class has some mostly used step definitions included here. You can add some more here if needed.
+
  */
 
 import XCTest
+import Cucumberish
 
 class CommonStepDefinitions: NSObject {
-    
+
     fileprivate var application : XCUIApplication!
-    
+
     fileprivate func elementByLabel(_ label : String, type: String) -> XCUIElement
     {
         var elementQurey : XCUIElementQuery!
@@ -39,7 +40,7 @@ class CommonStepDefinitions: NSObject {
         }
         return elementQurey[label]
     }
-    
+
     fileprivate func setup(_ application: XCUIApplication)
     {
         self.application = application
@@ -49,7 +50,7 @@ class CommonStepDefinitions: NSObject {
             let type = args?[1]
             self.elementByLabel(label!, type: type!).tap()
         }
-        
+
         //And/When/Then/But I tap the "Increment" button 5 times
         MatchAll("^I tap (?:the )?\"([^\\\"]*)\" (button|label|tab|view) ([1-9]{1}) time(?:s)?$") { (args, userInfo) -> Void in
             let label = args?[0]
@@ -61,7 +62,7 @@ class CommonStepDefinitions: NSObject {
             }
         }
         //             Then I write "Ahmed Ali" into the "Name" field
-        
+
         //When/And/But/When I write "Ahmed" in the "Name" field
         MatchAll("^I write \"([^\\\"]*)\" (?:into|in) (?:the )?\"([^\\\"]*)\" (field|text view)$") { (args, userInfo) -> Void in
             let type = args?[2]
@@ -70,8 +71,8 @@ class CommonStepDefinitions: NSObject {
             element.tap()
             element.typeText((args?[0])!)
         }
-        
-        
+
+
         MatchAll("^I switch (on|off) the \"([^\\\"]*)\" switch$") { (args, userInfo) -> Void in
             let theSwitch = application.switches[(args?[1])!]
             let currentValu = NSString(string: theSwitch.value as! String).integerValue
@@ -79,12 +80,12 @@ class CommonStepDefinitions: NSObject {
             if(currentValu != newValue){
                 theSwitch.tap()
             }
-            
+
         }
-        
-        
+
+
     }
-    
+
     class func setup(_ application: XCUIApplication)
     {
         CommonStepDefinitions().setup(application)
