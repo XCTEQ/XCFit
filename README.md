@@ -317,27 +317,27 @@ Testbase is group where we can abstract all setup, teardown and common stuff in 
 
 There are some predefined XCFit steps we can use by importing `XCFit` and extending out test class to `XCFit`. 
 
-`
-import XCTest
-import XCFit
+             import XCTest
+             import XCFit
 
-class XCFitTests: XCFit {
-    override func setUp() {
-        super.setUp()
-        continueAfterFailure = false
-        XCUIApplication().launch()
-    }
-    override func tearDown() {
-        super.tearDown()
-    }
+         class XCFitTests: XCFit {
+            override func setUp() {
+            super.setUp()
+            continueAfterFailure = false
+            XCUIApplication().launch()
+            }
+           override func tearDown() {
+            super.tearDown()
+            }
     
-    func testExample() {
-       givenILaunchedApplication()
-       whenITap(on: HomeScreen().crappyButtuon)
-       thenIShouldSeeAnAlert()
-    }
-}
+          func testExample() {
+            givenILaunchedApplication()
+            whenITap(on: HomeScreen().crappyButtuon)
+            thenIShouldSeeAnAlert()
+           }
+        }
 `
+
 You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those ste it
 
 
