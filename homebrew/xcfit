@@ -20,14 +20,14 @@ puts "==================XXXXXXXX==========================="
 
 def clone_xcfit
   # system("cd /tmp")
-  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/v2.1.tar.gz | tar xz")
+  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/3.0.6.tar.gz | tar xz")
   puts "*******======= Downloading XCFit Templates for the Xcode =============***"
-  @xcfit_template_dir = "/tmp/XCFit-2.1/XCFit_Templates/XCFit"
-  @gherkin_template_dir = "/tmp/XCFit-2.1/XCFit_Templates/Gherkin"
+  @xcfit_template_dir = "/tmp/XCFit-3.0.6/XCFit_Templates/XCFit"
+  @gherkin_template_dir = "/tmp/XCFit-3.0.6/XCFit_Templates/Gherkin"
 end
 
 def clean_xcfit
-  system("rm -rf /tmp/XCFit-2.1/")
+  system("rm -rf /tmp/XCFit-3.0.6/")
 end
 
 def setup_xcode_templates
