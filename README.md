@@ -7,9 +7,8 @@
 
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS and macOS apps. XCFit allows us to write API level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit),  [CocoaPods](http://cocoadocs.org/docsets/XCFit) and Swift Package Manager.**
 
-### XCFit 2.0 has just released !
+### XCFit 
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit2Release.png)
 
 * [XCFit : Full Stack BDD in Xcode](#xcfit--full-stack-bdd-in-xcode)
    * [XCFit Features](#xcfit-features)
@@ -134,6 +133,7 @@ setup_xcode_templates:
 ## Install XCFit Cocoapod and Swift Package (Covered later)
 
 Later, we need to install [XCFit](http://cocoadocs.org/docsets/XCFit) from CocoaPods to enable Cucumberish and Fitnesse test. We can also get XCFit from Swift Package Manager if we need to have additional helpers for the XCUI test framework.
+Swift Packages only supports other Swift Packages. 
 
 ---
 
@@ -222,7 +222,7 @@ Here is how to do it.
 
 We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) to be included in our project.
 
-### Getting Cucumberish into our Target
+### Getting Cucumberish CocoaPod into our Target
 
 In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) source content. There are few ways we can do that
 
@@ -247,9 +247,8 @@ $ pod install
 
 Now close the existing Xcode session and Xcode Workspace next time.
 
-> **Note** There is issue with Cocoapods when you have ``'use_frameworks!'``, it will not import header files and build will fail. If you are not using Frameworks in th Podfile then this approach is OK.
 
-- **Manual Installtion**
+- **Manual Installtion (not recommended use CocoaPods instaed )**
 
 We can manually copy content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) directory and drag to target as with option "**Create groups" and "Copy items if needed**".
 
@@ -257,25 +256,6 @@ Here is How to setup everything in a minute
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
 
-- **Carthage**
-
-Create a `Cartfile ` with following Content
-
-```
-         github "Ahmed-Ali/Cucumberish"
-```
-Now run Carthage wihtout build option.
-
-          $ carthage update --platform iOS --no-build
-
-Now in the `Carthage/Checkout` directory has `Cucumberish/Cucumberish`. drag to target as with option "**Create groups" and "Copy items if needed**".
-
-Here is how to do that !
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Carthage.gif)
-
-
-Please choose one of the suitable option for you.
 
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
@@ -290,7 +270,7 @@ XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target a
 
 ---
 
-# XCUI Page Object Pattern
+# XCUI Page Object Pattern and Pre-Defined Steps 
 
 Now, we have seen that it's failrly easy to setup BDD Style tests with Cucumberish but some people don't want that overhead of adding extra layer of Gherkin. XCFit gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework.
 
@@ -332,6 +312,33 @@ This group has all the test for our app. Currently demo template has two tests '
 * **TestBase**
 
 Testbase is group where we can abstract all setup, teardown and common stuff in the base class. Every Screen then use this class as base. You can add more stuff as needed e.g Fixtures, Launch Arguments
+
+## Using Predefined XCFit BDD Style Steps
+
+There are some predefined XCFit steps we can use by importing `XCFit` and extending out test class to `XCFit`. 
+
+`
+import XCTest
+import XCFit
+
+class XCFitTests: XCFit {
+    override func setUp() {
+        super.setUp()
+        continueAfterFailure = false
+        XCUIApplication().launch()
+    }
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    func testExample() {
+       givenILaunchedApplication()
+       whenITap(on: HomeScreen().crappyButtuon)
+       thenIShouldSeeAnAlert()
+    }
+}
+`
+You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those ste it
 
 
 ---
