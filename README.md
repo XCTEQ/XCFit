@@ -238,6 +238,9 @@ and add the paths to the frameworks you want to use under “Input Files”, e.g
 
          $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
                   
+Here is Carthage looks like 
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFit_Carthage.gif)
+
 You can choose any of the above method but Cocoapods is easy and less manual. 
 
 ### Import XCFit & Use Predefined Steps 
