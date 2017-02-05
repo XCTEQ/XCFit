@@ -93,10 +93,11 @@ You must have Mac Operating System with OSX/MacOS Sierra.
 
 XCFit installtion has two steps. 
 
-* Xcode Template Installtion 
+* **Xcode Template Installtion**
+
 This will install Xcode Templates with skeloton code to support BDD in iOS app. The templates are XCUI Page Object Templates, Cucumberish BDD Templated and OCSlim Fitnesse Templates. The templates can be installed with [xcfit-RubyGem](https://rubygems.org/gems/xcfit) or [Homebrew](http://brew.sh). 
 
-* Framework Installtion 
+* **Framework Installtion** 
 
 XCFit Swift Framework provided pre-defined BDD Style steps with XCUI and supporting Frameworks like Cucumberish and OCSlim used to write BDD Steps. XCFit Swift Framework is available on [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package manager. Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [OCSlimProject](https://github.com/paulstringer/OCSlimProject) are available on Cocoapods. 
 
@@ -147,9 +148,127 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png)
 
+## Framework Installtion 
+
+XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well but we will use Cocoapods as it's more automated than Carthage. We can create `Podfile` and add specific dependency for the target 
+
+```ruby
+    target '$_YOUR__TARGET' do
+      pod 'XCFit'
+    end
+```
+Same way we can get 'Cucumberish' and 'OCSlim' for the specific target. 
+
+```sh
+$ pod install
+```
+
+You need to close the existing Xcode session and Xcode Workspace .xcworkspace next time.
+
+
 ---
+# XCFit Swift Framework : XCUI Page Object Pattern + Pre-Defined Steps 
+
+XCFit templates gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework. You can install templates and start using the code straight way, no need to use framework unless you want to use pre-defined BDD style tests. 
 
 
+## Setup 'XCUI POM Test bundle' Target
+
+- From Xcode, create a new app(Or use existing app) and selct File ---> New ----> Target
+
+- Now Select 'XCFit' for iOS app and Click on 'XCUI POM Test Bundle'
+
+- Once Clicked on the target e.g 'XCUI POM Test Bundle' Xcode will create UI testing target with properly structured Xcode Groups and required files. You can then make physical directories on Disk Or change the folder/group structure as per your need.
+
+- You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !
+
+### What's in the XCUI POM Template ?
+
+* **YOUR_CUCUMBERISH_TARGETPageObjectTests.swift**
+
+This file is at the base of the target. It's exactly same file that Apple's XCUI Test generate at first. You may use it for recording the tests or simply delete it if not needed.
+
+* **Screens**
+
+This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift' This assumes that your apps is made up of multiple screens. You can write individual screen class which extend BaseScreen. All the functionality related to screen can be included in this class.
+
+
+* **Tests**
+
+This group has all the test for our app. Currently demo template has two tests 'HomeScreenTest.swift' and 'ProtocolOrientedTest.swift'. This examples shows how XCUI test can be implemented in the Object Orinted way and Protocol oriented way.
+
+* **TestBase**
+
+Testbase is group where we can abstract all setup, teardown and common stuff in the base class. Every Screen then use this class as base. You can add more stuff as needed e.g Fixtures, Launch Arguments
+
+## Getting XCFit Framework for pre-defined BDD Style steps 
+
+### Cocoapods 
+You can get XCFit Framework eaily.  Create `Podfile` and add specific dependency for the target 
+
+```ruby
+    target '$_YOUR__TARGET' do
+      pod 'XCFit'
+    end
+```
+Same way we can get 'Cucumberish' and 'OCSlim' for the specific target. 
+
+```sh
+$ pod install
+```
+Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' class just `import XCFit` and extend the class to `XCFit` class. The predefined steps are ready to use. 
+
+### Carthage 
+
+If you are using Carthage then it's easy to install XCFit. Add following to `Cartfile` 
+
+                  github "Shashikant86/XCFit"
+                  
+Now fetch dependency and build XCFit using. 
+
+                  $ carthage update --platform iOS
+ This will create 'Carthage' directory with built framework. We need to manually drag and drop this to our XCUIPoMTest' target build settings. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: bin/sh), add the following contents to the script area below the shell:
+
+        /usr/local/bin/carthage copy-frameworks
+and add the paths to the frameworks you want to use under “Input Files”, e.g.:
+
+         $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
+                  
+You can choose any of the above method but Cocoapods is easy and less manual. 
+
+### Import XCFit
+
+There are some predefined XCFit steps we can use by importing `XCFit` and extending out test base class to `XCFit`. Your test will read something like this: 
+
+```
+import XCTest
+import XCFit
+
+class XCFitTests: XCFit {
+   override func setUp() {
+     super.setUp()
+     continueAfterFailure = false
+      XCUIApplication().launch()
+   }
+   override func tearDown() {
+     super.tearDown()
+   }
+    
+  func testCheckAlertPresent() {
+    givenILaunchedApplication()
+    whenITap(on: HomeScreen().homeButtuon)
+    thenIShouldSeeAnAlert()
+  }
+}
+
+
+```
+
+             
+You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those steps unless you wish. 
+
+
+---
 
 # Setting Cucumberish BDD Scenarios in Xcode
 
@@ -208,12 +327,6 @@ Given the app is running
 
 - Select only '**Create folder references**' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed**'
 
-Here is how to do it.
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddFeaturesDirectory.gif)
-
-* **Cucumberish Header Files**
-
-We still don't have content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) to be included in our project.
 
 ### Getting Cucumberish CocoaPod into our Target
 
@@ -225,10 +338,9 @@ Create a 'Podfile' if you don't have already. In your Podfile, add following Pod
 
 ```ruby
     target '$_YOUR_CUCUMBERISH_TARGET' do
-      pod 'XCFit'
+      pod 'Cucumberish'
     end
 ```
-
 
 
 ```sh
@@ -238,22 +350,10 @@ $ pod install
  You can do that easily.
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddPod.gif)
 
-Now close the existing Xcode session and Xcode Workspace next time.
-
-
-- **Manual Installtion (not recommended use CocoaPods instaed )**
-
-We can manually copy content of [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) directory and drag to target as with option "**Create groups" and "Copy items if needed**".
-
-Here is How to setup everything in a minute
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFitStartUp.gif)
-
+Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next time.
 
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/CucumberTest.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. Now add your own :)
 
@@ -263,78 +363,6 @@ XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target a
 
 ---
 
-# XCUI Page Object Pattern and Pre-Defined Steps 
-
-Now, we have seen that it's failrly easy to setup BDD Style tests with Cucumberish but some people don't want that overhead of adding extra layer of Gherkin. XCFit gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework.
-
-## Setup 'XCUI POM Test bundle' Target
-
-- From Xcode, create a new app(Or use existing app) and selct File ---> New ----> Target
-
-- Now Select 'XCFit' for iOS app and Click on 'XCUI POM Test Bundle'
-
-- Once Clicked on the target e.g 'XCUI POM Test Bundle' Xcode will create UI testing target with properly structured Xcode Groups and required files. You can then make physical directories on Disk Or change the folder/group structure as per your need.
-
-- You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !
-
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCUIPOM.gif)
-
-### What's in the XCUI POM Template ?
-
-* **YOUR_CUCUMBERISH_TARGETPageObjectTests.swift**
-
-This file is at the base of the target. It's exactly same file that Apple's XCUI Test generate at first. You may use it for recording the tests or simply delete it if not needed.
-
-* **Screens**
-
-This is groups where we can abstract logic of every screen in the app. Example file are 'HomeScreen.swift' and 'BaseScreen.swift' This assumes that your apps is made up of multiple screens. You can write individual screen class which extend BaseScreen. All the functionality related to screen can be included in this class.
-
-* **Sections**
-
-This group has 'HomeElements.swift' class which stores all the locators of HomeScreen in enums. Sections are defined to store locators of the screen in the form of enums. Here are some samples we can store Images, Buttons and Static Texts of the HomeScreens. We can access those enums from anywhere from the Test methods or page objects.
-
-* **Protocols**
-
-Swift is protocol oriented language so feel to start with Protocol per screen. This group has 'HomeProtocol.swift' file where there is way to implement protocol oriented testing. Here is example of sample protocol for the homescreen. We can implement this protocol in the XCTest method as needed or we can write some extensions to support Testing.
-
-* **Tests**
-
-This group has all the test for our app. Currently demo template has two tests 'HomeScreenTest.swift' and 'ProtocolOrientedTest.swift'. This examples shows how XCUI test can be implemented in the Object Orinted way and Protocol oriented way.
-
-* **TestBase**
-
-Testbase is group where we can abstract all setup, teardown and common stuff in the base class. Every Screen then use this class as base. You can add more stuff as needed e.g Fixtures, Launch Arguments
-
-## Using Predefined XCFit BDD Style Steps
-
-There are some predefined XCFit steps we can use by importing `XCFit` and extending out test class to `XCFit`. 
-
-             import XCTest
-             import XCFit
-
-         class XCFitTests: XCFit {
-            override func setUp() {
-            super.setUp()
-            continueAfterFailure = false
-            XCUIApplication().launch()
-            }
-           override func tearDown() {
-            super.tearDown()
-            }
-    
-          func testExample() {
-            givenILaunchedApplication()
-            whenITap(on: HomeScreen().crappyButtuon)
-            thenIShouldSeeAnAlert()
-           }
-        }
-`
-
-You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those ste it
-
-
----
 
 # Fitnesse for iOS: Acceptance/Contract Tests
 
@@ -424,62 +452,9 @@ Now if you select “AcceptanceUnitTarget” and press CMD+U.
 Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.
 
 
-# Continuous Integration + Fastlane
+# Continuous Integration with Xcode Server 
 
-Now that , we have seen how to run Cucumberish, XCUIPOM, FitNesse acceptance tests from Xcode but it’s a good idea to run it with Fastlane.  We can also take control of version of Cocoapods and Fastlane by using Bundler. Let’s create a Gemfile at the root of the project with the following gem
-
-```ruby
-source "https://rubygems.org"   
-gem 'cocoapods'
-gem 'fastlane'   plugins_path = File.join(File.dirname(__FILE__), '.', 'Pluginfile') eval(File.read(plugins_path), binding) if File.exist?(plugins_path
-```
-
-Let’s also create directory “fastlane” and make “Fastfile” with following content
-
-```ruby
-
-fastlane_version "1.104.0"  
-default_platform :ios   
-platform :ios do   
-before_all do     
-   system "rm -rf ../test_reports/"     
-   system "bundle install"     
-   system "pod install"     
-    system "bundle exec fastlane add_plugin trainer"   
-end     
-desc "Runs all the XCUI POM, Cucumberish tests"
-  lane :xcfit_ui_test do
-   scan(
-   scheme: "XCFit2Demo",
-   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
-   output_directory: "test_reports/",
-   output_types: "html",
-   fail_build: false
-   )
-  end
-
-  desc "Runs Fitnesse Tests"
-  lane :fitnesse do
-   scan(
-   scheme: "AcceptanceUnitTests",
-   destination: 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.0',
-   output_directory: "test_reports/",
-   output_types: "html",
-   fail_build: false
-   )
-  end
-end
-```
-
-After running “bundle install” we should be able to run those test from command line like this :
-
-        $ bundle exec fastlane xcfit_ui_test
-
-
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FastlaneXCFit.gif)
-
-Once that done. We can have clear HTML reports genearted
-
+Coming Soon 
 
 # XCFit: Swift Package Manager
 
@@ -492,7 +467,7 @@ import PackageDescription
 let package = Package(
     name: "XCFit",
     dependencies: [
-  .Package(url: "https://github.com/Shashikant86/XCFit.git", majorVersion: 2),
+  .Package(url: "https://github.com/Shashikant86/XCFit.git", majorVersion: 4.0.0),
 ]
 )
 ```
