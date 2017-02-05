@@ -286,8 +286,6 @@ You will get access to lots of predefined BDD style human redable steps. It's no
 - Once Clicked on the target e.g 'Cucumberish UI Test Bundle' Xcode will create UI testing target with all the required files with Bridging header for Cucumberish UI Testing. It create Page Object Pattern with all required files with screens, steps definitions and Cucumberish initialiser swift file.
 
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/XCFit_CucumberishTemplates.gif)
-
 ### What's in the Cucumberish Template ?
 
 * **YOUR_CUCUMBERISH_TARGET.swift**
@@ -352,8 +350,6 @@ Create a 'Podfile' if you don't have already. In your Podfile, add following Pod
 $ pod install
 ```
 
- You can do that easily.
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AddPod.gif)
 
 Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next time.
 
