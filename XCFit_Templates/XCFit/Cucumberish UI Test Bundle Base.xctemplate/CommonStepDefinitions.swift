@@ -1,13 +1,11 @@
 //
 //  CommonStepDefinitions.swift
-//  Originally Created Ahmed Ali [ Cucumberish] and  re-written by XCFit Framework
 //  Copyright © 2016 XCFit Framework. All rights reserved.
 //
 //
 
 /*
-
- This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
+This is sample code created by XCFit Framework and can be edited/Removed as needed.
 
  This class has some mostly used step definitions included here. You can add some more here if needed.
 
@@ -61,9 +59,8 @@ class CommonStepDefinitions: NSObject {
                 element.tap()
             }
         }
-        //             Then I write "Ahmed Ali" into the "Name" field
 
-        //When/And/But/When I write "Ahmed" in the "Name" field
+        //When/And/But/When I write "London" in the "City" field
         MatchAll("^I write \"([^\\\"]*)\" (?:into|in) (?:the )?\"([^\\\"]*)\" (field|text view)$") { (args, userInfo) -> Void in
             let type = args?[2]
             let label = args?[1]
@@ -82,7 +79,6 @@ class CommonStepDefinitions: NSObject {
             }
 
         }
-
 
     }
 

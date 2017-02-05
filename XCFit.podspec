@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
-  s.version          = '3.0.6'
+  s.version          = '3.0.8'
   s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC

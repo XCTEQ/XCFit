@@ -64,25 +64,14 @@
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>HomeElements.swift</string>
 		<string>HomeScreenTest.swift</string>
-		<string>ProtocolOrientedTest.swift</string>
-		<string>HomeProtocol.swift</string>
 		<string>Extensions.swift</string>
 		<string>HomeScreen.swift</string>
-		<string>BaseScreen.swift</string>
 		<string>Info.plist:PackageType</string>
 		<string>___PACKAGENAMEASIDENTIFIER___TestBase.swift</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>HomeElements.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>HomeElements.swift</string>
-			<key>Group</key>
-			<string>Sections</string>
-		</dict>
 		<key>HomeScreenTest.swift</key>
 		<dict>
 			<key>Path</key>
@@ -90,38 +79,17 @@
 			<key>Group</key>
 			<string>Tests</string>
 		</dict>
-		<key>ProtocolOrientedTest.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>ProtocolOrientedTest.swift</string>
-			<key>Group</key>
-			<string>Tests</string>
-		</dict>
-		<key>HomeProtocol.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>HomeProtocol.swift</string>
-			<key>Group</key>
-			<string>Protocols</string>
-		</dict>
 		<key>Extensions.swift</key>
 		<dict>
 			<key>Path</key>
 			<string>Extensions.swift</string>
 			<key>Group</key>
-			<string>Protocols</string>
+			<string>TestBase</string>
 		</dict>
 		<key>HomeScreen.swift</key>
 		<dict>
 			<key>Path</key>
 			<string>HomeScreen.swift</string>
-			<key>Group</key>
-			<string>Screens</string>
-		</dict>
-		<key>BaseScreen.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>BaseScreen.swift</string>
 			<key>Group</key>
 			<string>Screens</string>
 		</dict>

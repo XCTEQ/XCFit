@@ -6,8 +6,7 @@
 //
 
 /*
-
- This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
+ This is sample code created by XCFit Framework and can be edited/Removed as needed.
 
  This file can take all the Swift extensions build around XCUI Test Frameworks which can be directly used in the tests, page objects. Here are sample extensions on XCUIElement and XCTestCase.
 

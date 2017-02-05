@@ -32,7 +32,7 @@
 			<key>ConstraintType</key>
 			<string>DefaultIfAssociatedTarget</string>
 			<key>Value</key>
-			<string>___ASSOCIATEDTARGET_bundleName___PageObjectTests</string>
+			<string>___ASSOCIATEDTARGET_bundleName___XCUIPoMTests</string>
 		</dict>
 	</array>
 </dict>

@@ -7,8 +7,8 @@
 
 /*
 
- This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
-
+ This is sample code created by XCFit Framework and can be edited/Removed as needed.
+ 
  This is very important file as we will be using it as initialiser of all out test suite. We have to resgister all our Step Definitions in this class. e.g we have registed CommonStepDefinitions and HomeScreenSteps here
 
  */

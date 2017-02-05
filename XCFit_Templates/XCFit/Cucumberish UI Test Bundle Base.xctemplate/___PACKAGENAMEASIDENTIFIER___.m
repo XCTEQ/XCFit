@@ -5,11 +5,10 @@
 //
 
 /*
- 
- This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
- 
- This is objective-C contructor to initialise Cucumberish in our project. 
- 
+This is sample code created by XCFit Framework and can be edited/Removed as needed.
+
+This is objective-C contructor to initialise Cucumberish in our project.
+
  */
 
 
@@ -24,5 +23,5 @@ __attribute__((constructor))
 void CucumberishInit()
 {
     [___PACKAGENAMEASIDENTIFIER___ CucumberishSwiftInit];
-    
+
 }

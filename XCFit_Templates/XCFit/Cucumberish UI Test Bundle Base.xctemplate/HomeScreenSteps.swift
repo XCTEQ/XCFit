@@ -19,9 +19,9 @@ class HomeScreenSteps: BaseScreen {
 
     func HomeScreenSteps() {
 
-        MatchAll("I tap on crappy button") { (args, userInfo) -> Void in
+        MatchAll("I tap on home button") { (args, userInfo) -> Void in
 
-            //self.waitAndTap(HomeScreen().crappyButton)
+
 
         }
 
