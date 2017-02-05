@@ -14,9 +14,13 @@
 
 import Foundation
 import XCTest
-import XCFit
 
-class ___PACKAGENAMEASIDENTIFIER___TestBase: XCFit {
+// Uncomment the import line below while using XCFit Swift framework for pre-defined BDD style steps. Extend this class to XCFit
+
+
+//import XCFit
+
+class ___PACKAGENAMEASIDENTIFIER___TestBase: XCTestCase {
 
     override func setUp() {
         super.setUp()
