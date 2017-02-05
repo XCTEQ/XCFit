@@ -182,6 +182,8 @@ XCFit templates gives an option to use very polular [Page Object Pattern](http:/
 
 - You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !
 
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFitPOM_Templates.gif)
+
 ### What's in the XCUI POM Template ?
 
 * **YOUR_CUCUMBERISH_TARGETPageObjectTests.swift**
@@ -218,6 +220,8 @@ $ pod install
 ```
 Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' class just `import XCFit` and extend the class to `XCFit` class. The predefined steps are ready to use. 
 
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/Pod_install_XCFit.gif)
+
 ### Carthage 
 
 If you are using Carthage then it's easy to install XCFit. Add following to `Cartfile` 
@@ -236,7 +240,7 @@ and add the paths to the frameworks you want to use under “Input Files”, e.g
                   
 You can choose any of the above method but Cocoapods is easy and less manual. 
 
-### Import XCFit
+### Import XCFit & Use Predefined Steps 
 
 There are some predefined XCFit steps we can use by importing `XCFit` and extending out test base class to `XCFit`. Your test will read something like this: 
 
@@ -266,6 +270,7 @@ class XCFitTests: XCFit {
 
              
 You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those steps unless you wish. 
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/pre-defined_xcfit_steps.gif)
 
 
 ---
@@ -354,6 +359,8 @@ Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next tim
 
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
+
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/cucumberish_template.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. Now add your own :)
 
