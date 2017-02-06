@@ -9,16 +9,15 @@
 
 ### XCFit 
 
-
 * [XCFit : Full Stack BDD in Xcode](#xcfit--full-stack-bdd-in-xcode)
    * [XCFit Features](#xcfit-features)
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
    * [Setup Xcode Templates](#setup-xcode-templates)
+   * [XCFit Swift Framework](#xcfit-swift-framework--xcui-page-object-pattern--pre-defined-steps)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
-   * [XCUI Page Object Pattern](#xcui-page-object-pattern)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
-   * [Continuous Integration   Fastlane](#continuous-integration--fastlane)
+   * [Continuous Integration with Xcode Server](#continuous-integration-with-xcode-server)
    * [XCFit: Swift Package Manager](#xcfit-swift-package-manager)
    * [Quick Demo with Example App](#quick-demo-with-example-app)
    * [Acknowledgements](#acknowledgements)
