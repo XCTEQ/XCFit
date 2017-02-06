@@ -146,7 +146,7 @@ $ xcfit set_xcode_templates
 
 You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/Xcode8-Templates.png)
 
 ## Framework Installtion 
 
@@ -220,7 +220,7 @@ $ pod install
 ```
 Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' class just `import XCFit` and extend the class to `XCFit` class. The predefined steps are ready to use. 
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/Pod_install_XCFit.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/Pod_install_XCFit.gif)
 
 ### Carthage 
 
@@ -239,7 +239,7 @@ and add the paths to the frameworks you want to use under “Input Files”, e.g
          $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
                   
 Here is Carthage looks like 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFit_Carthage.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/XCFit_Carthage.gif)
 
 You can choose any of the above method but Cocoapods is easy and less manual. 
 
@@ -273,7 +273,7 @@ class XCFitTests: XCFit {
 
              
 You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those steps unless you wish. 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/pre-defined_xcfit_steps.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/pre-defined_xcfit_steps.gif)
 
 
 ---
@@ -359,7 +359,7 @@ Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next tim
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/cucumberish_template.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/cucumberish_template.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. Now add your own :)
 
@@ -388,7 +388,7 @@ XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target a
 
 ** Watch it so far**
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTarget.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/AcceptanceTestsTarget.gif)
 
 1. To Fix Swift Issue : Just Click on ‘Edit-> Convert-> To Current Swift Syntax
 2. To Fix Pod issue : Add 'XCFit' for AcceptanceTests target
@@ -413,7 +413,7 @@ You should also note that, the script 'Launch Fitnesse' has been created in the 
 
  The browser will popup with example test. You should be able to excute that suite and see then running and passing
 
- ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTargetPod.gif)
+ ![image](https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/AcceptanceTestsTargetPod.gif)
 
  If you get any errors at this stage, please confirm that you have Java as well as ios-sim node package installed.
 
@@ -452,7 +452,7 @@ Now you should be able to build an “Acceptance Tests” target. Once, build is
 
 Now if you select “AcceptanceUnitTarget” and press CMD+U.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FitnesseXCTest.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/FitnesseXCTest.gif)
 
 
 Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.
