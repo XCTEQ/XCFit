@@ -47,15 +47,20 @@
   XCFit allows us to setup [Fitnesse](http://fitnesse.org/) style decision table test framework with [OCSlimProject](https://github.com/paulstringer/OCSlimProject) using 'Acceptance Tests  Bundle' templates.
 
 
-### XCFit Available on
+### Where to get XCFit
 
-* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : BDD Style scenarios for iOS App
+#### XCFit Swift Framework
 
-* **Homebrew** - Just do `brew tap shashikant86/homebrew-taps` and `brew install xcfit`
+* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App. 
+* ** Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects 
+* **Swift Package Manager** -- Swift Package Manager doesn't support iOS projects yet but XCFit is compatible with Swift Package manager as well. 
 
-* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) : Automated Xcode Templates
+#### XCFit Templates
 
-* **Swift Package Manager** : 2.0.0 : XCUI Test Framework Helpers
+* **Homebrew** - We can tap 'shashikant86/homebrew-taps' and Install XCFit to download Xcode Templates 
+
+* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) to get automated Xcode Templates
+
 
 
 # Tech & Software Requirements
@@ -233,8 +238,10 @@ Now fetch dependency and build XCFit using.
 
                   $ carthage update --platform iOS
  This will create 'Carthage' directory with built framework. We need to manually drag and drop this to our XCUIPoMTest' target build settings. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: bin/sh), add the following contents to the script area below the shell:
+ 
 
         /usr/local/bin/carthage copy-frameworks
+
 and add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
          $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
@@ -268,8 +275,6 @@ class XCFitTests: XCFit {
     thenIShouldSeeAnAlert()
   }
 }
-
-
 ```
 
              
@@ -484,11 +489,15 @@ let package = Package(
 # Quick Demo with Example App
 
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
+
  ```
   $ git clone https://github.com/Shashikant86/XCFit
+  
   $ cd XCFit/XCFit2Demo
+  
   $ open XCFit2Demo.xcworkspace
   ```
+ 
  Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane
 
 
