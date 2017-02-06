@@ -49,15 +49,20 @@
   XCFit allows us to setup [Fitnesse](http://fitnesse.org/) style decision table test framework with [OCSlimProject](https://github.com/paulstringer/OCSlimProject) using 'Acceptance Tests  Bundle' templates.
 
 
-### XCFit Available on
+### Where to get XCFit
 
-* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : BDD Style scenarios for iOS App
+#### XCFit Swift Framework
 
-* **Homebrew** - Just do `brew tap shashikant86/homebrew-taps` and `brew install xcfit`
+* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App. 
+* ** Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects 
+* **Swift Package Manager** -- Swift Package Manager doesn't support iOS projects yet but XCFit is compatible with Swift Package manager as well. 
 
-* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) : Automated Xcode Templates
+#### XCFit Templates
 
-* **Swift Package Manager** : 2.0.0 : XCUI Test Framework Helpers
+* **Homebrew** - We can tap 'shashikant86/homebrew-taps' and Install XCFit to download Xcode Templates 
+
+* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) to get automated Xcode Templates
+
 
 
 # Tech & Software Requirements
