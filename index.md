@@ -182,7 +182,7 @@ XCFit templates gives an option to use very polular [Page Object Pattern](http:/
 
 - You don't have to so any setting to run those demo XCUI tests. Just CMD+U and You are good to go !
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFitPOM_Templates.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/XCFitPOM_Templates.gif)
 
 ### What's in the XCUI POM Template ?
 
