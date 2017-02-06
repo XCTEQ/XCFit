@@ -238,6 +238,7 @@ If you are using Carthage then it's easy to install XCFit. Add following to `Car
 Now fetch dependency and build XCFit using. 
 
                   $ carthage update --platform iOS
+                  
  This will create 'Carthage' directory with built framework. We need to manually drag and drop this to our XCUIPoMTest' target build settings. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: bin/sh), add the following contents to the script area below the shell:
  
 
