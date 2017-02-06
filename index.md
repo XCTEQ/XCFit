@@ -34,8 +34,7 @@
   -  XCFit provides automated Xcode Target Templates for Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups. 
   - XCFit will setup Xcode Template with skeleton code and provide BDD Style Steps with Swift Framework which is available on Cocoapods, Carthage and Swift Package Manager.  
 
-
-  ### XCFIT Templates & Related Frameworks 
+### XCFIT Templates & Related Frameworks 
   
   * **XCFit Swift Framework with Pre-defined BDD Steps and Page Object Pattern Templates**
 
