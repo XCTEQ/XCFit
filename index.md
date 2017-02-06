@@ -113,6 +113,7 @@ XCFit templates can be installed using Homebrew or Rubygem.
 Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
      brew tap shashikant86/homebrew-taps
+
 Now, we can install XCFit brew package using
 
      brew install xcfit
