@@ -131,7 +131,9 @@ You can choose any of the above method. Rubygems method is prefered.
 # Setup Xcode Templates
 
 In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.
+
 ##### Xcode 8
+
 To setup Templates for Xcode 8.
 
 
@@ -166,6 +168,7 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 
 
 ---
+
 # XCFit Swift Framework : XCUI Page Object Pattern + Pre-Defined Steps 
 
 XCFit templates gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework. You can install templates and start using the code straight way, no need to use framework unless you want to use pre-defined BDD style tests. 
