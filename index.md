@@ -49,13 +49,13 @@
 
 ### Where to get XCFit
 
-#### XCFit Swift Framework
+##### XCFit Swift Framework
 
 * **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App. 
-* ** Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects 
+* **Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects 
 * **Swift Package Manager** -- Swift Package Manager doesn't support iOS projects yet but XCFit is compatible with Swift Package manager as well. 
 
-#### XCFit Templates
+##### XCFit Templates
 
 * **Homebrew** - We can tap 'shashikant86/homebrew-taps' and Install XCFit to download Xcode Templates 
 
