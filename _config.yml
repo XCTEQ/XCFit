@@ -2,7 +2,7 @@ title: XCFit
 description: Full Stack BDD in Xcode for iOS with Cucumberish, Page Object and Fitnesse
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-dinky
+theme: jekyll-theme-architect
 
 gems:
   - jekyll-mentions
