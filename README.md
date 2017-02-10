@@ -96,22 +96,22 @@ You must have Mac Operating System with OSX/MacOS Sierra.
 
 # Installation
 
-XCFit installtion has two steps. 
+XCFit installation has two steps. 
 
-* **Xcode Template Installtion**
+* **Xcode Template Installation**
 
-This will install Xcode Templates with skeloton code to support BDD in iOS app. The templates are XCUI Page Object Templates, Cucumberish BDD Templated and OCSlim Fitnesse Templates. The templates can be installed with [xcfit-RubyGem](https://rubygems.org/gems/xcfit) or [Homebrew](http://brew.sh). 
+This will install Xcode Templates with skeleton code to support BDD in iOS app. The templates are XCUI Page Object Templates, Cucumberish BDD Templated and OCSlim Fitnesse Templates. The templates can be installed with [xcfit-RubyGem](https://rubygems.org/gems/xcfit) or [Homebrew](http://brew.sh). 
 
-* **Framework Installtion** 
+* **Framework Installation** 
 
-XCFit Swift Framework provided pre-defined BDD Style steps with XCUI and supporting Frameworks like Cucumberish and OCSlim used to write BDD Steps. XCFit Swift Framework is available on [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package manager. Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [OCSlimProject](https://github.com/paulstringer/OCSlimProject) are available on Cocoapods. 
+XCFit Swift Framework provided pre-defined BDD Style steps with XCUI and supporting Frameworks like Cucumberish and OCSlim used to write BDD Steps. XCFit Swift Framework is available on [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package manager. [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [OCSlimProject](https://github.com/paulstringer/OCSlimProject) are available on Cocoapods. 
 
 XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](https://rubygems.org/). 
 
-## Template Installtion
+## Template Installation
 
 XCFit templates can be installed using Homebrew or Rubygem.
-### Homebrew Installtion 
+### Homebrew Installation 
 Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
      brew tap shashikant86/homebrew-taps
@@ -142,7 +142,7 @@ To setup Templates for Xcode 8.
 
 
 ```sh
-$ xcfit set_xcode_templates
+$ xcfit setup_xcode_templates
 
 ```
 
