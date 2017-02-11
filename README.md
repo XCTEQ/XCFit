@@ -14,7 +14,6 @@
    * [XCFit Features](#xcfit-features)
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
-   * [Setup Xcode Templates](#setup-xcode-templates)
    * [XCFit Swift Framework](#xcfit-swift-framework--xcui-page-object-pattern--pre-defined-steps)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
@@ -117,7 +116,7 @@ XCFit can be installed using [Homebrew](http://brew.sh) or using [RubyGems](http
 
 XCFit templates can be installed using Homebrew or Rubygem.
 
-### Homebrew Installation
+#### Homebrew Installation
 
 Assuming you have already installed [Homebrew](http://brew.sh). Let's tap the formula
 
@@ -129,7 +128,7 @@ Now, we can install XCFit brew package using
 
 This  will download XCFit templates.  
 
-### XCFit RubyGem Installation
+#### XCFit RubyGem Installation
 If you can't use HomeBrew for some reason then XCFit can be installed using [RubyGems](https://rubygems.org/). This will set our Xcode for BDD
 
        $ gem install xcfit
@@ -139,9 +138,7 @@ You need to use with 'sudo' if you are using system (pre-installed) Ruby(2.0). X
 You can choose any of the above method. Rubygems method is prefered.
 
 
----
-
-# Setup Xcode Templates
+### Setup Xcode Templates
 
 In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.
 ##### Xcode 8
