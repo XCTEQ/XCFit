@@ -8,8 +8,8 @@ language: generic
 sudo: required
 dist: trusty
 osx_image: xcode8
-# script:
-#   - swift build
+script:
+   - swift build
 #   - swift test
 # notifications:
 #   email:
