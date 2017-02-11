@@ -138,14 +138,18 @@ You can choose any of the above method. Rubygems method is prefered.
 
 In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.
 ##### Xcode 8
-To setup Templates for Xcode 8.
+To setup Templates for Xcode 8 for XCUI, Cucumberish target and Gherkin File Type.
 
 
 ```sh
 $ xcfit setup_xcfit_templates
 
 ```
+To Setup Fitnesse Templates
 
+```
+$ xcfit setup_fitnesse_templates
+```
 
 -  This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File--->New--->Target'
 

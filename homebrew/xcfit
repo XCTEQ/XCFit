@@ -3,6 +3,8 @@
 require 'fileutils'
 require 'tempfile'
 
+VERSION = "3.1.2"
+
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
 @root_developer_dir = File.join(@root_lib_dir, 'Developer')
@@ -20,14 +22,14 @@ puts "==================XXXXXXXX==========================="
 
 def clone_xcfit
   # system("cd /tmp")
-  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/3.1.1.tar.gz | tar xz")
+  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/#{VERSION}.tar.gz | tar xz")
   puts "*******======= Downloading XCFit Templates for the Xcode =============***"
-  @xcfit_template_dir = "/tmp/XCFit-3.1.1/XCFit_Templates/XCFit"
-  @gherkin_template_dir = "/tmp/XCFit-3.1.1/XCFit_Templates/Gherkin"
+  @xcfit_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/XCFit"
+  @gherkin_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/Gherkin"
 end
 
 def clean_xcfit
-  system("rm -rf /tmp/XCFit-3.1.1/")
+  system("rm -rf /tmp/XCFit-#{VERSION}/")
 end
 
 def setup_xcfit_templates
@@ -117,11 +119,11 @@ else
   if cmd == 'help'
     print_help
   elsif cmd == 'setup_xcfit_templates'
-    setup_xcode_templates
+    setup_xcfit_templates
   elsif cmd == 'setup_fitnesse_templates'
     setup_fitnesse_templates
   elsif cmd == 'version'
-    puts "3.1.1"
+    puts "#{VERSION}"
   else
     print_usage
   end
