@@ -92,6 +92,19 @@ module XCFit
          puts " ***************** Enjoy XCFit *****************"
       end
 
+			desc 'setup_fitnesse_templates', 'Downloads Fitnesse Xcode Templates from OCSlim'
+      def setup_fitnesse_templates
+         puts "==================XXXXXXXX==========================="
+         puts 'Downloading Fitnesse Templates'
+         puts "==================XXXXXXXX==========================="
+         system("cd /tmp && curl -sL https://github.com/Shashikant86/OCSlimProjectXcodeTemplates/archive/2.0.0.tar.gz| tar xz")
+				 system("cd /tmp/OCSlimProjectXcodeTemplates-2.0.0/ && make")
+         puts "==================XXXXXXXX==========================="
+         puts "=======Created Xcode Templates for the Fitnesse ===="
+         puts "==================XXXXXXXX==========================="
+      end
+
+
       desc 'get_cucumberish VERSION', 'Downloads Cucumberish version and Create Features directory. You must execute this from Cucumberish Xcode Target directory'
       def get_cucumberish(version="1.0.0")
          puts "==================XXXXXXXX==========================="

@@ -73,6 +73,18 @@ def setup_gherkin_template
 
 end
 
+desc 'setup_fitnesse_templates', 'Downloads Fitnesse Xcode Templates from OCSlim'
+def setup_fitnesse_templates
+   puts "==================XXXXXXXX==========================="
+   puts 'Downloading Fitnesse Templates'
+   puts "==================XXXXXXXX==========================="
+   system("cd /tmp && curl -sL https://github.com/Shashikant86/OCSlimProjectXcodeTemplates/archive/2.0.0.tar.gz| tar xz")
+   system("cd /tmp/OCSlimProjectXcodeTemplates-2.0.0/ && make")
+   puts "==================XXXXXXXX==========================="
+   puts "=======Created Xcode Templates for the Fitnesse ===="
+   puts "==================XXXXXXXX==========================="
+end
+
 def get_cucumberish
    puts "==================XXXXXXXX==========================="
    puts 'Downloading Cucumberish in the current working directory'
@@ -92,7 +104,9 @@ def print_usage
 
   <command-name> can be one of
     setup_xcode_templates
-      generate a Xcode 8 Templates for the Cucumberish and Fitnesse
+      generate a Xcode 8 Templates for the XCUI and Cucumberish
+    setup_fitnesse_templates
+      generate a Xcode 8 Templates for Fitnesse
     setup_gherkin_template
       generate Xcode Templates for the Gherkin Feature Files
     get_cucumberish
@@ -116,13 +130,16 @@ def print_help
   <command-name> can be one of
     help
     setup_xcode_templates
+    setup_fitnesse_templates
     setup_gherkin_tmplate
     version
 
     Commands:
       help : prints more detailed help information.
 
-      setup_xcode_templates  : Generate a Xcode8 Templates for the Cucumberish and Fitnesse
+      setup_xcode_templates  : Generate a Xcode8 Templates for the XCUI and Cucumberish
+
+      setup_fitnesse_templates : Generate Xcode templates for the Fitnesse
 
       setup_gherkin_template : Generate Xcode Templates for the Gherkin Feature Files
 
@@ -143,6 +160,8 @@ else
     print_help
   elsif cmd == 'setup_xcode_templates'
     setup_xcode_templates
+  elsif cmd == 'setup_fitnesse_templates'
+    setup_fitnesse_templates
   elsif cmd == 'get_cucumberish'
     get_cucumberish
   elsif cmd == 'version'
