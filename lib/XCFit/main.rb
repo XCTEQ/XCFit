@@ -33,10 +33,9 @@ module XCFit
       def setup_xcfit_templates
         if File.exist?($root_xcfit_dir)
         puts "==================XXXXXXXX==========================="
-         puts 'There is already XCFit directory in Xcode Templates. Have you tried XCFit Before? '
-         puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/XCFit directory to carry on'
-         puts "==================XXXXXXXX==========================="
-        exit 1
+				puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
+				puts 'Templates are being installed at ~/Library/Developer/Xcode/Templates/XCFit directory'
+        puts "==================XXXXXXXX==========================="
        end
          puts "==================XXXXXXXX==========================="
          puts 'Creating XCode Template for XCFit'

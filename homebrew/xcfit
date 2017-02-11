@@ -3,7 +3,7 @@
 require 'fileutils'
 require 'tempfile'
 
-VERSION = "3.1.2"
+VERSION = "3.1.3"
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
@@ -35,10 +35,9 @@ end
 def setup_xcfit_templates
   if File.exist?(@root_xcfit_dir)
     puts "==================XXXXXXXX==========================="
-    puts 'There is already XCFit directory in Xcode Templates. Have you tried XCFit Before? '
-    puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/XCFit directory to carry on'
+    puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
+    puts 'Templates are being installed at ~/Library/Developer/Xcode/Templates/XCFit directory'
     puts "==================XXXXXXXX==========================="
-   exit 1
   end
   clone_xcfit
   puts "==================XXXXXXXX==========================="
