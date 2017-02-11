@@ -3,7 +3,7 @@
 require 'fileutils'
 require 'tempfile'
 
-VERSION = "3.1.4"
+VERSION = "3.1.5"
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
@@ -32,7 +32,7 @@ def clean_xcfit
   system("rm -rf /tmp/XCFit-#{VERSION}/")
 end
 
-def setup_xcfit_templates
+def setup_xcode_templates
   if File.exist?(@root_xcfit_dir)
     puts "==================XXXXXXXX==========================="
     puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
@@ -71,7 +71,7 @@ def print_usage
   Usage: xcfit <command-name>
 
   <command-name> can be one of
-    setup_xcfit_templates
+    setup_xcode_templates
       generate a Xcode 8 Templates for the XCUI and Cucumberish
     setup_fitnesse_templates
       generate a Xcode 8 Templates for Fitnesse
@@ -93,14 +93,14 @@ def print_help
 
   <command-name> can be one of
     help
-    setup_xcfit_templates
+    setup_xcode_templates
     setup_fitnesse_templates
     version
 
     Commands:
       help : prints more detailed help information.
 
-      setup_xcfit_templates  : Generate a Xcode Target and File Templates for the XCUI and Cucumberish
+      setup_xcode_templates  : Generate a Xcode Target and File Templates for the XCUI and Cucumberish
 
       setup_fitnesse_templates : Generate Xcode templates for the Fitnesse
 
@@ -117,8 +117,8 @@ else
   cmd = ARGV.shift
   if cmd == 'help'
     print_help
-  elsif cmd == 'setup_xcfit_templates'
-    setup_xcfit_templates
+  elsif cmd == 'setup_xcode_templates'
+    setup_xcode_templates
   elsif cmd == 'setup_fitnesse_templates'
     setup_fitnesse_templates
   elsif cmd == 'version'
