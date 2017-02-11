@@ -129,7 +129,7 @@ Now, we can install XCFit brew package using
 
 This  will download XCFit templates.  
 
-### XCFit RubyGem Installtion
+### XCFit RubyGem Installation
 If you can't use HomeBrew for some reason then XCFit can be installed using [RubyGems](https://rubygems.org/). This will set our Xcode for BDD
 
        $ gem install xcfit
@@ -166,7 +166,7 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png)
 
-## Framework Installtion
+## Framework Installation
 
 XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well but we will use Cocoapods as it's more automated than Carthage. We can create `Podfile` and add specific dependency for the target
 
@@ -351,6 +351,7 @@ Given the app is running
 
 - Select only '**Create folder references**' Option. ** Do Not Select 'Create groups' Or 'Copy items if needed**'
 
+Now, We have to get cucumberish framework either using Carthage or Cocoapods. Let's doscuss both methods here 
 
 ### Getting Cucumberish CocoaPod into our Target
 
@@ -362,7 +363,7 @@ Create a 'Podfile' if you don't have already. In your Podfile, add following Pod
 
 ```ruby
     target '$_YOUR_CUCUMBERISH_TARGET' do
-      pod 'Cucumberish'
+      pod 'XCFit'
     end
 ```
 
@@ -384,6 +385,26 @@ Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xco
 #### Create Separate Scheme if needed
 
 XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target and run separate scheme to keep it independent from Unit tests. Make sure you make the new scheme executable for Running.
+
+### Getting Cucumberish using Carthage 
+
+Once you have setup XCFit Cucumberish templates, we need to get Cucumberish framework. In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) using Carthage, we need to create `Cartfile` with following content 
+
+                  github "Shashikant86/XCFit"
+
+Now install, Carthage frameworks using commamnd 
+
+                 $ carthage update --platform iOS
+
+This will chekcout and build XCFit and Cucumberish frameworks inside the `Carthage` directory. Now we need to manually drag and drop frameworks in the `build phases` of the Cucumberish target. 
+
+* From the build phases of the cucumberish target select ` Link Binary with Libraries` and drag `Cucumberish.framework` from `Carthage/Build/iOS` directory 
+* Add `New Copy Files Phase` and select destination as 'Frameworks' and Add Cucumberish Frameworks from `Carthage/Build/iOS` directory. Select 'Create Group' and 'Copy if needed' when prompted.  
+
+Once drag and drop is don and we have "Features" directory then we are ready to launch our BDD Style tests using 'CMD+U'. The entire Carthage Setup looks like this 
+
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/CarthageCucumberish.gif)
+
 
 ---
 
