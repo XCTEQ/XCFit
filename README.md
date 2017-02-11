@@ -442,7 +442,8 @@ Once drag and drop is don and we have "Features" directory then we are ready to 
 
 # Fitnesse for iOS: Acceptance/Contract Tests
 
-[Fitnesse](http://fitnesse.org/) is fully integrated standalone wiki and acceptance testing framework for BDD Style testing. As of now we have seen Cucumber and Page Object pattern test frameworks. If you really wanted to get more information about Fitnnese for iOS, please follow documentation on [OCSlim](http://paulstringer.github.io/OCSlimProject/) project. XCFit adopted the framework as dependeny to make it full stack BDD. We will cover basic setup as part of this document.
+If you really wanted to get more information about Fitnnese for iOS, please follow documentation on [OCSlim](http://paulstringer.github.io/OCSlimProject/) project. XCFit adopted the framework as dependeny to make it full stack BDD and might not be able to keep up with that for long. It's worth navigate to [OCSlim Project](http://paulstringer.github.io/OCSlimProject/) from this point but I will cover basic setup here. 
+[Fitnesse](http://fitnesse.org/) is fully integrated standalone wiki and acceptance testing framework for BDD Style testing. As of now we have seen Cucumber and Page Object pattern test frameworks.  We will cover basic setup as part of this document.
 Before get started make sure, you have Fitnesse Xcode templates installed
 
 
@@ -534,11 +535,11 @@ Now we can see that FitNesse tests are running as shown above.  We can add this 
 
 # Continuous Integration with Xcode Server
 
-Coming Soon
+You can read my detailed blog on how to setup Xcode Server for XCFit package on Dzone  [Xcode Continuous Integration with Xcode Server](https://dzone.com/articles/xcode-continuous-integration-with-macos-server)
 
 # XCFit: Swift Package Manager
 
-XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use. There is [sample swift package](https://github.com/Shashikant86/XCFitDemoSwiftPackage) on Github to test XCFit
+Swift Package Manager doesn't officially support iOS projects (Xcode Templates) but We can use it for building packages. XCFit will be having full on support for XCUI Test helpers so that we can use Apple's XCUI Test Framework painless to use. There is [sample swift package](https://github.com/Shashikant86/XCFitDemoSwiftPackage) on Github to test XCFit
 Full Documetation and API implementation still in progress. You can grab it like this  
 
 ```
@@ -559,16 +560,10 @@ let package = Package(
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
  ```
   $ git clone https://github.com/Shashikant86/XCFit
-  $ cd XCFit/XCFit2Demo
-  $ open XCFit2Demo.xcworkspace
+  $ cd XCFit/XCFit4Demo
+  $ open XCFit4Demo.xcodeproj/
   ```
- Run Unit, Fitnesse and Cucumberish test with Xcode. "cmd + U". We can execute it using Fastlane
-
-
-  ```
-  $ bundle install
-  $ bundle exec fastlane xcfit_ui_test
-```
+ Run XCUI and Cucumberish test with Xcode. "cmd + U". You can script it with `xcodebuild` or Fastlane Tools. 
 
 
 # Acknowledgements
