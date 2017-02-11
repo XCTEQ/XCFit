@@ -84,12 +84,10 @@ You must have Mac Operating System with OSX/MacOS Sierra.
 * **[Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
    - Might be pre-installed but worth double checking.
 * **[Homebrew](http://brew.sh)**   
-* **[iOS-Sim](https://www.npmjs.com/package/ios-sim)**
-  - Node Package required to launch iOS app for Fitnesse Acceptance tests.
-* [**Java**](https://www.java.com/en/)
-  - Java should be installed on Mac, it is required for Fitnesse Acceptance Test
-* **Ruby Packages(optional)**
+* **RubyGems Packages(optional)**
   - Xcpretty, Fastlane(Optional), Rake, Bundler etc
+* **Fitnesse only Optional** : You might need to have [iOS-Sim](https://www.npmjs.com/package/ios-sim), [Java](https://www.java.com/en/) if you want to use Fitnesse. 
+   
 
 ---
 
