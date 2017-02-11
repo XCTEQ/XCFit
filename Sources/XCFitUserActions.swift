@@ -71,10 +71,7 @@ extension XCFit {
         elementAppeared(element)
         element.press(forDuration: duration, thenDragTo: destinationElement)
     }
-    
-    
 
-    
 }
 
 
