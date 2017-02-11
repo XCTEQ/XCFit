@@ -15,10 +15,10 @@
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
    * [Setup Xcode Templates](#setup-xcode-templates)
+   * [XCFit Swift Framework](#xcfit-swift-framework--xcui-page-object-pattern--pre-defined-steps)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
-   * [XCUI Page Object Pattern](#xcui-page-object-pattern)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
-   * [Continuous Integration   Fastlane](#continuous-integration--fastlane)
+   * [Continuous Integration with Xcode Server](#continuous-integration-with-xcode-server)
    * [XCFit: Swift Package Manager](#xcfit-swift-package-manager)
    * [Quick Demo with Example App](#quick-demo-with-example-app)
    * [Acknowledgements](#acknowledgements)
@@ -49,15 +49,20 @@
   XCFit allows us to setup [Fitnesse](http://fitnesse.org/) style decision table test framework with [OCSlimProject](https://github.com/paulstringer/OCSlimProject) using 'Acceptance Tests  Bundle' templates.
 
 
-### XCFit Available on
+###   Where to get XCFit
 
-* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : BDD Style scenarios for iOS App
+##### XCFit Swift Framework
 
-* **Homebrew** - Just do `brew tap shashikant86/homebrew-taps` and `brew install xcfit`
+* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App. 
+* **Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects 
+* **Swift Package Manager** -- Swift Package Manager doesn't support iOS projects yet but XCFit is compatible with Swift Package manager as well. 
 
-* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) : Automated Xcode Templates
+##### XCFit Templates
 
-* **Swift Package Manager** : 2.0.0 : XCUI Test Framework Helpers
+* **Homebrew** - We can tap 'shashikant86/homebrew-taps' and Install XCFit to download Xcode Templates 
+
+* **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) to get automated Xcode Templates
+
 
 
 # Tech & Software Requirements
