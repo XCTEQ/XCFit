@@ -165,7 +165,10 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 ## Framework Installation
 
-XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well but we will use Cocoapods as it's more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well 
+
+### Cocoapods
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
 
 ```ruby
     target '$_YOUR__TARGET' do
@@ -179,6 +182,37 @@ $ pod install
 ```
 
 You need to close the existing Xcode session and Xcode Workspace .xcworkspace next time.
+
+### Carthage 
+
+XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` with following content 
+
+              github "Shashikant86/XCFit"
+              
+Now, we can fetch and build Carthage Dependencies using following command. 
+
+             $ carthage update --platform iOS
+             
+This will checkout and build XCFit and Cucumberish frameworks then we can manaully drag those frameworks in the `Build Phases` of the test targets. This is explained in details in the later section. 
+
+### Swift Package Manager 
+
+XCFit can be installed with Swift Package Manager however Swift Package Manager isn't officially supported for iOS so we can use XCFit only for the standalone Libraries. We need to create `Package.swift` file with following content. 
+```
+import PackageDescription
+
+let package = Package(
+    name: "XCFit",
+    dependencies: [
+  .Package(url: "https://github.com/Shashikant86/XCFit.git", majorVersion: 4.0.0),
+]
+)
+```
+Now we can use fetch XCFit using 
+
+            $ swift package fetch 
+ We can build, test package using the commnds avavilable for the Swift Package Manager.            
+
 
 
 ---
