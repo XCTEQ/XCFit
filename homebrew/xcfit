@@ -3,6 +3,8 @@
 require 'fileutils'
 require 'tempfile'
 
+VERSION = "3.1.4"
+
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
 @root_developer_dir = File.join(@root_lib_dir, 'Developer')
@@ -20,23 +22,22 @@ puts "==================XXXXXXXX==========================="
 
 def clone_xcfit
   # system("cd /tmp")
-  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/3.0.9.tar.gz | tar xz")
+  system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/#{VERSION}.tar.gz | tar xz")
   puts "*******======= Downloading XCFit Templates for the Xcode =============***"
-  @xcfit_template_dir = "/tmp/XCFit-3.0.9/XCFit_Templates/XCFit"
-  @gherkin_template_dir = "/tmp/XCFit-3.0.9/XCFit_Templates/Gherkin"
+  @xcfit_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/XCFit"
+  @gherkin_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/Gherkin"
 end
 
 def clean_xcfit
-  system("rm -rf /tmp/XCFit-3.0.9/")
+  system("rm -rf /tmp/XCFit-#{VERSION}/")
 end
 
-def setup_xcode_templates
+def setup_xcfit_templates
   if File.exist?(@root_xcfit_dir)
     puts "==================XXXXXXXX==========================="
-    puts 'There is already XCFit directory in Xcode Templates. Have you tried XCFit Before? '
-    puts 'Please remove/move existing ~/Library/Developer/Xcode/Templates/XCFit directory to carry on'
+    puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
+    puts 'Templates are being installed at ~/Library/Developer/Xcode/Templates/XCFit directory'
     puts "==================XXXXXXXX==========================="
-   exit 1
   end
   clone_xcfit
   puts "==================XXXXXXXX==========================="
@@ -52,36 +53,15 @@ def setup_xcode_templates
   puts " ***************** Enjoy XCFit *****************"
 end
 
-def setup_gherkin_template
-  if File.exist?(@root_gherkin_dir)
-    puts 'There is already Gherkin directory. Please move existing Gherkin directory to carry on '
-    puts "==================XXXXXXXX==========================="
-    exit 1
-  end
-  puts "==================XXXXXXXX==========================="
-  puts 'Creating XCode Template for XCFit'
-  puts 'This Template will allow you create Cucumberish and Fitnesse targets'
-  puts "==================XXXXXXXX==========================="
-  clone_xcfit
-  FileUtils.cp_r(@gherkin_template_dir, @root_template_dir)
-  clean_xcfit
-  puts 'Now Your Xcode will have XCFIT iOS and macOS tagets for Cucumberish and Fitnesse'
-  puts "==================XXXXXXXX==========================="
-  puts 'File -> New -->Target-->XCFit'
-  puts 'You wont need to restart Xcode but do so if nesessary!'
-  puts " ***************** Enjoy XCFit *****************"
-
-end
-
-def get_cucumberish
+def setup_fitnesse_templates
    puts "==================XXXXXXXX==========================="
-   puts 'Downloading Cucumberish in the current working directory'
-   puts 'You Should execute this command from Cucumberish Xcode target directory'
+   puts 'Downloading Fitnesse Templates'
    puts "==================XXXXXXXX==========================="
-   system("curl -sL https://github.com/Ahmed-Ali/Cucumberish/archive/v1.0.6.tar.gz | tar xz")
-   cucumberish_dir = "Cucumberish-1.0.6" + "/Cucumberish/"
-   system("mv #{cucumberish_dir}  .")
-   system("rm -rf Cucumberish-1.0.6")
+   system("cd /tmp && curl -sL https://github.com/Shashikant86/OCSlimProjectXcodeTemplates/archive/2.0.0.tar.gz| tar xz")
+   system("cd /tmp/OCSlimProjectXcodeTemplates-2.0.0/ && make")
+   puts "==================XXXXXXXX==========================="
+   puts "=======Created Xcode Templates for the Fitnesse ===="
+   puts "==================XXXXXXXX==========================="
 end
 
 
@@ -91,12 +71,10 @@ def print_usage
   Usage: xcfit <command-name>
 
   <command-name> can be one of
-    setup_xcode_templates
-      generate a Xcode 8 Templates for the Cucumberish and Fitnesse
-    setup_gherkin_template
-      generate Xcode Templates for the Gherkin Feature Files
-    get_cucumberish
-        Downloads Cucumberish directory into UI Testing target
+    setup_xcfit_templates
+      generate a Xcode 8 Templates for the XCUI and Cucumberish
+    setup_fitnesse_templates
+      generate a Xcode 8 Templates for Fitnesse
     version
       prints the XCFit version
     help
@@ -115,20 +93,18 @@ def print_help
 
   <command-name> can be one of
     help
-    setup_xcode_templates
-    setup_gherkin_tmplate
+    setup_xcfit_templates
+    setup_fitnesse_templates
     version
 
     Commands:
       help : prints more detailed help information.
 
-      setup_xcode_templates  : Generate a Xcode8 Templates for the Cucumberish and Fitnesse
+      setup_xcfit_templates  : Generate a Xcode Target and File Templates for the XCUI and Cucumberish
 
-      setup_gherkin_template : Generate Xcode Templates for the Gherkin Feature Files
+      setup_fitnesse_templates : Generate Xcode templates for the Fitnesse
 
-      get_cucumberish VERSION : Downloads Cucumberish version
-
-      version : prints the gem version
+      version : prints the XCFit version
 
   <Options>
       -v, --verbose  Turns on verbose logging
@@ -141,14 +117,12 @@ else
   cmd = ARGV.shift
   if cmd == 'help'
     print_help
-  elsif cmd == 'setup_xcode_templates'
-    setup_xcode_templates
-  elsif cmd == 'get_cucumberish'
-    get_cucumberish
+  elsif cmd == 'setup_xcfit_templates'
+    setup_xcfit_templates
+  elsif cmd == 'setup_fitnesse_templates'
+    setup_fitnesse_templates
   elsif cmd == 'version'
-    puts "2.x"
-  elsif cmd == 'setup_gherkin_template'
-    setup_gherkin_template
+    puts "#{VERSION}"
   else
     print_usage
   end

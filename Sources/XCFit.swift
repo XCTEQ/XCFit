@@ -8,6 +8,8 @@ open class XCFit: XCTestCase {
         self.expectation(for: exists, evaluatedWith: element, handler: nil)
         self.waitForExpectations(timeout: 60, handler: nil)
         XCTAssert(element.exists)
+        
+        
     }
     
     open func waitForElementToAppearCommpleted(_ element: XCUIElement) -> Bool {
@@ -17,6 +19,8 @@ open class XCFit: XCTestCase {
         
         let result = XCTWaiter().wait(for: [xcfitExpectation], timeout: 60)
         return result == .completed
+        
+        
     }
     
     open func waitForElementToAppearTimedOut(_ element: XCUIElement) -> Bool {

@@ -1,3 +1,3 @@
 module XCFit
-  VERSION = "2.0.9"
+  VERSION = "3.1.4"
 end
