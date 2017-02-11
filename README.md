@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
 [![Platform](https://img.shields.io/cocoapods/p/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
 
-# XCFit : Full Stack BDD in Xcode
+# XCFit : Full Stack iOS BDD in Xcode
 
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integrations Tests) is a full stack Xcode BDD framework for [Swift](https://swift.org) iOS apps. XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit is fully automated solution for Cucumberish and Fitnesse. You can use 80(Fitnesse):20(Cucumberish) formula to automate Acceptance and UI Testing for better coverage and faster feedback. XCFit is available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit),  [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
 
@@ -427,16 +427,14 @@ $ xcfit setup_fitnesse_templates
 
 - Once Clicked on the target e.g 'OS Acceptance Tests' Xcode will create new target with all required files and groups for Acceptance testing
 
-- Select 'Acceptance Test' Scheme from Xcode and try to build
+- Select 'Acceptance Test' Scheme from Xcode and try to build by pressing CMD+B
 
-- The build will fail as we need fix some **Swift3** related issue as well as we need to add **XCFit/OCSlimProject** Pod to the to the podfile.
+- The build might fail as we need fix some **Swift3** related issue as well as we need to add **XCFit/OCSlimProject** Pod to the to the podfile.
 
-** Watch it so far**
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTarget.gif)
 
 1. To Fix Swift Issue : Just Click on ‘Edit-> Convert-> To Current Swift Syntax
-2. To Fix Pod issue : Add 'XCFit' for AcceptanceTests target
+2. To Fix Pod issue : Add 'OCSlimProject' for AcceptanceTests target
 
 ```ruby
     target 'AcceptanceTests' do
@@ -458,7 +456,7 @@ You should also note that, the script 'Launch Fitnesse' has been created in the 
 
  The browser will popup with example test. You should be able to excute that suite and see then running and passing
 
- ![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/AcceptanceTestsTargetPod.gif)
+ ![image](https://github.com/Shashikant86/xcfitgif/blob/master/FitnesseAcceptance.gif)
 
  If you get any errors at this stage, please confirm that you have Java as well as ios-sim node package installed.
 
