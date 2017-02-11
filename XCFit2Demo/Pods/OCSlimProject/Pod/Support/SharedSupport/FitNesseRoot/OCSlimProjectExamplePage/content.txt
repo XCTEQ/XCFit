@@ -1,6 +1,0 @@
-!1 OCSlimProject Example Test Suite
-
-This Page is a Test Suite page. Click on the Test Page below to see a basic example of a Decision Table based Acceptance Test. 
-
-!contents -R2 -g -p -f -h
-

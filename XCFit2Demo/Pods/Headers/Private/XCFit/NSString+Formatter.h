@@ -1,1 +1,0 @@
-../../../XCFit/XCFit/Classes/Cucumberish/Utils/NSString+Formatter.h
