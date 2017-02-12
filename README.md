@@ -338,7 +338,7 @@ class XCFitTests: XCFit {
 
 You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those steps unless you wish. 
 
-**Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-using-predefined-steps))**
+**Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-on-using-pre-defines-bdd-style-steps)**
 
 ![image](https://github.com/Shashikant86/xcfitgif/blob/master/pre-defined_xcfit_steps.gif)
 
@@ -462,13 +462,14 @@ Once drag and drop is don and we have "Features" directory then we are ready to 
 ## Cucumberish Pre-Defined Steps
 
 There are some pre-defined Cucumberish Steps available to use directly without any need to implement in the step definition. You can see list of steps [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/Cucumberish_Predefined_Steps.md). You already have those steps in the 'CommonStepDefinitions.swift' file. You can modify the steps as per your project need or add your own. 
+**Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-on-using-pre-defines-bdd-style-steps)**
 
 # Advise on using Pre-Defines BDD Style Steps 
 
 XCFit has pre-defined steps for both XCFit Swift framework as well as Cucumberish framework. 
 
 * **[XCFit Pre-Defined BDD Style Steps](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md)**
-* **[Cucumberish Pre-Defined BDD Style Steps](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/Cucumberish_Predefined_Steps.md)
+* **[Cucumberish Pre-Defined BDD Style Steps](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/Cucumberish_Predefined_Steps.md)**
 
 It's recommended to use your own steps as predefined steps might not read well for your project needs. Pre-defined steps gives you guidance on how to implement your own step, however you can use pre-defined steps wherever they make sense to avoid duplication.
 
