@@ -629,12 +629,14 @@ You can clone the existing repo which has a demo app we can run Unit, Fitnesse a
  Run XCUI and Cucumberish test with Xcode. "cmd + U". You can script it with `xcodebuild` or Fastlane Tools. 
  
  
- # Step by Step Video Demo 
  
- You can watch step by step video demo on Youtube. Click the link below
+ 
+ 
+# Step by Step Video Demo 
+
+You can watch step by step video demo on Youtube. Click the link below
  
  [![Alt text](https://img.youtube.com/vi/7gqPxy6UVRw/0.jpg)](https://www.youtube.com/watch?v=7gqPxy6UVRw)
-
 
 # Acknowledgements
 
