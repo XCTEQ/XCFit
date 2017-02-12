@@ -626,11 +626,14 @@ let package = Package(
 # Quick Demo with Example App
 
 You can clone the existing repo which has a demo app we can run Unit, Fitnesse and Cucumbertish Tests as XCTest
+
  ```
   $ git clone https://github.com/Shashikant86/XCFit
   $ cd XCFit/XCFit4Demo
   $ open XCFit4Demo.xcodeproj/
   ```
+  
+  
  Run XCUI and Cucumberish test with Xcode. "cmd + U". You can script it with `xcodebuild` or Fastlane Tools. 
 
 
