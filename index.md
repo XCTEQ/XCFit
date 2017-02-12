@@ -629,7 +629,9 @@ You can clone the existing repo which has a demo app we can run Unit, Fitnesse a
 
  ```
   $ git clone https://github.com/Shashikant86/XCFit
+  
   $ cd XCFit/XCFit4Demo
+  
   $ open XCFit4Demo.xcodeproj/
   ```
   
