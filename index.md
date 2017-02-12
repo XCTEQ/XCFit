@@ -216,6 +216,7 @@ We can build, test package using the commnds avavilable for the Swift Package Ma
 
 
 ---
+
 # XCFit Swift Framework : XCUI Page Object Pattern + Pre-Defined Steps
 
 XCFit templates gives an option to use very polular [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) with Apple's Xcode UI Testing framework. You can install templates and start using the code straight way, no need to use framework unless you want to use pre-defined BDD style tests.
@@ -259,6 +260,7 @@ Testbase is group where we can abstract all setup, teardown and common stuff in 
 ## Getting XCFit Framework for pre-defined BDD Style steps
 
 ### Cocoapods
+
 You can get XCFit Framework easily. Create `Podfile` and add specific dependency for the target
 
 ```ruby
