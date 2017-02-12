@@ -35,7 +35,7 @@
   - XCFit will setup Xcode Templates with skeleton code and provide BDD Style Steps with Swift Framework which is available on Cocoapods, Carthage and Swift Package Manager.  
 
 
-  ### XCFIT & Other Frameworks
+### XCFIT & Other Frameworks
 
   * **XCFit Swift Framework with Pre-defined BDD Steps and Page Object Pattern Templates**
 
@@ -137,15 +137,15 @@ You can choose any of the above method. Rubygems method is prefered.
 ### Setup Xcode Templates
 
 In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.
+
+
 ##### Xcode Templates for XCFit
 
 To setup Templates for Xcode 8 for XCUI, Cucumberish target and Gherkin File Type.
 
 
 ```sh
-
 $ xcfit setup_xcode_templates
-
 
 ```
 To Setup Fitnesse Templates (Optional)
@@ -195,6 +195,7 @@ This will checkout and build XCFit and Cucumberish frameworks then we can manaul
 ### Swift Package Manager 
 
 XCFit can be installed with Swift Package Manager however Swift Package Manager isn't officially supported for iOS so we can use XCFit only for the standalone Libraries. We need to create `Package.swift` file with following content. 
+
 ```
 import PackageDescription
 
@@ -205,6 +206,7 @@ let package = Package(
 ]
 )
 ```
+
 Now we can use fetch XCFit using 
 
             $ swift package fetch 
