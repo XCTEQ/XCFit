@@ -27,6 +27,7 @@ class XCFit4DemoXCUIPoMTestsTestBase: XCFit {
         continueAfterFailure = false
         XCUIApplication().launch()
     }
+    
 
     override func tearDown() {
         super.tearDown()

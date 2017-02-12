@@ -15,13 +15,13 @@ import Foundation
 import XCTest
 import Cucumberish
 
-class HomeScreenSteps: BaseScreen {
+class HomeScreenSteps: HomeScreen {
 
     func HomeScreenSteps() {
 
-        MatchAll("I should see hello message") { (args, userInfo) -> Void in
+        MatchAll("I tap on home button") { (args, userInfo) -> Void in
 
-            XCTAssertTrue(XCUIApplication().staticTexts["Welcome"].exists)
+
 
         }
 

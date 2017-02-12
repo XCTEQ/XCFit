@@ -19,10 +19,11 @@ import XCTest
 class HomeScreenTest: HomeScreen {
 
     func testHomeScreen() {
-      // Below step will be available as part of XCFit Swift Framework. 
+      // Below step will be available as part of XCFit Swift Framework.  
+      // givenILaunchedApplication()
         
         givenILaunchedApplication()
-        whenITap(on: HomeScreen().clickButtuon)
+        
     }
 
 }

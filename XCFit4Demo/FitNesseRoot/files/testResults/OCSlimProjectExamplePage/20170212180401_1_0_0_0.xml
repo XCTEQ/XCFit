@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>OCSlimProjectExamplePage</rootPath>
+  <pageHistoryReference>
+    <name>OCSlimProjectExamplePage.TestPage</name>
+    <date>2017-02-12T18:04:01+00:00</date>
+    <pageHistoryLink>OCSlimProjectExamplePage.TestPage?pageHistory&amp;resultDate=20170212180401</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>267</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>[OCSP_RUN] == RunSlimTestTargetWithSlimPort~iOS:8085 ==
+[OCSP_RUN] Info: Test System SDK Deployment Target: 10.3
+[OCSP_RUN] Info: Test System Executable Folder Path: /Users/shashi/Library/Developer/Xcode/DerivedData/XCFit4Demo-aitzoijmrnugcldujulfbezzjpot/Build/Products/Debug-iphonesimulator/AcceptanceTests.app
+[OCSP_RUN] Info: Simulator Device Identifier: com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus, 10.3
+[OCSP_RUN] == Start Slim Test Sytem (ios-sim version 5.0.13, Node Version: v7.5.0) ==
+[OCSP_RUN] Waiting for Slim Test System To Launch
+[OCSP_RUN] Slim System Detected (1209)
+Feb 12 18:04:01 Shashikants-MacBook-Pro assertiond[98897]: Deleted job with label: UIKitApplication:Test.AcceptanceTests[0xeeb0][98897]
+Feb 12 18:04:01 Shashikants-MacBook-Pro assertiond[98897]: Submitted job with label: UIKitApplication:Test.AcceptanceTests[0xf6f1][98897]
+Feb 12 18:04:01 Shashikants-MacBook-Pro SpringBoard[98890]: [Test.AcceptanceTests] Bootstrap complete with label: UIKitApplication:Test.AcceptanceTests[0xf6f1][98897]
+Feb 12 18:04:21 Shashikants-MacBook-Pro SpringBoard[98890]: [Watchdog] [Test.AcceptanceTests] Provision violated for watchdog process-launch: &lt;FBSProcessResourceProvision: 0x6000014e0c80; allowance: &lt;; FBSProcessResourceAllowance; type: realTime; timeValue: 20.0s&gt;; violated: YES&gt;
+Feb 12 18:04:21 Shashikants-MacBook-Pro com.apple.CoreSimulator.SimDevice.454205BE-4938-4383-AC43-0C0C340902C8.launchd_sim[98871] (UIKitApplication:Test.AcceptanceTests[0xf6f1][98897][1243]): Service exited due to Killed: 9
+Feb 12 18:04:22 Shashikants-MacBook-Pro assertiond[98897]: Deleted job with label: UIKitApplication:Test.AcceptanceTests[0xf6f1][98897]
+Feb 12 18:04:22 Shashikants-MacBook-Pro assertiond[98897]: Ignoring assertion request named "FBSceneSnapshotAction:Test.AcceptanceTests" from &lt;BSProcessHandle: 0x7fd9d9f04e50; SpringBoard:98890; valid: YES&gt; because process { pid -1; bundleID (null) } is unknown.
+[OCSP_RUN] Slim Test System Exited Normally
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>53317</totalRunTimeInMillis>
+</suiteResults>
+

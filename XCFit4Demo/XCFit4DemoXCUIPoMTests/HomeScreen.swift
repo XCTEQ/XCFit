@@ -17,7 +17,6 @@ import XCTest
 
 class HomeScreen: XCFit4DemoXCUIPoMTestsTestBase {
 
-    let clickButtuon = XCUIApplication().buttons["Click"]
-    let helloMessage = XCUIApplication().staticTexts["Welcome"]
+    let homeButtuon = XCUIApplication().buttons["Home"]
 
 }

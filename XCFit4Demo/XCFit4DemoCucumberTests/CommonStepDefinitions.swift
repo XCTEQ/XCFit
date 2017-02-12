@@ -117,6 +117,7 @@ class CommonStepDefinitions: NSObject {
              application.checkBoxes[checkBox!].tap()
          }
 
+
         //And/When/Then/But I tap the "Header" view
         MatchAll("^I tap (?:the )?\"([^\\\"]*)\" (button|label|tab|view|field|textView)$") { (args, userInfo) -> Void in
             let label = args?[0]
