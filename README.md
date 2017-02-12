@@ -16,6 +16,7 @@
    * [Installation](#installation)
    * [XCFit Swift Framework](#xcfit-swift-framework--xcui-page-object-pattern--pre-defined-steps)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
+   * [Advide on using pre-defined BDD Steps](#advise-on-using-pre-defines-bdd-style-steps)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
    * [Continuous Integration with Xcode Server](#continuous-integration-with-xcode-server)
    * [XCFit: Swift Package Manager](#xcfit-swift-package-manager)
