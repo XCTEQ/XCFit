@@ -42,6 +42,82 @@ class CommonStepDefinitions: NSObject {
     fileprivate func setup(_ application: XCUIApplication)
     {
         self.application = application
+
+        MatchAll("I launched an App") { (args, userInfo) in
+            application.launch()
+         }
+
+         MatchAll("I terminated an App") { (args, userInfo) in
+             application.terminate()
+         }
+
+         MatchAll("^I see an alert with title \"([^\\\"]*)\" and clicked \"([^\\\"]*)\" action$") { (args, userInfo) in
+
+             let alert = application.alerts[(args?[0])!]
+             alert.buttons[(args?[0])!].tap()
+
+         }
+
+         MatchAll("^I allow system alert with  \"([^\\\"]*)\" description$") { (args, userInfo) in
+
+             let alertDescription = args?[0]
+
+             XCTestCase().addUIInterruptionMonitor(withDescription: alertDescription!) { (alert) -> Bool in
+                 alert.buttons["Allow"].tap()
+                 return true
+             }
+             XCUIApplication().tap()
+         }
+
+         MatchAll("^I slide a slider by  \"([^\\\"]*)\" normalised Value$") { (args, userInfo) in
+
+             let sliderPosition = args?[0]
+             let slidervalue :CGFloat = CGFloat((sliderPosition! as NSString).doubleValue)
+
+             application.sliders.element.adjust(toNormalizedSliderPosition: slidervalue)
+
+         }
+
+         MatchAll("^I select an item \"([^\\\"]*)\" from picker$") { (args, userInfo) in
+
+             let pickerPosition = args?[0]
+             application.pickerWheels.element.adjust(toPickerWheelValue: pickerPosition!)
+         }
+
+         MatchAll("^I click link \"([^\\\"]*)\" from webview$") { (args, userInfo) in
+
+             let linkText = args?[0]
+             application.links[linkText!].tap()
+         }
+
+         MatchAll("^I should see menubar with \"([^\\\"]*)\" header$") { (args, userInfo) in
+
+             let menubarText = args?[0]
+             XCTAssertTrue(application.menuBars[menubarText!].exists)
+         }
+
+         MatchAll("^I should see menu with \"([^\\\"]*)\" items$") { (args, userInfo) in
+
+             let menuCount = args![0]
+             let expectedMenuCount: UInt = UInt(menuCount)!
+             let appMenuCount = application.menus.count
+             XCTAssertEqual(expectedMenuCount, appMenuCount, "Comparing MenuCount")
+         }
+
+         MatchAll("^I should see screen with \"([^\\\"]*)\" cells$") { (args, userInfo) in
+
+             let cellCount = args![0]
+             let expectedCellCount: UInt = UInt(cellCount)!
+             let appCellCount = application.cells.count
+             XCTAssertEqual(expectedCellCount, appCellCount, "Comparing  Cell Count")
+         }
+
+         MatchAll("^I check \"([^\\\"]*)\" checkbox$") { (args, userInfo) in
+             let checkBox = args?[0]
+             application.checkBoxes[checkBox!].tap()
+         }
+
+
         //And/When/Then/But I tap the "Header" view
         MatchAll("^I tap (?:the )?\"([^\\\"]*)\" (button|label|tab|view|field|textView)$") { (args, userInfo) -> Void in
             let label = args?[0]

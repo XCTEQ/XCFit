@@ -15,7 +15,7 @@ import Foundation
 import XCTest
 import Cucumberish
 
-class HomeScreenSteps: BaseScreen {
+class HomeScreenSteps: HomeScreen {
 
     func HomeScreenSteps() {
 

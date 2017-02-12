@@ -69,10 +69,7 @@
 	<key>Nodes</key>
 	<array>
 		<string>HomeScreen.swift</string>
-		<string>BaseScreen.swift</string>
 		<string>HomeScreenSteps.swift</string>
-		<string>Hooks.swift</string>
-		<string>Extensions.swift</string>
 		<string>CommonStepDefinitions.swift</string>
 		<string>Info.plist:PackageType</string>
 		<string>___PACKAGENAMEASIDENTIFIER___-Bridging-Header.h</string>
@@ -89,33 +86,12 @@
 			<key>Group</key>
 			<string>Screens</string>
 		</dict>
-		<key>BaseScreen.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>BaseScreen.swift</string>
-			<key>Group</key>
-			<string>Screens</string>
-		</dict>
 		<key>HomeScreenSteps.swift</key>
 		<dict>
 			<key>Path</key>
 			<string>HomeScreenSteps.swift</string>
 			<key>Group</key>
 			<string>Step Definitions</string>
-		</dict>
-		<key>Hooks.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>Hooks.swift</string>
-			<key>Group</key>
-			<string>Common</string>
-		</dict>
-		<key>Extensions.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>Extensions.swift</string>
-			<key>Group</key>
-			<string>Common</string>
 		</dict>
 		<key>CommonStepDefinitions.swift</key>
 		<dict>
