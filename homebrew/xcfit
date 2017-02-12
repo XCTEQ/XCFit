@@ -3,7 +3,7 @@
 require 'fileutils'
 require 'tempfile'
 
-VERSION = "3.1.7"
+VERSION = "3.1.8"
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
