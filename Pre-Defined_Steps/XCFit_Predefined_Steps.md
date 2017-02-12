@@ -7,6 +7,8 @@ The XCFit predefined Steps are grouped by
 * Waiter Actions
 * Assertions
 
+XCUIElement value needs to be replaced by locator from your Application.Some of the values of String also need to replaced.
+
 ## Application launcher Steps
 
           givenILaunchedApplication()
@@ -23,7 +25,7 @@ The XCFit predefined Steps are grouped by
            whenISlideASlider(by normalisedValue: CGFloat)
            whenISelectAItemFromPicker(item: CGFloat)
            whenIClickLinkFromWebView(linkText: String)
-           whenIPressElementForDuration(_ element: XCUIElement, duration: TimeInterval)
+           whenIPressElementForDuration(XCUIElement, duration: TimeInterval)
            whenIPressOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval)
            whenIClickElementForDuration(_ element: XCUIElement, duration: TimeInterval)
            whenIClickOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval)
@@ -38,4 +40,10 @@ The XCFit predefined Steps are grouped by
 ## Assertions
 
            thenIShouldSee(XCUIElement)
-           thenElemenShouldHavePlaceholderValue(_ element: XCUIElement, _ value : String)
+           thenElemenShouldHavePlaceholderValue(XCUIElement,  String)
+           thenElementShouldHaveTitle(XCUIElement, String)
+           thenElementShouldBeEnabled(XCUIElement)
+           thenElementShouldBeVisible(XCUIElement)
+           thenElementShouldBeHittable(XCUIElement)
+           thenElementShouldSelected(XCUIElement)
+           thenIShouldSeeAnAlert()
