@@ -7,10 +7,6 @@
 
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integration Tests) is a full stack Xcode BDD framework for iOS apps written in [Swift](https://swift.org). XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit provides automated Xcode templates to setup skeleton of BDD which are available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit). XCFit also packaged asSwift Framework to provide pre-defined BDD Steps written in Swift. XCFit Swift framework is available on [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
 
-**=======Watch Entire XCFit on Youtube==========**
-
-
-[![Alt text](https://img.youtube.com/vi/7gqPxy6UVRw/0.jpg)](https://www.youtube.com/watch?v=7gqPxy6UVRw)
 
 ### XCFit
 
@@ -26,6 +22,7 @@
    * [Continuous Integration with Xcode Server](#continuous-integration-with-xcode-server)
    * [XCFit: Swift Package Manager](#xcfit-swift-package-manager)
    * [Quick Demo with Example App](#quick-demo-with-example-app)
+   * [Step by Step Video Demo](#step-by-step-video-demo)
    * [Acknowledgements](#acknowledgements)
    * [Author](#author)
    * [TODO](#todo)
@@ -636,6 +633,12 @@ You can clone the existing repo which has a demo app we can run Unit, Fitnesse a
   ```
  Run XCUI and Cucumberish test with Xcode. "cmd + U". You can script it with `xcodebuild` or Fastlane Tools. 
 
+
+# Step by Step Video Demo 
+
+You can watch step by step video demo on Youtube. Click the link below
+ 
+ [![Alt text](https://img.youtube.com/vi/7gqPxy6UVRw/0.jpg)](https://www.youtube.com/watch?v=7gqPxy6UVRw)
 
 # Acknowledgements
 
