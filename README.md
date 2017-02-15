@@ -7,7 +7,7 @@
 
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integration Tests) is a full stack Xcode BDD framework for iOS apps written in [Swift](https://swift.org). XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit provides automated Xcode templates to setup skeleton of BDD which are available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit). XCFit also packaged asSwift Framework to provide pre-defined BDD Steps written in Swift. XCFit Swift framework is available on [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
 
-> Important Note : XCFit 4 (tag 4.0.0) supports Swift 3.1 & Xcode 8.3 which is currently avavlable only for the deveopers.To Use XCFit for the Swift 3.0.2 & Xcode 8.2 use XCFit 3 (tag 3.0.0)
+> Important Note : XCFit 4 (tag 4.0.0) supports Swift 3.1 & Xcode 8.3 which is currently avavlable only for the deveopers. In order to Use XCFit for the Swift 3.0.2 & Xcode 8.2 use XCFit 3 (tag 3.0.0)
 
 ### XCFit
 
@@ -474,12 +474,28 @@ In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/mast
 
 Create a 'Podfile' if you don't have already. In your Podfile, add following Pod entry and update/install pod
 
+* **Swift 3.0.2**
+
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+
 ```ruby
-    target '$_YOUR_CUCUMBERISH_TARGET' do
+    target '$_YOUR__TARGET' do
+      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '3.0.0'
+    end
+```
+This will doownload Cocoapods supporting Swift 3.0.2
+
+* **Swift 3.1**
+
+You can doenload latest version 4.0.0 to work with Swift 3.1
+
+```ruby
+    target '$_YOUR__TARGET' do
       pod 'XCFit'
     end
 ```
 
+Now, we can install dependencies
 
 ```sh
 $ pod install
