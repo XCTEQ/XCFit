@@ -513,7 +513,7 @@ Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next tim
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/cucumberish_template.gif)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/cucumberish_template.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. 
 
