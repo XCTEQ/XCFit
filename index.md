@@ -7,6 +7,8 @@
 
 **XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integration Tests) is a full stack Xcode BDD framework for iOS apps written in [Swift](https://swift.org). XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit provides automated Xcode templates to setup skeleton of BDD which are available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit). XCFit also packaged asSwift Framework to provide pre-defined BDD Steps written in Swift. XCFit Swift framework is available on [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
 
+> Important Note : XCFit 4 (tag 4.0.0) supports Swift 3.1 & Xcode 8.3 which is currently avavlable only for the deveopers. In order to Use XCFit for the Swift 3.0.2 & Xcode 8.2 use XCFit 3 (tag 3.0.0)
+
 
 ### XCFit
 
@@ -79,9 +81,9 @@ You must have Mac Operating System with OSX/MacOS Sierra.
 
 
 * **[Xcode 8.3](https://developer.apple.com/xcode/)**
-   - XCFit only Supports Xcode 8.3 and above. 
+   - XCFit 4 only Supports Xcode 8.3 and above however XCFit 3 can be used with **Xcode 8.2** 
 * **[Swift 3.1](https://swift.org/download/)**
-   - Use  Swift 3.1-dev snapshot and toolchain. Swift 3.1 is currenly in beta.   
+   - Use  Swift 3.1-dev snapshot and toolchain. Swift 3.1 is currenly in beta.XCFit 3 can be used with **Swift 3.0.2**   
 * **[Ruby](https://www.ruby-lang.org/en/)**
    - Ruby is required to setup XCFit templates either using Homebrew or Rubygem. Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo.   
 * **[Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
@@ -167,13 +169,29 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well. 
 
 ### Cocoapods
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target. We can install XCFit Cocoapods depending on Swift verson we are using  
+
+* **Swift 3.0.2**
+
 Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+
+```ruby
+    target '$_YOUR__TARGET' do
+      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '3.0.0'
+    end
+```
+This will doownload Cocoapods supporting Swift 3.0.2
+
+* **Swift 3.1**
+
+You can doenload latest version 4.0.0 to work with Swift 3.1
 
 ```ruby
     target '$_YOUR__TARGET' do
       pod 'XCFit'
     end
 ```
+
 Same way we can get 'Cucumberish' and 'OCSlim' for the specific target.
 
 ```sh
@@ -184,10 +202,23 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 
 ### Carthage 
 
-XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` with following content 
+XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-              github "Shashikant86/XCFit"
+* **Swift 3.0.2
+
+Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
+
+              github "Shashikant86/XCFit" "3.0.0"
               
+              
+* **Swift 3.1**
+
+You can get lates tag t work with Swift 3.1 then `Cartfile` can have following 
+
+             github "Shashikant86/XCFit"
+
+
+
 Now, we can fetch and build Carthage Dependencies using following command. 
 
              $ carthage update --platform iOS
@@ -265,11 +296,27 @@ Testbase is group where we can abstract all setup, teardown and common stuff in 
 
 You can get XCFit Framework easily. Create `Podfile` and add specific dependency for the target
 
+* **Swift 3.0.2**
+
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+
+```ruby
+    target '$_YOUR__TARGET' do
+      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '3.0.0'
+    end
+```
+This will doownload Cocoapods supporting Swift 3.0.2
+
+* **Swift 3.1**
+
+You can doenload latest version 4.0.0 to work with Swift 3.1
+
 ```ruby
     target '$_YOUR__TARGET' do
       pod 'XCFit'
     end
 ```
+
 Now that, We need to install the framework using 
 
 ```sh
@@ -283,9 +330,21 @@ Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' cla
 
 ### Carthage
 
-It's easy to install XCFit using Carthage as well. Add following to `Cartfile`
+XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-                  github "Shashikant86/XCFit"
+* **Swift 3.0.2
+
+Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
+
+              github "Shashikant86/XCFit" "3.0.0"
+              
+              
+* **Swift 3.1**
+
+You can get lates tag t work with Swift 3.1 then `Cartfile` can have following 
+
+             github "Shashikant86/XCFit" "4.0.0"
+
 
 
 Now fetch dependency and build XCFit using.
