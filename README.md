@@ -203,7 +203,7 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-* **Swift 3.0.2
+* **Swift 3.0.2**
 
 Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
 
