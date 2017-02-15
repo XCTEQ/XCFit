@@ -327,7 +327,7 @@ Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' cla
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-* **Swift 3.0.2
+* **Swift 3.0.2**
 
 Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
 
@@ -519,7 +519,7 @@ XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target a
 
 Once you have setup XCFit Cucumberish templates, we need to get Cucumberish framework. In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) using Carthage, we need to create `Cartfile` with following content
 
-* **Swift 3.0.2
+* **Swift 3.0.2**
 
 Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
 
