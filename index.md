@@ -204,7 +204,7 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-* **Swift 3.0.2
+* **Swift 3.0.2**
 
 Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
 
@@ -332,7 +332,7 @@ Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' cla
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag 
 
-* **Swift 3.0.2
+* **Swift 3.0.2**
 
 Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
 
@@ -480,12 +480,28 @@ In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/mast
 
 Create a 'Podfile' if you don't have already. In your Podfile, add following Pod entry and update/install pod
 
+* **Swift 3.0.2**
+
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+
 ```ruby
-    target '$_YOUR_CUCUMBERISH_TARGET' do
+    target '$_YOUR__TARGET' do
+      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '3.0.0'
+    end
+```
+This will doownload Cocoapods supporting Swift 3.0.2
+
+* **Swift 3.1**
+
+You can doenload latest version 4.0.0 to work with Swift 3.1
+
+```ruby
+    target '$_YOUR__TARGET' do
       pod 'XCFit'
     end
 ```
 
+Now, we can install dependencies
 
 ```sh
 $ pod install
@@ -497,7 +513,7 @@ Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next tim
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
-![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/cucumberish_template.gif)
+![image](https://github.com/Shashikant86/xcfitgif/blob/master/cucumberish_template.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode. 
 
@@ -509,7 +525,19 @@ XCFit adds 'Cucumberish' target to existing Scheme. You can remove that target a
 
 Once you have setup XCFit Cucumberish templates, we need to get Cucumberish framework. In order to get [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish/tree/master/Cucumberish) using Carthage, we need to create `Cartfile` with following content
 
-                  github "Shashikant86/XCFit"
+* **Swift 3.0.2**
+
+Add the following to `Cartfile` to get Swift 3.0.2 compatable source 
+
+              github "Shashikant86/XCFit" "3.0.0"
+              
+              
+* **Swift 3.1**
+
+You can get lates tag t work with Swift 3.1 then `Cartfile` can have following 
+
+             github "Shashikant86/XCFit"
+
 
 Now install, Carthage frameworks using commamnd
 
