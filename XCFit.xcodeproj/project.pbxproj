@@ -216,6 +216,7 @@
 		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -229,14 +230,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = XCFit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos10.3;
 				SKIP_INSTALL = YES;
 				TARGET_NAME = XCFit;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		OBJ_25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -250,8 +254,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = XCFit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos10.3;
 				SKIP_INSTALL = YES;
 				TARGET_NAME = XCFit;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

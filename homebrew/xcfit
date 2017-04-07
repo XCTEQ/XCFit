@@ -53,18 +53,6 @@ def setup_xcode_templates
   puts " ***************** Enjoy XCFit *****************"
 end
 
-def setup_fitnesse_templates
-   puts "==================XXXXXXXX==========================="
-   puts 'Downloading Fitnesse Templates'
-   puts "==================XXXXXXXX==========================="
-   system("cd /tmp && curl -sL https://github.com/Shashikant86/OCSlimProjectXcodeTemplates/archive/2.0.0.tar.gz| tar xz")
-   system("cd /tmp/OCSlimProjectXcodeTemplates-2.0.0/ && make")
-   puts "==================XXXXXXXX==========================="
-   puts "=======Created Xcode Templates for the Fitnesse ===="
-   puts "==================XXXXXXXX==========================="
-end
-
-
 def print_usage
   puts <<EOF
 
@@ -72,9 +60,7 @@ def print_usage
 
   <command-name> can be one of
     setup_xcode_templates
-      generate a Xcode 8 Templates for the XCUI and Cucumberish
-    setup_fitnesse_templates
-      generate a Xcode 8 Templates for Fitnesse
+      generate a Xcode 8 Templates for the XCUI, Fitnesse and Cucumberish
     version
       prints the XCFit version
     help
@@ -94,15 +80,12 @@ def print_help
   <command-name> can be one of
     help
     setup_xcode_templates
-    setup_fitnesse_templates
     version
 
     Commands:
       help : prints more detailed help information.
 
-      setup_xcode_templates  : Generate a Xcode Target and File Templates for the XCUI and Cucumberish
-
-      setup_fitnesse_templates : Generate Xcode templates for the Fitnesse
+      setup_xcode_templates  : Generate a Xcode Target and File Templates for the XCUI, Fitnesse and Cucumberish
 
       version : prints the XCFit version
 
@@ -119,8 +102,6 @@ else
     print_help
   elsif cmd == 'setup_xcode_templates'
     setup_xcode_templates
-  elsif cmd == 'setup_fitnesse_templates'
-    setup_fitnesse_templates
   elsif cmd == 'version'
     puts "#{VERSION}"
   else

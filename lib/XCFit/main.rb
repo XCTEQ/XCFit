@@ -48,17 +48,5 @@ module XCFit
          puts 'You wont need to restart Xcode but do so if nesessary!'
          puts " ***************** Enjoy XCFit *****************"
       end
-
-			desc 'setup_fitnesse_templates', 'Downloads Fitnesse Xcode Templates from OCSlim'
-      def setup_fitnesse_templates
-         puts "==================XXXXXXXX==========================="
-         puts 'Downloading Fitnesse Templates'
-         puts "==================XXXXXXXX==========================="
-         system("cd /tmp && curl -sL https://github.com/Shashikant86/OCSlimProjectXcodeTemplates/archive/2.0.0.tar.gz| tar xz")
-				 system("cd /tmp/OCSlimProjectXcodeTemplates-2.0.0/ && make")
-         puts "==================XXXXXXXX==========================="
-         puts "=======Created Xcode Templates for the Fitnesse ===="
-         puts "==================XXXXXXXX==========================="
-      end
   end
 end
