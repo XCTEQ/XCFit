@@ -17,7 +17,7 @@ module XCFit
     $root_developer_dir = File.join($root_lib_dir, 'Developer')
     $root_xcode_dir = File.join($root_developer_dir, 'Xcode')
     $root_template_dir = File.join($root_xcode_dir, 'Templates')
-    $root_xcfit_dir = File.join($root_template_dir, 'XCfit')
+    $root_xcfit_dir = File.join($root_template_dir, 'XCFit')
     $root_gherkin_dir = File.join($root_template_dir, 'Gherkin')
 
 
@@ -31,7 +31,8 @@ module XCFit
 
 			desc 'setup_xcode_templates', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
       def setup_xcode_templates
-        if File.exist?($root_xcfit_dir)
+        FileUtils.mkdir_p '~/Library/Developer/Xcode/Templates/'
+				if File.exist?($root_xcfit_dir)
         puts "==================XXXXXXXX==========================="
 				puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
 				puts 'Templates are being installed at ~/Library/Developer/Xcode/Templates/XCFit directory'
@@ -41,7 +42,7 @@ module XCFit
          puts 'Creating XCode Template for XCFit'
          puts 'This Template will allow you create Cucumberish and Fitnesse targets'
          puts "==================XXXXXXXX==========================="
-         FileUtils.cp_r($source_xcfit_dir, $root_template_dir)
+         FileUtils.cp_r($source_template_dir, $root_template_dir)
          puts 'Now Your Xcode will have XCFIT iOS and macOS tagets for Cucumberish and Fitnesse'
          puts "==================XXXXXXXX==========================="
          puts 'File -> New -->Target-->XCFit'

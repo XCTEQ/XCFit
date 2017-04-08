@@ -3,14 +3,14 @@
 require 'fileutils'
 require 'tempfile'
 
-VERSION = "4.0.1"
+VERSION = "4.0.2"
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
 @root_developer_dir = File.join(@root_lib_dir, 'Developer')
 @root_xcode_dir = File.join(@root_developer_dir, 'Xcode')
 @root_template_dir = File.join(@root_xcode_dir, 'Templates')
-@root_xcfit_dir = File.join(@root_template_dir, 'XCfit')
+@root_xcfit_dir = File.join(@root_template_dir, 'XCFit')
 @root_gherkin_dir = File.join(@root_template_dir, 'Gherkin')
 # @source_dir = File.join(File.dirname(__FILE__), '..', 'XCFit_Templates')
 # @source_xcfit_dir = File.join(@source_dir, 'XCFit')
@@ -24,6 +24,7 @@ def clone_xcfit
   # system("cd /tmp")
   system("cd /tmp  && curl -sL https://github.com/Shashikant86/XCFit/archive/#{VERSION}.tar.gz | tar xz")
   puts "*******======= Downloading XCFit Templates for the Xcode =============***"
+  @src_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates"
   @xcfit_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/XCFit"
   @gherkin_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/Gherkin"
 end
@@ -33,6 +34,9 @@ def clean_xcfit
 end
 
 def setup_xcode_templates
+
+  FileUtils.mkdir_p '~/Library/Developer/Xcode/Templates/'
+
   if File.exist?(@root_xcfit_dir)
     puts "==================XXXXXXXX==========================="
     puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
@@ -44,7 +48,7 @@ def setup_xcode_templates
   puts 'Creating XCode Template for XCFit'
   puts 'This Template will allow you create Cucumberish and Fitnesse targets'
   puts "==================XXXXXXXX==========================="
-  FileUtils.cp_r(@xcfit_template_dir, @root_template_dir)
+  FileUtils.cp_r(@src_template_dir, @root_template_dir)
   clean_xcfit
   puts 'Now Your Xcode will have XCFIT iOS and macOS tagets for Cucumberish and Fitnesse'
   puts "==================XXXXXXXX==========================="
