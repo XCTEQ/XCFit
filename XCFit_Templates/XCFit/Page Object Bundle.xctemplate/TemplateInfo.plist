@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.pageObjectBundle</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.xcuiPomTestBundleBase</string>
+		<string>com.apple.dt.unit.iosBase</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This target builds a XCUI tests with Page Object Pattern using XCTest framework.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaUITestBundleTarget</string>
+		</dict>
+	</array>
+	<key>OptionConstraints</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>ConstraintType</key>
+			<string>DefaultIfAssociatedTarget</string>
+			<key>Value</key>
+			<string>___ASSOCIATEDTARGET_bundleName___PageObjectTests</string>
+		</dict>
+	</array>
+</dict>
+</plist>
