@@ -3,7 +3,7 @@
 require 'fileutils'
 require 'tempfile'
 
-VERSION = "4.0.2"
+VERSION = "4.0.3"
 
 @root_dir = File.expand_path('~')
 @root_lib_dir = File.join(@root_dir, 'Library')
@@ -34,9 +34,6 @@ def clean_xcfit
 end
 
 def setup_xcode_templates
-
-  FileUtils.mkdir_p '~/Library/Developer/Xcode/Templates/'
-
   if File.exist?(@root_xcfit_dir)
     puts "==================XXXXXXXX==========================="
     puts 'There is already XCFit directory in Xcode Templates. Looks like you are trying Fitnesse Templates '
