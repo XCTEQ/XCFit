@@ -6,6 +6,7 @@ module XCFit
 	class Main < Thor
 	  include Thor::Actions
     $source_dir = File.expand_path '../../..', __FILE__
+		$source_cocoapods_dir = File.join($source_dir, 'Cocoapods')
     $source_template_dir = File.join($source_dir, 'XCFit_Templates')
 		$source_template_xcode7_dir = File.join($source_dir, 'Xcode7-Templates')
 	  $source_xcfit_dir = File.join($source_template_dir, 'XCFit')
