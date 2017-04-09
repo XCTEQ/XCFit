@@ -25,10 +25,18 @@ module XCFit
 	  map %w(-v -V --version) => :version
 
 
-	  desc 'version', 'Get the current version number', :hide => true
+	    desc 'version', 'Get the current version number', :hide => true
       def version
         say XCFit::VERSION
       end
+
+			desc 'setup_xcfit_podfile', 'Setup XCFit Podfile template'
+			def setup_xcfit_podfile
+         puts '=======Creating Template Podfile for the XCFit project'
+				 puts '=======You need to replace targets with your project targets and comment unwanted targets ========'
+				 system("curl -s -O https://raw.githubusercontent.com/Shashikant86/XCFit/master/Cocoapods/Podfile")
+				 puts "Podfile successfully created in the current working directory here at #{Dir.getwd}/Podfile"
+			end
 
 			desc 'setup_xcode_templates', 'Generate All Xcode Templates for the Gherkin Feature Files & targets for Cucumberish and Fitnesse'
       def setup_xcode_templates

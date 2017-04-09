@@ -54,6 +54,13 @@ def setup_xcode_templates
   puts " ***************** Enjoy XCFit *****************"
 end
 
+def setup_xcfit_podfile
+   puts '=======Creating Template Podfile for the XCFit project'
+   puts '=======You need to replace targets with your project targets and comment unwanted targets ========'
+   system("curl -s -O https://raw.githubusercontent.com/Shashikant86/XCFit/master/Cocoapods/Podfile")
+   puts "Podfile successfully created in the current working directory here at #{Dir.getwd}/Podfile"
+end
+
 def print_usage
   puts <<EOF
 
@@ -62,6 +69,8 @@ def print_usage
   <command-name> can be one of
     setup_xcode_templates
       generate a Xcode 8 Templates for the XCUI, Fitnesse and Cucumberish
+    setup_xcfit_podfile
+      Creates template Podfile for the XCFit project covering all targets.
     version
       prints the XCFit version
     help
@@ -88,6 +97,8 @@ def print_help
 
       setup_xcode_templates  : Generate a Xcode Target and File Templates for the XCUI, Fitnesse and Cucumberish
 
+      setup_xcfit_podfile : Creates template Podfile for the XCFit project covering all targets.
+
       version : prints the XCFit version
 
   <Options>
@@ -103,6 +114,8 @@ else
     print_help
   elsif cmd == 'setup_xcode_templates'
     setup_xcode_templates
+  elsif cmd == 'setup_xcfit_podfile'
+    setup_xcfit_podfile
   elsif cmd == 'version'
     puts "#{VERSION}"
   else
