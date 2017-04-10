@@ -27,6 +27,7 @@ def clone_xcfit
   @src_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates"
   @xcfit_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/XCFit"
   @gherkin_template_dir = "/tmp/XCFit-#{VERSION}/XCFit_Templates/Gherkin"
+  @fastlane_template_dir = "/tmp/XCFit-#{VERSION}/Fastlane"
 end
 
 def clean_xcfit
@@ -61,6 +62,16 @@ def setup_xcfit_podfile
    puts "Podfile successfully created in the current working directory here at #{Dir.getwd}/Podfile"
 end
 
+def setup_xcfit_fastfile
+   puts '=======Creating Template Podfile for the XCFit project'
+   puts '=======You need to replace schemes and other varibales as required ========'
+   clone_xcfit
+   puts "==================XXXXXXXX==========================="
+   puts "==================XXXXXXXX==========================="
+   FileUtils.cp_r(@fastlane_template_dir, FileUtils.pwd())
+   clean_xcfit
+end
+
 def print_usage
   puts <<EOF
 
@@ -68,9 +79,11 @@ def print_usage
 
   <command-name> can be one of
     setup_xcode_templates
-      generate a Xcode 8 Templates for the XCUI, Fitnesse and Cucumberish
+      generate a Xcode Templates for the XCUI, Fitnesse and Cucumberish
     setup_xcfit_podfile
       Creates template Podfile for the XCFit project covering all targets.
+    setup_xcfit_fastfile
+      Creates template Fastfile to run tests with fastlane.
     version
       prints the XCFit version
     help
@@ -90,6 +103,9 @@ def print_help
   <command-name> can be one of
     help
     setup_xcode_templates
+    setup_xcfit_podfile
+    setup_xcfit_fastfile
+
     version
 
     Commands:
@@ -98,6 +114,8 @@ def print_help
       setup_xcode_templates  : Generate a Xcode Target and File Templates for the XCUI, Fitnesse and Cucumberish
 
       setup_xcfit_podfile : Creates template Podfile for the XCFit project covering all targets.
+
+      setup_xcfit_fastfile : Creates template Fastfile to run tests with fastlane.
 
       version : prints the XCFit version
 
@@ -116,6 +134,8 @@ else
     setup_xcode_templates
   elsif cmd == 'setup_xcfit_podfile'
     setup_xcfit_podfile
+  elsif cmd == 'setup_xcfit_fastfile'
+    setup_xcfit_fastfile
   elsif cmd == 'version'
     puts "#{VERSION}"
   else
