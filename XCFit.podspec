@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'XCFit'
-  s.version          = '4.0.5'
+  s.version          = '4.0.7'
   s.summary          = 'Full Stack BDD for iOS and macOS Apps with Swift, Xcode using XCUITest, Cucumberish, FitNesse and friends.'
 
   s.description      = <<-DESC
-XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucumberish and Fitnesse. Native Xcode implementation, No Appium, No Calabash, No Ruby or any other non iOS language.
+XCFit is a full stack BDD framework for iOS apps with Swift supports Protocol Oriented BDD and Page Object Pattern.
                        DESC
 
   s.homepage         = 'https://github.com/Shashikant86/XCFit'
@@ -18,7 +18,5 @@ XCFit is a full stack BDD framework for iOS and macOS apps with Swift using Cucu
   s.ios.deployment_target = '9.0'
   s.source_files = 'Sources/*.swift'
   s.framework = "XCTest"
-  s.dependency 'Cucumberish'
-  s.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "SRC_ROOT=@\\\"$(SRCROOT)\\\"" }
   s.xcconfig = { "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" => "NO" }
 end

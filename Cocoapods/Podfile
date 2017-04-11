@@ -18,7 +18,7 @@ target PAGE_OBJECT_TEST_TARGET do
 end
 
 target CUCUMBER_TEST_TARGET do
-  pod 'XCFit'
+  pod 'Cucumberish'
 end
 
 target FITNESSE_ACCEPTANCE_TEST_TARGET do

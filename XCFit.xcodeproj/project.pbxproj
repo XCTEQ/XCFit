@@ -37,7 +37,6 @@
 		OBJ_14 /* homebrew */ = {isa = PBXFileReference; lastKnownFileType = folder; path = homebrew; sourceTree = SOURCE_ROOT; };
 		OBJ_15 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = SOURCE_ROOT; };
 		OBJ_16 /* XCFit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit; sourceTree = SOURCE_ROOT; };
-		OBJ_17 /* XCFit2Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit2Demo; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* XCFit_Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit_Templates; sourceTree = SOURCE_ROOT; };
 		OBJ_20 /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_21 /* XCFitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +92,6 @@
 				OBJ_14 /* homebrew */,
 				OBJ_15 /* lib */,
 				OBJ_16 /* XCFit */,
-				OBJ_17 /* XCFit2Demo */,
 				OBJ_18 /* XCFit_Templates */,
 				OBJ_19 /* Products */,
 			);
@@ -281,6 +279,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -336,6 +335,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
