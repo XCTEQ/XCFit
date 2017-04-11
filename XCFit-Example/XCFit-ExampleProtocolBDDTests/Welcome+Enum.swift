@@ -9,23 +9,17 @@
 
  This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
 
-This is extension to Feature protocol to implement the steps in the given when then format.
+This file stores all the XCUIElements for the perticular screen or feature so that our steps become readable.
 
  */
 
+
 import Foundation
 import XCTest
-//import XCFit
 
-// Once XCFit is imported we can use predefined steps
-
-extension Feature {
+enum WelcomeElements {
     
-    func givenTheAppIsRunning() {
-        
-        XCUIApplication().launch()
-        
-    }
+    static let helloButton = XCUIApplication().buttons["hello"]
+    static let welcomeText = XCUIApplication().staticTexts["Welcome"]
     
 }
-

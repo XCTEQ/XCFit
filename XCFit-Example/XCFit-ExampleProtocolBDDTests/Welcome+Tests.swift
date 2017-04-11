@@ -18,7 +18,7 @@ import XCFit
 
 // Once XCFit is imported then you can extend this class to use pre-defined steps 
 
-class XCFit_ExampleProtocolBDDTestsTests: XCFit, Feature {
+class WelcomeTests: XCFit, Welcome {
     
     override func setUp() {
         super.setUp()
@@ -33,8 +33,8 @@ class XCFit_ExampleProtocolBDDTestsTests: XCFit, Feature {
     
     func testAppIsRunning() {
         givenTheAppIsRunning()
-        whenITap(on: FeatureElements.helloButton)
-        thenIShouldSee(FeatureElements.welcomeText)
+        whenITap(on: WelcomeElements.helloButton)
+        thenIShouldSee(WelcomeElements.welcomeText)
     }
 }
 

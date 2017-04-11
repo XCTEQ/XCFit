@@ -13,18 +13,18 @@ target PROTOCOL_BDD_TARGET do
     pod 'XCFit'
 end
 
-target PAGE_OBJECT_TEST_TARGET do
-    pod 'XCFit'
-end
-
-target CUCUMBER_TEST_TARGET do
-  pod 'Cucumberish'
-end
-
-target FITNESSE_ACCEPTANCE_TEST_TARGET do
-    pod 'OCSlimProject'
-end
-
-target FITNESSE_ACCEPTANCE_XCTEST_TARGET do
-    pod 'OCSlimProjectTestBundleSupport'
-end
+# target PAGE_OBJECT_TEST_TARGET do
+#     pod 'XCFit'
+# end
+#
+# target CUCUMBER_TEST_TARGET do
+#   pod 'Cucumberish'
+# end
+#
+# target FITNESSE_ACCEPTANCE_TEST_TARGET do
+#     pod 'OCSlimProject'
+# end
+#
+# target FITNESSE_ACCEPTANCE_XCTEST_TARGET do
+#     pod 'OCSlimProjectTestBundleSupport'
+# end

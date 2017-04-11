@@ -12,10 +12,10 @@
 		9BD0A58F1E9C781F00A06EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0A58D1E9C781F00A06EE0 /* Main.storyboard */; };
 		9BD0A5911E9C781F00A06EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0A5901E9C781F00A06EE0 /* Assets.xcassets */; };
 		9BD0A5941E9C781F00A06EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0A5921E9C781F00A06EE0 /* LaunchScreen.storyboard */; };
-		9BD0A5AC1E9C798600A06EE0 /* Feature+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5AB1E9C798600A06EE0 /* Feature+Protocol.swift */; };
-		9BD0A5AF1E9C798600A06EE0 /* Feature+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5AE1E9C798600A06EE0 /* Feature+Extension.swift */; };
-		9BD0A5B21E9C798600A06EE0 /* Feature+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5B11E9C798600A06EE0 /* Feature+Enum.swift */; };
-		9BD0A5B51E9C798600A06EE0 /* XCFit_ExampleProtocolBDDTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5B41E9C798600A06EE0 /* XCFit_ExampleProtocolBDDTestsTests.swift */; };
+		9BD0A5AC1E9C798600A06EE0 /* Welcome+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5AB1E9C798600A06EE0 /* Welcome+Protocol.swift */; };
+		9BD0A5AF1E9C798600A06EE0 /* Welcome+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5AE1E9C798600A06EE0 /* Welcome+Extension.swift */; };
+		9BD0A5B21E9C798600A06EE0 /* Welcome+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5B11E9C798600A06EE0 /* Welcome+Enum.swift */; };
+		9BD0A5B51E9C798600A06EE0 /* Welcome+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A5B41E9C798600A06EE0 /* Welcome+Tests.swift */; };
 		9BD0A5BC1E9C79C900A06EE0 /* XCFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD0A59C1E9C78EE00A06EE0 /* XCFit.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,10 +39,10 @@
 		9BD0A5951E9C781F00A06EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD0A59C1E9C78EE00A06EE0 /* XCFit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCFit.framework; path = Carthage/Build/iOS/XCFit.framework; sourceTree = "<group>"; };
 		9BD0A5A61E9C798600A06EE0 /* XCFit-ExampleProtocolBDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCFit-ExampleProtocolBDDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BD0A5AB1E9C798600A06EE0 /* Feature+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feature+Protocol.swift"; sourceTree = "<group>"; };
-		9BD0A5AE1E9C798600A06EE0 /* Feature+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feature+Extension.swift"; sourceTree = "<group>"; };
-		9BD0A5B11E9C798600A06EE0 /* Feature+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feature+Enum.swift"; sourceTree = "<group>"; };
-		9BD0A5B41E9C798600A06EE0 /* XCFit_ExampleProtocolBDDTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFit_ExampleProtocolBDDTestsTests.swift; sourceTree = "<group>"; };
+		9BD0A5AB1E9C798600A06EE0 /* Welcome+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome+Protocol.swift"; sourceTree = "<group>"; };
+		9BD0A5AE1E9C798600A06EE0 /* Welcome+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome+Extension.swift"; sourceTree = "<group>"; };
+		9BD0A5B11E9C798600A06EE0 /* Welcome+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome+Enum.swift"; sourceTree = "<group>"; };
+		9BD0A5B41E9C798600A06EE0 /* Welcome+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome+Tests.swift"; sourceTree = "<group>"; };
 		9BD0A5B61E9C798600A06EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +127,7 @@
 		9BD0A5AA1E9C798600A06EE0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9BD0A5AB1E9C798600A06EE0 /* Feature+Protocol.swift */,
+				9BD0A5AB1E9C798600A06EE0 /* Welcome+Protocol.swift */,
 			);
 			name = Features;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 		9BD0A5AD1E9C798600A06EE0 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
-				9BD0A5AE1E9C798600A06EE0 /* Feature+Extension.swift */,
+				9BD0A5AE1E9C798600A06EE0 /* Welcome+Extension.swift */,
 			);
 			name = Steps;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 		9BD0A5B01E9C798600A06EE0 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				9BD0A5B11E9C798600A06EE0 /* Feature+Enum.swift */,
+				9BD0A5B11E9C798600A06EE0 /* Welcome+Enum.swift */,
 			);
 			name = Elements;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 		9BD0A5B31E9C798600A06EE0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9BD0A5B41E9C798600A06EE0 /* XCFit_ExampleProtocolBDDTestsTests.swift */,
+				9BD0A5B41E9C798600A06EE0 /* Welcome+Tests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -296,10 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD0A5AC1E9C798600A06EE0 /* Feature+Protocol.swift in Sources */,
-				9BD0A5B51E9C798600A06EE0 /* XCFit_ExampleProtocolBDDTestsTests.swift in Sources */,
-				9BD0A5B21E9C798600A06EE0 /* Feature+Enum.swift in Sources */,
-				9BD0A5AF1E9C798600A06EE0 /* Feature+Extension.swift in Sources */,
+				9BD0A5AC1E9C798600A06EE0 /* Welcome+Protocol.swift in Sources */,
+				9BD0A5B51E9C798600A06EE0 /* Welcome+Tests.swift in Sources */,
+				9BD0A5B21E9C798600A06EE0 /* Welcome+Enum.swift in Sources */,
+				9BD0A5AF1E9C798600A06EE0 /* Welcome+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

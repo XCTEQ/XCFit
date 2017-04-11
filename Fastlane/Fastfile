@@ -24,34 +24,34 @@ lane :xcfit do |options|
   scan(opts)
 end
 
-desc "Runs XCFit Cucumberish Tests and Generate JUnit and HTML reports"
-lane :xcfit_cucumberish do |options|
-  opts = {
-    :scheme => XCFIT_CUCUMBERISH_SCHEME,
-    :workspace => WORKSPACE,
-    :configuration => CONFIGURATION,
-    :destination => DESTINATION,
-    :buildlog_path => './build',
-    :output_directory => './build/cucumberish/reports',
-    :output_style => 'basic',
-    :output_types => 'junit, html',
-    :code_coverage => true,
-  }
-  scan(opts)
-end
-
-desc "Runs XCFit Fitnesse Tests and Generate JUnit and HTML reports"
-lane :xcfit_fitnesse do |options|
-  opts = {
-    :scheme => XCFIT_FITNESSE_SCHEME,
-    :workspace => WORKSPACE,
-    :configuration => CONFIGURATION,
-    :destination => DESTINATION,
-    :buildlog_path => './build',
-    :output_directory => './build/fitnesse/reports',
-    :output_style => 'basic',
-    :output_types => 'junit, html',
-    :code_coverage => true,
-  }
-  scan(opts)
-end
+# desc "Runs XCFit Cucumberish Tests and Generate JUnit and HTML reports"
+# lane :xcfit_cucumberish do |options|
+#   opts = {
+#     :scheme => XCFIT_CUCUMBERISH_SCHEME,
+#     :workspace => WORKSPACE,
+#     :configuration => CONFIGURATION,
+#     :destination => DESTINATION,
+#     :buildlog_path => './build',
+#     :output_directory => './build/cucumberish/reports',
+#     :output_style => 'basic',
+#     :output_types => 'junit, html',
+#     :code_coverage => true,
+#   }
+#   scan(opts)
+# end
+# 
+# desc "Runs XCFit Fitnesse Tests and Generate JUnit and HTML reports"
+# lane :xcfit_fitnesse do |options|
+#   opts = {
+#     :scheme => XCFIT_FITNESSE_SCHEME,
+#     :workspace => WORKSPACE,
+#     :configuration => CONFIGURATION,
+#     :destination => DESTINATION,
+#     :buildlog_path => './build',
+#     :output_directory => './build/fitnesse/reports',
+#     :output_style => 'basic',
+#     :output_types => 'junit, html',
+#     :code_coverage => true,
+#   }
+#   scan(opts)
+# end

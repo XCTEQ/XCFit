@@ -68,7 +68,7 @@
 		<string>Feature+Extension.swift</string>
 		<string>Feature+Enum.swift</string>
 		<string>Info.plist:PackageType</string>
-		<string>___PACKAGENAMEASIDENTIFIER___Tests.swift</string>
+		<string>Feature+Tests.swift</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -97,10 +97,10 @@
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;BNDL&lt;/string&gt;
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___Tests.swift</key>
+		<key>Feature+Tests.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>___PACKAGENAMEASIDENTIFIER___Tests.swift</string>
+			<string>Feature+Tests.swift</string>
 			<key>Group</key>
 			<string>Tests</string>
 		</dict>
