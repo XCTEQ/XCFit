@@ -34,15 +34,15 @@
 ***
   -  You can now write Given When Then (Gherkin), Predefined BDD Steps and Decision Table in Xcode. In Short, you can do BDD in Xcode for your iOS app.   
   -  XCFit supports Swift so no need to use other languages like Ruby, Java, Python to write acceptance and UI tests for iOS.
-  -  XCFit provides automated Xcode Target Templates for Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups.
+  -  XCFit provides automated Xcode Target Templates for Protocol Oriented BDD, Page Object Pattern, Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups.
   - XCFit will setup Xcode Templates with skeleton code and provide BDD Style Steps with Swift Framework which is available on Cocoapods, Carthage and Swift Package Manager.  
 
 
   ### XCFIT & Other Frameworks
 
-  * **XCFit Swift Framework with Pre-defined BDD Steps and Page Object Pattern Templates**
+  * **XCFit Swift Framework with Pre-defined BDD Steps, Protocol & Page Object Templates**
 
-  XCFit setup [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) for Apple's [XCUI Test](https://developer.apple.com/videos/play/wwdc2015/406/) using 'XCUI POM Test Bundle' Templates. We can get pre-defined BDD steps by using XCFit Swift Framework from [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.
+  XCFit provides templates for Protocol Oriented BDD using 'Protocol BDD Bundle' and  [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) for Apple's [XCUI Test](https://developer.apple.com/videos/play/wwdc2015/406/) using 'XCUI POM Test Bundle' Templates. We can get pre-defined BDD steps by using XCFit Swift Framework from [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.
 
   * **Cucumberish BDD Framework and Cucucmber Style Xcode Templates(Optional Objective-C)**
 
@@ -156,37 +156,33 @@ $ xcfit setup_xcode_templates
 
 You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/Xcode8-Templates.png)
+![image](https://github.com/Shashikant86/XCFit5-GIFS/blob/master/templates.png)
 
 ## Framework Installation
 
 XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well.
 
 ### Cocoapods
-Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target. We can install XCFit Cocoapods depending on Swift verson we are using  
 
-* **Swift 3.0.2**
+#### Use XCFit Template Podfile
 
-Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target or  we can use XCFit template `Podfile` using command.
 
-```ruby
-    target '$_YOUR__TARGET' do
-      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '3.0.0'
-    end
-```
-This will doownload Cocoapods supporting Swift 3.0.2
+           $ xcfit setup_xcfit_podfile
 
-* **Swift 3.1**
+This will create a Podfile, you need to replace your target names as required.
 
-You can doenload latest version 4.0.0 to work with Swift 3.1
+#### Manual Cocoapods Installtion
+
+We can install XCFit Cocoapods depending on Swift version we are using  
+Latest version should support
 
 ```ruby
     target '$_YOUR__TARGET' do
       pod 'XCFit'
     end
 ```
-
-Same way we can get 'Cucumberish' and 'OCSlim' for the specific target.
+Now that, we have `Podfile` setup, we can install dependencies using command
 
 ```sh
 $ pod install
@@ -197,21 +193,9 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 ### Carthage
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag
-
-* **Swift 3.0.2**
-
-Add the following to `Cartfile` to get Swift 3.0.2 compatable source
-
-              github "Shashikant86/XCFit" "3.0.0"
-
-
-* **Swift 3.1**
-
-You can get lates tag t work with Swift 3.1 then `Cartfile` can have following
+You can get latest tag t work with Swift 3.1 then `Cartfile` can have following
 
              github "Shashikant86/XCFit"
-
-
 
 Now, we can fetch and build Carthage Dependencies using following command.
 
@@ -236,7 +220,7 @@ Now we can use fetch XCFit using
 
             $ swift package fetch
 
-We can build, test package using the commnds avavilable for the Swift Package Manager.            
+We can build, test package using the Commands available for the Swift Package Manager.            
 
 
 
@@ -245,9 +229,9 @@ We can build, test package using the commnds avavilable for the Swift Package Ma
 
 ## Protocol Oriented BDD
 
-XCFit template supports Protocol Oriented BDD. Swift is a protocol oriented language and wedon't want to miss the point of Protocol, Extensions and Enums. To setup template
+XCFit template supports Protocol Oriented BDD. Swift is a protocol oriented language and we don't want to miss the point of Protocol, Extensions and Enums. To setup template
 
-- From Xcode, create a new app(Or use existing app) and selct File ---> New ----> Target
+- From Xcode, create a new app(Or use existing app) and select File ---> New ----> Target
 
 - Now Select 'XCFit' for iOS app and Click on 'Protocol Oriented BDD Bundle'
 
@@ -321,10 +305,15 @@ Testbase is group where we can abstract all setup, teardown and common stuff in 
 
 ### Cocoapods
 You can get XCFit Framework easily. Create `Podfile` and add specific dependency for the target
+Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target or  we can use XCFit template `Podfile` using command.
+
+           $ xcfit setup_xcfit_podfile
+
+This will create a Podfile, you need to replace your target names as required.
 
 * **Swift 3.0.2**
 
-Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target
+ We can create `Podfile` and add specific dependency for the target
 
 ```ruby
     target '$_YOUR__TARGET' do
@@ -335,7 +324,7 @@ This will doownload Cocoapods supporting Swift 3.0.2
 
 * **Swift 3.1**
 
-You can doenload latest version 4.0.0 to work with Swift 3.1
+You can doenload latest version 5.0.0 to work with Swift 3.1
 
 ```ruby
     target '$_YOUR__TARGET' do
@@ -367,9 +356,9 @@ Add the following to `Cartfile` to get Swift 3.0.2 compatable source
 
 * **Swift 3.1**
 
-You can get lates tag t work with Swift 3.1 then `Cartfile` can have following
+You can get latest tag will  work with Swift 3.1 then `Cartfile` can have following
 
-             github "Shashikant86/XCFit" "4.0.0"
+             github "Shashikant86/XCFit" "5.0.0"
 
 
 Now fetch dependency and build XCFit using.
@@ -397,7 +386,7 @@ You can choose any of the above method but Cocoapods is easy and less manual.
 
 ## Import XCFit & Use Predefined Steps
 
-There are some predefined XCFit steps we can use by importing `XCFit` and extending out test base class to `XCFit`. There are plenty of Pre-Defined BDD Style Stpes available [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md). You can use prefined steps wherever they make sense however it's fairly esasy to write your own.
+There are some predefined XCFit steps we can use by importing `XCFit` and extending out test base class to `XCFit`. There are plenty of Pre-Defined BDD Style Steps available [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md). You can use predefined steps wherever they make sense however it's fairly easy to write your own.
 
 Your test will read something like this:
 
@@ -426,7 +415,7 @@ class XCFitTests: XCFit {
 ```
 
 
-You will get access to lots of predefined BDD style human redable steps. It's not mandatory to use those steps unless you wish.
+You will get access to lots of predefined BDD style human readable steps. It's not mandatory to use those steps unless you wish.
 
 **Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-on-using-pre-defines-bdd-style-steps)**
 
@@ -434,6 +423,7 @@ You will get access to lots of predefined BDD style human redable steps. It's no
 
 
 ---
+
 
 # Setting Cucumberish BDD Scenarios in Xcode
 
