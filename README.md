@@ -156,7 +156,7 @@ $ xcfit setup_xcode_templates
 
 You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
-![image](https://github.com/Shashikant86/XCFit5-GIFS/blob/master/templates.png)
+![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/templates.png)
 
 ## Framework Installation
 
@@ -386,7 +386,15 @@ You can choose any of the above method but Cocoapods is easy and less manual.
 
 ## Import XCFit & Use Predefined Steps
 
-There are some predefined XCFit steps we can use by importing `XCFit` and extending out test base class to `XCFit`. There are plenty of Pre-Defined BDD Style Steps available [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md). You can use predefined steps wherever they make sense however it's fairly easy to write your own.
+There are some predefined XCFit steps we can use by importing `XCFit` and extending out test class to `XCFit`. There are plenty of Pre-Defined BDD Style Steps available [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md). You can use predefined steps wherever they make sense however it's fairly easy to write your own.
+
+#### Using Steps inside Protocol Oriented BDD pattern
+
+You can simply import `XCFit` inside the test class and extend it to XCFit. You can also use `Feature+Extensions.swift` to implement or override some steps.
+
+#### Using Steps in Page Object Pattern
+
+You can simply import `XCFit` inside the test class and extend it to XCFit
 
 Your test will read something like this:
 
@@ -420,6 +428,20 @@ You will get access to lots of predefined BDD style human readable steps. It's n
 **Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-on-using-pre-defines-bdd-style-steps)**
 
 ![image](https://github.com/Shashikant86/xcfitgif/blob/master/pre-defined_xcfit_steps.gif)
+
+
+## Setting Fastlane for XCFit
+
+[Fastlane](https://fastlane.tools/) is a awesome tool for iOS Continuous Delivery which automates most of the iOS development tasks. We can use it to run tests written using XCFit, We can setup sample `Fastfile` using XCFit command
+
+
+           $ xcfit setup_xcfit_fastfile
+
+This will create template Fastfile with all the required lanes. You can replace the YOUR_SCHEME, WORKSPACE and other variables as required. We can then run
+
+           $ fastlane xcfit
+
+This will run all our tests using Fastlane that will be easy to plug it with any CI server.            
 
 
 ---
