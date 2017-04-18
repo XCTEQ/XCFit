@@ -158,6 +158,7 @@ You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cu
 
 ![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/templates.png)
 
+
 ## Framework Installation
 
 XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. XCFit and Cuucmberish can be installed using Carthage as well.
