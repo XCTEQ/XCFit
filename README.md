@@ -260,6 +260,8 @@ All the XCUIElements for that Feature.
 
 This is test where you call Given When Then from Extensions. You can import `XCFit` framework and extend this class 'XCFit' and also confirms to 'Feature' protocol
 
+![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/xcfit5-demo.gif)
+
 
 
 ## Page Object Pattern
@@ -442,7 +444,9 @@ This will create template Fastfile with all the required lanes. You can replace 
 
            $ fastlane xcfit
 
-This will run all our tests using Fastlane that will be easy to plug it with any CI server.            
+This will run all our tests using Fastlane that will be easy to plug it with any CI server.  
+
+![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/fastfile.gif)
 
 
 ---
