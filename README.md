@@ -5,7 +5,7 @@
 
 # XCFit : Full Stack iOS BDD in Xcode
 
-**XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integration Tests) is a full stack Xcode BDD framework for iOS apps written in [Swift](https://swift.org). XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit provides automated Xcode templates to setup skeleton of BDD which are available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit). XCFit also packaged asSwift Framework to provide pre-defined BDD Steps written in Swift. XCFit Swift framework is available on [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
+**XCFit a.k.a ([XCUI](https://developer.apple.com/videos/play/wwdc2015/406/0), [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [Fitnesse](https://github.com/paulstringer/OCSlimProject) Integration Tests) is a full stack Xcode BDD framework for iOS apps written in [Swift](https://swift.org). XCFit allows us to write BDD Style API/Contract level, UI and Acceptance Tests with Swift in human readable language using tools like Given/When/Then, [Cucumber](https://cucumber.io/) and [Fitnesse](http://fitnesse.org/) in Xcode. We can still use Apple's brand new UI Testing framework (XCUI) under the hood of XCFit and Cucumberish. XCFit provides automated Xcode templates to setup skeleton of BDD which are available on [Homebrew](http://brew.sh), [RubyGem](https://rubygems.org/gems/xcfit). XCFit also packaged as Swift Framework to provide pre-defined BDD Steps written in Swift for Protocol Oriented BDD. XCFit Swift framework is available on [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.**
 
 > Important Note : XCFit does not support macOS application.
 
@@ -33,14 +33,14 @@
 # XCFit Features
 ***
   -  You can now write Given When Then (Gherkin), Predefined BDD Steps and Decision Table in Xcode. In Short, you can do BDD in Xcode for your iOS app.   
-  -  XCFit supports Swift so no need to use other languages like Ruby, Java, Python to write acceptance and UI tests for iOS.
+  -  XCFit is purely in Swift so no need to use other languages like Ruby, Java, Python to write acceptance and UI tests for iOS.
   -  XCFit provides automated Xcode Target Templates for Protocol Oriented BDD, Page Object Pattern, Cucumberish, Fitnesse and Page Object Pattern(XCUI) targets which reduce hectic Xcode configuration steps. It also arrange code in Xcode groups.
   - XCFit will setup Xcode Templates with skeleton code and provide BDD Style Steps with Swift Framework which is available on Cocoapods, Carthage and Swift Package Manager.  
 
 
   ### XCFIT & Other Frameworks
 
-  * **XCFit Swift Framework with Pre-defined BDD Steps, Protocol & Page Object Templates**
+  * **XCFit- Xcode Templates and Swift Framework for Protocol Oriented BDD and Paget Objects**
 
   XCFit provides templates for Protocol Oriented BDD using 'Protocol BDD Bundle' and  [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html) for Apple's [XCUI Test](https://developer.apple.com/videos/play/wwdc2015/406/) using 'XCUI POM Test Bundle' Templates. We can get pre-defined BDD steps by using XCFit Swift Framework from [CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package Manager.
 
@@ -52,11 +52,11 @@
   XCFit allows us to setup [Fitnesse](http://fitnesse.org/) style decision table test framework with [OCSlimProject](https://github.com/paulstringer/OCSlimProject) using 'Acceptance Tests  Bundle' templates.
 
 
-###   Where to get XCFit
+###   Where to get XCFit Swift Framework and XCFit Xcode Templates
 
 #### XCFit Swift Framework
 
-* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App.
+* **CocoaPods** -- [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit) : XCFit Swift Frameworks and BDD Style predefined steps for the iOS App to support Protocol Oriented BDD.
 * **Carthage** -- You can install XCFit Swift Framework with Carthage as well for iOS Projects
 * **Swift Package Manager** -- Swift Package Manager doesn't support iOS projects yet but XCFit is compatible with Swift Package manager as well.
 
@@ -66,15 +66,16 @@
 
 * **RubyGems**  -- [xcfit-RubyGem](https://rubygems.org/gems/xcfit) to get automated Xcode Templates
 
+The rubygem method is preferred. 
 
 
 # Tech & Software Requirements
 
-XCFit uses a number of open source projects to work properly. You need to have following
+XCFit is pure Swift but other libraries like Fitnesse and Cucumberish need some additional softwares. 
 
 **Hardware**
 
-You must have Mac Operating System with OSX/MacOS Sierra.
+You must have Mac Operating System with OSX/MacOS Sierra or above.
 
 **Software**
 
@@ -82,7 +83,7 @@ You must have Mac Operating System with OSX/MacOS Sierra.
 * **[Xcode 8.3](https://developer.apple.com/xcode/)**
    - XCFit 4 only Supports Xcode 8.3 and above however XCFit 3 can be used with **Xcode 8.2**
 * **[Swift 3.1](https://swift.org/download/)**
-   - Use  Swift 3.1-dev snapshot and toolchain. Swift 3.1 is currenly in beta.XCFit 3 can be used with **Swift 3.0.2**  
+   - XCFit currenly support Swift 3.0 and Swift 3.1.   
 * **[Ruby](https://www.ruby-lang.org/en/)**
    - Ruby is required to setup XCFit templates either using Homebrew or Rubygem. Use [RVM](https://rvm.io/) for GEM management. Ideally Ruby > 2.X. You can use system Ruby with sudo.   
 * **[Curl on Mac](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/curl.1.html)**
@@ -102,11 +103,11 @@ XCFit installation has two steps.
 * **Xcode Template Installation**
 
 
-This will install Xcode Templates with skeleton code to support BDD in iOS app. The templates are XCUI Page Object Templates, Cucumberish BDD Templates and OCSlim Fitnesse Templates (optional). The templates can be installed with [xcfit-RubyGem](https://rubygems.org/gems/xcfit) or [Homebrew](http://brew.sh). You need to select only one method of installtion.
+This will install Xcode Templates with skeleton code to support BDD in iOS app. The templates are XCUI based Protocol-oriented BDD templates,  Page Object Templates, Cucumberish BDD Templates and OCSlim Fitnesse Templates (optional). The templates can be installed with [xcfit-RubyGem](https://rubygems.org/gems/xcfit) or [Homebrew](http://brew.sh). You need to select only one method of installtion. The rubygem method is preferred.  
 
 * **Framework Installation**
 
-XCFit Swift Framework provides pre-defined BDD Style steps with XCUI and supporting Frameworks like Cucumberish and OCSlim which cab be used to write BDD Steps. XCFit Swift Framework is available on [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package manager. [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [OCSlimProject](https://github.com/paulstringer/OCSlimProject) are available on Cocoapods.
+XCFit Swift Framework provides pre-defined BDD Style steps with XCUITest to support Protocol-oriented BDD and writing tests using Page Object pattern. The supporting Frameworks like Cucumberish and OCSlim which cab be used to write BDD Steps. XCFit Swift Framework is available on [XCFit-CocoaPods](http://cocoadocs.org/docsets/XCFit), Carthage and Swift Package manager. [Cucumberish](https://github.com/Ahmed-Ali/Cucumberish) and [OCSlimProject](https://github.com/paulstringer/OCSlimProject) are available on Cocoapods.
 
 
 ## Template Installation
@@ -139,10 +140,10 @@ You can choose any of the above method. Rubygems method is prefered.
 
 ### Setup Xcode Templates
 
-In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the things.
+In existing app or brand new app, we have to enable the Xcode templates for targets to speed up the 
 ##### Xcode Templates for XCFit
 
-To setup Templates for Xcode 8 for XCUI, Cucumberish target and Gherkin File Type.
+To setup Templates for Xcode 8 for XCUI ptotocol-oriented BDD, Cucumberish target and Gherkin File Type.
 
 
 ```sh
@@ -152,9 +153,9 @@ $ xcfit setup_xcode_templates
 
 ```
 
--  This will add couple of templates to your Xcode for iOS and macOS apps. In your app if you go to 'File--->New--->Target'
+-  This will add couple of templates to your Xcode for iOS apps. In your app if you go to 'File--->New--->Target'
 
-You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
+You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Protocol BDD, Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
 ![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/templates.png)
 
@@ -167,11 +168,11 @@ XCFit, Cucumberish or OCSlimProject Framework can be installed using Cocoapods. 
 
 #### Use XCFit Template Podfile
 
-Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target or  we can use XCFit template `Podfile` using command.
+Cocoapods is quicker and more automated than Carthage. We can create `Podfile` and add specific dependency for the target or  we can use XCFit template `Podfile` using command.
 
            $ xcfit setup_xcfit_podfile
 
-This will create a Podfile, you need to replace your target names as required.
+This will create a Podfile, you need to replace your XCFIT, CUCUMBERISH or FITNESSE target names as required.
 
 #### Manual Cocoapods Installtion
 
@@ -183,6 +184,8 @@ Latest version should support
       pod 'XCFit'
     end
 ```
+You can use any of the method above to setup `Podfile`. 
+
 Now that, we have `Podfile` setup, we can install dependencies using command
 
 ```sh
@@ -194,7 +197,7 @@ You need to close the existing Xcode session and Xcode Workspace .xcworkspace ne
 ### Carthage
 
 XCFit and Cucumberish can be installed as Cartahge. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag
-You can get latest tag t work with Swift 3.1 then `Cartfile` can have following
+You can get latest tag to work with Swift 3.1 then `Cartfile` can have following
 
              github "Shashikant86/XCFit"
 
@@ -226,11 +229,13 @@ We can build, test package using the Commands available for the Swift Package Ma
 
 
 ---
-# XCFit Swift Framework : XCUI Protocol Oriented, Page Object Pattern + Pre-Defined Steps
+# XCFit Swift Framework : Protocol Oriented BDD+ Page Object + Pre-Defined Steps
 
 ## Protocol Oriented BDD
 
-XCFit template supports Protocol Oriented BDD. Swift is a protocol oriented language and we don't want to miss the point of Protocol, Extensions and Enums. To setup template
+You can read step by step tutorial on my blog on Protocol-Oriented BDD [here](http://shashikantjagtap.net/introducing-protocol-oriented-bdd-swift-ios-apps/)
+
+XCFit template supports Protocol Oriented BDD. Swift is a protocol oriented language and we don't want to miss the point of Protocol, Extensions and Enums. To setup template. You can read step by step tutorial on my blog on Protocol-Oriented BDD[ here](http://shashikantjagtap.net/introducing-protocol-oriented-bdd-swift-ios-apps/)
 
 - From Xcode, create a new app(Or use existing app) and select File ---> New ----> Target
 
@@ -393,38 +398,11 @@ There are some predefined XCFit steps we can use by importing `XCFit` and extend
 
 #### Using Steps inside Protocol Oriented BDD pattern
 
-You can simply import `XCFit` inside the test class and extend it to XCFit. You can also use `Feature+Extensions.swift` to implement or override some steps.
+You can simply import `XCFit` inside the test class and extend it to XCFit. You can also use `Feature+Extensions.swift` to implement or override some steps. You can read step by step tutorial on my blog on Protocol-Oriented BDD [here](http://shashikantjagtap.net/introducing-protocol-oriented-bdd-swift-ios-apps/)
 
 #### Using Steps in Page Object Pattern
 
 You can simply import `XCFit` inside the test class and extend it to XCFit
-
-Your test will read something like this:
-
-```
-import XCTest
-import XCFit
-
-class XCFitTests: XCFit {
-   override func setUp() {
-     super.setUp()
-     continueAfterFailure = false
-      XCUIApplication().launch()
-   }
-   override func tearDown() {
-     super.tearDown()
-   }
-
-  func testCheckAlertPresent() {
-    givenILaunchedApplication()
-    whenITap(on: HomeScreen().homeButtuon)
-    thenIShouldSeeAnAlert()
-  }
-}
-
-
-```
-
 
 You will get access to lots of predefined BDD style human readable steps. It's not mandatory to use those steps unless you wish.
 
