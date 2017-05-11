@@ -158,7 +158,7 @@ $ xcfit setup_xcode_templates
 
 You will see new option for iOS i.e 'XCFit'. Once Clicked on it. You will see Protocol BDD, Cucumberish UI and Fitnesse Acceptance Tests. XCUI POM, Fitnesse Acceptance Unit Test bundles. As shown
 
-![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/templates.png?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit5-GIF/master/templates.png)
 
 
 ## Framework Installation
@@ -266,7 +266,7 @@ All the XCUIElements for that Feature.
 
 This is test where you call Given When Then from Extensions. You can import `XCFit` framework and extend this class 'XCFit' and also confirms to 'Feature' protocol
 
-![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/xcfit5-demo.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit5-GIF/master/xcfit5-demo.gif)
 
 
 
@@ -289,7 +289,7 @@ XCFit templates gives an option to use very polular [Page Object Pattern](http:/
 
 
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFitPOM_Templates.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/XCFitPOM_Templates.gif)
 
 ### What's in the XCUI POM Template ?
 
@@ -350,7 +350,7 @@ $ pod install
 Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' class just `import XCFit` and extend the class to `XCFit` class. The predefined steps are ready to use.
 
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/Pod_install_XCFit.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/Pod_install_XCFit.gif)
 
 ### Carthage
 
@@ -389,7 +389,7 @@ and add the paths to the frameworks you want to use under “Input Files”, e.g
 
 Here is Carthage looks like
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/XCFit_Carthage.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/XCFit_Carthage.gif)
 
 You can choose any of the above method but Cocoapods is easy and less manual.
 
@@ -409,7 +409,7 @@ You will get access to lots of predefined BDD style human readable steps. It's n
 
 **Don't like Pre-defined steps, you can easily override the steps, covered in the later section [here](#advise-on-using-pre-defines-bdd-style-steps)**
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/pre-defined_xcfit_steps.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/pre-defined_xcfit_steps.gif)
 
 
 ## Setting Fastlane for XCFit
@@ -425,7 +425,7 @@ This will create template Fastfile with all the required lanes. You can replace 
 
 This will run all our tests using Fastlane that will be easy to plug it with any CI server.  
 
-![image](https://github.com/Shashikant86/XCFit5-GIF/blob/master/fastfile.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit5-GIF/master/fastfile.gif)
 
 
 ---
@@ -523,7 +523,7 @@ Now close the existing Xcode session and Xcode Workspace `.xcworkspace` next tim
 We now have everything we needed to run demo Cucumber demo test. Update Scheme if don't want to run unit test or other type of tests.
 and press 'CMD+U'
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/cucumberish_template.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/cucumberish_template.gif)
 
 Congratulations !! You have just ran your first Cucumber BDD Scenario in the Xcode.
 
@@ -553,7 +553,7 @@ This will chekcout and build XCFit and Cucumberish frameworks inside the `Cartha
 
 Once drag and drop is don and we have "Features" directory then we are ready to launch our BDD Style tests using 'CMD+U'. The entire Carthage Setup looks like this
 
-![image](https://github.com/Shashikant86/xcfitgif/blob/master/CarthageCucumberish.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/CarthageCucumberish.gif)
 
 ## Cucumberish Pre-Defined Steps
 
@@ -641,7 +641,7 @@ You should also note that, the script 'Launch Fitnesse' has been created in the 
 
  The browser will popup with example test. You should be able to excute that suite and see then running and passing
 
- ![image](https://github.com/Shashikant86/xcfitgif/blob/master/FitnesseAcceptance.gif?raw=true)
+ ![image](https://raw.githubusercontent.com/Shashikant86/xcfitgif/master/FitnesseAcceptance.gif)
 
  If you get any errors at this stage, please confirm that you have Java as well as ios-sim node package installed.
 
@@ -680,7 +680,7 @@ Now you should be able to build an “Acceptance Tests” target. Once, build is
 
 Now if you select “AcceptanceUnitTarget” and press CMD+U.
 
-![image](https://github.com/Shashikant86/XCFit-GIFS/blob/master/FitnesseXCTest.gif?raw=true)
+![image](https://raw.githubusercontent.com/Shashikant86/XCFit-GIFS/master/FitnesseXCTest.gif)
 
 
 Now we can see that FitNesse tests are running as shown above.  We can add this to main scheme to make sure we are running it after the unit tests to follow proper development workflow. We can build and run it as our normal unit tests.
