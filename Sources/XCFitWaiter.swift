@@ -13,7 +13,7 @@ import Foundation
 extension XCFit {
     
     open func whenIexpectElementToAppear(_ element: XCUIElement) {
-        let result = waitForElementToAppearCommpleted(element)
+        let result = waitForElementToAppearCompleted(element)
         XCTAssertTrue(result)
     }
     

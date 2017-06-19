@@ -13,7 +13,7 @@ open class XCFit: XCTestCase {
     }
 
 
-    open func waitForElementToAppearCommpleted(_ element: XCUIElement) -> Bool {
+    open func waitForElementToAppearCompleted(_ element: XCUIElement) -> Bool {
         let predicate = NSPredicate(format: "exists == true AND hittable == true AND enabled == true")
         let xcfitExpectation = expectation(for: predicate, evaluatedWith: element,
                                            handler: nil)
@@ -48,7 +48,7 @@ open class XCFit: XCTestCase {
     }
 
     open func elementAppeared(_ element: XCUIElement) {
-        let result = waitForElementToAppearCommpleted(element)
+        let result = waitForElementToAppearCompleted(element)
         XCTAssertTrue(result)
 //        waitUntilElementActive(element: element)
     }
