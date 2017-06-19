@@ -9,7 +9,7 @@
 
  This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
 
-This is extension to Feature protocol to implement the steps in the given when then format.
+This is an extension to Feature protocol to implement the steps in the given when then format.
 
  */
 

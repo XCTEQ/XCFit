@@ -7,7 +7,7 @@
 /*
 This is sample code created by XCFit Framework and can be edited/Removed as needed.
 
-This is  header file to manage objective-C dependencies in the Swift code. We are using Cucumberish steps. You probably don't need to touch this file.
+This is the header file to manage Objective-C dependencies in the Swift code. We are using Cucumberish steps. You probably don't need to touch this file.
 
  */
 

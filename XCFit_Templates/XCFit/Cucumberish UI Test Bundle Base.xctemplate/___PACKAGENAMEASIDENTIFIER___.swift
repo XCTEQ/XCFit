@@ -9,7 +9,7 @@
 
  This is sample code created by XCFit Framework and can be edited/Removed as needed.
  
- This is very important file as we will be using it as initialiser of all out test suite. We have to resgister all our Step Definitions in this class. e.g we have registed CommonStepDefinitions and HomeScreenSteps here
+ This is a very important file as we will be using it as initialiser of all our test suite. We have to register all our Step Definitions in this class. e.g we have registed CommonStepDefinitions and HomeScreenSteps here
 
  */
 
@@ -21,13 +21,13 @@ class ___PACKAGENAMEASIDENTIFIER___: NSObject {
     class func CucumberishSwiftInit()
     {
         var application : XCUIApplication!
-        //A closure that will be executed just before executing any of your features
+        // A closure that will be executed just before executing any of your features
         beforeStart { () -> Void in
             application = XCUIApplication()
             CommonStepDefinitions.setup(application);
             HomeScreenSteps().HomeScreenSteps()
         }
-        //A Given step definition
+        // A Given step definition
         Given("the app is running") { (args, userInfo) -> Void in
             application.launch()
 

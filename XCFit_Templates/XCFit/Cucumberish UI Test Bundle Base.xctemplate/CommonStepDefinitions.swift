@@ -7,7 +7,7 @@
 /*
 This is sample code created by XCFit Framework and can be edited/Removed as needed.
 
- This class has some mostly used step definitions included here. You can add some more here if needed.
+ This class has some most-commonly used step definitions included here. You can add some more here if needed.
 
  */
 
@@ -20,23 +20,23 @@ class CommonStepDefinitions: NSObject {
 
     fileprivate func elementByLabel(_ label : String, type: String) -> XCUIElement
     {
-        var elementQurey : XCUIElementQuery!
+        var elementQuery : XCUIElementQuery!
         switch(type){
         case "button":
-            elementQurey = application.buttons
+            elementQuery = application.buttons
         case "label":
-            elementQurey = application.staticTexts
+            elementQuery = application.staticTexts
         case "tab":
-            elementQurey = application.tabs
+            elementQuery = application.tabs
         case "field", "text field":
-            elementQurey = application.textFields
+            elementQuery = application.textFields
         case "textView", "text view":
-            elementQurey = application.textViews
+            elementQuery = application.textViews
         case "view":
-            elementQurey = application.otherElements
-        default: elementQurey = application.otherElements
+            elementQuery = application.otherElements
+        default: elementQuery = application.otherElements
         }
-        return elementQurey[label]
+        return elementQuery[label]
     }
 
     fileprivate func setup(_ application: XCUIApplication)

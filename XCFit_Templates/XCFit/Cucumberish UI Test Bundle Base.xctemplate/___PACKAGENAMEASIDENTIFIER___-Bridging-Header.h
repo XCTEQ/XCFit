@@ -6,9 +6,9 @@
 
 /*
 
- This is sample code created by XCFit Framework and can be edited/Removed as needed.
+ This is sample code created by XCFit Framework and can be edited/removed as needed.
  
- This is bridging header to manage objective-C dependencies in the Swift code. We are using Cucumberish steps. You probably don't need to touch this file.
+ This is the bridging header to manage Objective-C dependencies in the Swift code. We are using Cucumberish steps. You probably don't need to touch this file.
 
  */
 // Uncomment  below two line while usng manual installtion

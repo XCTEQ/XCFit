@@ -9,7 +9,7 @@
 
  This is sample code created by XCFit Framework and can be edited/Removed as per your project need. You can also re-arrange Xcode Groups and directories as per your need.
 
-This file stores all the XCUIElements for the perticular screen or feature so that our steps become readable.
+This file stores all the XCUIElements for the particular screen or feature so that our steps become readable.
 
  */
 

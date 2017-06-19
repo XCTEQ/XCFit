@@ -16,7 +16,7 @@ extension XCFit {
         XCTAssertTrue(element.exists)
     }
     
-    open func thenElemenShouldHavePlaceholderValue(_ element: XCUIElement, _ value : String) {
+    open func thenElementShouldHavePlaceholderValue(_ element: XCUIElement, _ value : String) {
         XCTAssertEqual(element.placeholderValue, value)
     }
     

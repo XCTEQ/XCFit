@@ -7,7 +7,7 @@
 /*
 This is sample code created by XCFit Framework and can be edited/Removed as needed.
 
-This is objective-C contructor to initialise Cucumberish in our project.
+This is the Objective-C constructor to initialise Cucumberish in our project.
 
  */
 

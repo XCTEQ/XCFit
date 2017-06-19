@@ -21,7 +21,7 @@ extension XCFit {
         element.doubleTap()
     }
     
-    open func whenItypeTextIntoTextField(textField: XCUIElement, text: String) {
+    open func whenITypeTextIntoTextField(textField: XCUIElement, text: String) {
         elementAppeared(textField)
         textField.typeText(text)
     }

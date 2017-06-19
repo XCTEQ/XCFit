@@ -15,7 +15,7 @@
 #pragma GCC error "Target requires pod '___POD_NAME___'. Add the entry \"pod '___POD_NAME___'\" to your Podfile configuration."
 #endif
 
-/* Copy and paste this entry to your projects Podfile and run 'pod install' or 'pod update' as necessary
+/* Copy and paste this entry to your project's Podfile and run 'pod install' or 'pod update' as necessary
  
  target '___PACKAGENAMEASIDENTIFIER___' do
     platform :___POD_PLATFORM_IDENTIFIER___

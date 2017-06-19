@@ -19,7 +19,7 @@ XCUIElement value needs to be replaced by locator from your Application.Some of 
 
            whenITap(on element: XCUIElement)
            whenIDoubleTapOn(XCUIElement)
-           whenItypeTextIntoTextField(textField: XCUIElement, text: String)
+           whenITypeTextIntoTextField(textField: XCUIElement, text: String)
            whenIActOnAlert(alertTitle: String, alertButton: String)
            whenIAllowSystemAlert(alertDescription: String)
            whenISlideASlider(by normalisedValue: CGFloat)
@@ -32,15 +32,15 @@ XCUIElement value needs to be replaced by locator from your Application.Some of 
 
 ## Waiter Actions
 
-           whenIexpectElementToAppear(XCUIElement)  
-           whenIexpectElementTimeOut(XCUIElement)
-           whenIexpectElementIncorrectOrder(XCUIElement)
-           whenIexpectElementInvertedFulfillment(XCUIElement)         
+           whenIExpectElementToAppear(XCUIElement)  
+           whenIExpectElementTimeOut(XCUIElement)
+           whenIExpectElementIncorrectOrder(XCUIElement)
+           whenIExpectElementInvertedFulfillment(XCUIElement)         
 
 ## Assertions
 
            thenIShouldSee(XCUIElement)
-           thenElemenShouldHavePlaceholderValue(XCUIElement,  String)
+           thenElementShouldHavePlaceholderValue(XCUIElement,  String)
            thenElementShouldHaveTitle(XCUIElement, String)
            thenElementShouldBeEnabled(XCUIElement)
            thenElementShouldBeVisible(XCUIElement)
