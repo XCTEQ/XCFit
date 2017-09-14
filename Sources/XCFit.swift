@@ -3,7 +3,6 @@ import XCTest
 @available(OSX 10.11, *)
 open class XCFit: XCTestCase {
 
-
     open func waitUntilElementActive(element: XCUIElement) {
         let exists = NSPredicate(format: "exists == true AND hittable == true AND enabled == true")
         self.expectation(for: exists, evaluatedWith: element, handler: nil)
