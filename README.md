@@ -18,7 +18,7 @@
 
 #### My Personal Info
 ------------------------------------------------------
-[![Website](https://img.shields.io/website-up-down-green-red/http/shashikantjagtap.net.svg?label=my-blogs)]()
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-blogs)](http://shashikantjagtap.net/)
 [![Twitter Shashikant86](https://img.shields.io/badge/twitter-Shashikant86-green.svg)](http://twitter.com/Shashikant86)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Shashikant86.svg?style=social&label=Follow)]()
 
