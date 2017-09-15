@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  XCFit-Example
 //
-//  Created by Shashikant Jagtap on 11/04/2017.
+//  Created by Shashikant Jagtap on 15/09/2017.
 //  Copyright © 2017 Shashikant Jagtap. All rights reserved.
 //
 
@@ -10,10 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var welcomeText: UILabel!
-    @IBAction func sayHello(_ sender: Any) {
-        welcomeText.text = "Welcome"
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

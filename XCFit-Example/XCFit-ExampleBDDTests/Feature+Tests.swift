@@ -16,25 +16,22 @@ import XCTest
 
 import XCFit
 
-// Once XCFit is imported then you can extend this class to use pre-defined steps 
+// Once XCFit is imported then you can extend this class to use pre-defined steps
 
-class WelcomeTests: XCFit, Welcome {
-    
+class FeatureTests: XCFit, Feature {
+
     override func setUp() {
         super.setUp()
-        
+
         continueAfterFailure = false
         XCUIApplication().launch()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func testAppIsRunning() {
         givenTheAppIsRunning()
-        whenITap(on: WelcomeElements.helloButton)
-        thenIShouldSee(WelcomeElements.welcomeText)
     }
 }
-

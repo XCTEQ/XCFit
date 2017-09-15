@@ -19,7 +19,7 @@ import XCTest
 
 // Once XCFit is imported we can use predefined steps
 
-extension Welcome {
+extension Feature {
     
     func givenTheAppIsRunning() {
         

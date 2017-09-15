@@ -39,7 +39,7 @@
 		OBJ_16 /* XCFit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* XCFit_Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCFit_Templates; sourceTree = SOURCE_ROOT; };
 		OBJ_20 /* XCFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_21 /* XCFitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_21 /* XCFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = XCFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* XCFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +160,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_22 = {
+						LastSwiftMigration = 0900;
+					};
+					OBJ_29 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "XCFit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -230,6 +238,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos10.3;
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = XCFit;
 				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
@@ -254,6 +264,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos10.3;
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = XCFit;
 				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
@@ -296,6 +308,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = XCFitTests;
 			};
 			name = Debug;
@@ -313,6 +327,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = XCFitTests;
 			};
 			name = Release;

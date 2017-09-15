@@ -17,9 +17,8 @@ This file stores all the XCUIElements for the perticular screen or feature so th
 import Foundation
 import XCTest
 
-enum WelcomeElements {
+enum FeatureElements {
     
-    static let helloButton = XCUIApplication().buttons["hello"]
-    static let welcomeText = XCUIApplication().staticTexts["Welcome"]
+//    static let welcomeButton = XCUIApplication().buttons["hello"]
     
 }

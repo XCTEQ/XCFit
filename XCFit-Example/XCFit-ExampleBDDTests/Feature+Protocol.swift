@@ -15,6 +15,6 @@ import Foundation
 import XCTest
 
 
-protocol Welcome {
+protocol Feature {
     func testAppIsRunning()
 }
