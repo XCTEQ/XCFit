@@ -1,9 +1,27 @@
-[![CI Status](http://img.shields.io/travis/Shashikant86/XCFit.svg?style=flat)](https://travis-ci.org/Shashikant86/XCFit)
+#### XCFit Project Details 
+------------------------------------------------------
 [![Version](https://img.shields.io/cocoapods/v/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
 [![License](https://img.shields.io/cocoapods/l/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
 [![Platform](https://img.shields.io/cocoapods/p/XCFit.svg?style=flat)](http://cocoapods.org/pods/XCFit)
+[![CocoaPods](https://img.shields.io/cocoapods/at/XCFit.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/dt/XCFit.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/dm/XCFit.svg)]()
+[![GitHub release](https://img.shields.io/github/release/Shashikant86/xcfit.svg)]()
+[![RubyGem](https://img.shields.io/gem/v/xcfit.svg)]()
 
+#### XCFit Continuous Integration Status
+------------------------------------------------------
+[![CI Status](http://img.shields.io/travis/Shashikant86/XCFit.svg?style=flat)](https://travis-ci.org/Shashikant86/XCFit)
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59b9a96f1efa9600015eb138&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59b9a96f1efa9600015eb138/build/latest?branch=master)
+[![Nevercode build status](https://app.nevercode.io/api/projects/eaabd63a-fc8b-445c-887f-ae7ff0b41631/workflows/80607373-32fe-45ea-9c94-a713ceb02e97/status_badge.svg?branch=master)](https://app.nevercode.io/#/project/eaabd63a-fc8b-445c-887f-ae7ff0b41631/workflow/80607373-32fe-45ea-9c94-a713ceb02e97/latestBuild?branch=master)
+![BitRise](https://www.bitrise.io/app/c8bfbd4aa57ec9fc/status.svg?token=y5G14HOmhB_aAxVWMkHxsw&branch=master)
+
+#### My Personal Info
+------------------------------------------------------
+[![Website](https://img.shields.io/website-up-down-green-red/http/shashikantjagtap.net.svg?label=my-blogs)]()
+[![Twitter Shashikant86](https://img.shields.io/badge/twitter-Shashikant86-green.svg)](http://twitter.com/Shashikant86)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Shashikant86.svg?style=social&label=Follow)]()
+
 
 # XCFit : Full Stack iOS BDD in Xcode
 
