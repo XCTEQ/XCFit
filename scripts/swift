@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Swift 4 Circle CI Installer";
+
+# Determine version
+VERSION_FILE=".swift-version"
+if [ ! -f $VERSION_FILE ];
+then
+    echo "No .swift-version file found."
+    exit 1
+fi
+VERSION=`cat $VERSION_FILE | tr -d '[[:space:]]'`
+echo "📅 Version: $VERSION";
+
+# Determine OS
+UNAME=`uname`;
+if [[ $UNAME == "Linux" ]];
+then
+    UBUNTU_RELEASE=`lsb_release -a 2>/dev/null`;
+    if [[ $UBUNTU_RELEASE == *"15.10"* ]];
+    then
+        OS="ubuntu1510";
+    else
+        OS="ubuntu1404";
+    fi
+else
+    echo "Unsupported Operating System: $UNAME";
+fi
+echo "🖥 Operating System: $OS";
+
+echo "📦 Installing Swiftenv"
+git clone --depth 1 https://github.com/kylef/swiftenv.git ~/.swiftenv
+export SWIFTENV_ROOT="$HOME/.swiftenv"
+export PATH="$SWIFTENV_ROOT/bin:$SWIFTENV_ROOT/shims:$PATH"
+
+echo "📚 Installing Dependencies"
+sudo apt-get install -y clang libicu-dev
+
+echo "🐦 Installing Swift";
+swiftenv install $VERSION;
+
+echo "🚀 Building";
+swift build
+if [[ $? != 0 ]];
+then
+    echo "❌  Build failed";
+    exit 1;
+fi
+
+echo "💼 Building Release";
+swift build -c release
+if [[ $? != 0 ]];
+then
+    echo "❌  Build for release failed";
+    exit 1;
+fi
+
+echo "🔎 Testing";
+
+swift test
+if [[ $? != 0 ]];
+then
+    echo "❌ Tests failed";
+    exit 1;
+fi
+
+echo "✅ Done";
