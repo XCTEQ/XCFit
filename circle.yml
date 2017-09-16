@@ -3,11 +3,15 @@ machine:
     version: "9.0"
 
 dependencies:
+  pre:
+    - brew install carthage
+    - gem install fastlane --no-ri --no-rdoc --no-document
+
+dependencies:
   cache_directories:
     - "XCFit-Example/Carthage"
 test:
   override:
-    - gem install fastlane --no-ri --no-rdoc --no-document
     - cd XCFit-Example
     - carthage bootstrap --platform iOS
     - fastlane scan -s XCFit-Example
