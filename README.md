@@ -1,6 +1,6 @@
 #### XCFit Project Details 
 ------------------------------------------------------
-[![Version](https://img.shields.io/cocoapods/v/XCFit.svg?style=flat&label=Pod)](http://cocoapods.org/pods/XCFit)
+[![Version](https://img.shields.io/cocoapods/v/XCFit.svg?style=flat&label=pod)](http://cocoapods.org/pods/XCFit)
 [![CocoaPods](https://img.shields.io/cocoapods/at/XCFit.svg)]()
 [![CocoaPods](https://img.shields.io/cocoapods/dt/XCFit.svg?label=pod-downloads)]()
 [![GitHub release](https://img.shields.io/github/release/Shashikant86/xcfit.svg?label=git-release)]()
@@ -11,10 +11,11 @@
 
 #### XCFit Continuous Integration Status
 ------------------------------------------------------
-[![CI Status](http://img.shields.io/travis/Shashikant86/XCFit.svg?style=flat&label=TravisCI)](https://travis-ci.org/Shashikant86/XCFit)
+[![CI Status](http://img.shields.io/travis/Shashikant86/XCFit.svg?style=flat&label=travisci)](https://travis-ci.org/Shashikant86/XCFit)
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59b9a96f1efa9600015eb138&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59b9a96f1efa9600015eb138/build/latest?branch=master)
 [![Nevercode build status](https://app.nevercode.io/api/projects/eaabd63a-fc8b-445c-887f-ae7ff0b41631/workflows/80607373-32fe-45ea-9c94-a713ceb02e97/status_badge.svg?branch=master)](https://app.nevercode.io/#/project/eaabd63a-fc8b-445c-887f-ae7ff0b41631/workflow/80607373-32fe-45ea-9c94-a713ceb02e97/latestBuild?branch=master)
 ![BitRise](https://www.bitrise.io/app/c8bfbd4aa57ec9fc/status.svg?token=y5G14HOmhB_aAxVWMkHxsw&branch=master)
+[![CircleCI](https://circleci.com/gh/Shashikant86/XCFit/tree/master.svg?style=shield)](https://circleci.com/gh/Shashikant86/XCFit/tree/master)
 
 #### XCFit Author Info
 ------------------------------------------------------
