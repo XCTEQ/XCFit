@@ -1,4 +1,6 @@
 machine:
+  xcode:
+    version: "9.0"
 
 dependencies:
   pre:
@@ -13,5 +15,7 @@ dependencies:
 
 test:
   override:
+    - sudo apt-get update
+    - swift --version
     - swift build
     - swift test
