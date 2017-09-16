@@ -15,7 +15,7 @@ machine:
 
 test:
   override:
-    - ./script/swift
+    - ./scripts/swift
     # - swift --version
     # - swift build
     # - swift test
