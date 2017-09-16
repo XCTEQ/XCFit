@@ -1,18 +1,14 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
+language: objective-c
+osx_image: xcode9
+cache:
+  directories:
+  - XCFit-Example/Carthage
 
-os:
-  - osx
-language: generic
-sudo: required
-dist: trusty
-osx_image: xcode8
+before_install:
+  - gem install fastlane --no-ri --no-rdoc --no-document
+
+install: true
 script:
-# echo " Can not test this on TravisCI as Xcode 8.3 and Swift 3.1 isn't yet available"
-#   - swift build
-#   - swift test
-# notifications:
-#   email:
-#     on_success: never
-#     on_failure: change
+  - cd XCFit-Example
+  - carthage bootstrap --platform iOS
+  - fastlane scan -s XCFit-Example
