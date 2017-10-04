@@ -1,7 +1,7 @@
 //
 //
 //  Created by XCFit Framework
-//  Copyright © 2016 XCFit Framework. All rights reserved.
+//  Copyright © 2017 XCFit Framework. All rights reserved.
 //
 //
 

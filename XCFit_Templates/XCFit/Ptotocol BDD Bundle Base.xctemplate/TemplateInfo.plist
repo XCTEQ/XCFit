@@ -64,43 +64,51 @@
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>Feature+Protocol.swift</string>
-		<string>Feature+Extension.swift</string>
-		<string>Feature+Enum.swift</string>
+		<string>Feature.swift</string>
+		<string>FeatureSteps.swift</string>
+		<string>FeatureElements.swift</string>
 		<string>Info.plist:PackageType</string>
-		<string>Feature+Tests.swift</string>
+		<string>FeatureTests.swift</string>
+		<string>UITestBase.swift</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Feature+Protocol.swift</key>
+		<key>Feature.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Feature+Protocol.swift</string>
+			<string>Feature.swift</string>
 			<key>Group</key>
 			<string>Features</string>
 		</dict>
-		<key>Feature+Extension.swift</key>
+		<key>UITestBase.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Feature+Extension.swift</string>
+			<string>UITestBase.swift</string>
 			<key>Group</key>
-			<string>Steps</string>
+			<string>Common</string>
 		</dict>
-		<key>Feature+Enum.swift</key>
+		<key>FeatureSteps.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Feature+Enum.swift</string>
+			<string>FeatureSteps.swift</string>
 			<key>Group</key>
-			<string>Elements</string>
+			<string>StepDefinitions</string>
+		</dict>
+		<key>FeatureElements.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>FeatureElements.swift</string>
+			<key>Group</key>
+			<string>XCUIElements</string>
 		</dict>
 		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;BNDL&lt;/string&gt;
 </string>
-		<key>Feature+Tests.swift</key>
+		<key>FeatureTests.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Feature+Tests.swift</string>
+			<string>FeatureTests.swift</string>
 			<key>Group</key>
 			<string>Tests</string>
 		</dict>

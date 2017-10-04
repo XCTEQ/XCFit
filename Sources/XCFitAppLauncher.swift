@@ -10,19 +10,22 @@ import XCTest
 
 @available(OSX 10.11, *)
 extension XCFit {
-    
+
     open func givenILaunchedApplication() {
-        super.setUp()
-        XCUIApplication().launch()
+        XCTContext.runActivity(named: "Given I Launched Application") { _ in
+            XCUIApplication().launch()
+        }
     }
-    
+
     open func whenITerminatedApplication() {
-        XCUIApplication().terminate()
+        XCTContext.runActivity(named: "When I Terminated Application") { _ in
+            XCUIApplication().terminate()
+        }
     }
-    
+
     open func givenILaunchedApplicationWithArguments(launchArguments: [[String]] = []) {
         launchArguments.forEach { XCUIApplication().launchArguments += $0 }
         XCUIApplication().launch()
     }
-    
+
 }
