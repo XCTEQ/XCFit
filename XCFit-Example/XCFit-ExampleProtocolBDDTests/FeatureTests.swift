@@ -1,7 +1,7 @@
 //
 //
 //  Created by XCFit Framework
-//  Copyright © 2016 XCFit Framework. All rights reserved.
+//  Copyright © 2017 XCFit Framework. All rights reserved.
 //
 
 /*
@@ -12,26 +12,12 @@
 
  */
 
-import XCTest
-
-import XCFit
-
-// Once XCFit is imported then you can extend this class to use pre-defined steps
-
-class FeatureTests: XCFit, Feature {
-
-    override func setUp() {
-        super.setUp()
-
-        continueAfterFailure = false
-        XCUIApplication().launch()
-    }
-
-    override func tearDown() {
-        super.tearDown()
-    }
+class FeatureTests: UITestBase, Feature {
 
     func testAppIsRunning() {
-        givenTheAppIsRunning()
+        givenILaunchAppInCleanState()
+        givenILaunchedApplication()
+        whenITap(on: FeatureScreen.helloButton.element)
+        thenIShouldSee(FeatureScreen.welcome.element)
     }
 }

@@ -2,7 +2,7 @@
 //  XCFit_ExampleTests.swift
 //  XCFit-ExampleTests
 //
-//  Created by Shashikant Jagtap on 15/09/2017.
+//  Created by Shashikant Jagtap on 04/10/2017.
 //  Copyright © 2017 Shashikant Jagtap. All rights reserved.
 //
 

@@ -13,22 +13,30 @@ import Foundation
 extension XCFit {
 
     open func whenIexpectElementToAppear(_ element: XCUIElement) {
-        let result = waitForElementToAppearCommpleted(element)
-        XCTAssertTrue(result)
+        XCTContext.runActivity(named: "When I Expect Element \(element) to appear") { _ in
+            let result = waitForElementToAppearCommpleted(element)
+            XCTAssertTrue(result)
+        }
     }
 
     open func whenIexpectElementTimeOut(_ element: XCUIElement) {
-        let result = waitForElementToAppearTimedOut(element)
-        XCTAssertTrue(result)
+        XCTContext.runActivity(named: "When I Expect Element \(element) to Timeout") { _ in
+            let result = waitForElementToAppearTimedOut(element)
+            XCTAssertTrue(result)
+        }
     }
 
     open func whenIexpectElementIncorrectOrder(_ element: XCUIElement) {
-        let result = waitForElementToAppearIncorrectOrder(element)
-        XCTAssertTrue(result)
+        XCTContext.runActivity(named: "When I Expect Element \(element) in incorrect order") { _ in
+            let result = waitForElementToAppearIncorrectOrder(element)
+            XCTAssertTrue(result)
+        }
     }
 
     open func whenIexpectElementInvertedFulfillment(_ element: XCUIElement) {
-        let result = waitForElementToAppearinvertedFulfillment(element)
-        XCTAssertTrue(result)
+        XCTContext.runActivity(named: "When I Expect Element \(element) in Inverted Fullfillment") { _ in
+            let result = waitForElementToAppearinvertedFulfillment(element)
+            XCTAssertTrue(result)
+        }
     }
 }

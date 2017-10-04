@@ -1,7 +1,7 @@
 //
 //
 //  Created by XCFit Framework
-//  Copyright © 2016 XCFit Framework. All rights reserved.
+//  Copyright © 2017 XCFit Framework. All rights reserved.
 //
 
 /*
@@ -13,7 +13,6 @@ This file is a protocol with all the requirements for the specific feature.
 
 import Foundation
 import XCTest
-
 
 protocol Feature {
     func testAppIsRunning()

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BCC66CE1F6BB3B600FE2602"
+               BlueprintIdentifier = "9BD3EBC21F85858300F86380"
                BuildableName = "XCFit-Example.app"
                BlueprintName = "XCFit-Example"
                ReferencedContainer = "container:XCFit-Example.xcodeproj">
@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BCC66E21F6BB3B600FE2602"
+               BlueprintIdentifier = "9BD3EBD61F85858300F86380"
                BuildableName = "XCFit-ExampleTests.xctest"
                BlueprintName = "XCFit-ExampleTests"
                ReferencedContainer = "container:XCFit-Example.xcodeproj">
@@ -43,9 +43,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BCC66F81F6BB3D000FE2602"
-               BuildableName = "XCFit-ExampleBDDTests.xctest"
-               BlueprintName = "XCFit-ExampleBDDTests"
+               BlueprintIdentifier = "9BD3EBEC1F85859500F86380"
+               BuildableName = "XCFit-ExampleProtocolBDDTests.xctest"
+               BlueprintName = "XCFit-ExampleProtocolBDDTests"
                ReferencedContainer = "container:XCFit-Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,7 +53,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BCC66CE1F6BB3B600FE2602"
+            BlueprintIdentifier = "9BD3EBC21F85858300F86380"
             BuildableName = "XCFit-Example.app"
             BlueprintName = "XCFit-Example"
             ReferencedContainer = "container:XCFit-Example.xcodeproj">
@@ -77,7 +77,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BCC66CE1F6BB3B600FE2602"
+            BlueprintIdentifier = "9BD3EBC21F85858300F86380"
             BuildableName = "XCFit-Example.app"
             BlueprintName = "XCFit-Example"
             ReferencedContainer = "container:XCFit-Example.xcodeproj">
@@ -96,7 +96,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BCC66CE1F6BB3B600FE2602"
+            BlueprintIdentifier = "9BD3EBC21F85858300F86380"
             BuildableName = "XCFit-Example.app"
             BlueprintName = "XCFit-Example"
             ReferencedContainer = "container:XCFit-Example.xcodeproj">

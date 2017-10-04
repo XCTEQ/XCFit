@@ -33,7 +33,9 @@ extension XCFit {
     }
 
     open func whenIActOnAlert(alertTitle: String, alertButton: String) {
-        XCUIApplication().alerts[alertTitle].buttons[alertButton].tap()
+        XCTContext.runActivity(named: "When I Act on Alert \(alertTitle) with Button \(alertButton)") { _ in
+            XCUIApplication().alerts[alertTitle].buttons[alertButton].tap()
+        }
     }
 
     open func whenIAllowSystemAlert(alertDescription: String) {
@@ -47,35 +49,50 @@ extension XCFit {
     }
 
     open func whenISlideASlider(by normalisedValue: CGFloat) {
-        XCUIApplication().sliders.element.adjust(toNormalizedSliderPosition: normalisedValue)
+        XCTContext.runActivity(named: "When I Slide A Slider by value \(normalisedValue)") { _ in
+            XCUIApplication().sliders.element.adjust(toNormalizedSliderPosition: normalisedValue)
+        }
     }
 
     open func whenISelectAItemFromPicker(item: CGFloat) {
-        XCUIApplication().pickerWheels.element.adjust(toNormalizedSliderPosition: item)
+        XCTContext.runActivity(named: "When I Select A Item \(item) from Picker") { _ in
+            XCUIApplication().pickerWheels.element.adjust(toNormalizedSliderPosition: item)
+        }
     }
 
     open func whenIClickLinkFromWebView(linkText: String) {
-        XCUIApplication().links[linkText].tap()
+        XCTContext.runActivity(named: "When I Click Link \(linkText) from WebView") { _ in
+            XCUIApplication().links[linkText].tap()
+        }
     }
 
     open func whenIPressElementForDuration(_ element: XCUIElement, duration: TimeInterval) {
-        elementAppeared(element)
-        element.press(forDuration: duration)
+        XCTContext.runActivity(named: "When I Press Element \(element) For Duration \(duration)") { _ in
+            elementAppeared(element)
+            element.press(forDuration: duration)
+        }
     }
 
     open func whenIPressOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval) {
-        elementAppeared(element)
-        element.press(forDuration: duration, thenDragTo: destinationElement)
+        
+        XCTContext.runActivity(named: "When I Press Element \(element) and Drag to other element \(destinationElement)") { _ in
+            elementAppeared(element)
+            element.press(forDuration: duration, thenDragTo: destinationElement)
+        }
     }
 
     open func whenIClickElementForDuration(_ element: XCUIElement, duration: TimeInterval) {
-        elementAppeared(element)
-        element.press(forDuration: duration)
+        XCTContext.runActivity(named: "When I Click Element \(element) For Duration \(duration)") { _ in
+            elementAppeared(element)
+            element.press(forDuration: duration)
+        }
     }
 
     open func whenIClickOnElementAndDragToOtherElement(_ element: XCUIElement, destinationElement: XCUIElement, duration: TimeInterval) {
-        elementAppeared(element)
-        element.press(forDuration: duration, thenDragTo: destinationElement)
+        XCTContext.runActivity(named: "When I Click on Element \(element) and Drag to other element \(destinationElement)") { _ in
+            elementAppeared(element)
+            element.press(forDuration: duration, thenDragTo: destinationElement)
+        }
     }
 
 }
