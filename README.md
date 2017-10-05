@@ -37,7 +37,7 @@
    * [XCFit Features](#xcfit-features)
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
-   * [XCFit Swift Framework](##xcfit-swift-framework--protocol-oriented-bdd)
+   * [XCFit Swift Framework](#xcfit-swift-framework--protocol-oriented-bdd)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
    * [Advide on using pre-defined BDD Steps](#advise-on-using-pre-defines-bdd-style-steps)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
@@ -212,9 +212,23 @@ Now, we can fetch and build Carthage Dependencies using following command.
 
              $ carthage update --platform iOS
 
-This will checkout and build XCFit frameworks then we can manually drag those frameworks in the `Build Phases` of the test targets. This is explained in details in the later section.
+This will checkout and build XCFit frameworks then we can manually drag those frameworks in the `Build Phases` of the test targets. This will create 'Carthage' directory with built framework. We need to manually drag and drop this to our XCUIPoMTest' target build settings. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: bin/sh), add the following contents to the script area below the shell:
+
+
+        /usr/local/bin/carthage copy-frameworks
+
+and add the paths to the frameworks you want to use under “Input Files”, e.g.:
+
+
+         $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
+
+
+
+You can choose any of the above method but Cocoapods is easy and less manual.
 
 ### Swift Package Manager
+
+#### ==== Please Note that Swift Package Manager doesn't support iOS at the moment =====
 
 XCFit can be installed with Swift Package Manager however Swift Package Manager isn't officially supported for iOS so we can use XCFit only for the standalone Libraries. We need to create `Package.swift` file with following content.
 ```
@@ -276,82 +290,15 @@ This is a base class for all the Test. Once XCFit imported then we can extend th
 
 ## Getting XCFit Framework for pre-defined BDD Style steps
 
-### Cocoapods
-You can get XCFit Framework easily. Create `Podfile` and add specific dependency for the target
+You can get XCFit Framework easily with methods mentioned above. If you choose decided to use Cocoapods then create `Podfile` and add specific dependency for the target
 Cocoapods is more automated than Carthage. We can create `Podfile` and add specific dependency for the target or  we can use XCFit template `Podfile` using command.
 
            $ xcfit setup_xcfit_podfile
 
-This will create a Podfile, you need to replace your target names as required.
-
-* **Swift 4**
-
- We can create `Podfile` and add specific dependency for the target
-
-```ruby
-    target '$_YOUR__TARGET' do
-      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '7.0.0'
-    end
-```
-This will doownload Cocoapods supporting Swift 3.0.2
-
-* **Swift 3.1**
-
-You can get version 6.0.0 to work with Swift 3.1
-
-```ruby
-    target '$_YOUR__TARGET' do
-      pod 'XCFit', :git => 'https://github.com/Shashikant86/XCFit.git', :tag => '6.0.0'
-    end
-```
-
-Now that, We need to install the framework using
-
-```sh
-$ pod install
-```
-
-Close existing Xcode Session and Open `.xcworkspace/`. Now in the 'testBase' class just `import XCFit` and extend the class to `XCFit` class. The predefined steps are ready to use.
-
-
-### Carthage
-
-XCFit and Cucumberish can be installed as Carthage. We need to create `Cartfile` in the root of the project. Depending on which version of Swift you are using, we can use different tag
-
-* **Swift 4**
-
-Add the following to `Cartfile` to get Swift 4 compatable source
-
-              github "Shashikant86/XCFit" "7.0.0"
-
-
-* **Swift 3.1**
-
-You can get latest tag will  work with Swift 3.1 then `Cartfile` can have following
-
-             github "Shashikant86/XCFit" "6.0.0"
-
-
-Now fetch dependency and build XCFit using.
-
-
-                  $ carthage update --platform iOS
-
-
-This will create 'Carthage' directory with built framework. We need to manually drag and drop this to our XCUIPoMTest' target build settings. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: bin/sh), add the following contents to the script area below the shell:
-
-
-        /usr/local/bin/carthage copy-frameworks
-
-and add the paths to the frameworks you want to use under “Input Files”, e.g.:
-
-
-         $(SRCROOT)/Carthage/Build/iOS/XCFit.framework                
+This will create a Podfile, you need to replace your target names as required and then follow the instructions above. 
 
 
 
-
-You can choose any of the above method but Cocoapods is easy and less manual.
 ## Import XCFit & Use Predefined Steps
 
 There are some predefined XCFit steps we can use by importing `XCFit` and extending out test class to `XCFit`. There are plenty of Pre-Defined BDD Style Steps available [here](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md). You can use predefined steps wherever they make sense however it's fairly easy to write your own.
@@ -720,7 +667,7 @@ You can clone the existing repo which has a demo app we can run Unit, Fitnesse a
 
 
 
-# Step by Step Video Demo
+# Step by Step Video Demo: OLD Version
 
 You can watch step by step video demo on Youtube. Click the link below
 
