@@ -362,7 +362,7 @@ You can simply import `XCFit` inside the `UITestBase` class and extend it to XCF
 
 # Practical Demo
 
-[![Alt text](https://img.youtube.com/vi/7gqPxy6UVRw/0.jpg)](https://www.youtube.com/watch?v=7gqPxy6UVRw)
+[![Alt text](https://img.youtube.com/vi/m2u0CGiwV_8/0.jpg)](https://www.youtube.com/watch?v=m2u0CGiwV_8)
 
 
 
