@@ -37,7 +37,7 @@
    * [XCFit Features](#xcfit-features)
    * [Tech &amp; Software Requirements](#tech--software-requirements)
    * [Installation](#installation)
-   * [XCFit Swift Framework](#xcfit-swift-framework--xcui-page-object-pattern--pre-defined-steps)
+   * [XCFit Swift Framework](##xcfit-swift-framework--protocol-oriented-bdd)
    * [Setting Cucumberish BDD Scenarios in Xcode](#setting-cucumberish-bdd-scenarios-in-xcode)
    * [Advide on using pre-defined BDD Steps](#advise-on-using-pre-defines-bdd-style-steps)
    * [Fitnesse for iOS: Acceptance/Contract Tests](#fitnesse-for-ios-acceptancecontract-tests)
@@ -360,13 +360,12 @@ There are some predefined XCFit steps we can use by importing `XCFit` and extend
 
 You can simply import `XCFit` inside the `UITestBase` class and extend it to XCFit. You can also use `FeatureSteps.swift` to implement or override some steps. You can read step by step tutorial on my blog on Protocol-Oriented BDD [here](http://shashikantjagtap.net/introducing-protocol-oriented-bdd-swift-ios-apps/)
 
-# Practical Demo
+# Practical Demo: Watch Youtube Video
 
 [![Alt text](https://img.youtube.com/vi/m2u0CGiwV_8/0.jpg)](https://www.youtube.com/watch?v=m2u0CGiwV_8)
 
 
-
-** =====I would strongly recommend to use Protocol Oriented Approach for BDD and you can ignore the below mentioned patterns ===== **
+### I would strongly recommend to use Protocol Oriented Approach for BDD and you can ignore the below mentioned patterns 
 
 
 ---
