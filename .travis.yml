@@ -9,6 +9,6 @@ before_install:
 
 install: true
 script:
-  - cd XCFit-Example
+  - cd XCFit-Demo
   - carthage bootstrap --platform iOS
-  - fastlane scan -s XCFit-Example
+  - fastlane scan -s XCFit-Demo
