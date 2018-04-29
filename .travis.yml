@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9
 cache:
   directories:
-  - XCFit-Example/Carthage
+  - XCFit-Demo/Carthage
 
 before_install:
   - gem install fastlane --no-ri --no-rdoc --no-document
