@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  XCFit-Example
+//  XCFit-Demo
 //
-//  Created by Shashikant Jagtap on 04/10/2017.
-//  Copyright © 2017 Shashikant Jagtap. All rights reserved.
+//  Created by Shashikant Jagtap on 29/04/2018.
+//  Copyright © 2018 Shashikant Jagtap. All rights reserved.
 //
 
 import UIKit

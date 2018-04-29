@@ -19,15 +19,16 @@ import XCTest
 
 enum FeatureScreen: String {
 
-    case helloButton
-    case welcome
+case homeButton = "Home"
 
-    var element: XCUIElement {
+    var button: XCUIElement {
         switch self {
-        case .helloButton:
-            return XCUIApplication().buttons["Hello"]
-        case .welcome:
-            return XCUIApplication().textFields["Welcome"]
+        case .homeButton:
+          if UIDevice.current.userInterfaceIdiom == .pad {
+               return XCUIApplication().buttons["iPadHome"]
+           } else {
+               return XCUIApplication().buttons[self.rawValue]
+          }
         }
     }
 }

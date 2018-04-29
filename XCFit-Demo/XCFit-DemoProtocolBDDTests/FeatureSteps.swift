@@ -27,9 +27,9 @@ extension Feature {
         }
     }
 
-    func whenITapHelloButton() {
-        XCTContext.runActivity(named: "When I Tap Hello Button") { _ in
-            FeatureScreen.helloButton.element.tap()
+    func whenITapHomeButton() {
+        XCTContext.runActivity(named: "When I Tap Home Button") { _ in
+            FeatureScreen.homeButton.button.tap()
         }
     }
 }

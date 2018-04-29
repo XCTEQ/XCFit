@@ -12,12 +12,13 @@
 
  */
 
+import XCFit
+
 class FeatureTests: UITestBase, Feature {
 
     func testAppIsRunning() {
         givenILaunchAppInCleanState()
-        givenILaunchedApplication()
-        whenITap(on: FeatureScreen.helloButton.element)
-        thenIShouldSee(FeatureScreen.welcome.element)
+        
+        
     }
 }
