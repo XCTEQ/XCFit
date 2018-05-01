@@ -177,6 +177,7 @@
 				9B8ED8F52096424100EEA377 /* Sources */,
 				9B8ED8F62096424100EEA377 /* Frameworks */,
 				9B8ED8F72096424100EEA377 /* Resources */,
+				9B7264FB209913BD0043EDE4 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -275,6 +276,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9B7264FB209913BD0043EDE4 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XCFit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		9B8ED931209645B600EEA377 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
