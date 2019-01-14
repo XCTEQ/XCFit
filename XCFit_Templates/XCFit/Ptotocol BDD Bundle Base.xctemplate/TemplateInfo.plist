@@ -47,18 +47,6 @@
 			</dict>
 			<key>BuildPhases</key>
 			<array>
-				<dict>
-					<key>Class</key>
-					<string>Sources</string>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>Frameworks</string>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>Resources</string>
-				</dict>
 			</array>
 		</dict>
 	</array>
