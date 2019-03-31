@@ -5,7 +5,7 @@ cache:
   - XCFit-Demo/Carthage
 
 before_install:
-  - gem install fastlane --no-ri --no-rdoc --no-document
+  - gem install fastlane
 
 install: true
 script:
