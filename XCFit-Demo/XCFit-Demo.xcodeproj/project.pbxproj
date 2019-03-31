@@ -64,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B8ED912209642B100EEA377 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -195,9 +188,6 @@
 				9B8ED90E209642B100EEA377 /* Sources */,
 				9B8ED90F209642B100EEA377 /* Frameworks */,
 				9B8ED910209642B100EEA377 /* Resources */,
-				9B8ED911209642B100EEA377 /* Sources */,
-				9B8ED912209642B100EEA377 /* Frameworks */,
-				9B8ED913209642B100EEA377 /* Resources */,
 				9B8ED931209645B600EEA377 /* ShellScript */,
 			);
 			buildRules = (
@@ -266,13 +256,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B8ED913209642B100EEA377 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -326,13 +309,6 @@
 				9B8ED927209642B200EEA377 /* UITestBase.swift in Sources */,
 				9B8ED91B209642B200EEA377 /* Feature.swift in Sources */,
 				9B8ED924209642B200EEA377 /* FeatureTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B8ED911209642B100EEA377 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
