@@ -19,6 +19,6 @@ class HomeScreen: XCTestCase {
 
     // You can add locators and functions of homeScreen here
 
-   let homeButtuon = XCUIApplication().buttons["Home"]
+   let homeButton = XCUIApplication().buttons["Home"]
 
 }

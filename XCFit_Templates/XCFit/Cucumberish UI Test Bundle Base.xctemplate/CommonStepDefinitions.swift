@@ -1,4 +1,4 @@
-//
+ery//
 //  CommonStepDefinitions.swift
 //  Copyright © 2017 XCFit Framework. All rights reserved.
 //
@@ -23,20 +23,20 @@ class CommonStepDefinitions: NSObject {
         var elementQurey : XCUIElementQuery!
         switch(type){
         case "button":
-            elementQurey = application.buttons
+            elementQuery = application.buttons
         case "label":
-            elementQurey = application.staticTexts
+            elementQuery = application.staticTexts
         case "tab":
-            elementQurey = application.tabs
+            elementQuery = application.tabs
         case "field", "text field":
-            elementQurey = application.textFields
+            elementQuery = application.textFields
         case "textView", "text view":
-            elementQurey = application.textViews
+            elementQuery = application.textViews
         case "view":
-            elementQurey = application.otherElements
+            elementQuery = application.otherElements
         default: elementQurey = application.otherElements
         }
-        return elementQurey[label]
+        return elementQuery[label]
     }
 
     fileprivate func setup(_ application: XCUIApplication)

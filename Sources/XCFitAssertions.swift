@@ -18,7 +18,7 @@ extension XCFit {
         }
     }
 
-    open func thenElemenShouldHavePlaceholderValue(_ element: XCUIElement, _ value : String) {
+    open func thenElementShouldHavePlaceholderValue(_ element: XCUIElement, _ value : String) {
         XCTContext.runActivity(named: "Then Element Should Have Placeholder Value \(value)") { _ in
              XCTAssertEqual(element.placeholderValue, value)
         }
